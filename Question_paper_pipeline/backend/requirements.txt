@@ -1,0 +1,25 @@
+# Gecko Med — Question Paper Extraction Pipeline
+# Backend dependencies
+
+# Web framework
+fastapi==0.128.0
+uvicorn[standard]==0.37.0
+python-multipart>=0.0.9   # Required for UploadFile
+
+# Data validation
+pydantic==2.11.7
+
+# PDF processing
+pymupdf>=1.26.0           # PyMuPDF — fitz
+
+# OCR
+paddlepaddle>=2.6.0       # CPU version
+paddleocr>=2.6,<4
+
+# Image processing
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# ML / NLP (available for future enhancements)
+scikit-learn>=1.3.0
+numpy>=1.24.0
