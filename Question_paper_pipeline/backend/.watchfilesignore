@@ -1,0 +1,5 @@
+# Ignore storage and temporary data from triggering uvicorn server reload
+storage/
+storage/**
+*.tmp
+*.log

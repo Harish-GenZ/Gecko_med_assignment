@@ -20,6 +20,15 @@ import re
 import logging
 from typing import List, Dict, Any, Optional
 
+# Thread safety configuration for PaddlePaddle + OpenBLAS on Windows:
+os.environ["OMP_NUM_THREADS"] = "1"
+os.environ["OPENBLAS_NUM_THREADS"] = "1"
+os.environ["MKL_NUM_THREADS"] = "1"
+os.environ["VECLIB_MAXIMUM_THREADS"] = "1"
+os.environ["NUMEXPR_NUM_THREADS"] = "1"
+os.environ["FLAGS_allocator_strategy"] = "naive_best_fit"
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+
 # Disable OneDNN (MKL-DNN) in both PaddlePaddle and PaddleX before any paddle imports
 os.environ["PADDLE_PDX_ENABLE_MKLDNN_BYDEFAULT"] = "0"
 os.environ["FLAGS_use_mkldnn"] = "0"

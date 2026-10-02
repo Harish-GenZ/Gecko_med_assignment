@@ -25,9 +25,9 @@ logger = logging.getLogger(__name__)
 # Compiled regex patterns
 # ---------------------------------------------------------------------------
 
-# Section boundary patterns (e.g. "Section A", "PART-A", "Part B", "Group 1", "First Paper")
+# Section boundary patterns (e.g. "Section A", "PART-A", "Part B", "(PART-A)", "[Group 1]")
 SECTION_RE = re.compile(
-    r'^[\s]*(?:section|part|group)\s*[-:]?\s*([A-Za-z0-9]+|first|second|part\s*-[iI]+|[iI]+)[\s\(\):]*.*$',
+    r'^[\s\(\[]*(?:section|part|group)\s*[-:]?\s*([A-Za-z0-9]+|first|second|part\s*-[iI]+|[iI]+)[\s\(\):]*.*$',
     re.I
 )
 
@@ -203,7 +203,8 @@ def analyze_document_structure(paper_text: str) -> DocumentStructure:
                 state = "QUESTIONS"
                 sec_match = SECTION_RE.match(line_s)
                 if sec_match:
-                    detected_sections.append(sec_match.group(0).strip())
+                    clean_sec = re.sub(r'^[\s\(\[]+|[\s\)\]]+$', '', sec_match.group(0)).strip()
+                    detected_sections.append(clean_sec)
                 question_lines.append(line)
 
             elif is_q_pref or (is_cat and not is_inst_kw) or is_formula:
@@ -239,7 +240,8 @@ def analyze_document_structure(paper_text: str) -> DocumentStructure:
                 state = "QUESTIONS"
                 sec_match = SECTION_RE.match(line_s)
                 if sec_match:
-                    detected_sections.append(sec_match.group(0).strip())
+                    clean_sec = re.sub(r'^[\s\(\[]+|[\s\)\]]+$', '', sec_match.group(0)).strip()
+                    detected_sections.append(clean_sec)
                 question_lines.append(line)
 
             elif is_q_pref or is_formula:

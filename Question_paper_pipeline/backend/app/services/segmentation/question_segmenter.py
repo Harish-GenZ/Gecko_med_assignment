@@ -77,7 +77,7 @@ CATEGORY_RULES = [
 
 # Section boundary patterns
 SECTION_RE = re.compile(
-    r'^[\s]*(?:section|part|group)\s*[-:]?\s*([A-Za-z0-9]+|first|second|part\s*-[iI]+|[iI]+)[\s\(\):]*.*$',
+    r'^[\s\(\[]*(?:section|part|group)\s*[-:]?\s*([A-Za-z0-9]+|first|second|part\s*-[iI]+|[iI]+)[\s\(\):]*.*$',
     re.I
 )
 
@@ -332,7 +332,7 @@ def segment_questions(paper_text: str) -> List[Dict[str, Any]]:
         sec_m = SECTION_RE.match(line)
         if sec_m and not re.search(r'question|answer|study|explain|describe', line, re.I):
             finish_current_question()
-            current_section = sec_m.group(0).strip()
+            current_section = re.sub(r'^[\s\(\[]+|[\s\)\]]+$', '', sec_m.group(0)).strip()
             current_category = None
             current_category_marks = None
             hanging_lines = []

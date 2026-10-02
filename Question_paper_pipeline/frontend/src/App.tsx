@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import type {
   ExtractionResult, JobStatusResponse, MCQOption,
-  PageInfo, Question, QuestionPaper, QuestionType
+  PageInfo, Question, QuestionPaper, QuestionType, WorkerInfo
 } from './types'
 import { uploadDocument, getJobStatus } from './services/api'
 
@@ -89,7 +89,131 @@ function QuestionItem({ q }: { q: Question }) {
         </div>
       </div>
       {q.options && q.options.length > 0 && <MCQOptions options={q.options} />}
-      <ConfBar value={q.confidence} />
+      {q.confidence_breakdown ? (
+        <div className="q-confidence-row">
+          <div className="q-conf-bar-wrap">
+            <ConfBar value={q.confidence} />
+          </div>
+          <div className="q-conf-chips">
+            <span className="q-conf-chip">Boundary: {(q.confidence_breakdown.boundary * 100).toFixed(0)}%</span>
+            <span className="q-conf-chip">Category: {(q.confidence_breakdown.classification * 100).toFixed(0)}%</span>
+            {q.confidence_breakdown.ocr !== null && q.confidence_breakdown.ocr !== undefined && (
+              <span className="q-conf-chip">OCR: {(q.confidence_breakdown.ocr * 100).toFixed(0)}%</span>
+            )}
+          </div>
+        </div>
+      ) : (
+        <ConfBar value={q.confidence} />
+      )}
+      {q.anomalies && q.anomalies.length > 0 && (
+        <div className="q-anomalies-list">
+          {q.anomalies.map((a, i) => (
+            <span key={i} className={`q-anomaly-badge sev-${a.severity}`}>⚠️ {a.reason}</span>
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
+
+function PaperQualityAuditCard({ paper }: { paper: QuestionPaper }) {
+  const conf = paper.confidence
+  if (!conf) return null
+
+  const status = paper.confidence_level || 'HIGH'
+  const statusClass = status.toLowerCase().replace('_', '-')
+
+  return (
+    <div className={`quality-audit-card ${statusClass}`}>
+      <div className="audit-header">
+        <div className="audit-title-group">
+          <span className="audit-badge-icon">🛡️</span>
+          <span className="audit-title">Quality &amp; Extraction Confidence Audit</span>
+        </div>
+        <div className="audit-status-group">
+          {paper.vision_verified ? (
+            paper.vision_status === 'CORRECTED' ? (
+              <span className="vision-status-chip corrected">✨ Vision Corrected</span>
+            ) : paper.vision_status === 'MANUAL_REVIEW' ? (
+              <span className="vision-status-chip manual-review">⚠️ Manual Review Required</span>
+            ) : paper.vision_status === 'FAILED' ? (
+              <span className="vision-status-chip failed">❌ Vision Failed (Manual Review)</span>
+            ) : (
+              <span className="vision-status-chip verified">✅ Vision Verified</span>
+            )
+          ) : paper.needs_visual_verification ? (
+            <span className="vision-status-chip pending">⏳ Vision Verification Pending</span>
+          ) : null}
+
+          {paper.vision_confidence !== undefined && paper.vision_confidence !== null && (
+            <span className="vision-conf-pill">Vision Conf: {(paper.vision_confidence * 100).toFixed(0)}%</span>
+          )}
+
+          <span className={`status-pill status-${statusClass}`}>
+            Status: {status.replace('_', ' ')}
+          </span>
+        </div>
+      </div>
+
+      <div className="audit-metrics-grid">
+        <div className="audit-metric-box overall-box">
+          <span className="metric-label">Overall</span>
+          <span className="metric-value">{(conf.overall_confidence * 100).toFixed(0)}%</span>
+          <div className="metric-bar">
+            <div className={`metric-fill ${confClass(conf.overall_confidence)}`} style={{ width: `${conf.overall_confidence * 100}%` }} />
+          </div>
+        </div>
+
+        <div className="audit-metric-box">
+          <span className="metric-label">Structure</span>
+          <span className="metric-value">{(conf.structure_confidence * 100).toFixed(0)}%</span>
+          <div className="metric-bar">
+            <div className={`metric-fill ${confClass(conf.structure_confidence)}`} style={{ width: `${conf.structure_confidence * 100}%` }} />
+          </div>
+        </div>
+
+        <div className="audit-metric-box">
+          <span className="metric-label">OCR Quality</span>
+          <span className="metric-value">
+            {conf.ocr_confidence !== null && conf.ocr_confidence !== undefined
+              ? `${(conf.ocr_confidence * 100).toFixed(0)}%`
+              : 'N/A'}
+          </span>
+          <div className="metric-bar">
+            <div className={`metric-fill ${confClass(conf.ocr_confidence ?? 0.85)}`} style={{ width: `${(conf.ocr_confidence ?? 0.85) * 100}%` }} />
+          </div>
+        </div>
+
+        <div className="audit-metric-box">
+          <span className="metric-label">Segmentation</span>
+          <span className="metric-value">{(conf.segmentation_confidence * 100).toFixed(0)}%</span>
+          <div className="metric-bar">
+            <div className={`metric-fill ${confClass(conf.segmentation_confidence)}`} style={{ width: `${conf.segmentation_confidence * 100}%` }} />
+          </div>
+        </div>
+
+        <div className="audit-metric-box">
+          <span className="metric-label">Classification</span>
+          <span className="metric-value">{(conf.classification_confidence * 100).toFixed(0)}%</span>
+          <div className="metric-bar">
+            <div className={`metric-fill ${confClass(conf.classification_confidence)}`} style={{ width: `${conf.classification_confidence * 100}%` }} />
+          </div>
+        </div>
+      </div>
+
+      {paper.anomalies && paper.anomalies.length > 0 && (
+        <div className="audit-reasons-box">
+          <span className="reasons-heading">⚠️ Quality Warnings &amp; Review Reasons:</span>
+          <ul className="reasons-list">
+            {paper.anomalies.map((anom, idx) => (
+              <li key={idx} className={`anomaly-item anomaly-${anom.severity}`}>
+                <span className="anomaly-sev-badge">[{anom.severity.toUpperCase()}]</span>
+                <span className="anomaly-reason">{anom.reason}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   )
 }
@@ -153,9 +277,15 @@ function PaperCard({ paper }: { paper: QuestionPaper }) {
         </div>
         <div className="paper-stats">
           <span className="paper-stat-pill">{paper.questions.length} questions</span>
-          <span className="paper-stat-pill">
-            {(metadata.confidence * 100).toFixed(0)}% metadata conf
-          </span>
+          {paper.confidence ? (
+            <span className={`paper-stat-pill audit-stat-pill status-${(paper.confidence_level || 'HIGH').toLowerCase().replace('_', '-')}`}>
+              Overall: {(paper.confidence.overall_confidence * 100).toFixed(0)}% ({paper.confidence_level?.replace('_', ' ')})
+            </span>
+          ) : (
+            <span className="paper-stat-pill">
+              {(metadata.confidence * 100).toFixed(0)}% metadata conf
+            </span>
+          )}
           <span className={`collapse-icon ${open ? 'open' : ''}`}>▼</span>
         </div>
       </div>
@@ -163,6 +293,8 @@ function PaperCard({ paper }: { paper: QuestionPaper }) {
       {/* Body */}
       {open && (
         <div className="questions-container">
+          {/* Quality Audit Card */}
+          <PaperQualityAuditCard paper={paper} />
           {/* Instructions Box */}
           {paper.instructions && paper.instructions.length > 0 && (
             <div className="instructions-card">
@@ -271,6 +403,87 @@ function PageInfoStrip({ pages }: { pages: PageInfo[] }) {
   )
 }
 
+function WorkerCardItem({ worker }: { worker: WorkerInfo }) {
+  const isDone = worker.status.toLowerCase().includes('completed')
+  const isOCR = worker.status.toLowerCase().includes('neural') || worker.status.toLowerCase().includes('paddleocr')
+  const startTimeRef = useRef<number>(Date.now() - (worker.elapsed_seconds ?? 0) * 1000)
+  const [liveSecs, setLiveSecs] = useState<number>(worker.elapsed_seconds ?? 0)
+
+  useEffect(() => {
+    if (isDone) {
+      setLiveSecs(worker.elapsed_seconds ?? 0)
+      return
+    }
+    const interval = setInterval(() => {
+      setLiveSecs(Math.max(0, Math.round(((Date.now() - startTimeRef.current) / 1000) * 10) / 10))
+    }, 400)
+    return () => clearInterval(interval)
+  }, [isDone, worker.elapsed_seconds])
+
+  return (
+    <div
+      className={`worker-card ${isDone ? 'worker-card-done' : 'worker-card-active'}`}
+    >
+      <div className="worker-card-header">
+        <div className="worker-badge">
+          <span className="worker-gear">{isDone ? '✅' : '⚙️'}</span>
+          <span className="worker-label">Worker <strong className="worker-pid">PID {worker.worker_pid}</strong></span>
+        </div>
+        <span className="worker-page-badge">📄 Page {worker.page_number}</span>
+      </div>
+
+      <div className="worker-card-body">
+        <div className="worker-status-row">
+          <span className={`worker-beacon ${isDone ? 'beacon-done' : isOCR ? 'beacon-ocr' : 'beacon-active'}`} />
+          <span className="worker-status-text" title={worker.status}>
+            {worker.status}
+          </span>
+        </div>
+
+        <div className="worker-timer">
+          <span className="timer-icon">⏱️</span>
+          <span className="timer-val">
+            {isDone
+              ? `${(worker.elapsed_seconds ?? liveSecs).toFixed(1)}s (completed)`
+              : `${liveSecs.toFixed(1)}s active`}
+          </span>
+        </div>
+      </div>
+
+      {!isDone && (
+        <div className="worker-mini-track">
+          <div className={`worker-mini-fill ${isOCR ? 'fill-neural' : 'fill-active'}`} />
+        </div>
+      )}
+    </div>
+  )
+}
+
+function WorkersMonitor({ workers }: { workers: WorkerInfo[] }) {
+  if (!workers || workers.length === 0) return null
+
+  return (
+    <div className="workers-section">
+      <div className="workers-header">
+        <div className="workers-title">
+          <span className="workers-pulse-icon">⚡</span>
+          <span>Parallel OCR Workers ({workers.length} Processes)</span>
+        </div>
+        <span className="workers-tag">Page-level Multiprocessing</span>
+      </div>
+
+      <div className="worker-grid">
+        {workers.map((worker) => (
+          <WorkerCardItem
+            key={`${worker.worker_pid}-${worker.page_number}`}
+            worker={worker}
+          />
+        ))}
+      </div>
+    </div>
+  )
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 // Main App
 // ─────────────────────────────────────────────────────────────────────────────
@@ -283,17 +496,70 @@ export default function App() {
   const [errorMsg, setErrorMsg] = useState<string | null>(null)
   const [dragging, setDragging] = useState(false)
   const [showJson, setShowJson] = useState(false)
+  const [displayProgress, setDisplayProgress] = useState<number>(0)
+  const [elapsedTime, setElapsedTime] = useState<number>(0)
+  const jobStartTimeRef = useRef<number>(0)
   const fileRef = useRef<HTMLInputElement>(null)
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
   // Cleanup on unmount
   useEffect(() => () => { if (pollRef.current) clearInterval(pollRef.current) }, [])
 
+  // Live elapsed timer while processing
+  useEffect(() => {
+    let timer: ReturnType<typeof setInterval> | null = null
+    if (phase === 'processing' || phase === 'uploading') {
+      timer = setInterval(() => {
+        if (jobStartTimeRef.current > 0) {
+          setElapsedTime(Math.floor((Date.now() - jobStartTimeRef.current) / 1000))
+        }
+      }, 500)
+    }
+    return () => {
+      if (timer) clearInterval(timer)
+    }
+  }, [phase])
+
+  // Sync displayProgress with jobState progress
+  useEffect(() => {
+    if (phase === 'processing') {
+      const target = jobState?.progress ?? 5
+      setDisplayProgress(prev => Math.max(prev, target))
+    } else if (phase === 'uploading') {
+      setDisplayProgress(5)
+    } else if (phase === 'done') {
+      setDisplayProgress(100)
+    } else if (phase === 'idle') {
+      setDisplayProgress(0)
+    }
+  }, [jobState?.progress, phase])
+
+  // Micro-progress trickle so the bar continuously feels active during heavy OCR inference
+  useEffect(() => {
+    if (phase !== 'processing') return
+    const interval = setInterval(() => {
+      setDisplayProgress(prev => {
+        const backendProgress = jobState?.progress ?? 5
+        if (backendProgress < 70 && prev < 68) {
+          return Math.min(prev + 0.35, 68)
+        }
+        if (backendProgress >= 70 && backendProgress < 95 && prev < 93) {
+          return Math.min(prev + 0.5, 93)
+        }
+        return prev
+      })
+    }, 250)
+    return () => clearInterval(interval)
+  }, [phase, jobState?.progress])
+
   async function handleFile(file: File) {
     if (!file) return
     setPhase('uploading')
     setJobState(null)
     setErrorMsg(null)
+    setDisplayProgress(5)
+    jobStartTimeRef.current = Date.now()
+    setElapsedTime(0)
 
     try {
       const created = await uploadDocument(file)
@@ -329,7 +595,7 @@ export default function App() {
           setErrorMsg('Lost connection to processing job. Please re-upload your document.')
         }
       }
-    }, 1500)
+    }, 1000)
   }
 
   const onDrop = useCallback((e: React.DragEvent) => {
@@ -344,6 +610,9 @@ export default function App() {
     setPhase('idle')
     setJobState(null)
     setErrorMsg(null)
+    setDisplayProgress(0)
+    setElapsedTime(0)
+    jobStartTimeRef.current = 0
   }
 
   const result = jobState?.result
@@ -356,7 +625,7 @@ export default function App() {
           <div className="dot" />
           <span>Gecko Med</span>
         </div>
-        <span className="navbar-badge">Question Paper AI</span>
+        <span className="navbar-badge">Question Paper Pipeline</span>
       </nav>
 
       <main className="main-content">
@@ -431,13 +700,47 @@ export default function App() {
         {phase === 'processing' && jobState && (
           <div className="progress-card">
             <div className="progress-header">
-              <span className="progress-label"><span className="spinner" /> Processing…</span>
-              <span className="progress-pct">{jobState.progress}%</span>
+              <div className="progress-title-area">
+                <span className="spinner" />
+                <span className="progress-main-title">Processing Document</span>
+                <span className="progress-filename" title={jobState.filename}>{jobState.filename}</span>
+              </div>
+              <div className="progress-header-right">
+                <span className="progress-elapsed">⏱️ {elapsedTime}s</span>
+                <span className="progress-pct">{Math.round(displayProgress)}%</span>
+              </div>
             </div>
+
             <div className="progress-bar-track">
-              <div className="progress-bar-fill" style={{ width: `${jobState.progress}%` }} />
+              <div
+                className="progress-bar-fill animated-shimmer"
+                style={{ width: `${Math.min(Math.max(displayProgress, 5), 100)}%` }}
+              />
             </div>
-            <div className="progress-step">📌 {jobState.current_step}</div>
+
+            <div className="progress-footer-row">
+              <div className="progress-step">
+                <span className="step-icon">📍</span>
+                <span className="step-text">{jobState.current_step}</span>
+              </div>
+              {jobState.workers_info && jobState.workers_info.length > 1 && (
+                <span className="parallel-badge">
+                  ⚡ {jobState.workers_info.length}x Multi-Process Parallel Mode
+                </span>
+              )}
+            </div>
+
+            {/* Parallel Workers Monitor */}
+            {jobState.workers_info && jobState.workers_info.length > 0 ? (
+              <WorkersMonitor workers={jobState.workers_info} />
+            ) : (
+              jobState.progress < 15 && (
+                <div className="workers-placeholder">
+                  <span className="spinner mini-spinner" />
+                  <span>Preparing pages and initializing parallel OCR workers...</span>
+                </div>
+              )
+            )}
           </div>
         )}
 
@@ -469,6 +772,39 @@ export default function App() {
                 </button>
               </div>
             </div>
+
+            {/* Vision Verification Alert Banner */}
+            {result.needs_manual_review ? (
+              <div className="vision-alert-banner warning-mode">
+                <span className="vision-alert-icon">⚠️</span>
+                <div className="vision-alert-content">
+                  <div className="vision-alert-title">Manual Review Required</div>
+                  <div className="vision-alert-desc">
+                    Structural quality audit or Vision verification flagged uncertainties: {result.visual_verification_reasons?.join(', ')}.
+                  </div>
+                </div>
+              </div>
+            ) : result.vision_verified_pages && result.vision_verified_pages.length > 0 ? (
+              <div className="vision-alert-banner verified-mode">
+                <span className="vision-alert-icon">✨</span>
+                <div className="vision-alert-content">
+                  <div className="vision-alert-title">Multimodal Vision Verification Applied</div>
+                  <div className="vision-alert-desc">
+                    Pages {result.vision_verified_pages.join(', ')} were verified with Gemini Vision and structural corrections applied.
+                  </div>
+                </div>
+              </div>
+            ) : result.needs_visual_verification ? (
+              <div className="vision-alert-banner">
+                <span className="vision-alert-icon">👁️</span>
+                <div className="vision-alert-content">
+                  <div className="vision-alert-title">Visual Verification Recommended for this Document</div>
+                  <div className="vision-alert-desc">
+                    Structural quality audit detected anomalies: {result.visual_verification_reasons?.join(', ')}.
+                  </div>
+                </div>
+              </div>
+            ) : null}
 
             {/* Page info */}
             {jobState?.pages_info && jobState.pages_info.length > 0 && (

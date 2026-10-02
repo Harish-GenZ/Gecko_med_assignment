@@ -20,7 +20,14 @@ def _init_from_disk() -> None:
     """Preload existing jobs from disk on server startup."""
     if not JOBS_DIR.exists():
         return
+    for p_file in JOBS_DIR.glob("*_p*.*"):
+        try:
+            p_file.unlink(missing_ok=True)
+        except Exception:
+            pass
     for json_file in JOBS_DIR.glob("*.json"):
+        if "_p" in json_file.stem:
+            continue
         try:
             with open(json_file, "r", encoding="utf-8") as f:
                 data = json.load(f)
@@ -58,27 +65,52 @@ def create_job(filename: str) -> str:
 
 def get_job(job_id: str) -> Optional[dict]:
     with _lock:
-        if job_id in _jobs:
-            return _jobs[job_id]
+        state = _jobs.get(job_id)
+        if state is not None:
+            job_data = dict(state)
+        else:
+            job_data = None
 
-    # Disk fallback
-    path = JOBS_DIR / f"{job_id}.json"
-    if path.exists():
+    if job_data is None:
+        # Disk fallback
+        path = JOBS_DIR / f"{job_id}.json"
+        if path.exists():
+            try:
+                with open(path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                jid = data.get("job_id")
+                if jid:
+                    if data.get("status") in (JobStatus.QUEUED, JobStatus.PROCESSING, "queued", "processing"):
+                        data["status"] = JobStatus.FAILED
+                        data["error"] = "Server reloaded while processing. Please re-upload the document."
+                    with _lock:
+                        _jobs[jid] = data
+                    job_data = dict(data)
+            except Exception:
+                pass
+
+    if job_data is not None:
+        # Collect dynamic worker progress files if processing
+        workers = []
         try:
-            with open(path, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            jid = data.get("job_id")
-            if jid:
-                if data.get("status") in (JobStatus.QUEUED, JobStatus.PROCESSING, "queued", "processing"):
-                    data["status"] = JobStatus.FAILED
-                    data["error"] = "Server reloaded while processing. Please re-upload the document."
-                with _lock:
-                    _jobs[jid] = data
-                return data
+            for p_file in JOBS_DIR.glob(f"{job_id}_p*.json"):
+                try:
+                    with open(p_file, "r", encoding="utf-8") as f:
+                        w_info = json.load(f)
+                    if "worker_pid" in w_info:
+                        workers.append(w_info)
+                except Exception:
+                    pass
         except Exception:
             pass
 
-    return None
+        if workers:
+            workers.sort(key=lambda w: w.get("page_number", 0))
+            job_data["workers_info"] = workers
+        else:
+            job_data["workers_info"] = None
+
+    return job_data
 
 
 def update_job(job_id: str, **kwargs) -> None:
