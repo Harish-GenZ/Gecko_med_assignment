@@ -440,6 +440,154 @@ html, body, #root {
   border-radius: 100px;
 }
 
+.file-size-badge {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  background: rgba(6, 182, 212, 0.12);
+  border: 1px solid rgba(6, 182, 212, 0.28);
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+}
+
+.btn-stop-process {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #fca5a5;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: var(--font-sans);
+  line-height: 1.4;
+}
+
+.btn-stop-process:hover {
+  background: rgba(239, 68, 68, 0.22);
+  border-color: rgba(239, 68, 68, 0.6);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.25);
+}
+
+.btn-stop-process:active {
+  transform: translateY(0);
+}
+
+.btn-stop-process .stop-icon {
+  font-size: 11px;
+}
+
+.loading-transition-card {
+  animation: card-fade-in 0.25s ease-out;
+}
+
+@keyframes card-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.transition-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-top: 22px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.transition-step-chip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  transition: all 0.3s ease;
+}
+
+.transition-step-chip .chip-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.chip-text-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.chip-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chip-sublabel {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.transition-step-chip.chip-done {
+  border-color: rgba(16, 185, 129, 0.45);
+  background: rgba(16, 185, 129, 0.08);
+}
+
+.transition-step-chip.chip-done .chip-label {
+  color: #34d399;
+}
+
+.transition-step-chip.chip-done .chip-sublabel {
+  color: #059669;
+}
+
+.transition-step-chip.chip-active {
+  border-color: rgba(59, 130, 246, 0.6);
+  background: rgba(59, 130, 246, 0.12);
+  box-shadow: 0 0 16px rgba(59, 130, 246, 0.2);
+  animation: pulse-active-chip 2s infinite alternate ease-in-out;
+}
+
+.transition-step-chip.chip-active .chip-label {
+  color: #60a5fa;
+}
+
+.transition-step-chip.chip-active .chip-sublabel {
+  color: #93c5fd;
+}
+
+@keyframes pulse-active-chip {
+  from {
+    border-color: rgba(59, 130, 246, 0.4);
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.15);
+  }
+  to {
+    border-color: rgba(6, 182, 212, 0.8);
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.35);
+  }
+}
+
+.transition-step-chip.chip-pending {
+  opacity: 0.55;
+}
+
+
 /* ============================================================
    Workers Dashboard
    ============================================================ */

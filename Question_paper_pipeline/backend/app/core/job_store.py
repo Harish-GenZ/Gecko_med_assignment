@@ -130,6 +130,39 @@ def update_job(job_id: str, **kwargs) -> None:
     _persist(job_id, state)
 
 
+_cancelled_jobs: set = set()
+
+
+def cancel_job(job_id: str) -> bool:
+    """Marks a job as cancelled and cleans up any intermediate worker progress files."""
+    with _lock:
+        _cancelled_jobs.add(job_id)
+        if job_id in _jobs:
+            _jobs[job_id]["status"] = JobStatus.CANCELLED
+            _jobs[job_id]["current_step"] = "Cancelled by user"
+            state = dict(_jobs[job_id])
+            _persist(job_id, state)
+
+    # Clean up worker progress files
+    for p_file in JOBS_DIR.glob(f"{job_id}_p*.json"):
+        try:
+            p_file.unlink(missing_ok=True)
+        except Exception:
+            pass
+    return True
+
+
+def is_job_cancelled(job_id: str) -> bool:
+    """Check if the given job has been cancelled."""
+    with _lock:
+        if job_id in _cancelled_jobs:
+            return True
+        job = _jobs.get(job_id)
+        if job and job.get("status") == JobStatus.CANCELLED:
+            return True
+    return False
+
+
 def _persist(job_id: str, state: dict) -> None:
     """Write job state to disk (JSON) for durability."""
     path = JOBS_DIR / f"{job_id}.json"

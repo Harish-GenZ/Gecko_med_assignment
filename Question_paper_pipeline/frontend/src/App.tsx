@@ -3,7 +3,7 @@ import type {
   ExtractionResult, JobStatusResponse, MCQOption,
   PageInfo, Question, QuestionPaper, QuestionType, WorkerInfo
 } from './types'
-import { uploadDocument, getJobStatus } from './services/api'
+import { uploadDocument, getJobStatus, cancelJob } from './services/api'
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Helpers
@@ -17,6 +17,12 @@ function confClass(c: number): string {
 
 function typeBadgeClass(t: QuestionType): string {
   return t.replace(/\s+/g, '-')
+}
+
+function formatFileSize(bytes: number): string {
+  if (bytes < 1024) return `${bytes} B`
+  if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`
+  return `${(bytes / (1024 * 1024)).toFixed(1)} MB`
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -493,6 +499,7 @@ type AppPhase = 'idle' | 'uploading' | 'processing' | 'done' | 'error'
 export default function App() {
   const [phase, setPhase] = useState<AppPhase>('idle')
   const [jobState, setJobState] = useState<JobStatusResponse | null>(null)
+  const [fileInfo, setFileInfo] = useState<{ name: string; size: number } | null>(null)
   const [errorMsg, setErrorMsg] = useState<string | null>(null)
   const [dragging, setDragging] = useState(false)
   const [showJson, setShowJson] = useState(false)
@@ -501,11 +508,16 @@ export default function App() {
   const jobStartTimeRef = useRef<number>(0)
   const fileRef = useRef<HTMLInputElement>(null)
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null)
+  const currentJobIdRef = useRef<string | null>(null)
+  const uploadAbortRef = useRef<AbortController | null>(null)
 
   // Cleanup on unmount
-  useEffect(() => () => { if (pollRef.current) clearInterval(pollRef.current) }, [])
+  useEffect(() => () => {
+    if (pollRef.current) clearInterval(pollRef.current)
+    if (uploadAbortRef.current) uploadAbortRef.current.abort()
+  }, [])
 
-  // Live elapsed timer while processing
+  // Live elapsed timer while processing or uploading
   useEffect(() => {
     let timer: ReturnType<typeof setInterval> | null = null
     if (phase === 'processing' || phase === 'uploading') {
@@ -523,10 +535,10 @@ export default function App() {
   // Sync displayProgress with jobState progress
   useEffect(() => {
     if (phase === 'processing') {
-      const target = jobState?.progress ?? 5
+      const target = jobState?.progress ?? 15
       setDisplayProgress(prev => Math.max(prev, target))
     } else if (phase === 'uploading') {
-      setDisplayProgress(5)
+      setDisplayProgress(8)
     } else if (phase === 'done') {
       setDisplayProgress(100)
     } else if (phase === 'idle') {
@@ -534,12 +546,15 @@ export default function App() {
     }
   }, [jobState?.progress, phase])
 
-  // Micro-progress trickle so the bar continuously feels active during heavy OCR inference
+  // Micro-progress trickle so the bar continuously feels active during upload and heavy OCR inference
   useEffect(() => {
-    if (phase !== 'processing') return
+    if (phase !== 'processing' && phase !== 'uploading') return
     const interval = setInterval(() => {
       setDisplayProgress(prev => {
-        const backendProgress = jobState?.progress ?? 5
+        if (phase === 'uploading') {
+          return Math.min(prev + 0.6, 28)
+        }
+        const backendProgress = jobState?.progress ?? 15
         if (backendProgress < 70 && prev < 68) {
           return Math.min(prev + 0.35, 68)
         }
@@ -554,18 +569,40 @@ export default function App() {
 
   async function handleFile(file: File) {
     if (!file) return
+    if (fileRef.current) fileRef.current.value = ''
+    setFileInfo({ name: file.name, size: file.size })
     setPhase('uploading')
     setJobState(null)
     setErrorMsg(null)
-    setDisplayProgress(5)
+    setDisplayProgress(8)
     jobStartTimeRef.current = Date.now()
     setElapsedTime(0)
+    currentJobIdRef.current = null
+
+    if (uploadAbortRef.current) uploadAbortRef.current.abort()
+    const abortCtrl = new AbortController()
+    uploadAbortRef.current = abortCtrl
 
     try {
-      const created = await uploadDocument(file)
+      const created = await uploadDocument(file, abortCtrl.signal)
+      currentJobIdRef.current = created.job_id
       setPhase('processing')
+      // Immediately check initial status to skip poll delay if backend responds fast
+      try {
+        const initialStatus = await getJobStatus(created.job_id)
+        setJobState(initialStatus)
+        if (initialStatus.status === 'completed') {
+          setPhase('done')
+          return
+        }
+      } catch {
+        // Will retry on poll interval
+      }
       startPolling(created.job_id)
     } catch (e: unknown) {
+      if (abortCtrl.signal.aborted) {
+        return // User cancelled during upload, no error needed
+      }
       setPhase('error')
       setErrorMsg(e instanceof Error ? e.message : 'Upload failed')
     }
@@ -579,9 +616,13 @@ export default function App() {
         const status = await getJobStatus(jobId)
         consecutiveErrors = 0
         setJobState(status)
-        if (status.status === 'completed' || status.status === 'failed') {
+        if (status.status === 'completed' || status.status === 'failed' || status.status === 'cancelled') {
           clearInterval(pollRef.current!)
           pollRef.current = null
+          if (status.status === 'cancelled') {
+            reset()
+            return
+          }
           setPhase(status.status === 'completed' ? 'done' : 'error')
           if (status.status === 'failed') setErrorMsg(status.error ?? 'Processing failed')
         }
@@ -605,10 +646,46 @@ export default function App() {
     if (file) handleFile(file)
   }, [])
 
+  async function handleStopJob() {
+    // 1. Abort file upload if in flight
+    if (uploadAbortRef.current) {
+      uploadAbortRef.current.abort()
+      uploadAbortRef.current = null
+    }
+
+    // 2. Stop client polling immediately
+    if (pollRef.current) {
+      clearInterval(pollRef.current)
+      pollRef.current = null
+    }
+
+    // 3. Notify backend pipeline to terminate workers
+    const activeJobId = currentJobIdRef.current || jobState?.job_id
+    if (activeJobId) {
+      try {
+        await cancelJob(activeJobId)
+      } catch (err) {
+        console.warn('Error calling cancelJob:', err)
+      }
+    }
+
+    // 4. Reset interface cleanly back to idle
+    reset()
+  }
+
   function reset() {
-    if (pollRef.current) clearInterval(pollRef.current)
+    if (uploadAbortRef.current) {
+      uploadAbortRef.current.abort()
+      uploadAbortRef.current = null
+    }
+    if (pollRef.current) {
+      clearInterval(pollRef.current)
+      pollRef.current = null
+    }
+    currentJobIdRef.current = null
     setPhase('idle')
     setJobState(null)
+    setFileInfo(null)
     setErrorMsg(null)
     setDisplayProgress(0)
     setElapsedTime(0)
@@ -623,7 +700,7 @@ export default function App() {
       <nav className="navbar">
         <div className="navbar-brand">
           <div className="dot" />
-          <span>Gecko Med</span>
+          <span>Gecko Med - Question paper pipeline</span>
         </div>
         <span className="navbar-badge">Question Paper Pipeline</span>
       </nav>
@@ -632,7 +709,7 @@ export default function App() {
         {/* Hero */}
         {phase === 'idle' && (
           <div className="hero">
-            <div className="hero-eyebrow">🏥 Medical Examination AI</div>
+            <div className="hero-eyebrow">🏥 Medical Examination Pipeline</div>
             <h1>Extract &amp; Classify<br /><span>Question Papers</span></h1>
             <p className="hero-subtitle">
               Upload scanned or digital exam PDFs. Our AI pipeline detects paper
@@ -683,15 +760,88 @@ export default function App() {
           </section>
         )}
 
-        {/* Uploading */}
-        {phase === 'uploading' && (
-          <div className="progress-card">
+        {/* Loading in-between state: Ingestion, Upload & Pipeline Initialization */}
+        {(phase === 'uploading' || (phase === 'processing' && !jobState)) && (
+          <div className="progress-card loading-transition-card">
             <div className="progress-header">
-              <span className="progress-label"><span className="spinner" /> Uploading…</span>
-              <span className="progress-pct">0%</span>
+              <div className="progress-title-area">
+                <span className="spinner" />
+                <span className="progress-main-title">
+                  {phase === 'uploading' ? 'Uploading Document…' : 'Initializing Processing Pipeline…'}
+                </span>
+                {fileInfo?.name && (
+                  <span className="progress-filename" title={fileInfo.name}>
+                    {fileInfo.name}
+                  </span>
+                )}
+              </div>
+              <div className="progress-header-right">
+                <button
+                  type="button"
+                  className="btn-stop-process"
+                  onClick={handleStopJob}
+                  title="Stop process and return to upload"
+                >
+                  <span className="stop-icon">⏹</span>
+                  <span>Stop &amp; Go Back</span>
+                </button>
+                <span className="progress-elapsed">⏱️ {elapsedTime}s</span>
+                {fileInfo && (
+                  <span className="file-size-badge">{formatFileSize(fileInfo.size)}</span>
+                )}
+                <span className="progress-pct">{Math.round(displayProgress)}%</span>
+              </div>
             </div>
+
             <div className="progress-bar-track">
-              <div className="progress-bar-fill" style={{ width: '5%' }} />
+              <div
+                className="progress-bar-fill animated-shimmer"
+                style={{ width: `${Math.min(Math.max(displayProgress, 8), 100)}%` }}
+              />
+            </div>
+
+            <div className="progress-footer-row">
+              <div className="progress-step">
+                <span className="step-icon">📍</span>
+                <span className="step-text">
+                  {phase === 'uploading'
+                    ? 'Transferring document to secure processing pipeline...'
+                    : 'Ingesting PDF, rasterizing pages & assigning parallel OCR workers...'}
+                </span>
+              </div>
+              <span className="parallel-badge">⚡ 5x Multi-Process Parallel Mode</span>
+            </div>
+
+            {/* Preparation pipeline stages */}
+            <div className="transition-steps-grid">
+              <div className={`transition-step-chip ${phase === 'processing' ? 'chip-done' : 'chip-active'}`}>
+                <span className="chip-icon">{phase === 'processing' ? '✅' : '📤'}</span>
+                <div className="chip-text-group">
+                  <span className="chip-label">Document Ingestion</span>
+                  <span className="chip-sublabel">{phase === 'processing' ? 'Completed' : 'Uploading...'}</span>
+                </div>
+              </div>
+              <div className={`transition-step-chip ${phase === 'processing' ? 'chip-active' : 'chip-pending'}`}>
+                <span className="chip-icon">📑</span>
+                <div className="chip-text-group">
+                  <span className="chip-label">Page Rasterization</span>
+                  <span className="chip-sublabel">{phase === 'processing' ? 'Preparing pages...' : 'Queued'}</span>
+                </div>
+              </div>
+              <div className="transition-step-chip chip-pending">
+                <span className="chip-icon">⚡</span>
+                <div className="chip-text-group">
+                  <span className="chip-label">5x OCR Workers</span>
+                  <span className="chip-sublabel">PaddleOCR pool</span>
+                </div>
+              </div>
+              <div className="transition-step-chip chip-pending">
+                <span className="chip-icon">🤖</span>
+                <div className="chip-text-group">
+                  <span className="chip-label">Vision Verification</span>
+                  <span className="chip-sublabel">Gemini 2.5 Flash</span>
+                </div>
+              </div>
             </div>
           </div>
         )}
@@ -706,6 +856,15 @@ export default function App() {
                 <span className="progress-filename" title={jobState.filename}>{jobState.filename}</span>
               </div>
               <div className="progress-header-right">
+                <button
+                  type="button"
+                  className="btn-stop-process"
+                  onClick={handleStopJob}
+                  title="Stop processing and return to upload"
+                >
+                  <span className="stop-icon">⏹</span>
+                  <span>Stop &amp; Go Back</span>
+                </button>
                 <span className="progress-elapsed">⏱️ {elapsedTime}s</span>
                 <span className="progress-pct">{Math.round(displayProgress)}%</span>
               </div>
@@ -756,8 +915,9 @@ export default function App() {
         )}
 
         {/* Results */}
-        {phase === 'done' && result && (
-          <>
+        {phase === 'done' && (
+          result ? (
+            <>
             <div className="results-header">
               <div className="results-title">
                 ✅ Extraction Complete
@@ -833,6 +993,16 @@ export default function App() {
               ))
             )}
           </>
+          ) : (
+            <div className="progress-card loading-transition-card">
+              <div className="progress-header">
+                <div className="progress-title-area">
+                  <span className="spinner" />
+                  <span className="progress-main-title">Finalizing Extraction Results…</span>
+                </div>
+              </div>
+            </div>
+          )
         )}
       </main>
 

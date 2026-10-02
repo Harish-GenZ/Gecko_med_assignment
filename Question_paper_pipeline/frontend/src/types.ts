@@ -1,7 +1,7 @@
 // TypeScript types matching backend Pydantic schemas
 
 export type QuestionType = 'Essay' | 'Short Notes' | 'Very Short Answers' | 'MCQ' | 'Unknown'
-export type JobStatus    = 'queued' | 'processing' | 'completed' | 'failed'
+export type JobStatus    = 'queued' | 'processing' | 'completed' | 'failed' | 'cancelled'
 export type ReviewStatus = 'ok' | 'needs_review'
 export type PageType     = 'digital' | 'scanned' | 'mixed'
 

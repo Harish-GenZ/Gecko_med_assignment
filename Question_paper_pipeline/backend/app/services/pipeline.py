@@ -218,6 +218,12 @@ def run_pipeline(file_path: Path, job_id: str) -> None:
                             break
 
                     while future_to_page:
+                        if job_store.is_job_cancelled(job_id):
+                            logger.info(f"[{job_id}] User cancelled job during worker execution. Cancelling remaining tasks.")
+                            for fut in future_to_page:
+                                fut.cancel()
+                            return
+
                         # Wait for the next completed future
                         done_fut = next(as_completed(list(future_to_page.keys())))
                         p = future_to_page.pop(done_fut)
@@ -496,6 +502,9 @@ def run_pipeline(file_path: Path, job_id: str) -> None:
                     f"{sum(len(p.questions) for p in question_papers)} questions")
 
     except Exception as e:
+        if job_store.is_job_cancelled(job_id):
+            logger.info(f"[{job_id}] Pipeline aborted gracefully following cancellation.")
+            return
         logger.exception(f"[{job_id}] Pipeline failed: {e}")
         _update(
             job_id,
@@ -522,4 +531,6 @@ def _cleanup_worker_status_files(job_id: str) -> None:
 
 
 def _update(job_id: str, **kwargs) -> None:
+    if job_store.is_job_cancelled(job_id):
+        return
     job_store.update_job(job_id, **kwargs)

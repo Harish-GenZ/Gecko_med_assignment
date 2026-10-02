@@ -6,9 +6,6 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 BASE_DIR    = Path(__file__).parent.parent.parent  # backend/
-STORAGE_DIR = BASE_DIR / "storage"
-UPLOADS_DIR = STORAGE_DIR / "uploads"
-JOBS_DIR    = STORAGE_DIR / "jobs"
 
 # Load .env file from backend/ directory if present
 ENV_FILE = BASE_DIR / ".env"
@@ -16,6 +13,21 @@ if ENV_FILE.exists():
     load_dotenv(ENV_FILE)
 else:
     load_dotenv()
+
+# Server & Network Configuration (Railway dynamic PORT support)
+HOST = os.getenv("HOST", "0.0.0.0")
+PORT = int(os.getenv("PORT", "8000"))
+CORS_ORIGINS_RAW = os.getenv("CORS_ORIGINS", "http://localhost:3000,http://localhost:5173,*")
+CORS_ORIGINS = [o.strip() for o in CORS_ORIGINS_RAW.split(",") if o.strip()]
+
+# Storage Configuration (Supports Railway persistent volumes)
+STORAGE_DIR = Path(os.getenv("STORAGE_DIR", str(BASE_DIR / "storage")))
+UPLOADS_DIR = STORAGE_DIR / "uploads"
+JOBS_DIR    = STORAGE_DIR / "jobs"
+
+# Static directory for serving pre-built frontend SPA if present
+STATIC_DIR = Path(os.getenv("STATIC_DIR", str(BASE_DIR / "static")))
+FRONTEND_DIST_DIR = BASE_DIR.parent / "frontend" / "dist"
 
 # Ensure directories exist at import time
 UPLOADS_DIR.mkdir(parents=True, exist_ok=True)

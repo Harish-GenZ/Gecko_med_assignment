@@ -1,17 +1,50 @@
+# Gecko Med Question Paper Extraction Pipeline
+# Production Backend Container for Railway & Cloud Hosting
+
 FROM python:3.11-slim
+
+# Prevent Python from writing .pyc files and enable unbuffered output
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    OMP_NUM_THREADS=1 \
+    OPENBLAS_NUM_THREADS=1 \
+    MKL_NUM_THREADS=1 \
+    FLAGS_allocator_strategy=naive_best_fit \
+    PADDLE_PDX_ENABLE_MKLDNN_BYDEFAULT=0 \
+    FLAGS_use_mkldnn=0 \
+    PADDLE_ENABLE_MKLDNN=0
 
 WORKDIR /app
 
-# System dependencies for OpenCV and PaddlePaddle
+# Install system dependencies required for OpenCV, PyMuPDF, and PaddlePaddle
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libglib2.0-0 libsm6 libxrender1 libxext6 libgl1-mesa-glx \
+    build-essential \
+    libgl1 \
+    libglib2.0-0 \
+    libgomp1 \
+    libsm6 \
+    libxext6 \
+    libxrender1 \
+    ca-certificates \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
+# Install Python dependencies
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
 
+# Pre-download and cache PaddleOCR detection and recognition models
+# This eliminates cold-start download delays and Baidu mirror timeouts in production
+RUN python -c "from paddleocr import PaddleOCR; PaddleOCR(lang='en', use_doc_orientation_classify=False, use_doc_unwarping=False, use_textline_orientation=False, enable_mkldnn=False)"
+
+# Copy application code
 COPY . .
+
+# Ensure storage directories exist
+RUN mkdir -p /app/storage/uploads /app/storage/jobs
 
 EXPOSE 8000
 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1"]
+# Dynamically bind to Railway's $PORT (defaults to 8000 if not set)
+CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000} --workers 1"]

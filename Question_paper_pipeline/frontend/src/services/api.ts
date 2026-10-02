@@ -2,15 +2,18 @@
 
 import type { JobCreateResponse, JobStatusResponse } from '../types'
 
-const BASE = '/api'
+// Use VITE_API_URL if set (e.g. for separate backend service on Railway), otherwise use relative /api
+const API_HOST = (import.meta.env.VITE_API_URL || '').replace(/\/+$/, '')
+const BASE = `${API_HOST}/api`
 
-export async function uploadDocument(file: File): Promise<JobCreateResponse> {
+export async function uploadDocument(file: File, signal?: AbortSignal): Promise<JobCreateResponse> {
   const form = new FormData()
   form.append('file', file)
 
   const res = await fetch(`${BASE}/upload`, {
     method: 'POST',
     body:   form,
+    signal,
   })
 
   if (!res.ok) {
@@ -30,4 +33,15 @@ export async function getJobStatus(jobId: string): Promise<JobStatusResponse> {
   }
 
   return res.json()
+}
+
+export async function cancelJob(jobId: string): Promise<{ success: boolean; message: string }> {
+  try {
+    const res = await fetch(`${BASE}/job/${jobId}/cancel`, {
+      method: 'POST',
+    })
+    return await res.json()
+  } catch {
+    return { success: false, message: 'Failed to notify server of cancellation.' }
+  }
 }

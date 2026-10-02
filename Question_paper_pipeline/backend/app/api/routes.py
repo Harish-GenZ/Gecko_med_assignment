@@ -96,6 +96,20 @@ def list_jobs():
     ]
 
 
+@router.post("/job/{job_id}/cancel")
+def cancel_job(job_id: str):
+    """
+    Cancel an active processing job.
+    """
+    job = job_store.get_job(job_id)
+    if not job:
+        raise HTTPException(status_code=404, detail=f"Job '{job_id}' not found.")
+
+    job_store.cancel_job(job_id)
+    logger.info(f"Job {job_id} cancelled via client request.")
+    return {"success": True, "message": f"Job {job_id} cancelled."}
+
+
 @router.get("/health")
 def health():
     return {"status": "ok"}

@@ -87,7 +87,7 @@ The React app will be available at **http://localhost:5173**
 
 ### Option 2 — Docker Compose
 
-Make sure Docker Desktop is running, then from the project root:
+Make sure Docker Desktop is running, then from the `Question_paper_pipeline/` directory:
 
 ```bash
 docker compose up --build
@@ -104,6 +104,17 @@ To stop the containers:
 ```bash
 docker compose down
 ```
+
+---
+
+### Option 3 — Production Deployment (Railway)
+
+The codebase is fully production-ready for deployment on **Railway.app**:
+- **Unified 1-Click Container**: Builds React SPA + FastAPI backend in a single container with zero CORS configuration (`Dockerfile` & `railway.json`).
+- **Pre-baked OCR Models**: PaddleOCR models are baked during Docker build to avoid cold-start download timeouts.
+- **Dynamic Port & Volume Support**: Automatically binds to Railway's dynamic `$PORT` and supports persistent volumes at `/app/storage`.
+
+For full step-by-step instructions, see [RAILWAY_DEPLOYMENT.md](file:///c:/Users/BALAHARISH%20NATARAJAN/Desktop/Gecko%20Med%20assignment/Question_paper_pipeline/RAILWAY_DEPLOYMENT.md).
 
 ---
 
