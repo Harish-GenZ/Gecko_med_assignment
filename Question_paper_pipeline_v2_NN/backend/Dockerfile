@@ -16,14 +16,16 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /app
 
-# Install system dependencies required for OpenCV, PyMuPDF, and PaddlePaddle
+# Install system dependencies required for OpenCV, PyMuPDF, and C++ ONNX extensions
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     libgl1 \
     libglib2.0-0 \
     libgomp1 \
-    libsm6 \
+    libxcb1 \
+    libx11-6 \
     libxext6 \
+    libsm6 \
     libxrender1 \
     ca-certificates \
     curl \
@@ -32,11 +34,20 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Install Python dependencies
 COPY requirements.txt .
 RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt
+    pip install --no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cpu && \
+    pip install --no-cache-dir -r requirements.txt && \
+    pip uninstall -y opencv-python opencv-contrib-python && \
+    pip install --no-cache-dir opencv-python-headless
 
-# Pre-download and cache PaddleOCR detection and recognition models
-# This eliminates cold-start download delays and Baidu mirror timeouts in production
-RUN python -c "from paddleocr import PaddleOCR; PaddleOCR(lang='en', use_doc_orientation_classify=False, use_doc_unwarping=False, use_textline_orientation=False, enable_mkldnn=False)"
+# Pre-download and cache RapidOCR ONNX models and SentenceTransformer neural models into the image layer
+RUN python -c "\
+from rapidocr_onnxruntime import RapidOCR; RapidOCR(); \
+try:\
+    from sentence_transformers import SentenceTransformer; SentenceTransformer('all-MiniLM-L6-v2'); \
+    print('Neural models pre-cached successfully into Docker image layer.'); \
+except Exception as e:\
+    print(f'SentenceTransformer pre-cache notice: {e}'); \
+"
 
 # Copy application code
 COPY . .

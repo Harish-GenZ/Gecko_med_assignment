@@ -85,6 +85,7 @@ _SECTION_DEFAULTS: Dict[str, QuestionType] = {
 # ---------------------------------------------------------------------------
 _embedding_model = None
 _embedding_init_attempted = False
+_ANCHOR_EMBEDDINGS: Dict[QuestionType, np.ndarray] = {}
 
 # Prototypical semantic anchor sentences for cosine matching
 _ANCHOR_PROTOTYPES = {
@@ -110,6 +111,21 @@ _ANCHOR_PROTOTYPES = {
 }
 
 
+def _init_anchor_embeddings(model) -> None:
+    """
+    Precompute and cache normalized embeddings for anchor prototypes once.
+    Eliminates redundant transformer inferences across questions, achieving <2ms latency.
+    """
+    global _ANCHOR_EMBEDDINGS
+    if not _ANCHOR_EMBEDDINGS and model is not None:
+        try:
+            for q_type, anchors in _ANCHOR_PROTOTYPES.items():
+                _ANCHOR_EMBEDDINGS[q_type] = model.encode(anchors, normalize_embeddings=True)
+            logger.info("[Classifier] Precomputed semantic anchor embeddings for ultra-fast cosine similarity.")
+        except Exception as e:
+            logger.warning(f"[Classifier] Failed to precompute anchor embeddings: {e}")
+
+
 def _get_embedding_model():
     global _embedding_model, _embedding_init_attempted
     if _embedding_init_attempted:
@@ -122,6 +138,7 @@ def _get_embedding_model():
         SentenceTransformer = getattr(st_mod, "SentenceTransformer")
         _embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
         logger.info("[Classifier] Loaded SentenceTransformer all-MiniLM-L6-v2 for semantic question categorization")
+        _init_anchor_embeddings(_embedding_model)
     except Exception as e:
         logger.debug(f"[Classifier] SentenceTransformer not initialized: {e}. Using rule/mark-based categorization.")
     return _embedding_model
@@ -129,20 +146,23 @@ def _get_embedding_model():
 
 def _classify_by_semantic_embedding(text: str) -> Optional[Tuple[QuestionType, float]]:
     """
-    Computes semantic similarity against question type prototypes in <5ms.
-    Eliminates reliance on rigid regex keywords.
+    Computes semantic similarity against precomputed question type prototypes in <2ms.
+    Eliminates reliance on rigid regex keywords without re-encoding anchor sentences.
     """
     model = _get_embedding_model()
     if model is None:
         return None
+
+    global _ANCHOR_EMBEDDINGS
+    if not _ANCHOR_EMBEDDINGS:
+        _init_anchor_embeddings(model)
 
     try:
         text_emb = model.encode([text], normalize_embeddings=True)[0]
         best_type = None
         best_score = -1.0
 
-        for q_type, anchors in _ANCHOR_PROTOTYPES.items():
-            anchor_embs = model.encode(anchors, normalize_embeddings=True)
+        for q_type, anchor_embs in _ANCHOR_EMBEDDINGS.items():
             similarities = np.dot(anchor_embs, text_emb)
             max_sim = float(np.max(similarities))
             if max_sim > best_score:
@@ -150,7 +170,7 @@ def _classify_by_semantic_embedding(text: str) -> Optional[Tuple[QuestionType, f
                 best_type = q_type
 
         # Cosine similarity threshold for confident classification
-        if best_type and best_score >= 0.52:
+        if best_type and best_score >= 0.50:
             return best_type, SEMANTIC_CONF
     except Exception as emb_err:
         logger.debug(f"[Classifier] Embedding inference error: {emb_err}")

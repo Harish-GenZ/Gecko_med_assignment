@@ -1,0 +1,4484 @@
+{
+  "job_id": "adc7b143-a8dc-4211-8289-a3fb5945021e",
+  "status": "completed",
+  "filename": "CM (internal & send up)_250323_115238.pdf",
+  "progress": 100,
+  "current_step": "Completed",
+  "error": null,
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 2029,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 2,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 2608,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 3,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 1541,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 4,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 1280,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 5,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 1602,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 6,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 1475,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 7,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 1246,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 8,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 977,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 9,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 998,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 10,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 1265,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 11,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 1495,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 12,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 1124,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 13,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 1327,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 14,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 904,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 15,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 846,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 16,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 873,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 17,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 878,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 18,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 927,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 19,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 955,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 20,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 907,
+      "processing_state": "FINALIZED"
+    }
+  ],
+  "result": {
+    "document": "d4633900-c82f-4971-8375-68e1af11bd24.pdf",
+    "total_pages": 20,
+    "question_papers": [
+      {
+        "paper_index": 0,
+        "page_range": [
+          1,
+          1
+        ],
+        "metadata": {
+          "university": "Bareilly",
+          "exam_month": "November",
+          "exam_year": "2023",
+          "session_code": null,
+          "subject": "Community Medicine",
+          "paper_code": null,
+          "max_marks": "100",
+          "duration": "3 hours",
+          "confidence": 0.9,
+          "status": "ok",
+          "missing_fields": [
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "You are working as scientist B in an institute and you are planning research to conduct in the\ncatchment areas of your institute.\nAnswer the following question in context with above scenario\na. Define epidemiology\nb. Enlist the type of epidemiological studies.\nC. Explain briefly the merits and demerits of case control and cohort study design.",
+            "type": "Essay",
+            "part": "Section A",
+            "heading": "Structured Long Essay Questions/Problem based questions/ Modified Essay Questions",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.959,
+            "confidence_breakdown": {
+              "ocr": 0.906,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.959
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "a. Describe the uses of screening\nb. Draw the diagrams of 3 types of graphs (frequently used in data presentation)\nC. Explain the natural history of diseases.\nd. Differentiate between active and passive immunization using examples of\nimmunization against tetanus and rabies\ne. Discuss the steps of investigation of an epidemic",
+            "type": "Short Notes",
+            "part": "Section A",
+            "heading": "Short Essay Questions (SEQs)",
+            "options": null,
+            "marks": "6",
+            "confidence": 0.959,
+            "confidence_breakdown": {
+              "ocr": 0.906,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.959
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "An epidemic of diarrhoea of unknown aetiology has occurred in the nearby locality, suspects\nsay they have common source of water supply from nearby river. How will you carry out\nsurveillance of this water supply on following parameters\nAnswer the following question in context with above scenario\na. Describe steps of sample collection of water\nb. Discuss the methods of transportation of water sample\nc. Explain the surveillance of drinking water",
+            "type": "Essay",
+            "part": "SectionB",
+            "heading": "Structured Long Essay Questions/Problem based questions/ Modified Essay Questions",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.959,
+            "confidence_breakdown": {
+              "ocr": 0.906,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.959
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "a. Discuss the newer techniques in health based on genetic engineering\nb. Explain the principles and uses of essential medicine under NHM\nc. Describe the third generation IUDs\nd. Explain the IMNCI role in preventing Diarrhoeal diseases\ne. Enumerate the indicators of fertility and describe any one",
+            "type": "Short Notes",
+            "part": "SectionB",
+            "heading": "Short Essay Questions (SEQs)",
+            "options": null,
+            "marks": "6",
+            "confidence": 0.959,
+            "confidence_breakdown": {
+              "ocr": 0.906,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.959
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Attempt all question in the given sequence.",
+          "explain with examples wherever necessary"
+        ],
+        "parts": [
+          "Section A",
+          "SectionB"
+        ],
+        "raw_text": "Send UpExamination,Batch 2020,November 2023\nCommunity MedicinePaper 1\nRohilkhand Medical College & Hospital, Bareilly\nTime: 3 hours. Marks:80+20=100\nNote: Attempt all question in the given sequence. Draw appropriate diagrams and\nexplain with examples wherever necessary\nSection A (Marks: 40)\nQl. Structured Long Essay Questions/Problem based questions/ Modified Essay\nQuestions\nYou are working as scientist B in an institute and you are planning research to conduct in the\ncatchment areas of your institute.\nAnswer the following question in context with above scenario(2+4+6 = 10 Marks)\na.Define epidemiology\nb. Enlist the type of epidemiological studies.\nC- Explain briefly the merits and demerits of case control and cohort study design.\nQ2. Short Essay Questions (SEQs) (6 marks each=30Marks)\naDescribe the uses of screening ec--\nb. Draw the diagrams of 3 types of graphs(frequently jused in data presentation\nCExplain the natural history of diseases .\n-d. Differentiate between active and passive immunization using examples of\nimmunization against tetanus an& rabies\nJe.Discuss the steps of investigation of an epidemic\nSectionB(Marks:40)\nQl. Structured Long Essay Questions/Problem based questions/ Modified Essay\nQuestions\nAn epidemic of diarrhoea of unknown aetiology has occurred in the nearby locality, suspects\nsay they have common source of water supply from nearby river. How will you carry out\nsurveillance of this water supply on following parameters\nAnswer the following question in context with above scenario(Marks 2+2+6-10)\na.Describe steps of sample collection of water\nb. Discuss the methods of transportation of water sample\n.Explain the surveillance of drinking water\nQ2. Short Essay Questions (SEQs) (6 marks each=30Marks)\nDiscuss the newer techniques in health based on genetic engineering\nExplain the principles and uses of essential medicine under NHM\nDescribe the third generation IUDs\nExplain the IMNCI role in preventing Diarrhoeal diseases\nEnumerate the indicators of fertility and describe any one",
+        "confidence": {
+          "ocr_confidence": 0.906,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.966
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 1,
+        "page_range": [
+          2,
+          2
+        ],
+        "metadata": {
+          "university": "Bareilly",
+          "exam_month": "November",
+          "exam_year": "2023",
+          "session_code": null,
+          "subject": "Community Medicine",
+          "paper_code": null,
+          "max_marks": "100",
+          "duration": "3 hours",
+          "confidence": 0.9,
+          "status": "ok",
+          "missing_fields": [
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Sohan, a 6lyear old male resident of Rithora, was suffering from cough more than 3 weeks and fever\nwith evening rise of temperature for last 2 weeks. He had taken treatment only for fever and cough but\nthe complaints persisted. He was referred to district hospital where on sputum examination his two\nsputum samples were found positive for AFB. Sohan had not taken any previous treatment for\ntuberculosis.\nAnswer the following question in context with above scenario\na. Explain the category of DOTS applicable to thepatient.\nb. Describe the other types of patients come under this category.\nc. Describe the treatment regimen for the above category.\nd,DefineNew Case,relapse,MDRandXDRof tuberculosis.\ne. Discuss the preventive measures against the childhood tubercular meningitis?",
+            "type": "Essay",
+            "part": "Section A",
+            "heading": "Structured Long Essay Questions/Problem based questions/Modified EssayQuestions",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.956,
+            "confidence_breakdown": {
+              "ocr": 0.895,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.956
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Discuss about the components of the iodine deficiency disorders under the iodine deficiency\ndisordercontrolprogramme\nb. Describe the Primary mental health care & it's implementations.\nc. Describe the activities of WHO in disease control and health promotion as per the World health\ndaytheme2023\nalong with Cultural factors in Health and Diseases",
+            "type": "Short Notes",
+            "part": "Section A",
+            "heading": "Short Essay Questions (SEQs)",
+            "options": null,
+            "marks": "6",
+            "confidence": 0.956,
+            "confidence_breakdown": {
+              "ocr": 0.895,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.956
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "AsthemedicalofficerofaPHC you have to check the work of Anganwariworker and he was not\nsatisfied with the services provided by her in the village.\nAnswer the following question in context with above scenario\na. PrepareaprojecttoimprovetheservicesoftheAnganwariworker in the catchment areas of yourhospital.\nEnumerate the steps of projectprotocol prepared by you.\n_b.DifferentiateBetween objectiveandgoalinhealthplanning Ce+\nERT CPM\nd. DifferentiateBetweenProgrammeevaluatipnandreviewtechniqueandcriticalpathmethod",
+            "type": "Essay",
+            "part": "SectionB",
+            "heading": "Structured Long Essay Questions/Problem based questions/Modified Essay Questions",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.956,
+            "confidence_breakdown": {
+              "ocr": 0.895,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.956
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "ShortEssayQuestions (SEQs)-\na. Describe the phases in disaster management\nb. Classify the risk factors of non-communicable diseases\ne. Discuss the medical benefitsyunder ESI schemes\nDescribe the Janni Suraksha Yojana (JSY)\ne. Discuss strategies and services of School Health Program",
+            "type": "Essay",
+            "part": "SectionB",
+            "heading": "Structured Long Essay Questions/Problem based questions/Modified Essay Questions",
+            "options": null,
+            "marks": "6",
+            "confidence": 0.956,
+            "confidence_breakdown": {
+              "ocr": 0.895,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.956
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Attempt all question in the given sequence.",
+          "Explain with examples the various characteristics used for social stratification and their use"
+        ],
+        "parts": [
+          "Section A",
+          "SectionB"
+        ],
+        "raw_text": "Send Up Examination,Batch 2020,November 2023\nPaper II\nCommunity Medicine\nRohilkhand Medical College & Hospital, Bareilly\nTime: 3 hours Max.Marks:80+20=100\nNote: Attempt all question in the given sequence. Draw appropriate diagrams and explain with\nexamples wherever necessary\nSection A (Marks: 40)\nQ1.Structured Long Essay Questions/Problem based questions/Modified EssayQuestions\nSohan, a 6lyear old male resident of Rithora, was suffering from cough more than 3 weeks and fever\nwith evening rise of temperature for last 2 weeks. He had taken treatment only for fever and cough but\nthe complaints persisted. He was referred to district hospital where on sputum examination his two\nsputum samples were found positive for AFB. Sohan had not taken any previous treatment for\ntuberculosis.\nAnswer the following question in context with above scenario (marks =1+2+3+2+2-10)\na-Explain the category of DOTS applicable to thepatient.\nb.Describe the other types of patients come under this category.\nc.Describe the treatment regimen for the above category.\nd,DefineNew Case,relapse,MDRandXDRof tuberculosis.\ne.Discuss the preventive measures against the childhood tubercular meningitis?\nQ2. Short Essay Questions (SEQs) (6 marks each=30Marks)\nDiscuss about the components of the iodine deficiency disorders under the iodine deficiency\ndisordercontrolprogramme\nbDescribe the Primary mental health care & it's implementations.\nc. Describe the activities of WHO in disease control and health promotion as per the World health\ndaytheme2023\nExplain with examples the various characteristics used for social stratification and their use\nalong with Cultural factors in Health and Diseases\nSectionB(Marks:40)\nQ1.Structured Long Essay Questions/Problem based questions/Modified Essay Questions\nAsthemedicalofficerofaPHC you have to check the work of Anganwariworker and he was not\nsatisfied with the services provided by her in the village.\nAnswer the following question in context with above scenario (Marks 5+1+2+2-10)\na.PrepareaprojecttoimprovetheservicesoftheAnganwariworker in the catchment areas of yourhospital.\nEnumerate the steps of projectprotocol prepared by you.\n_b.DifferentiateBetween objectiveandgoalinhealthplanning Ce+\nERT CPM\nd.DifferentiateBetweenProgrammeevaluatipnandreviewtechniqueandcriticalpathmethod\nQ2.ShortEssayQuestions (SEQs)(6marks each-30Marks)\na.Describe the phases in disaster management\nb.Classify the risk factors of non-communicable diseases\ne.Discuss the medical benefitsyunder ESI schemes\nDescribe the Janni Suraksha Yojana (JSY)\neDiscuss strategies and services of School Health Program",
+        "confidence": {
+          "ocr_confidence": 0.895,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.964
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 2,
+        "page_range": [
+          3,
+          3
+        ],
+        "metadata": {
+          "university": "Bareilly",
+          "exam_month": null,
+          "exam_year": "2020",
+          "session_code": null,
+          "subject": "Community Medicine",
+          "paper_code": null,
+          "max_marks": null,
+          "duration": null,
+          "confidence": 0.8,
+          "status": "ok",
+          "missing_fields": [
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Max.Marks: 40 Time1hour50Minutes",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.952,
+            "confidence_breakdown": {
+              "ocr": 0.879,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.952
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "Read the following case scenario and answer the questions (Marks 10)\nA study from BIU examined whether the risk of Hepatitis C (Hep C) was related to whether\npeople had tattoos. A sample of 600 individy: is was randomly selected from the student\npopulation. In this sample 113 had a tattoo. For individicals with a tattoo, 22 were found to have\nHepatitis C and for individuals without a tattoo, 25 were found to have Hepatitis C. Researchers\nwant to know if there is evidence from this st:dv of an increased prevalence of Hep C fon\nindividuals with a tattoo amongst the population from which they were sampled.\na. What study design is being used in this exainple? [l mark]\nb. Explain the detail steps of above study design? []\n&. Give formal statements of the Null and Alternative hypotheses. []\nd. Interpret the data in details? []\ne. Classify thevarious types of study designs?[]",
+            "type": "Essay",
+            "part": null,
+            "heading": "Long answer question",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.952,
+            "confidence_breakdown": {
+              "ocr": 0.879,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.952
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "ShortAnswerQuestions x5-\nPQLT 96\na. Explain the importancehuman wellbeing indexes.\nb: Explain the criteria for evaluation of screening tests\nrc. Enumerate vaccines and describe schedule, dose, site and modes of vaccination in\nthe National Immunization Schedule\nd. Draw the labelled diagram of normal distribution curve. Write its characteristics.\ninterventional study",
+            "type": "Essay",
+            "part": null,
+            "heading": "Long answer question",
+            "options": null,
+            "marks": "30",
+            "confidence": 0.952,
+            "confidence_breakdown": {
+              "ocr": 0.879,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.952
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Attempt all questions",
+          "Write theories answers in separate answer book"
+        ],
+        "parts": null,
+        "raw_text": "RemedialExamination\nBatch 2020, Septem0er,2023\nCommunity Medicine\nRohilkhand Medical College and Hospital, Bareilly\nMax.Marks: 40 Time1hour50Minutes\nNote:\nAttempt all questions\nWrite theories answers in separate answer book\nLong answer question\nQl.Read the following case scenario and answer the questions (Marks 10)\nA study from BIU examined whether the risk of Hepatitis C (Hep C) was related to whether\npeople had tattoos. A sample of 600 individy: is was randomly selected from the student\npopulation. In this sample 113 had a tattoo. For individicals with a tattoo, 22 were found to have\nHepatitis C and for individuals without a tattoo, 25 were found to have Hepatitis C. Researchers\nwant to know if there is evidence from this st:dv of an increased prevalence of Hep C fon\nindividuals with a tattoo amongst the population from which they were sampled.\na.What study design is being used in this exainple? [l mark]\nb. Explain the detail steps of above study design? [2 marks]\n&. Give formal statements of the Null and Alternative hypotheses. [2 marks]\nd. Interpret the data in details? [3 marks]\ne.Classify thevarious types of study designs?[2marks]\nQ2.ShortAnswerQuestions (6Marks x5-30Marks)\nPQLT 96\na. Explain the importancehuman wellbeing indexes.\nb: Explain the criteria for evaluation of screening tests\nrc. Enumerate vaccines and describe schedule, dose, site and modes of vaccination in\nthe National Immunization Schedule\nd. Draw the labelled diagram of normal distribution curve. Write its characteristics.\ninterventional study",
+        "confidence": {
+          "ocr_confidence": 0.879,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.8,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.8,
+          "overall_confidence": 0.931
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Main'."
+          }
+        ],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 3,
+        "page_range": [
+          4,
+          4
+        ],
+        "metadata": {
+          "university": "Bareilly",
+          "exam_month": "October",
+          "exam_year": "2023",
+          "session_code": null,
+          "subject": "Community Medicine",
+          "paper_code": null,
+          "max_marks": "40",
+          "duration": "1hour50Minutes",
+          "confidence": 0.9,
+          "status": "ok",
+          "missing_fields": [
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Longanswerquestion\nRead the following case scenario and answer the questions (Marks 10)\nA 30 yrs old pregnant lady diagnosed with anaemia came from an urban slum in the OPD.\nAfter taking the history it was found that she belongs to a low socio- economic status. As a\nmedical officer, you need to manage her and also recommend her appropriate preventive\nmeasures\n2. Plan the dietary advice in the current scenario as a part of ante-natal care.\n[]\n3. Suggest appropriate measures for the post-natal care including the dietary plan for\nthe mother. []",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.55,
+            "confidence_breakdown": {
+              "ocr": 0.89,
+              "boundary": 0.7,
+              "classification": 0.95,
+              "overall": 0.55
+            },
+            "status": "needs_review",
+            "confidence_level": "LOW",
+            "anomalies": [
+              {
+                "type": "embedded_question_boundary",
+                "severity": "high",
+                "text_preview": "Longanswerquestion\nRead the following case scenario and answer the questions (Marks 10)\nA 30 yrs old",
+                "reason": "Question body appears to contain an unsegmented subsequent question boundary '2. P'."
+              }
+            ]
+          },
+          {
+            "number": "2",
+            "text": "ShortAnswerQuestions x5=\na) Diseuss in detail about measles epidemiology and the recent steps taken to\neliminate it from the country?\nb) Name 5 international agencies which work for health and discuss in details about\nrole and responsibilities of World health organization in case of pandemic?\nDiscuss about GATHER approach and its implication in family and welfare\nprogramme?\nUNIE<\nd) Discuss about role of Socio-economic status in health?\n)Enumerate the principles of ethics?",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "30",
+            "confidence": 0.955,
+            "confidence_breakdown": {
+              "ocr": 0.89,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.955
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Attemptall questions",
+          "Write theories answers in separate answer book"
+        ],
+        "parts": null,
+        "raw_text": "RemedialExamination-3\nBatch2020,October,2023\nCommunity Medicine\nRohilkhand Medical College and Hospital, Bareilly\nMax.Marks: 40 Time:1hour50Minutes\nNote:\nAttemptall questions\nWrite theories answers in separate answer book\nQ1.Longanswerquestion\nRead the following case scenario and answer the questions (Marks 10)\nA 30 yrs old pregnant lady diagnosed with anaemia came from an urban slum in the OPD.\nAfter taking the history it was found that she belongs to a low socio- economic status. As a\nmedical officer, you need to manage her and also recommend her appropriate preventive\nmeasures\n2.Plan the dietary advice in the current scenario as a part of ante-natal care.\n[4 Marks]\n3. Suggest appropriate measures for the post-natal care including the dietary plan for\nthe mother. [4 Marks]\nQ2.ShortAnswerQuestions(6Marksx5=30Marks)\na) Diseuss in detail about measles epidemiology and the recent steps taken to\neliminate it from the country?\nb) Name 5 international agencies which work for health and discuss in details about\nrole and responsibilities of World health organization in case of pandemic?\nDiscuss about GATHER approach and its implication in family and welfare\nprogramme?\nUNIE<\nd) Discuss about role of Socio-economic status in health?\n)Enumerate the principles of ethics?",
+        "confidence": {
+          "ocr_confidence": 0.89,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.85,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.58
+        },
+        "confidence_level": "LOW",
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "embedded_question_boundary"
+        ],
+        "anomalies": [
+          {
+            "type": "embedded_question_boundary",
+            "severity": "high",
+            "text_preview": "Longanswerquestion\nRead the following case scenario and answer the questions (Marks 10)\nA 30 yrs old",
+            "reason": "Question body appears to contain an unsegmented subsequent question boundary '2. P'."
+          }
+        ],
+        "vision_verified": true,
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 4,
+        "page_range": [
+          5,
+          5
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": "December",
+          "exam_year": "2022",
+          "session_code": null,
+          "subject": "Community Medicine",
+          "paper_code": null,
+          "max_marks": "100",
+          "duration": "3 hours",
+          "confidence": 0.55,
+          "status": "needs_review",
+          "missing_fields": [
+            "university",
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "(i) Attemptall questions\n(ii) (ii)",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.825,
+            "confidence_breakdown": {
+              "ocr": 0.85,
+              "boundary": 0.7,
+              "classification": 0.95,
+              "overall": 0.825
+            },
+            "status": "ok",
+            "confidence_level": "MEDIUM",
+            "anomalies": [
+              {
+                "type": "header_leakage_in_question",
+                "severity": "medium",
+                "text_preview": "(i) Attemptall questions\n(ii) (ii)",
+                "reason": "Question body contains examination header or instruction phrases."
+              }
+            ]
+          },
+          {
+            "number": "1",
+            "text": "a) What is this condition called?\nb) How the medical officer will investigate this outbreak, describe the steps.\nc) What will be the recommendations made by the medical officer to the stakeholder at various levels to\nprevent the recurrence of this types of outbreaks in future?",
+            "type": "Essay",
+            "part": "Section -A (40",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.85,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "a)Determinants ofHealth\nb)RandomizedControlledTrials innd,pmhw,cnsatrou Pefathon\nc) Herd Immunity\nd)Chi-Square Test\ne) Uses of Screening \u4e00 Conbol sh doren",
+            "type": "Short Notes",
+            "part": "Section -A (40",
+            "heading": "Short Answer Questions (SAQs)",
+            "options": null,
+            "marks": "6",
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.85,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "An educational institute is situated in a geographical area which has annual parasite index\n<l. District Malaria Office of the area conducted a survey and found the index density of\nmosquitoes to be 5.5 in the affected areas against the permissible limit of 2.\nMarks)\na) Explain the relevance of two indices mentioned in the above scenario\nb)Describetheintegrated approach of mosquito control\nc) Discuss the seasonal variations in mosquitos' density in northern India\nd) Enumerate the insecticidal agents indicated for use in the campus of an educational institute\nDDi,moothunpiopoyas",
+            "type": "Essay",
+            "part": "Section-B (40",
+            "heading": "Short Answer Questions (SAQs)",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.85,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "ShortAnswerQuestions (SAQs) = Pretu\na. Demographic cycle\nb. Genetic counselling\nc. Objectives and aspects of School Health Services\nd. Objectives of Ante Natal Care (ANC)\ne. Importance of feedback in communication process",
+            "type": "Essay",
+            "part": "Section-B (40",
+            "heading": "Short Answer Questions (SAQs)",
+            "options": null,
+            "marks": "6",
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.85,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": null,
+        "parts": [
+          "Section -A (40",
+          "Section-B (40"
+        ],
+        "raw_text": "MBBS3rdProfessional(Part-D)\nSend upExamination 2022\nBatch 2019,December 2022\nCommunity Medicine\nPaper 1\nTime:3 hours Maximum Marks:100\nNote:\n(i) Attemptall questions\n(ii)\n(ii)\nMCQs(20Questions)of1Markeach (1x20=20 Marks)\nSection -A (40 Marks)\na) What is this condition called?\nb) How the medical officer will investigate this outbreak, describe the steps.\nc) What will be the recommendations made by the medical officer to the stakeholder at various levels to\nprevent the recurrence of this types of outbreaks in future?\nQ.2. Short Answer Questions (SAQs) (6 Marks each=30Marks)\na)Determinants ofHealth\nb)RandomizedControlledTrials innd,pmhw,cnsatrou Pefathon\nc) Herd Immunity\nd)Chi-Square Test\ne) Uses of Screening \u4e00 Conbol sh doren\nSection-B (40 marks)\nQ.1. An educational institute is situated in a geographical area which has annual parasite index\n<l. District Malaria Office of the area conducted a survey and found the index density of\nmosquitoes to be 5.5 in the affected areas against the permissible limit of 2. (2+4+2+2= 10\nMarks)\na) Explain the relevance of two indices mentioned in the above scenario\nb)Describetheintegrated approach of mosquito control\nc) Discuss the seasonal variations in mosquitos' density in northern India\nd) Enumerate the insecticidal agents indicated for use in the campus of an educational institute\nDDi,moothunpiopoyas\nQ2.ShortAnswerQuestions (SAQs) (6Marks each=30Marks) Pretu\na. Demographic cycle\nb. Genetic counselling\nc. Objectives and aspects of School Health Services\nd. Objectives of Ante Natal Care (ANC)\ne. Importance of feedback in communication process",
+        "confidence": {
+          "ocr_confidence": 0.85,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.94,
+          "metadata_confidence": 0.55,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.908
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [
+          {
+            "type": "header_leakage_in_question",
+            "severity": "medium",
+            "text_preview": "(i) Attemptall questions\n(ii) (ii)",
+            "reason": "Question body contains examination header or instruction phrases."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          }
+        ],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 5,
+        "page_range": [
+          6,
+          6
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": "December",
+          "exam_year": "2022",
+          "session_code": null,
+          "subject": "Community Medicine",
+          "paper_code": null,
+          "max_marks": null,
+          "duration": "3 hours",
+          "confidence": 0.5,
+          "status": "needs_review",
+          "missing_fields": [
+            "university",
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Sohan, a 61 year old male resident of Rithora, was suffering from cough more than 3 weeks\nnot taken any previous treatment for tuberculosis.\na) Explain the diagnosis of the case with appropriate reason?\nb) Discuss the classification of the cases for treatment.\nc) Describe diagnostic algorithm for these types of case under national health programme",
+            "type": "Essay",
+            "part": "Section-A (40",
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.952,
+            "confidence_breakdown": {
+              "ocr": 0.88,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.952
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "a) Enumerate the WHO regions and name the cities of their head quarters\nb) Describe the services in Mental Health provided at village-\nc) Discuss the effect of social stratification in health and diseases\nd) Enumerate the spectrum of conditions under iodine deficiency disorders",
+            "type": "Short Notes",
+            "part": "Section-A (40",
+            "heading": "Short Answer Questions (SAQs)",
+            "options": null,
+            "marks": "6",
+            "confidence": 0.952,
+            "confidence_breakdown": {
+              "ocr": 0.88,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.952
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "Define the health Planning. Draw the flow chart of planning cycle. Describe various stages\nof health planning.",
+            "type": "Essay",
+            "part": "Section - B (40",
+            "heading": "Short Answer Questions (SAQs)",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.952,
+            "confidence_breakdown": {
+              "ocr": 0.88,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.952
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "a) Discuss the recommendations of Bhore Committee for development of public health care\ndelivery system in India\nb) Classify the risk factors of Hypertension\nc) Describe the pneumoconiosis\ne) Explain the role of members of Rapid Response Team (RRT) in pandemic management",
+            "type": "Short Notes",
+            "part": "Section - B (40",
+            "heading": "Short Answer Questions (SAQs)",
+            "options": null,
+            "marks": "6",
+            "confidence": 0.952,
+            "confidence_breakdown": {
+              "ocr": 0.88,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.952
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Maximum Marks: 100",
+          "() Attempt all questions",
+          "(ii) backafter 20minutesof the start",
+          "(iii)"
+        ],
+        "parts": [
+          "Section-A (40",
+          "Section - B (40"
+        ],
+        "raw_text": "MBBS3rdProfessional(Part-D)\nSend up Examination 2022\nBatch2019,December2022\nCommunity Medicine\nTime:3 hours Paper 2\nNote: Maximum Marks: 100\n() Attempt all questions\n(ii)\nbackafter 20minutesof the start\n(iii)\nsection B\nMCQs(20Questions)of1Markeach (1x20=20Marks)\nSection-A (40 Marks)\nQ1. Sohan, a 61 year old male resident of Rithora, was suffering from cough more than 3 weeks\nnot taken any previous treatment for tuberculosis. (2+3+5-10 Marks)\na) Explain the diagnosis of the case with appropriate reason?\nb) Discuss the classification of the cases for treatment.\nc) Describe diagnostic algorithm for these types of case under national health programme\nQ2. Short Answer Questions (SAQs) (6 Marks each=30Marks)\na) Enumerate the WHO regions and name the cities of their head quarters\nb) Describe the services in Mental Health provided at village-\nc) Discuss the effect of social stratification in health and diseases\nd) Enumerate the spectrum of conditions under iodine deficiency disorders\nSection - B (40 Marks)\nQ1. Define the health Planning. Draw the flow chart of planning cycle. Describe various stages\nof health planning. (2+3+5= 10 Marks)\nQ2. Short Answer Questions (SAQs) (6 Marks each=30Marks)\na) Discuss the recommendations of Bhore Committee for development of public health care\ndelivery system in India\nb) Classify the risk factors of Hypertension\nc) Describe the pneumoconiosis\ne) Explain the role of members of Rapid Response Team (RRT) in pandemic management",
+        "confidence": {
+          "ocr_confidence": 0.88,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.5,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.921
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          }
+        ],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 6,
+        "page_range": [
+          7,
+          7
+        ],
+        "metadata": {
+          "university": "Bareilly",
+          "exam_month": "November",
+          "exam_year": "2022",
+          "session_code": null,
+          "subject": "Community Medicine",
+          "paper_code": null,
+          "max_marks": "50",
+          "duration": "2:00 Hours",
+          "confidence": 0.9,
+          "status": "ok",
+          "missing_fields": [
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Draw appropriate",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.895,
+            "confidence_breakdown": {
+              "ocr": 0.889,
+              "boundary": 0.85,
+              "classification": 0.95,
+              "overall": 0.895
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "Swapnil, an 11-month-old boy, weight 6.0 kg, developed rashes along with\na spot in the mouth at 2nd molar after three days of his symptoms his brother\nalso get the similar rashes, by chance on ASHA regular visit to his house,\nnoticed the same and report it to you, How will you take this ahead.\n(1+1+2+4+2=\na) What is this sign called?\nb) What is the probable diagnosis of this condition?\nc) What is the line of management?\nd) Is this the epidemic alert for you if yes then justify your answer?\ne) What measures can be taken to prevent this in India?",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.955,
+            "confidence_breakdown": {
+              "ocr": 0.889,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.955
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "A 50 Year all male came to the Community Medicine OPD and ask for\npreventive health check up so tell what all preventive health check up you will\nadvice to him?",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.955,
+            "confidence_breakdown": {
+              "ocr": 0.889,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.955
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Writeshort notes onfollowing =30)\nA)Epidemic\nB) Screening for breast cancer\nC)Oddsratio\nD) Ice berg phenomena\nEyEpidemiological triad\nF)Polio as threat ofepidemic\nG) Bidirectional cohort\nH)Zscore\nD UIP schedule\nJ) Standard deviation",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "3",
+            "confidence": 0.955,
+            "confidence_breakdown": {
+              "ocr": 0.889,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.955
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Attempt all question in the given sequence.",
+          "diagrams and explain with examples wherever necessary"
+        ],
+        "parts": null,
+        "raw_text": "RemedialExamination\nBatch2019,November2022\nCommunity Medicine\nRohilkhand Medical College &Hospital, Bareilly\n(Max.Marks:50) Time:2:00 Hours\nNote: Attempt all question in the given sequence. Draw appropriate\ndiagrams and explain with examples wherever necessary\nQ1. Swapnil, an 11-month-old boy, weight 6.0 kg, developed rashes along with\na spot in the mouth at 2nd molar after three days of his symptoms his brother\nalso get the similar rashes, by chance on ASHA regular visit to his house,\nnoticed the same and report it to you, How will you take this ahead.\n(1+1+2+4+2=10Marks)\na) What is this sign called?\nb) What is the probable diagnosis of this condition?\nc) What is the line of management?\nd) Is this the epidemic alert for you if yes then justify your answer?\ne) What measures can be taken to prevent this in India?\nQ2. A 50 Year all male came to the Community Medicine OPD and ask for\npreventive health check up so tell what all preventive health check up you will\nadvice to him? (10 Marks)\nQ3.Writeshort notes onfollowing (3markseach=30)\nA)Epidemic\nB) Screening for breast cancer\nC)Oddsratio\nD) Ice berg phenomena\nEyEpidemiological triad\nF)Polio as threat ofepidemic\nG) Bidirectional cohort\nH)Zscore\nD UIP schedule\nJ) Standard deviation",
+        "confidence": {
+          "ocr_confidence": 0.889,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.963,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.8,
+          "overall_confidence": 0.935
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Main'."
+          }
+        ],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 7,
+        "page_range": [
+          8,
+          8
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": "January",
+          "exam_year": "2022",
+          "session_code": "11016",
+          "subject": null,
+          "paper_code": null,
+          "max_marks": "60",
+          "duration": "3hours",
+          "confidence": 0.4,
+          "status": "needs_review",
+          "missing_fields": [
+            "university",
+            "subject"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Describe natural history of diseases, various levels of\nprevention, modes of interventions and determinants of health.\n(4+2+2+2=\uff09)",
+            "type": "Essay",
+            "part": "PART-A (30",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.944,
+            "confidence_breakdown": {
+              "ocr": 0.848,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.944
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Short Question:\na) Phases of clinical trial in context with Covid-19 vaccines\nb) Evaluation of Screening tests\nc) Schedule, dose, site and route for vaccines given in National\nImmunization Schedule\nd) Inferential statistics for non-parametric data",
+            "type": "Essay",
+            "part": "PART-A (30",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "5",
+            "confidence": 0.944,
+            "confidence_breakdown": {
+              "ocr": 0.848,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.944
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "Define Maternal Mortality Rate. Write various causes of\nMaternal Mortality in India. Describe Preventive Obstetric Care\nProvisions in India.",
+            "type": "Essay",
+            "part": "PART-B (30",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.944,
+            "confidence_breakdown": {
+              "ocr": 0.848,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.944
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Short Question:\na) Zoonosis\nb)Noise Pollution\nc) Types of Genetic Counselling\nd) Home based Neo-natal care",
+            "type": "Essay",
+            "part": "PART-B (30",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "5",
+            "confidence": 0.944,
+            "confidence_breakdown": {
+              "ocr": 0.848,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.944
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Attempt all questions."
+        ],
+        "parts": [
+          "PART-A (30",
+          "PART-B (30"
+        ],
+        "raw_text": "PaperCode:11016\nSend-upExamination-January2022\nMBBS3rdProfessional Part-l\nCommunityMedicine\nFirstPaper\nTIME:3hours Maximummarks:60\nNote:Attempt all questions. Write answers in separate answer sheets for\nPart Aand Part B.\nPART-A (30Marks)\nLong Question:\n1. Describe natural history of diseases, various levels of\nprevention, modes of interventions and determinants of health.\n(4+2+2+2=10Marks\uff09\n2. Short Question:\n(5 Marks each)\na) Phases of clinical trial in context with Covid-19 vaccines\nb) Evaluation of Screening tests\nc) Schedule, dose, site and route for vaccines given in National\nImmunization Schedule\nd) Inferential statistics for non-parametric data\nPART-B (30 Marks)\nLong Question:\n1.\nDefine Maternal Mortality Rate. Write various causes of\nMaternal Mortality in India. Describe Preventive Obstetric Care\nProvisions in India.\n(2+2+6=10 Marks)\n2. Short Question:\n(5 Marks each)\na) Zoonosis\nb)Noise Pollution\nc) Types of Genetic Counselling\nd) Home based Neo-natal care",
+        "confidence": {
+          "ocr_confidence": 0.848,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.4,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.905
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 8,
+        "page_range": [
+          9,
+          9
+        ],
+        "metadata": {
+          "university": "Bareilly",
+          "exam_month": "November",
+          "exam_year": "2022",
+          "session_code": null,
+          "subject": "Community Medicine",
+          "paper_code": null,
+          "max_marks": "50",
+          "duration": "60 mins",
+          "confidence": 0.9,
+          "status": "ok",
+          "missing_fields": [
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Draw\nnecessary",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.895,
+            "confidence_breakdown": {
+              "ocr": 0.892,
+              "boundary": 0.85,
+              "classification": 0.95,
+              "overall": 0.895
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "a. Rapid Response team sn\nb. Sample collection for water microbiological assessment\nc. Covid 19vaccination\nd. Difference between epidemic and endemic disease\ne. Polio as epidemic threat to India\nf. Contact tracing\ng. International agency role in pandemic\nh. Palliative care in pandemic\ni. Steps of hand washing\nj. Ethical consideration for a covid 19 positive case with respect\nto admitted patient",
+            "type": "Short Notes",
+            "part": null,
+            "heading": "Short answer questions",
+            "options": null,
+            "marks": "3",
+            "confidence": 0.955,
+            "confidence_breakdown": {
+              "ocr": 0.892,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.955
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Recently an unknown virus cases have been found to increase in\nyour district so you been the CMO of the district is asked by the DM\nof the district to make an acticn plan to overcome this issue. In this\nsituation you must make the appropriate action plan for the above (20)\nmarks)",
+            "type": "Short Notes",
+            "part": null,
+            "heading": "Short answer questions",
+            "options": null,
+            "marks": "3",
+            "confidence": 0.955,
+            "confidence_breakdown": {
+              "ocr": 0.892,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.955
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Attempt all question in the given sequence.",
+          "appropriate diagrams and explain with examples wherever"
+        ],
+        "parts": null,
+        "raw_text": "Pandemic Module Examination,Batch 2019,November 2022\nCommunity Medicine\nRohilkhand Medical College & Hospital, Bareilly\nTime:60 mins Max.Marks:50\nNote: Attempt all question in the given sequence. Draw\nappropriate diagrams and explain with examples wherever\nnecessary\nQ1. Short answer questions -(3 marks each=30Marks)\na. Rapid Response team sn\nb. Sample collection for water microbiological assessment\nc. Covid 19vaccination\nd. Difference between epidemic and endemic disease\ne. Polio as epidemic threat to India\nf. Contact tracing\ng. International agency role in pandemic\nh.Palliative care in pandemic\ni. Steps of hand washing\nj. Ethical consideration for a covid 19 positive case with respect\nto admitted patient\nQ2. Recently an unknown virus cases have been found to increase in\nyour district so you been the CMO of the district is asked by the DM\nof the district to make an acticn plan to overcome this issue. In this\nsituation you must make the appropriate action plan for the above (20\nmarks)",
+        "confidence": {
+          "ocr_confidence": 0.892,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.95,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.8,
+          "overall_confidence": 0.933
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Main'."
+          }
+        ],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 9,
+        "page_range": [
+          10,
+          10
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": "November",
+          "exam_year": "2022",
+          "session_code": null,
+          "subject": null,
+          "paper_code": null,
+          "max_marks": null,
+          "duration": null,
+          "confidence": 0.2,
+          "status": "needs_review",
+          "missing_fields": [
+            "university",
+            "subject",
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Raju 6years old boy,weight 12.0kg,developed frequent episodes of\ndiarrhoea, tiredness and weakness, abdominal pain and weight loss for last 6\nmonths.For these problems he visited nearest PHC,The Doctor in OPD\nassessed the case.\na) Write the steps of assessment,\nb)Enuneratethe causes of his problem.\nc)What is the line of management?\nd) What are the preventive measures?\ne) Write the names of the national health programmes helpful for the\ncase.\n,Define family.Enumerate the stages of the family cyele,Deseribe various\ntypes offamily.Discuss theroleoffamily.(1+2+3+4-",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.95,
+            "confidence_breakdown": {
+              "ocr": 0.871,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.95
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "following\nA)ContentofservicesbyUNICEF\nB)Acculturation\nC)ProteinQualityAssessment\nD)WHOplan formanagementof dehydration\nE)Reference man and woman\nFRecommendedDietaryAllowance\nG)ConsumerProtectionAct,1986\nH)ThePreventionofFoodAdulterationAct,1954\nI) Bilateral International HealthAgencies\nJ)Mental Health Services in a Community",
+            "type": "Short Notes",
+            "part": null,
+            "heading": "Writeshortnotesonfollowing =30)",
+            "options": null,
+            "marks": "3",
+            "confidence": 0.95,
+            "confidence_breakdown": {
+              "ocr": 0.871,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.95
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Notet Attempt all questions in the glven seyuense.Draw appropriate",
+          "diagrams and explain with examples wherever necessary"
+        ],
+        "parts": null,
+        "raw_text": "ReedialExaination,Buteh2019,November2022\nCommunily Medielne Part lll\nRohilkhand Medieal College & Hospltal, Barelly\n(MaxMarkssS0) Timer2:00Hours\nNotet Attempt all questions in the glven seyuense.Draw appropriate\ndiagrams and explain with examples wherever necessary\nQ1,Raju 6years old boy,weight 12.0kg,developed frequent episodes of\ndiarrhoea, tiredness and weakness, abdominal pain and weight loss for last 6\nmonths.For these problems he visited nearest PHC,The Doctor in OPD\nassessed the case. (10Marks)\na) Write the steps of assessment, (2 Marks)\nb)Enuneratethe causes of his problem.(2Marks)\nc)What is the line of management? (2 Marks)\nd) What are the preventive measures? (2 Marks)\ne) Write the names of the national health programmes helpful for the\ncase. (2Marks)\n,Define family.Enumerate the stages of the family cyele,Deseribe various\ntypes offamily.Discuss theroleoffamily.(1+2+3+4-10Marks)\nQ3,Writeshortnotesonfollowing (3marks each=30)\nA)ContentofservicesbyUNICEF\nB)Acculturation\nC)ProteinQualityAssessment\nD)WHOplan formanagementof dehydration\nE)Reference man and woman\nFRecommendedDietaryAllowance\nG)ConsumerProtectionAct,1986\nH)ThePreventionofFoodAdulterationAct,1954\nI) Bilateral International HealthAgencies\nJ)Mental Health Services in a Community",
+        "confidence": {
+          "ocr_confidence": 0.871,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.2,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.9,
+          "overall_confidence": 0.879
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Numbering gap detected in section 'Main': Q1 is followed by Q3 (missing 1 question(s))."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 10,
+        "page_range": [
+          11,
+          11
+        ],
+        "metadata": {
+          "university": "Bareilly",
+          "exam_month": "November",
+          "exam_year": "2022",
+          "session_code": null,
+          "subject": "Community Medicine",
+          "paper_code": null,
+          "max_marks": null,
+          "duration": null,
+          "confidence": 0.8,
+          "status": "ok",
+          "missing_fields": [
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "(Max.Marks:50)",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.898,
+            "confidence_breakdown": {
+              "ocr": 0.902,
+              "boundary": 0.85,
+              "classification": 0.95,
+              "overall": 0.898
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "Rambahadur 45 years old case, height 161cm weight 79 kg, developed\nincreased frequency of urination, excessive thirst or hunger, and sudden weight\nloss in last 15 day. He visited to the district hospital for seeking treatment for\nthis recently developed disease. The Doctor in OPD assessed the case by taking\ndetailed history and examined thoroughly.\na) Write the WHO recommended criteria for diagnosis of the disease.\nb) Write the WHO recommended classification of the disease.\nc) Screening criteria for individuals at high risk for the disease?",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.958,
+            "confidence_breakdown": {
+              "ocr": 0.902,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.958
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Define occupational health. Enumerate various pneumoconiosis. Describe\nthe benefits to employee under Employees' State Insurance. Discuss the role of\npre-placement health check up of the employee for the benefits to the employer\n/company.(1+2+3+4=",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.958,
+            "confidence_breakdown": {
+              "ocr": 0.902,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.958
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "A)Anaemia Mukta Bharat Abhiyaan\nB)Health Economics\nC) Segregation of hospital wastes\nD) Triage at casualty ward in response to disaster\nE)Tribal Health initiative in India\nF) Health and wellness centres\nG) Integrated disease surveillance programme (IDSP)\nH) Pradhan Mantri Jan Arogya Yojana\nD Role ofASHA in NPCDCS\nJNITIAyog",
+            "type": "Short Notes",
+            "part": null,
+            "heading": "Write short notes on following =30)",
+            "options": null,
+            "marks": "3",
+            "confidence": 0.958,
+            "confidence_breakdown": {
+              "ocr": 0.902,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.958
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Note: Attempt all questions in the given sequence. Draw appropriate",
+          "diagrams and explain with examples wherever necessary"
+        ],
+        "parts": null,
+        "raw_text": "Remedial Examination,Batch2019,November2022\nCommunity Medicine Part IV\nRohilkhand Medical College & Hospital, Bareilly\n(Max.Marks:50)\nTime:2:00 Hours\nNote: Attempt all questions in the given sequence. Draw appropriate\ndiagrams and explain with examples wherever necessary\nQ1. Rambahadur 45 years old case, height 161cm weight 79 kg, developed\nincreased frequency of urination, excessive thirst or hunger, and sudden weight\nloss in last 15 day. He visited to the district hospital for seeking treatment for\nthis recently developed disease. The Doctor in OPD assessed the case by taking\ndetailed history and examined thoroughly . (10Marks)\na) Write the WHO recommended criteria for diagnosis of the disease.\n(3Marks)\nb) Write the WHO recommended classification of the disease.(3Marks)\nc) Screening criteria for individuals at high risk for the disease?\n(4Marks)\nQ2. Define occupational health. Enumerate various pneumoconiosis. Describe\nthe benefits to employee under Employees' State Insurance. Discuss the role of\npre-placement health check up of the employee for the benefits to the employer\n/company.(1+2+3+4=10Marks)\nQ3.Write short notes on following (3marks each=30)\nA)Anaemia Mukta Bharat Abhiyaan\nB)Health Economics\nC) Segregation of hospital wastes\nD) Triage at casualty ward in response to disaster\nE)Tribal Health initiative in India\nF) Health and wellness centres\nG) Integrated disease surveillance programme (IDSP)\nH) Pradhan Mantri Jan Arogya Yojana\nD Role ofASHA in NPCDCS\nJNITIAyog",
+        "confidence": {
+          "ocr_confidence": 0.902,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.963,
+          "metadata_confidence": 0.8,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.8,
+          "overall_confidence": 0.928
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Main'."
+          }
+        ],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 11,
+        "page_range": [
+          12,
+          12
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": "January",
+          "exam_year": "2021",
+          "session_code": "11016",
+          "subject": "Community Medicine",
+          "paper_code": null,
+          "max_marks": "60",
+          "duration": "3hours",
+          "confidence": 0.65,
+          "status": "needs_review",
+          "missing_fields": [
+            "university"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Enumerate and briefly describe the types of observational studies.",
+            "type": "Essay",
+            "part": "PartA (30",
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.948,
+            "confidence_breakdown": {
+              "ocr": 0.861,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.948
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "What is herd immunity and why is it important.",
+            "type": "Essay",
+            "part": "PartA (30",
+            "heading": null,
+            "options": null,
+            "marks": "5",
+            "confidence": 0.948,
+            "confidence_breakdown": {
+              "ocr": 0.861,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.948
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "[ Describe the iceberg phenomenon? Explain giving suitable examples.",
+            "type": "Essay",
+            "part": "PartA (30",
+            "heading": null,
+            "options": null,
+            "marks": "5",
+            "confidence": 0.948,
+            "confidence_breakdown": {
+              "ocr": 0.861,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.948
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4",
+            "text": "1 What is cold chain? Describe the equipments used in maintaining cold chain.",
+            "type": "Essay",
+            "part": "PartA (30",
+            "heading": null,
+            "options": null,
+            "marks": "5",
+            "confidence": 0.948,
+            "confidence_breakdown": {
+              "ocr": 0.861,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.948
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "5",
+            "text": "(2/MarksEach)\n(a) Generation time\n(b) Pasteurizationofmilk",
+            "type": "Short Notes",
+            "part": "PartA (30",
+            "heading": "Write a short notes on",
+            "options": null,
+            "marks": null,
+            "confidence": 0.948,
+            "confidence_breakdown": {
+              "ocr": 0.861,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.948
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "Describe the levels of prevention of disease.How would you apply these levels\nin preventing CHD in a given population?",
+            "type": "Essay",
+            "part": "PartB (30",
+            "heading": "Write a short notes on",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.948,
+            "confidence_breakdown": {
+              "ocr": 0.861,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.948
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Differentiate between isolation and quarantine.",
+            "type": "Essay",
+            "part": "PartB (30",
+            "heading": "Write a short notes on",
+            "options": null,
+            "marks": "5",
+            "confidence": 0.948,
+            "confidence_breakdown": {
+              "ocr": 0.861,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.948
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "(a) PQLI\n(b) Droplet nuclei\n(c) Pandemic\n(d) Attributable risk\n(e) Reservoir",
+            "type": "Very Short Answers",
+            "part": "PartB (30",
+            "heading": "Define",
+            "options": null,
+            "marks": "1",
+            "confidence": 0.948,
+            "confidence_breakdown": {
+              "ocr": 0.861,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.948
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4",
+            "text": "Describe in brief \"a ranuomized controlled trial\"",
+            "type": "Very Short Answers",
+            "part": "PartB (30",
+            "heading": "Define",
+            "options": null,
+            "marks": "5",
+            "confidence": 0.948,
+            "confidence_breakdown": {
+              "ocr": 0.861,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.948
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "5",
+            "text": "E Enumerate themortality indicators",
+            "type": "Very Short Answers",
+            "part": "PartB (30",
+            "heading": "Define",
+            "options": null,
+            "marks": "5",
+            "confidence": 0.948,
+            "confidence_breakdown": {
+              "ocr": 0.861,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.948
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Attempt ali questions."
+        ],
+        "parts": [
+          "PartA (30",
+          "PartB (30"
+        ],
+        "raw_text": "PaperCode:11016\nSend-upExamination-January2021\nMBBS 3rd Professional Part-I\nCommunity Medicine\nPaper First\nTIME:3hours Maximummarks:60\nNote:Attempt ali questions. Write answers in separate answer sheets for\nPart A and Part B.Explainyour answers with appropriatediagrams.\nPartA (30 Marks)\nQ.1. Enumerate and briefly describe the types of observational studies.\n(10 Marks)\nQ.2. What is herd immunity and why is it important. (5Marks)\nQ.3. [ Describe the iceberg phenomenon? Explain giving suitable examples.\n(5 Marks)\nQ.4. 1 What is cold chain? Describe the equipments used in maintaining cold chain.\n(5 Marks)\nQ.5. Write a short notes on:\n(2/MarksEach)\n(a)Generation time\n(b)Pasteurizationofmilk\nPartB (30 Marks)\nQ.1.Describe the levels of prevention of disease.How would you apply these levels\nin preventing CHD in a given population? (10 Marks)\nQ.2. Differentiate between isolation and quarantine. (5 Marks)\nQ.3. Define :\n(1MarkEach)\n(a) PQLI\n(b)Droplet nuclei\n(c) Pandemic\n(d) Attributable risk\n(e)Reservoir\nQ.4. Describe in brief \"a ranuomized controlled trial\" (5 Marks)\nQ.5.E Enumerate themortality indicators (5 Marks)",
+        "confidence": {
+          "ocr_confidence": 0.861,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.65,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.932
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          }
+        ],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 12,
+        "page_range": [
+          13,
+          13
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": "January",
+          "exam_year": "2021",
+          "session_code": "11017",
+          "subject": null,
+          "paper_code": null,
+          "max_marks": "60",
+          "duration": "3hours",
+          "confidence": 0.4,
+          "status": "needs_review",
+          "missing_fields": [
+            "university",
+            "subject"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Which diseases are covered under the National Vector Borne disease control\nprogramme? Describe the milestones and targets set for Malaria elimination\nin India.",
+            "type": "Essay",
+            "part": "PartA (30",
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.849,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Describe the steps involved in the pianning cycle.",
+            "type": "Essay",
+            "part": "PartA (30",
+            "heading": null,
+            "options": null,
+            "marks": "5",
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.849,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Classify hormonal contraceptives. Write briefly about their side effects.",
+            "type": "Essay",
+            "part": "PartA (30",
+            "heading": null,
+            "options": null,
+            "marks": "5",
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.849,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4",
+            "text": "Enumerate and very briefly discuss the major co-morbidities ir tuberculosis.",
+            "type": "Essay",
+            "part": "PartA (30",
+            "heading": null,
+            "options": null,
+            "marks": "5",
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.849,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "5",
+            "text": "What is a growth chart? Enumerate the uses of the growth chart.",
+            "type": "Essay",
+            "part": "PartA (30",
+            "heading": null,
+            "options": null,
+            "marks": "5",
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.849,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "Define Primary Health Care. What are it's components? Describe how primary\nhealth care is provided in the rural areas of India.",
+            "type": "Essay",
+            "part": "PartB (30",
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.849,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "(2/MarksEach)\n(a) CompositionofORS\n(b) Postexposureprophylaxisinrabies",
+            "type": "Short Notes",
+            "part": "PartB (30",
+            "heading": "Write short notes on: (2/MarksEach)",
+            "options": null,
+            "marks": null,
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.849,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Describe the mode of transmission, clinical manifestation and diagnosis of\nCoronavirus disease-19 (Covid-19).",
+            "type": "Short Notes",
+            "part": "PartB (30",
+            "heading": "Write short notes on: (2/MarksEach)",
+            "options": null,
+            "marks": "5",
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.849,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4",
+            "text": "Enumerate the symptoms of drug acldiction.",
+            "type": "Short Notes",
+            "part": "PartB (30",
+            "heading": "Write short notes on: (2/MarksEach)",
+            "options": null,
+            "marks": "5",
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.849,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "5",
+            "text": "Describe forms of protein energy malnutrition. Describe methods of early\ndetection of PEM.",
+            "type": "Short Notes",
+            "part": "PartB (30",
+            "heading": "Write short notes on: (2/MarksEach)",
+            "options": null,
+            "marks": "5",
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.849,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Attempt all questions."
+        ],
+        "parts": [
+          "PartA (30",
+          "PartB (30"
+        ],
+        "raw_text": "Paper Code:11017\nSend-upExamination-January2021\nMBBS 3rd Professional Part-I\nCommunityMedicine\nPaper Second\nTIME:3hours Maximummarks:60\nNote:Attempt all questions. Write aliswers in separate answer sheets for\nPart A and Part B.Explain your answers withappropriate diagrams.\nPartA (30Marks)\nQ1.Which diseases are covered under the National Vector Borne disease control\nprogramme? Describe the milestones and targets set for Malaria elimination\nin India. (10 Marks)\nQ.2.Describe the steps involved in the pianning cycle. (5 Marks)\nQ.3.Classify hormonal contraceptives. Write briefly about their side effects.\n(5 Marks)\nQ.4 Enumerate and very briefly discuss the major co-morbidities ir tuberculosis.\n(5Marks)\nQ.5.What is a growth chart? Enumerate the uses of the growth chart. (5 Marks)\nPartB (30 Marks)\nQ.1. Define Primary Health Care. What are it's components? Describe how primary\nhealth care is provided in the rural areas of India. (10Marks)\nQ.2. Write short notes on: (2/MarksEach)\n(a)CompositionofORS\n(b)Postexposureprophylaxisinrabies\nQ.3. Describe the mode of transmission, clinical manifestation and diagnosis of\nCoronavirus disease-19(Covid-19). (5 Marks)\nQ.4 Enumerate the symptoms of drug acldiction.\n(5 Marks)\nQ.5. Describe forms of protein energy malnutrition. Describe methods of early\ndetection of PEM.\n(5 Marks)",
+        "confidence": {
+          "ocr_confidence": 0.849,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.4,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.905
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 13,
+        "page_range": [
+          14,
+          14
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": null,
+          "exam_year": null,
+          "session_code": null,
+          "subject": null,
+          "paper_code": null,
+          "max_marks": null,
+          "duration": "3hours",
+          "confidence": 0.1,
+          "status": "needs_review",
+          "missing_fields": [
+            "university",
+            "subject",
+            "exam_date",
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "D PartA\nmodes ofInterventions.\nin last 3 days in the population of 300.",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.948,
+            "confidence_breakdown": {
+              "ocr": 0.862,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.948
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "(a)Screeningof diseases\n(b) Histogram\n(c) Spectrumofhealth",
+            "type": "Short Notes",
+            "part": null,
+            "heading": "Write short notes on the following",
+            "options": null,
+            "marks": null,
+            "confidence": 0.948,
+            "confidence_breakdown": {
+              "ocr": 0.862,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.948
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "this child accordingto IMNClguidelines",
+            "type": "Essay",
+            "part": "Part B",
+            "heading": "Write short notes on the following",
+            "options": null,
+            "marks": null,
+            "confidence": 0.948,
+            "confidence_breakdown": {
+              "ocr": 0.862,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.948
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "(a)Bacteriologicalsurveillanceofwater\n(b) Emergencycontraceptives\n(c) InsecticideResistance\nMaximum marks:60",
+            "type": "Short Notes",
+            "part": "Part B",
+            "heading": "Write short notes on the following",
+            "options": null,
+            "marks": null,
+            "confidence": 0.828,
+            "confidence_breakdown": {
+              "ocr": 0.862,
+              "boundary": 0.7,
+              "classification": 0.95,
+              "overall": 0.828
+            },
+            "status": "ok",
+            "confidence_level": "MEDIUM",
+            "anomalies": [
+              {
+                "type": "header_leakage_in_question",
+                "severity": "medium",
+                "text_preview": "(a)Bacteriologicalsurveillanceofwater\n(b) Emergencycontraceptives\n(c) InsecticideResistance\nMaximum ",
+                "reason": "Question body contains examination header or instruction phrases."
+              }
+            ]
+          },
+          {
+            "number": "1",
+            "text": "MBBS3rdProfessional Part-l.\nCommunity Medicine\nPaper First",
+            "type": "Essay",
+            "part": "Part B (30",
+            "heading": "Write short notes on the following",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.948,
+            "confidence_breakdown": {
+              "ocr": 0.862,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.948
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "Define exclusive breast feeding. Enumerate advantages of breast feeding",
+            "type": "Essay",
+            "part": "Part B (30",
+            "heading": "Write short notes on the following",
+            "options": null,
+            "marks": "4",
+            "confidence": 0.948,
+            "confidence_breakdown": {
+              "ocr": 0.862,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.948
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "A 8 months old baby comes to your clinic with 6 episodes of diarrhoea in last\n24 hours. On examination child is thirsty, skin pinch goes back very slowly,\ndrinking poorly & has sunken eyes. Write down the steps of management of",
+            "type": "Essay",
+            "part": "Part B (30",
+            "heading": "Write short notes on the following",
+            "options": null,
+            "marks": "4",
+            "confidence": 0.948,
+            "confidence_breakdown": {
+              "ocr": 0.862,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.948
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": null,
+        "parts": [
+          "Part B",
+          "Part B (30"
+        ],
+        "raw_text": "TIME:3hours\nQ.1. D PartA\nmodes ofInterventions.\nin last 3 days in the population of 300.\nQ.3.Write short notes on the following :\n(a)Screeningof diseases\n(b) Histogram\n(c)Spectrumofhealth\nPart B\nthis child accordingto IMNClguidelines\nQ.3.Write short notes on the following :\n(a)Bacteriologicalsurveillanceofwater\n(b)Emergencycontraceptives\n(c)InsecticideResistance\nMaximum marks:60\nPartA (30 Marks)\n(8 Marks)\n(10 Marks)\n(4Marks Each)\nPart B (30 Marks)\n(8 Marks)\n(10Marks)\n(4 Marks Each)\nPaper Code:11016\nMBBS3rdProfessional Part-l.\nSend-up Examination-February2020\nCommunity Medicine\nPaper First\nQ.1. Define exclusive breast feeding. Enumerate advantages of breast feeding\nQ.2.A 8 months old baby comes to your clinic with 6 episodes of diarrhoea in last\n24 hours. On examination child is thirsty, skin pinch goes back very slowly,\ndrinking poorly & has sunken eyes. Write down the steps of management of",
+        "confidence": {
+          "ocr_confidence": 0.862,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.957,
+          "metadata_confidence": 0.1,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.6,
+          "overall_confidence": 0.829
+        },
+        "confidence_level": "MEDIUM",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Part B (30'."
+          },
+          {
+            "type": "question_numbering_gap",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Numbering gap detected in section 'Main': Q1 is followed by Q3 (missing 1 question(s))."
+          },
+          {
+            "type": "question_numbering_gap",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Numbering gap detected in section 'Part B': Q1 is followed by Q3 (missing 1 question(s))."
+          },
+          {
+            "type": "header_leakage_in_question",
+            "severity": "medium",
+            "text_preview": "(a)Bacteriologicalsurveillanceofwater\n(b) Emergencycontraceptives\n(c) InsecticideResistance\nMaximum ",
+            "reason": "Question body contains examination header or instruction phrases."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 14,
+        "page_range": [
+          15,
+          15
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": "February",
+          "exam_year": "2020",
+          "session_code": "11017",
+          "subject": null,
+          "paper_code": null,
+          "max_marks": "60",
+          "duration": "3hours",
+          "confidence": 0.4,
+          "status": "needs_review",
+          "missing_fields": [
+            "university",
+            "subject"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "& important strategies under RNTCP guidelines.",
+            "type": "Essay",
+            "part": "PartA (30",
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.949,
+            "confidence_breakdown": {
+              "ocr": 0.866,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.949
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "nutritional Anemia.",
+            "type": "Essay",
+            "part": "PartA (30",
+            "heading": null,
+            "options": null,
+            "marks": "8",
+            "confidence": 0.909,
+            "confidence_breakdown": {
+              "ocr": 0.866,
+              "boundary": 0.9,
+              "classification": 0.95,
+              "overall": 0.909
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "following :\n(a) WorldHealthDay2017\n(b) JEVaccine\n(c) Syndrome approach for STD's = u ()",
+            "type": "Short Notes",
+            "part": "PartA (30",
+            "heading": "Write short notes on thefollowing",
+            "options": null,
+            "marks": "4",
+            "confidence": 0.949,
+            "confidence_breakdown": {
+              "ocr": 0.866,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.949
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "Enumerate modifiable & non-modifiable risk factors for Diabetes Mellitus\nWrite down the preventive strategies under diabetes control Programme.",
+            "type": "Essay",
+            "part": "Part B (30",
+            "heading": "Write short notes on thefollowing",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.949,
+            "confidence_breakdown": {
+              "ocr": 0.866,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.949
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Rajesh Kumar, 20 years male reported at PHC with Dog bite (street dog) on left\nleg with bleeding wound.Discuss in brief the line of management for this case.",
+            "type": "Essay",
+            "part": "Part B (30",
+            "heading": "Write short notes on thefollowing",
+            "options": null,
+            "marks": "8",
+            "confidence": 0.949,
+            "confidence_breakdown": {
+              "ocr": 0.866,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.949
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "(a) ESI Act 1948\n(b) Primary Health Care\n(c) Network analysis",
+            "type": "Short Notes",
+            "part": "Part B (30",
+            "heading": "Write short notes on the following",
+            "options": null,
+            "marks": "4",
+            "confidence": 0.949,
+            "confidence_breakdown": {
+              "ocr": 0.866,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.949
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": null,
+        "parts": [
+          "PartA (30",
+          "Part B (30"
+        ],
+        "raw_text": "Paper Code:11017\nMBBS 3rdProfessional Part-l\nSend-up Examination-February 2020\nCommunityMedicine\nPaper Second\nTIME:3hours Maximummarks:60\nPartA (30 Marks)\nQ.1.\n& important strategies under RNTCP guidelines. (10 Marks)\nQ.2.\nnutritional Anemia. (8 Marks)\nQ.3.Write short notes on thefollowing : (4 Marks Each)\n(a)WorldHealthDay2017\n(b)JEVaccine\n(c) Syndrome approach for STD's = u(\nPart B (30 Marks)\nQ.1.Enumerate modifiable & non-modifiable risk factors for Diabetes Mellitus\nWrite down the preventive strategies under diabetes control Programme.\n(10 Marks)\nQ.2.Rajesh Kumar, 20 years male reported at PHC with Dog bite (street dog) on left\nleg with bleeding wound.Discuss in brief the line of management for this case.\n(8 Marks)\nQ.3. Write short notes on the following : (4Marks Each)\n(a) ESI Act 1948\n(b) Primary Health Care\n(c) Network analysis",
+        "confidence": {
+          "ocr_confidence": 0.866,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.983,
+          "metadata_confidence": 0.4,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.905
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 15,
+        "page_range": [
+          16,
+          16
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": null,
+          "exam_year": "2016",
+          "session_code": null,
+          "subject": "Community Medicine",
+          "paper_code": null,
+          "max_marks": "100",
+          "duration": "3 hours",
+          "confidence": 0.55,
+          "status": "needs_review",
+          "missing_fields": [
+            "university",
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Basic steps and design of Randomized Control Trial",
+            "type": "Essay",
+            "part": "Section A",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.953,
+            "confidence_breakdown": {
+              "ocr": 0.878,
+              "boundary": 1.0,
+              "classification": 0.952,
+              "overall": 0.953
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Secondary Attack Rate",
+            "type": "Essay",
+            "part": "Section A",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.899,
+            "confidence_breakdown": {
+              "ocr": 0.878,
+              "boundary": 0.9,
+              "classification": 0.912,
+              "overall": 0.899
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Proportional Mortality Ratio",
+            "type": "Essay",
+            "part": "Section A",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.953,
+            "confidence_breakdown": {
+              "ocr": 0.878,
+              "boundary": 1.0,
+              "classification": 0.952,
+              "overall": 0.953
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4",
+            "text": "Schematic diagram of the design of case control and cohort studies",
+            "type": "Essay",
+            "part": "Section A",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.953,
+            "confidence_breakdown": {
+              "ocr": 0.878,
+              "boundary": 1.0,
+              "classification": 0.952,
+              "overall": 0.953
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "10",
+            "text": "Churt Cuestion",
+            "type": "Essay",
+            "part": "Section A",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.899,
+            "confidence_breakdown": {
+              "ocr": 0.878,
+              "boundary": 0.9,
+              "classification": 0.912,
+              "overall": 0.899
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "LongQuestion",
+            "type": "Essay",
+            "part": "Section B",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.899,
+            "confidence_breakdown": {
+              "ocr": 0.878,
+              "boundary": 0.9,
+              "classification": 0.912,
+              "overall": 0.899
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "Long Question  each)\n10)\n(Marks = 2+4+4= 10)\nChurt Cuestion  each)\n1. Basic steps and design of Randomized Control Trial",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.55,
+            "confidence_breakdown": {
+              "ocr": 0.878,
+              "boundary": 0.7,
+              "classification": 0.94,
+              "overall": 0.55
+            },
+            "status": "needs_review",
+            "confidence_level": "LOW",
+            "anomalies": [
+              {
+                "type": "embedded_question_boundary",
+                "severity": "high",
+                "text_preview": "Long Question  each)\n10)\n(Marks = 2+4+4= 10)\nChurt Cuestion  each)\n1. Basic steps and design of Rand",
+                "reason": "Question body appears to contain an unsegmented subsequent question boundary '1. B'."
+              }
+            ]
+          },
+          {
+            "number": "2",
+            "text": "Write Classifications of Foods. Describe role of essential nutrients in health. Explain\nLimiting Araino Acids with Example?.\nShort Question",
+            "type": "Essay",
+            "part": "Section B",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.953,
+            "confidence_breakdown": {
+              "ocr": 0.878,
+              "boundary": 1.0,
+              "classification": 0.952,
+              "overall": 0.953
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Genetic Counselling",
+            "type": "Essay",
+            "part": "Section B",
+            "heading": "Long Question",
+            "options": null,
+            "marks": null,
+            "confidence": 0.872,
+            "confidence_breakdown": {
+              "ocr": 0.878,
+              "boundary": 0.85,
+              "classification": 0.892,
+              "overall": 0.872
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4",
+            "text": "Risk Approach to improve MCH care",
+            "type": "Essay",
+            "part": "Section B",
+            "heading": "Long Question",
+            "options": null,
+            "marks": null,
+            "confidence": 0.953,
+            "confidence_breakdown": {
+              "ocr": 0.878,
+              "boundary": 1.0,
+              "classification": 0.952,
+              "overall": 0.953
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": null,
+        "parts": [
+          "Section A",
+          "Section B"
+        ],
+        "raw_text": "FIRSTTERMINALEXAMINATION\nCommunity Medicine\n2016 Batch (6th Semester)\nVenue: Examination Hall\nDate:29-07-2019\nTime: 3 hours\nMaxMarks:100\nflow charts.\nSection A\nLong Question (10 Marks each)\n10)\n(Marks = 2+4+4= 10)\nChurt Cuestion (5 Marks each)\n1. Basic steps and design of Randomized Control Trial\n2. Secondary Attack Rate\n3.Proportional Mortality Ratio\n4. Schematic diagram of the design of case control and cohort studies\nSection B\nLongQuestion (10Markseach)\n1. Enumerate objectives of Antenatal Care (ANC). Write in detail about Preventive services\nfor mothers during ANC Check-up. (Marks 4+6 = 10)\n2. Write Classifications of Foods. Describe role of essential nutrients in health. Explain\nLimiting Araino Acids with Example?. (Marks = 4+3+3=10)\nShort Question (5Marks each)\n1. Low Birth Weight\n2. MCH Problems\n3. Genetic Counselling\n4. Risk Approach to improve MCH care",
+        "confidence": {
+          "ocr_confidence": 0.878,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.925,
+          "metadata_confidence": 0.55,
+          "classification_confidence": 0.933,
+          "consistency_confidence": 0.75,
+          "overall_confidence": 0.58
+        },
+        "confidence_level": "LOW",
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "embedded_question_boundary"
+        ],
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Numbering gap detected in section 'Section A': Q4 is followed by Q10 (missing 5 question(s))."
+          },
+          {
+            "type": "embedded_question_boundary",
+            "severity": "high",
+            "text_preview": "Long Question  each)\n10)\n(Marks = 2+4+4= 10)\nChurt Cuestion  each)\n1. Basic steps and design of Rand",
+            "reason": "Question body appears to contain an unsegmented subsequent question boundary '1. B'."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          }
+        ],
+        "vision_verified": true,
+        "vision_confidence": 0.94,
+        "vision_status": "CORRECTED",
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 16,
+        "page_range": [
+          17,
+          17
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": null,
+          "exam_year": "2018",
+          "session_code": null,
+          "subject": "Community Medicine",
+          "paper_code": null,
+          "max_marks": "100",
+          "duration": null,
+          "confidence": 0.5,
+          "status": "needs_review",
+          "missing_fields": [
+            "university",
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "prevention, modes of interventions and determinants of\nhealth (Marks5+5+5=-15)",
+            "type": "Essay",
+            "part": "SectionA",
+            "heading": "Long Question",
+            "options": null,
+            "marks": null,
+            "confidence": 0.954,
+            "confidence_breakdown": {
+              "ocr": 0.885,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.954
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Integrated approach for vector control. (Marks =15)\nShortQuestion",
+            "type": "Essay",
+            "part": "SectionA",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.954,
+            "confidence_breakdown": {
+              "ocr": 0.885,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.954
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "Basic steps of Randomized Control Trial",
+            "type": "Essay",
+            "part": "SectionA",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.954,
+            "confidence_breakdown": {
+              "ocr": 0.885,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.954
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Types of Screening",
+            "type": "Essay",
+            "part": "SectionA",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.914,
+            "confidence_breakdown": {
+              "ocr": 0.885,
+              "boundary": 0.9,
+              "classification": 0.95,
+              "overall": 0.914
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Sampling",
+            "type": "Essay",
+            "part": "SectionA",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.55,
+            "confidence_breakdown": {
+              "ocr": 0.885,
+              "boundary": 0.65,
+              "classification": 0.95,
+              "overall": 0.55
+            },
+            "status": "needs_review",
+            "confidence_level": "LOW",
+            "anomalies": [
+              {
+                "type": "suspiciously_short_question",
+                "severity": "high",
+                "text_preview": "Sampling",
+                "reason": "Question body is extremely short (8 chars) and may be an OCR fragment or truncated."
+              }
+            ]
+          },
+          {
+            "number": "4",
+            "text": "Measures of central tendency",
+            "type": "Essay",
+            "part": "SectionA",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.954,
+            "confidence_breakdown": {
+              "ocr": 0.885,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.954
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "Define MMR. Write various causes of Maternal Mortality in\nIndia. Write in brief about a national Programme for control of\nMaternal Mortality in India.",
+            "type": "Essay",
+            "part": "Section B",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.954,
+            "confidence_breakdown": {
+              "ocr": 0.885,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.954
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Enumerate objectives of Antenatal Care and write in detail about\nPreventive services for mothers.\nShortQuestion",
+            "type": "Essay",
+            "part": "Section B",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.954,
+            "confidence_breakdown": {
+              "ocr": 0.885,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.954
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "Icebergphenomenon",
+            "type": "Essay",
+            "part": "Section B",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.914,
+            "confidence_breakdown": {
+              "ocr": 0.885,
+              "boundary": 0.9,
+              "classification": 0.95,
+              "overall": 0.914
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Monitoring of Air Pollution",
+            "type": "Essay",
+            "part": "Section B",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.954,
+            "confidence_breakdown": {
+              "ocr": 0.885,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.954
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Types of Genetic Counselling",
+            "type": "Essay",
+            "part": "Section B",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.954,
+            "confidence_breakdown": {
+              "ocr": 0.885,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.954
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4",
+            "text": "DrawtheDisaster Management Cycle",
+            "type": "Essay",
+            "part": "Section B",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.954,
+            "confidence_breakdown": {
+              "ocr": 0.885,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.954
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": null,
+        "parts": [
+          "SectionA",
+          "Section B"
+        ],
+        "raw_text": "Community Medicine (Paper I)\nVenue:Examination Hall Date:23-05-2018\nTime:2:00PMTo5:00PM MaxMarks:100\nSectionA\nLong Question (15 Marks each)\nprevention, modes of interventions and determinants of\nhealth(Marks5+5+5=-15)\n2. Integrated approach for vector control. (Marks =15)\nShortQuestion (5Marks each)\n1.Basic steps of Randomized Control Trial\n2. Types of Screening\n3.Sampling\n4.Measures of central tendency\nSection B\nLong Question (15 Marks each)\n1. Define MMR. Write various causes of Maternal Mortality in\nIndia. Write in brief about a national Programme for control of\nMaternal Mortality in India.(Marks 3+6+6=15)\n2.Enumerate objectives of Antenatal Care and write in detail about\nPreventive services for mothers. (Marks 5+10-15)\nShortQuestion (5Marks each)\n1.Icebergphenomenon\n2. Monitoring of Air Pollution\n3. Types of Genetic Counselling\n4.DrawtheDisaster Management Cycle",
+        "confidence": {
+          "ocr_confidence": 0.885,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.954,
+          "metadata_confidence": 0.5,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.2,
+          "overall_confidence": 0.833
+        },
+        "confidence_level": "MEDIUM",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'SectionA'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q2 detected in section 'SectionA'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Section B'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q2 detected in section 'Section B'."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          }
+        ],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 17,
+        "page_range": [
+          18,
+          18
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": "June",
+          "exam_year": "2018",
+          "session_code": null,
+          "subject": "Community Medicine",
+          "paper_code": null,
+          "max_marks": "100",
+          "duration": null,
+          "confidence": 0.5,
+          "status": "needs_review",
+          "missing_fields": [
+            "university",
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "about prevention and control of Measles.",
+            "type": "Essay",
+            "part": "Section A",
+            "heading": "Long Question  1. Describe Epidemiology of Measles and also write in details",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.952,
+            "confidence_breakdown": {
+              "ocr": 0.879,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.952
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Define balanced diet. Write its importance in pregnant and lactating mother. Plan a balanced forpregnant and lactating\nmother\nShort Question",
+            "type": "Essay",
+            "part": "Section A",
+            "heading": "Long Question  1. Describe Epidemiology of Measles and also write in details",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.952,
+            "confidence_breakdown": {
+              "ocr": 0.879,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.952
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "GOBIFFF",
+            "type": "Essay",
+            "part": "Section A",
+            "heading": "Long Question  1. Describe Epidemiology of Measles and also write in details",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.55,
+            "confidence_breakdown": {
+              "ocr": 0.879,
+              "boundary": 0.65,
+              "classification": 0.95,
+              "overall": 0.55
+            },
+            "status": "needs_review",
+            "confidence_level": "LOW",
+            "anomalies": [
+              {
+                "type": "suspiciously_short_question",
+                "severity": "high",
+                "text_preview": "GOBIFFF",
+                "reason": "Question body is extremely short (7 chars) and may be an OCR fragment or truncated."
+              }
+            ]
+          },
+          {
+            "number": "2",
+            "text": "Classification of Malnutrition",
+            "type": "Essay",
+            "part": "Section A",
+            "heading": "Long Question  1. Describe Epidemiology of Measles and also write in details",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.952,
+            "confidence_breakdown": {
+              "ocr": 0.879,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.952
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "DOTSPlus",
+            "type": "Essay",
+            "part": "Section A",
+            "heading": "Long Question  1. Describe Epidemiology of Measles and also write in details",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.55,
+            "confidence_breakdown": {
+              "ocr": 0.879,
+              "boundary": 0.65,
+              "classification": 0.95,
+              "overall": 0.55
+            },
+            "status": "needs_review",
+            "confidence_level": "LOW",
+            "anomalies": [
+              {
+                "type": "suspiciously_short_question",
+                "severity": "high",
+                "text_preview": "DOTSPlus",
+                "reason": "Question body is extremely short (8 chars) and may be an OCR fragment or truncated."
+              }
+            ]
+          },
+          {
+            "number": "4",
+            "text": "Post-exposure Prophylaxis of dog bite",
+            "type": "Essay",
+            "part": "Section A",
+            "heading": "Long Question  1. Describe Epidemiology of Measles and also write in details",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.952,
+            "confidence_breakdown": {
+              "ocr": 0.879,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.952
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "Describe Various Risk Factors and Prevention and control\nmeasuresfor Diabetes Mellitus. Disease Control",
+            "type": "Essay",
+            "part": "Section B",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.952,
+            "confidence_breakdown": {
+              "ocr": 0.879,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.952
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Describe National Vector-Borne\nProgramme.(Marks =15)\nShortQuestion",
+            "type": "Essay",
+            "part": "Section B",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.952,
+            "confidence_breakdown": {
+              "ocr": 0.879,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.952
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "Anganwadi workers",
+            "type": "Essay",
+            "part": "Section B",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.912,
+            "confidence_breakdown": {
+              "ocr": 0.879,
+              "boundary": 0.9,
+              "classification": 0.95,
+              "overall": 0.912
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Planning Cycle",
+            "type": "Essay",
+            "part": "Section B",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.912,
+            "confidence_breakdown": {
+              "ocr": 0.879,
+              "boundary": 0.9,
+              "classification": 0.95,
+              "overall": 0.912
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Syndromic Approach Management with examples",
+            "type": "Essay",
+            "part": "Section B",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.952,
+            "confidence_breakdown": {
+              "ocr": 0.879,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.952
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4",
+            "text": "ESIAct",
+            "type": "Essay",
+            "part": "Section B",
+            "heading": "Long Question",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.55,
+            "confidence_breakdown": {
+              "ocr": 0.879,
+              "boundary": 0.65,
+              "classification": 0.95,
+              "overall": 0.55
+            },
+            "status": "needs_review",
+            "confidence_level": "LOW",
+            "anomalies": [
+              {
+                "type": "suspiciously_short_question",
+                "severity": "high",
+                "text_preview": "ESIAct",
+                "reason": "Question body is extremely short (6 chars) and may be an OCR fragment or truncated."
+              }
+            ]
+          }
+        ],
+        "instructions": null,
+        "parts": [
+          "Section A",
+          "Section B"
+        ],
+        "raw_text": "SEND UPEXAMINATIONS MAY-JUNE,2018\nCommunity Medicine (Paper I)\nDate:24-05-2018\nVenue: Examination Hall Max Marks: 100\nTime: 2:00 PM To 5:00 PM\nSection A\nLong Question (15 Marks each) 1. Describe Epidemiology of Measles and also write in details\nabout prevention and control of Measles. (Marks 5+10=15)\n2. Define balanced diet. Write its importance in pregnant and lactating mother. Plan a balanced forpregnant and lactating\nmother (Marks3+6+6=15)\nShort Question (5 Marks each)\n1.GOBIFFF\n2. Classification of Malnutrition\n3.DOTSPlus\n4.Post-exposure Prophylaxis of dog bite\nSection B\nLong Question (15 Marks each)\n1. Describe Various Risk Factors and Prevention and control\nmeasuresfor Diabetes Mellitus. (Marks 5+10-15) Disease Control\n2.Describe National Vector-Borne\nProgramme.(Marks =15)\nShortQuestion (5Marks each)\n1. Anganwadi workers\n2.Planning Cycle\n3. Syndromic Approach Management with examples\n4.ESIAct\n2024.07.0420:43",
+        "confidence": {
+          "ocr_confidence": 0.879,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.896,
+          "metadata_confidence": 0.5,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.2,
+          "overall_confidence": 0.82
+        },
+        "confidence_level": "MEDIUM",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Section A'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q2 detected in section 'Section A'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Section B'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q2 detected in section 'Section B'."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          }
+        ],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 18,
+        "page_range": [
+          19,
+          19
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": null,
+          "exam_year": null,
+          "session_code": null,
+          "subject": null,
+          "paper_code": null,
+          "max_marks": "60",
+          "duration": null,
+          "confidence": 0.1,
+          "status": "needs_review",
+          "missing_fields": [
+            "university",
+            "subject",
+            "exam_date",
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Classify Epidemiologic methods.Describe in detail about\"case control study\"",
+            "type": "Essay",
+            "part": "PartA",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.856,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "following:3+3+3\n(i) Epidemiologicaltriad\n(ii) Health hazards of airpollution\n(iii) Emergency contraceptive Methods",
+            "type": "Short Notes",
+            "part": "PartA",
+            "heading": "Write short notes onfollowing",
+            "options": null,
+            "marks": "9",
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.856,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "(i)Sampling Methods iiIntegratedapproachforvectorcontro!",
+            "type": "Short Notes",
+            "part": "PartA",
+            "heading": "Write short notes on following",
+            "options": null,
+            "marks": "8",
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.856,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "DefineMMR and writethe causes of MMRm India.Describe in brief national\nprogammes forthe control of MMRin India.",
+            "type": "Essay",
+            "part": "PartB/",
+            "heading": "Write short notes on following",
+            "options": null,
+            "marks": "13",
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.856,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Write shortnotes on following:\n(i) Uses of screening\n(ii) Usesof growth chart\n(i) Prenatal Diagnosis",
+            "type": "Essay",
+            "part": "PartB/",
+            "heading": "Write short notes on following",
+            "options": null,
+            "marks": "9",
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.856,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Write shori notes on following:\n(i) Function ofFamily\n(i) Herd Immunity (in Latent period)",
+            "type": "Essay",
+            "part": "PartB/",
+            "heading": "Write short notes on following",
+            "options": null,
+            "marks": "8",
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.856,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Attempt all guestions."
+        ],
+        "parts": [
+          "PartA",
+          "PartB/"
+        ],
+        "raw_text": "Send Up Examination Third Professional PartI(20J0 Batch)\nCommunityMedicine(14Jan2015)\nPaperl\nMaximumMarks:60)\n(Time:Thrcehours)\nNote: Attempt all guestions. Write answer in separate answer book\nMor Part A and Part B.Explain youranswerwith appropriate\ndiagrams.\nPartAMarks:30!\n1.Classify Epidemiologic methods.Describe in detail about\"case control study\"\n5+8=13\n2.Write short notes onfollowing:3+3+3=9\n(i)Epidemiologicaltriad (ii)Health hazards of airpollution\n(iii) Emergency contraceptive Methods\n3. Write short notes on following:4+4=8\n(i)Sampling Methods iiIntegratedapproachforvectorcontro!\nPartB/Marks :30)\n1.DefineMMR and writethe causes of MMRm India.Describe in brief national\nprogammes forthe control of MMRin India.(2+4+7=13)\n2.Write shortnotes on following:3+3+3-9\n(i)Uses of screening (ii)Usesof growth chart (i)Prenatal Diagnosis\n3.Write shori notes on following:2+3+3-8\n(i)Function ofFamily (i)Herd Immunity (in Latent period\n2024.07.0420:42",
+        "confidence": {
+          "ocr_confidence": 0.856,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.1,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.876
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 19,
+        "page_range": [
+          20,
+          20
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": null,
+          "exam_year": "2010",
+          "session_code": null,
+          "subject": null,
+          "paper_code": null,
+          "max_marks": "60",
+          "duration": null,
+          "confidence": 0.25,
+          "status": "needs_review",
+          "missing_fields": [
+            "university",
+            "subject",
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Describe theepidemiology of Measles and its public health imporlance;write in brief\nprevention and control of Measles.",
+            "type": "Essay",
+            "part": "PartA",
+            "heading": null,
+            "options": null,
+            "marks": "13",
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.85,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "following:",
+            "type": "Short Notes",
+            "part": "PartA",
+            "heading": "Writeshortnotesonfollowing:3+3+3-9",
+            "options": null,
+            "marks": "9",
+            "confidence": 0.55,
+            "confidence_breakdown": {
+              "ocr": 0.85,
+              "boundary": 0.65,
+              "classification": 0.95,
+              "overall": 0.55
+            },
+            "status": "needs_review",
+            "confidence_level": "LOW",
+            "anomalies": [
+              {
+                "type": "suspiciously_short_question",
+                "severity": "high",
+                "text_preview": "following:",
+                "reason": "Question body is extremely short (10 chars) and may be an OCR fragment or truncated."
+              }
+            ]
+          },
+          {
+            "number": "1",
+            "text": "WindowperiodofHIV\n(ii) WHO\n(ii) Nutritional Anemia\n(0)Triage\n(ii) Health Education versus Propaganda FDOTSPhus",
+            "type": "Short Notes",
+            "part": "PartA",
+            "heading": "Writeshortnotesonfollowing:3+3+3-9",
+            "options": null,
+            "marks": "9",
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.85,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "(i) Population norms,staffing pattern,IPHS standards andFunctions of Sub center.\n(i) Write in brief riskictors and prevention and control of Hyperlension.",
+            "type": "Short Notes",
+            "part": "PartB",
+            "heading": "Write in short the following",
+            "options": null,
+            "marks": "13",
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.85,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Write shortnotes on following:\n(i) FRU\n(ii) Asbestosis\n(ii) Risk factors and screening of cervical cancer",
+            "type": "Short Notes",
+            "part": "PartB",
+            "heading": "Write in short the following",
+            "options": null,
+            "marks": "9",
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.85,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "(i)PERT\n(i) WHOclassification &treatmentofLeprosy ODASHA",
+            "type": "Short Notes",
+            "part": "PartB",
+            "heading": "Write short notes on following:2+4+2-8",
+            "options": null,
+            "marks": "8",
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.85,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": null,
+        "parts": [
+          "PartA",
+          "PartB"
+        ],
+        "raw_text": "Send Up Examination Third Professional PartI (2010 Batch)\nCommunityMedicinc(15Jan2015)\nPaper Il\n(Time:Threehours) (MaximumMarks:60)\nfor Part A and Part B. Explain your answer with appropriate\ndiagrams,\nPartAMarks:30\n1.Describe theepidemiology of Measles and its public health imporlance;write in brief\nprevention and control of Measles.(6+7-13)\n2.Writeshortnotesonfollowing:3+3+3-9\ni)WindowperiodofHIV (ii)WHO (ii) Nutritional Anemia\n(0)Triage (ii) Health Education versus Propaganda FDOTSPhus\nPartBMarks:30\n1.Write in short the following:6+7=13\n(i) Population norms,staffing pattern,IPHS standards andFunctions of Sub center.\n(i)Write in brief riskictors and prevention and control of Hyperlension.\n2.Write shortnotes on following:3+3+3-9\n(i)FRU(ii)Asbestosis (ii) Risk factors and screening of cervical cancer\n3.Write short notes on following:2+4+2-8\n(i)PERT(i)WHOclassification &treatmentofLeprosy ODASHA",
+        "confidence": {
+          "ocr_confidence": 0.85,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.942,
+          "metadata_confidence": 0.25,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.8,
+          "overall_confidence": 0.858
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'PartA'."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      }
+    ],
+    "page_audits": [
+      {
+        "page": 1,
+        "confidence": {
+          "ocr_confidence": 0.906,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.966
+        },
+        "status": "HIGH",
+        "anomalies": [],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 2,
+        "confidence": {
+          "ocr_confidence": 0.895,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.964
+        },
+        "status": "HIGH",
+        "anomalies": [],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 3,
+        "confidence": {
+          "ocr_confidence": 0.879,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.8,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.8,
+          "overall_confidence": 0.931
+        },
+        "status": "HIGH",
+        "anomalies": [
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Main'."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 4,
+        "confidence": {
+          "ocr_confidence": 0.89,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.85,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.58
+        },
+        "status": "LOW",
+        "anomalies": [
+          {
+            "type": "embedded_question_boundary",
+            "severity": "high",
+            "text_preview": "Longanswerquestion\nRead the following case scenario and answer the questions (Marks 10)\nA 30 yrs old",
+            "reason": "Question body appears to contain an unsegmented subsequent question boundary '2. P'."
+          }
+        ],
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "embedded_question_boundary"
+        ],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 5,
+        "confidence": {
+          "ocr_confidence": 0.85,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.94,
+          "metadata_confidence": 0.55,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.908
+        },
+        "status": "HIGH",
+        "anomalies": [
+          {
+            "type": "header_leakage_in_question",
+            "severity": "medium",
+            "text_preview": "(i) Attemptall questions\n(ii) (ii)",
+            "reason": "Question body contains examination header or instruction phrases."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 6,
+        "confidence": {
+          "ocr_confidence": 0.88,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.5,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.921
+        },
+        "status": "HIGH",
+        "anomalies": [
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 7,
+        "confidence": {
+          "ocr_confidence": 0.889,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.963,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.8,
+          "overall_confidence": 0.935
+        },
+        "status": "HIGH",
+        "anomalies": [
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Main'."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 8,
+        "confidence": {
+          "ocr_confidence": 0.848,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.4,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.905
+        },
+        "status": "HIGH",
+        "anomalies": [
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 9,
+        "confidence": {
+          "ocr_confidence": 0.892,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.95,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.8,
+          "overall_confidence": 0.933
+        },
+        "status": "HIGH",
+        "anomalies": [
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Main'."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 10,
+        "confidence": {
+          "ocr_confidence": 0.871,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.2,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.9,
+          "overall_confidence": 0.879
+        },
+        "status": "HIGH",
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Numbering gap detected in section 'Main': Q1 is followed by Q3 (missing 1 question(s))."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 11,
+        "confidence": {
+          "ocr_confidence": 0.902,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.963,
+          "metadata_confidence": 0.8,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.8,
+          "overall_confidence": 0.928
+        },
+        "status": "HIGH",
+        "anomalies": [
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Main'."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 12,
+        "confidence": {
+          "ocr_confidence": 0.861,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.65,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.932
+        },
+        "status": "HIGH",
+        "anomalies": [
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 13,
+        "confidence": {
+          "ocr_confidence": 0.849,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.4,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.905
+        },
+        "status": "HIGH",
+        "anomalies": [
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 14,
+        "confidence": {
+          "ocr_confidence": 0.862,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.957,
+          "metadata_confidence": 0.1,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.6,
+          "overall_confidence": 0.829
+        },
+        "status": "MEDIUM",
+        "anomalies": [
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Part B (30'."
+          },
+          {
+            "type": "question_numbering_gap",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Numbering gap detected in section 'Main': Q1 is followed by Q3 (missing 1 question(s))."
+          },
+          {
+            "type": "question_numbering_gap",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Numbering gap detected in section 'Part B': Q1 is followed by Q3 (missing 1 question(s))."
+          },
+          {
+            "type": "header_leakage_in_question",
+            "severity": "medium",
+            "text_preview": "(a)Bacteriologicalsurveillanceofwater\n(b) Emergencycontraceptives\n(c) InsecticideResistance\nMaximum ",
+            "reason": "Question body contains examination header or instruction phrases."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 15,
+        "confidence": {
+          "ocr_confidence": 0.866,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.983,
+          "metadata_confidence": 0.4,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.905
+        },
+        "status": "HIGH",
+        "anomalies": [
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 16,
+        "confidence": {
+          "ocr_confidence": 0.878,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.925,
+          "metadata_confidence": 0.55,
+          "classification_confidence": 0.933,
+          "consistency_confidence": 0.75,
+          "overall_confidence": 0.58
+        },
+        "status": "LOW",
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Numbering gap detected in section 'Section A': Q4 is followed by Q10 (missing 5 question(s))."
+          },
+          {
+            "type": "embedded_question_boundary",
+            "severity": "high",
+            "text_preview": "Long Question  each)\n10)\n(Marks = 2+4+4= 10)\nChurt Cuestion  each)\n1. Basic steps and design of Rand",
+            "reason": "Question body appears to contain an unsegmented subsequent question boundary '1. B'."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          }
+        ],
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "embedded_question_boundary"
+        ],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.94,
+        "vision_status": "CORRECTED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 1
+      },
+      {
+        "page": 17,
+        "confidence": {
+          "ocr_confidence": 0.885,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.954,
+          "metadata_confidence": 0.5,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.2,
+          "overall_confidence": 0.833
+        },
+        "status": "MEDIUM",
+        "anomalies": [
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'SectionA'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q2 detected in section 'SectionA'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Section B'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q2 detected in section 'Section B'."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 18,
+        "confidence": {
+          "ocr_confidence": 0.879,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.896,
+          "metadata_confidence": 0.5,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.2,
+          "overall_confidence": 0.82
+        },
+        "status": "MEDIUM",
+        "anomalies": [
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Section A'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q2 detected in section 'Section A'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Section B'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q2 detected in section 'Section B'."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 19,
+        "confidence": {
+          "ocr_confidence": 0.856,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.1,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.876
+        },
+        "status": "HIGH",
+        "anomalies": [
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 20,
+        "confidence": {
+          "ocr_confidence": 0.85,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.942,
+          "metadata_confidence": 0.25,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.8,
+          "overall_confidence": 0.858
+        },
+        "status": "HIGH",
+        "anomalies": [
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'PartA'."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      }
+    ],
+    "processing_notes": [
+      "Paper 4: [HIGH] Question body appears to contain an unsegmented subsequent question boundary '2. P'.",
+      "Paper 4: Overall confidence 58.0% (LOW) \u2014 visual review recommended.",
+      "Paper 16: [HIGH] Question body appears to contain an unsegmented subsequent question boundary '1. B'.",
+      "Paper 16: Overall confidence 58.0% (LOW) \u2014 visual review recommended."
+    ],
+    "needs_visual_verification": true,
+    "visual_verification_reasons": [
+      "embedded_question_boundary"
+    ],
+    "vision_verified_pages": [
+      4,
+      16
+    ],
+    "needs_manual_review": false
+  },
+  "created_at": "2026-10-03T12:33:20.040117"
+}

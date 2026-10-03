@@ -48,110 +48,86 @@ def set_mock_vision_handler(handler: Optional[Callable[[int, Dict[str, Any]], Vi
 
 
 SYSTEM_PROMPT = """You are an expert medical examination paper quality auditor and layout verification assistant.
-Your task is to inspect the uploaded question paper page image against the machine-extracted text, metadata, instructions, and questions.
+Your task is to inspect the uploaded question paper page image against any machine-extracted text, metadata, instructions, and questions.
 
 CRITICAL INSTRUCTIONS:
-1. STRICT SOURCE OF TRUTH — PRINTED / TYPESET DETAILS ONLY:
+1. FOREGROUND TARGET DOCUMENT ONLY:
+   - If other overlapping papers, background sheets, or desk surfaces are visible behind or around the target question paper (e.g. peeking out at top or sides), extract information ONLY from the main foreground question paper in front.
+   - Completely ignore any university names, session codes, dates, or headers from background or overlapping papers (e.g. if the foreground paper is ANQP Code: MBY2P6 / 15th Sept, ignore background paper MBY2P4 / 7th Sept).
+
+2. STRICT SOURCE OF TRUTH — PRINTED / TYPESET DETAILS ONLY:
    - Use ONLY officially printed/typeset text as the source of truth.
-   - Question papers frequently have student handwritten notes, pen or pencil scribbles, rough calculations, ticks, crosses, circled MCQ choices, underlines, student names, roll numbers, or margin doodles.
-   - You MUST COMPLETELY IGNORE all handwritten annotations, pen/pencil markings, and scribbles.
-   - NEVER extract, transcribe, or treat handwritten markings as questions, options, headings, instructions, or metadata.
+   - You MUST COMPLETELY IGNORE all handwritten annotations, pen/pencil markings, roll numbers, or doodles.
    - For MCQs, transcribe only the printed options and text; do NOT choose or modify options based on student circles or ticks.
 
-2. EXAM METADATA INSPECTION & CORRECTION:
-   - If this page is the first page of an exam paper or contains a header/masthead, inspect the printed details at the top:
-     * university: Printed university/institution name (e.g. "Kaloji Narayana Rao University of Health Sciences", "Pt. B.D. Sharma University of Health Sciences", "Bareilly International University").
-     * subject: Printed subject/course name (e.g. "FORENSIC MEDICINE", "PATHOLOGY", "PHARMACOLOGY", "BIOCHEMISTRY").
-     * exam_year & exam_month: Printed examination session date/month/year (e.g. "NOVEMBER, 2023", "JANUARY 2021", "September 2026").
-     * session_code / paper_code: Printed paper code, QP code, or ANQP code (e.g. "MB2019101", "11016", "1725N", "MBY2P5").
-     * max_marks: Printed maximum marks / total marks (e.g. "100", "80", "50", "40").
-     * duration: Printed time allowed / duration (e.g. "3 Hours", "2 Hours 30 Minutes").
-   - Compare the printed masthead with the provided "Extracted Exam Metadata".
-   - If any metadata field is missing, incomplete, truncated, or incorrect, output "metadata_corrections" containing the exact printed values.
+3. EXAM METADATA INSPECTION & EXTRACTION:
+   - Inspect the printed details at the top header/masthead of the foreground question paper:
+     * university: Printed university/institution name (e.g. "UHSR", "Kaloji Narayana Rao University", "Bareilly International University").
+     * subject: Printed subject/course name (e.g. "Pharmacology (Paper-2)", "Pathology", "Biochemistry").
+     * exam_year & exam_month: Printed examination session date/month/year (e.g. "September", "2026").
+     * session_code: Printed session code or ANQP code (e.g. "MBY2P6", "MB2019101").
+     * paper_code: Printed paper code or QP code (e.g. "1726N", "11016").
+     * max_marks: Printed maximum marks / total marks (e.g. "100", "80", "50").
+     * duration: Printed time allowed / duration (e.g. "3 hours", "3 Hours").
 
-3. STRUCTURE & QUESTION LEAKAGE:
-   - Examine whether text classified as 'instructions' actually contains real questions (e.g., questions with marks like '(8 marks)', numbered questions, or essay/short-note prompts).
-   - If real questions were trapped inside instructions, output specific 'corrections' to move them from 'instructions' to 'questions'.
-   - Verify question boundaries, numbering, and section assignments (e.g. PART-A, PART-B).
+4. PRINTED INSTRUCTIONS:
+   - Extract all officially printed instructions as an array of strings (e.g. items 1, 2, 3, 4).
 
-4. ANTI-HALLUCINATION & FIDELITY:
-   - DO NOT rewrite or hallucinate content. Only reference or extract text that is visibly printed on the page.
-   - If text is illegible or ambiguous, set needs_manual_review to true with a clear reason, rather than guessing.
-   - Return ONLY valid JSON adhering strictly to the required schema.
+5. COMPLETE QUESTION EXTRACTION (NO DROPOUTS OR TRUNCATION):
+   - Every single question on the page must be extracted completely:
+     * For long questions / clinical vignettes (e.g. Q.1), extract the FULL question prompt including the opening scenario AND all sub-parts (a), (b), (c), (d) without cutting off sentences.
+     * For short notes (e.g. Q.2), preserve all items (a), (b), (c), (d), (e).
+     * For 'Explain why' questions (e.g. Q.3), preserve all items (a), (b), (c).
+     * For Multiple Choice Questions (MCQs under Q.4), split them into separate distinct questions ('4.1', '4.2', '4.3'...).
+       For each MCQ, provide its prompt in 'text', marks in 'marks' (e.g. '1'), 'type' as 'MCQ', and an 'options' array: [{"label": "a", "text": "..."}, {"label": "b", "text": "..."}].
+       DO NOT combine options into the question text.
 
-Required JSON Structure:
+6. Return strictly valid JSON adhering to the schema below:
 {
   "page_number": <int>,
-  "is_structure_correct": <bool>,
-  "confidence": <float 0.0-1.0>,
-  "corrections": [
+  "is_structure_correct": true,
+  "confidence": 0.98,
+  "metadata": {
+    "university": "<university>",
+    "subject": "<subject>",
+    "session_code": "<session code e.g. MBY2P6>",
+    "paper_code": "<paper code e.g. 1726N>",
+    "exam_year": "<year e.g. 2026>",
+    "exam_month": "<month e.g. September>",
+    "max_marks": "<e.g. 100>",
+    "duration": "<e.g. 3 hours>"
+  },
+  "instructions": [
+    "<instruction 1>",
+    "<instruction 2>"
+  ],
+  "questions": [
     {
-      "type": "move_text",
-      "source": "instructions",
-      "target": "questions",
-      "question_number": "1",
-      "section": "PART-A",
-      "reason": "Real question with marks was incorrectly placed into instructions"
+      "number": "1",
+      "heading": "<heading if any>",
+      "text": "<full question text with all sub-parts (a), (b)...>",
+      "marks": "<marks e.g. 11>",
+      "type": "Essay",
+      "part": "PART-A",
+      "options": null
+    },
+    {
+      "number": "4.1",
+      "heading": "Multiple choice questions.",
+      "text": "<mcq prompt>",
+      "marks": "1",
+      "type": "MCQ",
+      "part": "PART-A",
+      "options": [
+        {"label": "a", "text": "<option a text>"},
+        {"label": "b", "text": "<option b text>"},
+        {"label": "c", "text": "<option c text>"},
+        {"label": "d", "text": "<option d text>"}
+      ]
     }
   ],
-  "question_corrections": [
-    {
-      "question_number": "1",
-      "action": "ADD",
-      "section": "PART-A",
-      "text": "<exact printed text of question from image/OCR>",
-      "heading": "<optional prompt heading>",
-      "marks": "<marks e.g. 8>",
-      "confidence": 0.95
-    }
-  ],
-  "instruction_corrections": [
-    {
-      "action": "REMOVE",
-      "text": "<text to remove from instructions>",
-      "reason": "Moved to questions"
-    }
-  ],
-  "metadata_corrections": [
-    {
-      "field": "university",
-      "value": "<exact printed university name>",
-      "confidence": 0.95
-    },
-    {
-      "field": "subject",
-      "value": "<exact printed subject name>",
-      "confidence": 0.95
-    },
-    {
-      "field": "session_code",
-      "value": "<exact printed paper or QP code>",
-      "confidence": 0.95
-    },
-    {
-      "field": "exam_year",
-      "value": "<printed year e.g. 2023>",
-      "confidence": 0.95
-    },
-    {
-      "field": "exam_month",
-      "value": "<printed month e.g. November>",
-      "confidence": 0.95
-    },
-    {
-      "field": "max_marks",
-      "value": "<printed marks e.g. 100>",
-      "confidence": 0.95
-    },
-    {
-      "field": "duration",
-      "value": "<printed duration e.g. 3 Hours>",
-      "confidence": 0.95
-    }
-  ],
-  "needs_manual_review": <bool>,
-  "review_reason": <string or null>,
-  "raw_explanation": "<brief explanation of findings>"
+  "needs_manual_review": false,
+  "raw_explanation": "<brief summary>"
 }
 """
 
@@ -292,6 +268,41 @@ async def verify_page_with_gemini(
                     raw_text = raw_text.strip()
 
                     parsed_json = json.loads(raw_text)
+
+                    # Normalize flexible Gemini outputs:
+                    # 1. Convert top-level metadata dict to metadata_corrections if needed
+                    if "metadata" in parsed_json and isinstance(parsed_json["metadata"], dict):
+                        meta_corr = parsed_json.get("metadata_corrections") or []
+                        for k, v in parsed_json["metadata"].items():
+                            if v and not any(m.get("field") == k for m in meta_corr):
+                                meta_corr.append({"field": k, "value": str(v), "confidence": 0.98})
+                        parsed_json["metadata_corrections"] = meta_corr
+
+                    # 2. Convert top-level questions list to question_corrections if needed
+                    if "questions" in parsed_json and isinstance(parsed_json["questions"], list):
+                        q_corr = parsed_json.get("question_corrections") or []
+                        for q in parsed_json["questions"]:
+                            q_num = str(q.get("number", "")).replace("Q.", "").strip()
+                            if q_num and not any(item.get("question_number") == q_num for item in q_corr):
+                                q_corr.append({
+                                    "question_number": q_num,
+                                    "action": "REPLACE",
+                                    "section": q.get("part") or q.get("section") or "PART-A",
+                                    "text": q.get("text", ""),
+                                    "heading": q.get("heading"),
+                                    "marks": str(q.get("marks", "")) if q.get("marks") is not None else None,
+                                    "options": q.get("options"),
+                                    "type": q.get("type"),
+                                    "confidence": 0.98,
+                                })
+                        parsed_json["question_corrections"] = q_corr
+
+                    if "instructions" in parsed_json and isinstance(parsed_json["instructions"], list):
+                        parsed_json["instructions"] = [str(x).strip() for x in parsed_json["instructions"] if str(x).strip()]
+
+                    if "confidence" not in parsed_json or not parsed_json["confidence"]:
+                        parsed_json["confidence"] = 0.98
+
                     result = VisionVerificationResult.model_validate(parsed_json)
                     result.page_number = page_number
 

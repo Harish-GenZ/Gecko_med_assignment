@@ -58,10 +58,12 @@ def _evaluate_and_trigger_page_vision(
     page: dict,
     idx: int,
     vision_manager: VisionPipelineManager,
-    job_id: str
+    job_id: str,
+    total_pages: int = 1,
 ) -> None:
     """
-    Evaluates page-level OCR text and triggers early Vision verification if anomalies detected.
+    Evaluates page-level OCR text and triggers early Vision verification if anomalies detected
+    or if the document is a single/short page or camera/scan image where high fidelity is critical.
     Does NOT block: submits task to background thread pool and returns immediately.
     """
     text = page.get("text", "")
@@ -106,6 +108,17 @@ def _evaluate_and_trigger_page_vision(
         if struct_conf < 0.65 and "low_structure_confidence" not in reasons:
             needs_vision = True
             reasons.append("low_structure_confidence")
+
+        # For single/few-page documents or non-digital scanned/photo pages:
+        # User requirement: take the extra seconds (up to 15-20s) to extract high-fidelity details with Vision
+        is_scanned_or_photo = page.get("page_type") != PageType.DIGITAL
+        if vision_manager.enabled:
+            if total_pages <= 3:
+                needs_vision = True
+                reasons.append("short_document_high_fidelity")
+            elif is_scanned_or_photo:
+                needs_vision = True
+                reasons.append("scanned_or_camera_image")
 
         if needs_vision:
             extracted_meta = extract_metadata(doc_struct.header_text or text[:1000]).model_dump()
@@ -188,7 +201,7 @@ def run_pipeline(file_path: Path, job_id: str) -> None:
                 page["ocr_used"] = res["ocr_used"]
                 vision_manager.set_page_state(idx, PageProcessingState.OCR_COMPLETE)
                 vision_manager.record_timestamp(idx, "ocr_completed")
-                _evaluate_and_trigger_page_vision(page, idx, vision_manager, job_id)
+                _evaluate_and_trigger_page_vision(page, idx, vision_manager, job_id, total_pages=total_pages)
         else:
             # Multi-page: distribute independent pages across ProcessPoolExecutor workers
             logger.info(f"[{job_id}] Distributing {total_pages} pages across {max_workers} worker processes (OCR_WORKERS={OCR_WORKERS})")
@@ -254,7 +267,7 @@ def run_pipeline(file_path: Path, job_id: str) -> None:
                         vision_manager.record_timestamp(idx, "ocr_completed")
 
                         # Trigger Vision verification asynchronously immediately
-                        _evaluate_and_trigger_page_vision(page, idx, vision_manager, job_id)
+                        _evaluate_and_trigger_page_vision(page, idx, vision_manager, job_id, total_pages=total_pages)
 
                         progress = 10 + int(60 * completed_count / max(total_pages, 1))
                         _update(job_id, progress=progress,
@@ -310,7 +323,7 @@ def run_pipeline(file_path: Path, job_id: str) -> None:
                         page["ocr_used"] = res["ocr_used"]
                         vision_manager.set_page_state(idx, PageProcessingState.OCR_COMPLETE)
                         vision_manager.record_timestamp(idx, "ocr_completed")
-                        _evaluate_and_trigger_page_vision(page, idx, vision_manager, job_id)
+                        _evaluate_and_trigger_page_vision(page, idx, vision_manager, job_id, total_pages=total_pages)
 
                         progress = 10 + int(60 * completed_count / max(total_pages, 1))
                         _update(job_id, progress=progress,
@@ -427,7 +440,12 @@ def run_pipeline(file_path: Path, job_id: str) -> None:
             qp = audit_paper(qp, paper_pages, doc_structure)
 
             # Check if whole paper audit detected an anomaly on pages not yet submitted to Vision
-            if qp.needs_visual_verification:
+            should_verify_paper = (
+                qp.needs_visual_verification
+                or total_pages <= 3
+                or any(p.get("page_type") != PageType.DIGITAL for p in paper_pages)
+            )
+            if should_verify_paper and vision_manager.enabled:
                 for p in paper_pages:
                     p_idx = p["page_index"]
                     if p_idx not in vision_manager._futures:
@@ -442,13 +460,13 @@ def run_pipeline(file_path: Path, job_id: str) -> None:
                                 "structure": qp.confidence.structure_confidence if qp.confidence else 0.5,
                                 "overall": qp.confidence.overall_confidence if qp.confidence else 0.5,
                             },
-                            "verification_reasons": qp.visual_verification_reasons,
+                            "verification_reasons": qp.visual_verification_reasons or ["paper_level_verification"],
                         }
                         vision_manager.submit_page_verification(
                             page_index=p_idx,
                             page_image=p.get("image"),
                             page_payload=payload,
-                            reasons=qp.visual_verification_reasons,
+                            reasons=qp.visual_verification_reasons or ["paper_level_verification"],
                         )
 
             # Await any running Vision tasks (returns instantly if already completed during OCR)

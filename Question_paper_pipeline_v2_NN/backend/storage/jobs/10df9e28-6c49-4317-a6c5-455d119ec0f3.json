@@ -1,0 +1,19 @@
+{
+  "job_id": "10df9e28-6c49-4317-a6c5-455d119ec0f3",
+  "status": "failed",
+  "filename": "WhatsApp Image 2026-09-26 at 06.32.04.jpeg",
+  "progress": 92,
+  "current_step": "Failed",
+  "error": "name 'MCQOption' is not defined",
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 1830,
+      "processing_state": "VISION_PROCESSING"
+    }
+  ],
+  "result": null,
+  "created_at": "2026-10-03T13:14:43.432874"
+}

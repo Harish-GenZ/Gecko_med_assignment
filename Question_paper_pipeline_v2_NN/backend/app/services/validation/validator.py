@@ -69,9 +69,6 @@ def validate_and_flag(
                 f"({paper.confidence_level.value}) — visual review recommended."
             )
 
-    result.needs_visual_verification = overall_needs_vision
-    result.visual_verification_reasons = overall_vision_reasons
-
     verified_pages = []
     if vision_results:
         for pg_idx, v_res in vision_results.items():
@@ -80,6 +77,13 @@ def validate_and_flag(
                 manual_review_needed = True
 
     result.vision_verified_pages = sorted(verified_pages)
+    if result.vision_verified_pages and len(result.vision_verified_pages) >= (result.total_pages or 1):
+        result.needs_visual_verification = False
+        result.visual_verification_reasons = []
+    else:
+        result.needs_visual_verification = overall_needs_vision
+        result.visual_verification_reasons = overall_vision_reasons
+
     result.needs_manual_review = manual_review_needed
 
     if pages_list:

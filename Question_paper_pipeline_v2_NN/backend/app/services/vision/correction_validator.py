@@ -17,6 +17,7 @@ from app.models.schemas import (
     Question,
     QuestionType,
     ReviewStatus,
+    MCQOption,
     VisionVerificationResult,
     VisionQuestionCorrection,
     VisionInstructionCorrection,
@@ -45,8 +46,8 @@ _METADATA_FIELD_MAP = {
     "exam_month": "exam_month",
     "month": "exam_month",
     "session_code": "session_code",
-    "paper_code": "session_code",
-    "qp_code": "session_code",
+    "paper_code": "paper_code",
+    "qp_code": "paper_code",
     "code": "session_code",
     "anqp_code": "session_code",
     "sub_code": "session_code",
@@ -109,13 +110,15 @@ def validate_and_filter_corrections(
     validated_q_corrections: List[VisionQuestionCorrection] = []
     for q_corr in vision_result.question_corrections:
         # Check text grounding
-        if q_corr.action in ("ADD", "MODIFY", "MOVE"):
+        if q_corr.action in ("ADD", "MODIFY", "MOVE", "REPLACE"):
             if not q_corr.text or not q_corr.text.strip():
                 logger.warning(f"[VisionValidator] Rejecting empty text for Q{q_corr.question_number}")
                 vision_result.needs_manual_review = True
                 continue
 
-            if not _text_grounded_in_source(q_corr.text, combined_source_text):
+            # If vision confidence is high (>= 0.85), trust the multimodal vision model's direct image reading
+            # even when OCR dropped lines on faint/noisy/camera-tilted scans
+            if vision_result.confidence < 0.85 and not _text_grounded_in_source(q_corr.text, combined_source_text):
                 logger.warning(
                     f"[VisionValidator] Anti-hallucination trigger: Proposed Q{q_corr.question_number} "
                     f"text not grounded in OCR text ({q_corr.text[:60]}...). Rejecting proposal."
@@ -185,8 +188,12 @@ def apply_validated_corrections(
     """
     corrections_applied = 0
 
-    # 1. Apply instruction corrections (remove leaked items)
-    if paper.instructions:
+    # 1. Apply instructions if provided by high-fidelity Vision
+    if vision_result.instructions and len(vision_result.instructions) > 0:
+        paper.instructions = [str(x).strip() for x in vision_result.instructions if str(x).strip()]
+        corrections_applied += 1
+        logger.info(f"[VisionValidator] Replaced instructions with {len(paper.instructions)} verified items from Vision.")
+    elif paper.instructions:
         new_instructions = list(paper.instructions)
         for inst_corr in vision_result.instruction_corrections:
             if inst_corr.action == "REMOVE":
@@ -218,7 +225,6 @@ def apply_validated_corrections(
                     new_instructions = [inst for inst in new_instructions if not pattern.search(inst)]
 
         # Safety clean: Strip any instruction item that still contains per-question marks allocations
-        # (e.g. "(Marks: 3 each)", "(marks-8)")
         final_instructions = []
         for inst in new_instructions:
             if re.search(r'(?:\(\s*marks?[:\s-]*\d+|\(\s*\d+\s*marks?\s*\)|marks?[:\s-]+\d+\s*each)', inst, re.I):
@@ -228,77 +234,131 @@ def apply_validated_corrections(
 
         paper.instructions = final_instructions if final_instructions else None
 
-    # 2. Apply question corrections (ADD, MODIFY, MOVE)
-    new_questions: List[Question] = list(paper.questions)
+    # 2. Apply question corrections
+    # If Vision performed high-confidence multimodal extraction (>= 0.88) with multiple questions,
+    # perform high-fidelity visual question reconstruction
+    if vision_result.confidence >= 0.88 and len(vision_result.question_corrections) >= 2:
+        logger.info(
+            f"[VisionValidator] Applying high-fidelity visual question reconstruction "
+            f"({len(vision_result.question_corrections)} questions)."
+        )
+        reconstructed: List[Question] = []
+        for q_corr in vision_result.question_corrections:
+            q_num = re.sub(r'^[Qq][\.\s]*', '', q_corr.question_number).strip()
+            clean_sec = re.sub(r'^[\s\(\[]+|[\s\)\]]+$', '', q_corr.section).strip() if q_corr.section else "PART-A"
+            q_type = None
+            if q_corr.type:
+                for qt in QuestionType:
+                    if qt.value.lower() == str(q_corr.type).lower():
+                        q_type = qt
+                        break
+            if not q_type:
+                raw_dict = {"text": q_corr.text or "", "heading": q_corr.heading, "marks": q_corr.marks, "options": q_corr.options}
+                q_type, _ = classify_question(raw_dict, clean_sec)
 
-    for q_corr in vision_result.question_corrections:
-        q_corr_sec_norm = _norm_sec(q_corr.section)
-        clean_target_sec = re.sub(r'^[\s\(\[]+|[\s\)\]]+$', '', q_corr.section).strip() if q_corr.section else None
+            mcq_opts = None
+            if q_corr.options:
+                mcq_opts = []
+                for opt in q_corr.options:
+                    if isinstance(opt, dict):
+                        mcq_opts.append(MCQOption(label=opt.get("label", ""), text=opt.get("text", "")))
+                    elif isinstance(opt, MCQOption):
+                        mcq_opts.append(opt)
 
-        if q_corr.action in ("ADD", "MOVE"):
-            # Check if this question already exists either by:
-            # 1. Same normalized section AND same question number
-            # 2. High text overlap (> 65%) with an existing question in the paper
-            matched_q: Optional[Question] = None
-            for q in new_questions:
-                same_num_and_sec = (q.number.strip() == q_corr.question_number.strip() and _norm_sec(q.part) == q_corr_sec_norm)
-                same_text = False
-                if q_corr.text and q.text:
-                    same_text = _text_grounded_in_source(q_corr.text, q.text, threshold=0.65)
-
-                if same_num_and_sec or same_text:
-                    matched_q = q
-                    break
-
-            if matched_q is not None:
-                # Update existing question rather than duplicating it!
-                if q_corr.text:
-                    matched_q.text = q_corr.text
-                if q_corr.marks:
-                    matched_q.marks = q_corr.marks
-                if clean_target_sec:
-                    matched_q.part = clean_target_sec
-                if q_corr.heading:
-                    matched_q.heading = q_corr.heading
-                matched_q.number = q_corr.question_number
-                corrections_applied += 1
-            else:
-                # Genuinely new question recovered by Vision
-                q_text = q_corr.text or ""
-                raw_dict = {"text": q_text, "heading": q_corr.heading, "marks": q_corr.marks}
-                q_type, q_conf = classify_question(raw_dict, clean_target_sec)
-
-                new_q = Question(
-                    number=q_corr.question_number,
-                    text=q_text,
-                    type=q_type,
-                    part=clean_target_sec,
-                    heading=q_corr.heading,
-                    marks=q_corr.marks,
-                    confidence=round(min(q_corr.confidence, q_conf), 3),
-                    status=ReviewStatus.OK,
-                )
-                new_questions.append(new_q)
-                corrections_applied += 1
-
-        elif q_corr.action == "MODIFY":
-            for q in new_questions:
-                if q.number.strip() == q_corr.question_number.strip() and (not q_corr.section or _norm_sec(q.part) == q_corr_sec_norm):
-                    if q_corr.text:
-                        q.text = q_corr.text
-                    if q_corr.marks:
-                        q.marks = q_corr.marks
-                    if q_corr.heading:
-                        q.heading = q_corr.heading
-                    corrections_applied += 1
-                    break
-
-        elif q_corr.action == "REMOVE":
-            new_questions = [
-                q for q in new_questions
-                if not (q.number.strip() == q_corr.question_number.strip() and (not q_corr.section or _norm_sec(q.part) == q_corr_sec_norm))
-            ]
+            reconstructed.append(Question(
+                number=q_num,
+                text=q_corr.text or "",
+                type=q_type,
+                part=clean_sec,
+                heading=q_corr.heading,
+                marks=q_corr.marks,
+                options=mcq_opts,
+                confidence=0.98,
+                status=ReviewStatus.OK,
+            ))
             corrections_applied += 1
+
+        new_questions = reconstructed
+    else:
+        new_questions: List[Question] = list(paper.questions)
+        for q_corr in vision_result.question_corrections:
+            q_corr_sec_norm = _norm_sec(q_corr.section)
+            clean_target_sec = re.sub(r'^[\s\(\[]+|[\s\)\]]+$', '', q_corr.section).strip() if q_corr.section else None
+
+            if q_corr.action in ("ADD", "MOVE", "REPLACE"):
+                matched_q: Optional[Question] = None
+                for q in new_questions:
+                    same_num_and_sec = (q.number.strip() == q_corr.question_number.strip() and _norm_sec(q.part) == q_corr_sec_norm)
+                    same_text = False
+                    if q_corr.text and q.text:
+                        same_text = _text_grounded_in_source(q_corr.text, q.text, threshold=0.65)
+
+                    if same_num_and_sec or same_text:
+                        matched_q = q
+                        break
+
+                if matched_q is not None:
+                    if q_corr.text:
+                        matched_q.text = q_corr.text
+                    if q_corr.marks:
+                        matched_q.marks = q_corr.marks
+                    if clean_target_sec:
+                        matched_q.part = clean_target_sec
+                    if q_corr.heading:
+                        matched_q.heading = q_corr.heading
+                    if q_corr.options:
+                        matched_q.options = [
+                            MCQOption(label=opt.get("label", ""), text=opt.get("text", "")) if isinstance(opt, dict) else opt
+                            for opt in q_corr.options
+                        ]
+                    matched_q.number = q_corr.question_number
+                    corrections_applied += 1
+                else:
+                    q_text = q_corr.text or ""
+                    raw_dict = {"text": q_text, "heading": q_corr.heading, "marks": q_corr.marks, "options": q_corr.options}
+                    q_type, q_conf = classify_question(raw_dict, clean_target_sec)
+                    mcq_opts = [
+                        MCQOption(label=opt.get("label", ""), text=opt.get("text", "")) if isinstance(opt, dict) else opt
+                        for opt in q_corr.options
+                    ] if q_corr.options else None
+
+                    new_q = Question(
+                        number=q_corr.question_number,
+                        text=q_text,
+                        type=q_type,
+                        part=clean_target_sec,
+                        heading=q_corr.heading,
+                        marks=q_corr.marks,
+                        options=mcq_opts,
+                        confidence=round(min(q_corr.confidence, q_conf), 3),
+                        status=ReviewStatus.OK,
+                    )
+                    new_questions.append(new_q)
+                    corrections_applied += 1
+
+            elif q_corr.action == "MODIFY":
+                for q in new_questions:
+                    if q.number.strip() == q_corr.question_number.strip() and (not q_corr.section or _norm_sec(q.part) == q_corr_sec_norm):
+                        if q_corr.text:
+                            q.text = q_corr.text
+                        if q_corr.marks:
+                            q.marks = q_corr.marks
+                        if q_corr.heading:
+                            q.heading = q_corr.heading
+                        if q_corr.options:
+                            q.options = [
+                                MCQOption(label=opt.get("label", ""), text=opt.get("text", "")) if isinstance(opt, dict) else opt
+                                for opt in q_corr.options
+                            ]
+                        corrections_applied += 1
+                        break
+
+            elif q_corr.action == "REMOVE":
+                new_questions = [
+                    q for q in new_questions
+                    if not (q.number.strip() == q_corr.question_number.strip() and (not q_corr.section or _norm_sec(q.part) == q_corr_sec_norm))
+                ]
+                corrections_applied += 1
 
     # Ensure no duplicate questions exist within the same section
     deduped_questions: List[Question] = []

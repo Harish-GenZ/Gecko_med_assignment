@@ -35,10 +35,18 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 WORKDIR /app
 
 # Install native system dependencies required for image decoding and C++ ONNX extensions
+# libgl1, libglib2.0-0, libgomp1, libxcb1, libx11-6, libxext6, libsm6, libxrender1
+# resolve missing libxcb.so.1 and libGL.so.1 shared library errors in headless Debian
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
+    libgl1 \
     libglib2.0-0 \
     libgomp1 \
+    libxcb1 \
+    libx11-6 \
+    libxext6 \
+    libsm6 \
+    libxrender1 \
     ca-certificates \
     curl \
     && rm -rf /var/lib/apt/lists/*
@@ -48,11 +56,20 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY backend/requirements.txt .
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cpu && \
-    pip install --no-cache-dir -r requirements.txt
+    pip install --no-cache-dir -r requirements.txt && \
+    pip uninstall -y opencv-python opencv-contrib-python && \
+    pip install --no-cache-dir opencv-python-headless
 
-# Pre-download and cache RapidOCR ONNX models into the image layer
+# Pre-download and cache RapidOCR ONNX models and SentenceTransformer neural models into the image layer
 # Eliminates cold-start runtime model downloads on container boot
-RUN python -c "from rapidocr_onnxruntime import RapidOCR; RapidOCR()"
+RUN python -c "\
+from rapidocr_onnxruntime import RapidOCR; RapidOCR(); \
+try:\
+    from sentence_transformers import SentenceTransformer; SentenceTransformer('all-MiniLM-L6-v2'); \
+    print('Neural models pre-cached successfully into Docker image layer.'); \
+except Exception as e:\
+    print(f'SentenceTransformer pre-cache notice: {e}'); \
+"
 
 # Copy backend application source
 COPY backend/ /app/

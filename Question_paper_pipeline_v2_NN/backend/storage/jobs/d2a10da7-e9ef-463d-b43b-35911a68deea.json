@@ -1,0 +1,205 @@
+{
+  "job_id": "d2a10da7-e9ef-463d-b43b-35911a68deea",
+  "status": "completed",
+  "filename": "WhatsApp Image 2026-09-26 at 06.32.05 (1).jpeg",
+  "progress": 100,
+  "current_step": "Completed",
+  "error": null,
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 2137,
+      "processing_state": "FINALIZED"
+    }
+  ],
+  "result": {
+    "document": "34155e13-97fb-461f-802e-f2ccb757a9fa.jpeg",
+    "total_pages": 1,
+    "question_papers": [
+      {
+        "paper_index": 0,
+        "page_range": [
+          1,
+          1
+        ],
+        "metadata": {
+          "university": "UHSR EXAMINATIONS Q.P.Code:1723N",
+          "exam_month": "September",
+          "exam_year": "2026",
+          "session_code": "MBY2P3",
+          "subject": "Microbiology",
+          "paper_code": null,
+          "max_marks": "100",
+          "duration": "3hours",
+          "confidence": 1.0,
+          "status": "needs_review",
+          "missing_fields": []
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "marked weight loss for 4 months. She has generalized lymphadenopathy and a history of multiple blood\ntransfusions 8years ago.\n(a) What isthemostprobablediagnosis?\n(b) Describethelaboratorydiagnosis of the infection.",
+            "type": "Essay",
+            "part": "PART-A",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.858,
+              "boundary": 1.0,
+              "classification": 0.947,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "(a) A patient misunderstands medical advice. How should the doctor clarify information while\nmaintaining trust?\n(b) Clinical applications and advantages of moleculardiagnostic methods\n(d) Mechanismsand examplesofautoimmunediseases\n(e) Clinical features,complications and lab diagnosis of Dengue\nQ:3 Explain:\n(a) Why HIV showa progressive decline in CD4 T lymphocytes?\n(b) Why FUO evaluated using a systematic approach rather than empirical treatment alone?\n(c) Why chikungunya cause prolonged joint pain after fever subsides?",
+            "type": "Short Notes",
+            "part": "PART-A",
+            "heading": "Writeshortnoteson",
+            "options": null,
+            "marks": "9",
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.858,
+              "boundary": 1.0,
+              "classification": 0.947,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4",
+            "text": "Multiplechoicequestions.\n1. A 24-year-old woman has fatigue, malar rash and photosensitivity.ANA is positive. Which\nantibody is mostspecific?\n(a) Anti-Ro\n(b) Anti-dsDNA\n(C) Anti-centromere\n(d) Anti-Jo-1\n2. A 2-month-old infant receives a vaccine containing diphtheria, pertussis and tetanus\ncomponents.Whichtypeof immunity does it induce?\n(a) Passivenatural\n(b) Passiveartificial\n(c) Active artificial\n(d) Active natural\n3. A veterinarian has intermittent fever, sweating and arthralgia after handling infected cattle.\nWhichorganismismostlikely?\n(a) Brucellamelitensis\n(b) Francisellatularensis\n(c) Yersinia pestis\n(d) Coxiellaburnetid\n4. A patient develops high fever, bleeding manifestations and shock after contact with an\ninfected person in an outbreak area. Which infection is most likely?\n(a) Mumps\n(b) Influenza\n(c) Measles\n(d) Ebola virusdisease",
+            "type": "Short Notes",
+            "part": "PART-A",
+            "heading": "Writeshortnoteson",
+            "options": null,
+            "marks": null,
+            "confidence": 0.55,
+            "confidence_breakdown": {
+              "ocr": 0.858,
+              "boundary": 0.65,
+              "classification": 0.55,
+              "overall": 0.55
+            },
+            "status": "needs_review",
+            "confidence_level": "LOW",
+            "anomalies": [
+              {
+                "type": "embedded_question_boundary",
+                "severity": "high",
+                "text_preview": "Multiplechoicequestions.\n1. A 24-year-old woman has fatigue, malar rash and photosensitivity.ANA is ",
+                "reason": "Question body appears to contain an unsegmented subsequent question boundary '1. A'."
+              }
+            ]
+          }
+        ],
+        "instructions": [
+          "1.Attempt all of the following questions. Preferably attempt all the questions serially.",
+          "any blank spaces of more than two lines before the END stamp after you finish the exam.",
+          "4, Do not use black lead/graphite pencil on the answer booklets for answering the questions.",
+          "Acase ofuseof Unfairmeans will bemade if instructions at2.3&4arenotcomplied."
+        ],
+        "parts": [
+          "PART-A"
+        ],
+        "raw_text": "UHSsR EAmInAtIOns Q.P.Code:1723N\nANQPCode:MBY2P3\n3rd September, 2026 MBBS 2nd Prof.\nMicrobiology (Paper-1) Roll No.207.a57\nTime:3hoursM.Marks:100\n*IMPORTANTNOTE:\n1.Attempt all of the following questions. Preferably attempt all the questions serially.\nany blank spaces of more than two lines before the END stamp after you finish the exam.\n4, Do not use black lead/graphite pencil on the answer booklets for answering the questions.\nAcase ofuseof Unfairmeans will bemade if instructions at2.3&4arenotcomplied.\nPART-A\nmarked weight loss for 4 months. She has generalized lymphadenopathy and a history of multiple blood\ntransfusions 8years ago.\n(a)What isthemostprobablediagnosis?\n(b)Describethelaboratorydiagnosis of the infection.\n5x5-25\nQ2 Writeshortnoteson:\n(a) A patient misunderstands medical advice. How should the doctor clarify information while\nmaintaining trust?\n(b)Clinical applications and advantages of moleculardiagnostic methods\n(d)Mechanismsand examplesofautoimmunediseases\n(e)Clinical features,complications and lab diagnosis of Dengue 3\u00d73=9\nQ:3 Explain:\n(a) Why HIV showa progressive decline in CD4 T lymphocytes?\n(b) Why FUO evaluated using a systematic approach rather than empirical treatment alone?\n(c) Why chikungunya cause prolonged joint pain after fever subsides? 1x5=5\nQ.4 Multiplechoicequestions.\n1. A 24-year-old woman has fatigue, malar rash and photosensitivity.ANA is positive. Which\nantibody is mostspecific?\n(a)Anti-Ro\n(b)Anti-dsDNA\n(C)Anti-centromere\n(d)Anti-Jo-1\n2. A 2-month-old infant receives a vaccine containing diphtheria, pertussis and tetanus\ncomponents.Whichtypeof immunity does it induce?\n(a)Passivenatural\n(b)Passiveartificial\n(c) Active artificial\n(d)Active natural\n3. A veterinarian has intermittent fever, sweating and arthralgia after handling infected cattle.\nWhichorganismismostlikely?\n(a)Brucellamelitensis\n(b)Francisellatularensis\n(c)Yersinia pestis\n(d)Coxiellaburnetid\n4. A patient develops high fever, bleeding manifestations and shock after contact with an\ninfected person in an outbreak area. Which infection is most likely?\n(a)Mumps\n(b)Influenza\n(c) Measles\n(d)Ebola virusdisease",
+        "confidence": {
+          "ocr_confidence": 0.858,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.883,
+          "metadata_confidence": 1.0,
+          "classification_confidence": 0.815,
+          "consistency_confidence": 0.9,
+          "overall_confidence": 0.58
+        },
+        "confidence_level": "LOW",
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "embedded_question_boundary"
+        ],
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Numbering gap detected in section 'PART-A': Q2 is followed by Q4 (missing 1 question(s))."
+          },
+          {
+            "type": "embedded_question_boundary",
+            "severity": "high",
+            "text_preview": "Multiplechoicequestions.\n1. A 24-year-old woman has fatigue, malar rash and photosensitivity.ANA is ",
+            "reason": "Question body appears to contain an unsegmented subsequent question boundary '1. A'."
+          }
+        ],
+        "vision_verified": true,
+        "vision_confidence": 0.94,
+        "vision_status": "CORRECTED",
+        "needs_manual_review": false
+      }
+    ],
+    "page_audits": [
+      {
+        "page": 1,
+        "confidence": {
+          "ocr_confidence": 0.858,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.883,
+          "metadata_confidence": 1.0,
+          "classification_confidence": 0.815,
+          "consistency_confidence": 0.9,
+          "overall_confidence": 0.58
+        },
+        "status": "LOW",
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Numbering gap detected in section 'PART-A': Q2 is followed by Q4 (missing 1 question(s))."
+          },
+          {
+            "type": "embedded_question_boundary",
+            "severity": "high",
+            "text_preview": "Multiplechoicequestions.\n1. A 24-year-old woman has fatigue, malar rash and photosensitivity.ANA is ",
+            "reason": "Question body appears to contain an unsegmented subsequent question boundary '1. A'."
+          }
+        ],
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "embedded_question_boundary"
+        ],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      }
+    ],
+    "processing_notes": [
+      "Paper 1: [HIGH] Question body appears to contain an unsegmented subsequent question boundary '1. A'.",
+      "Paper 1: Overall confidence 58.0% (LOW) \u2014 visual review recommended."
+    ],
+    "needs_visual_verification": true,
+    "visual_verification_reasons": [
+      "embedded_question_boundary"
+    ],
+    "vision_verified_pages": [
+      1
+    ],
+    "needs_manual_review": false
+  },
+  "created_at": "2026-10-03T13:02:38.173620"
+}

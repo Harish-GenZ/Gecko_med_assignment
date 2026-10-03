@@ -1,0 +1,19 @@
+{
+  "job_id": "ab5f20df-8118-4d49-8b1d-e81fbf5fb146",
+  "status": "failed",
+  "filename": "38112463-13f7-45d6-9a24-3e1963d225ec.jpeg",
+  "progress": 92,
+  "current_step": "Failed",
+  "error": "name 'MCQOption' is not defined",
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 2110,
+      "processing_state": "VISION_PROCESSING"
+    }
+  ],
+  "result": null,
+  "created_at": "2026-10-03T13:15:28.259392"
+}

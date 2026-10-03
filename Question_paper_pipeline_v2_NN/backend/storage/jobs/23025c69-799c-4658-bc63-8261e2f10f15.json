@@ -1,0 +1,369 @@
+{
+  "job_id": "23025c69-799c-4658-bc63-8261e2f10f15",
+  "status": "completed",
+  "filename": "WhatsApp Image 2026-09-26 at 06.32.04.jpeg",
+  "progress": 100,
+  "current_step": "Completed",
+  "error": null,
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 1811,
+      "processing_state": "FINALIZED"
+    }
+  ],
+  "result": {
+    "document": "909b8f9c-82ce-4365-94fd-53ff480fd735.jpeg",
+    "total_pages": 1,
+    "question_papers": [
+      {
+        "paper_index": 0,
+        "page_range": [
+          1,
+          1
+        ],
+        "metadata": {
+          "university": "UHSR EXAMINATIONS",
+          "exam_month": null,
+          "exam_year": null,
+          "session_code": null,
+          "subject": null,
+          "paper_code": null,
+          "max_marks": null,
+          "duration": null,
+          "confidence": 0.35,
+          "status": "needs_review",
+          "missing_fields": [
+            "subject",
+            "exam_date",
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "5",
+            "text": "A 60-year-old man with osteoarthritis has a history of NSAID induced peptic ulcer. He\nrequires an analgesic with relatively lower gastrointestinal toxicity Which of the following\ndrugs would be preferable?\n(a) Indomethacin\n(b) Ketorolac\n(c) Aspirin\n(d) Celecoxib",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.951,
+            "confidence_breakdown": {
+              "ocr": 0.876,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.951
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "5",
+            "text": "Enumerate hypolipidemic drugs. Write down the mechanism of action, clinical uses & adverse effects\nofstatins.",
+            "type": "Essay",
+            "part": "PART-B",
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.951,
+            "confidence_breakdown": {
+              "ocr": 0.876,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.951
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "6",
+            "text": "Writeshort notes on thefollowing:\n(a) RoleofCorticosteroidsinbronchialasthma\n(b) Phase/Vclinicaltrial\n(C) Drug therapyof megaloblasticanaemia\n(d) Managementofatropinepoisoning\n(e) Pharmacovigilanceprogramof India\n()Drugtreatmentofhypertensioninpregnantladies\n(g) Clinicaluses &adverse effects of Mannitol",
+            "type": "Essay",
+            "part": "PART-B",
+            "heading": null,
+            "options": null,
+            "marks": "5",
+            "confidence": 0.951,
+            "confidence_breakdown": {
+              "ocr": 0.876,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.951
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "7.1",
+            "text": "Which of the following drugs would be best for treatment of an acute attack of asthma?\nayInhaled albuterol",
+            "type": "MCQ",
+            "part": "PART-B",
+            "heading": "Multiple choice questions.",
+            "options": [
+              {
+                "label": "b",
+                "text": "Oralalbuterol"
+              },
+              {
+                "label": "c",
+                "text": "Oral dexamethasone"
+              },
+              {
+                "label": "d",
+                "text": "Oralsalmeterol"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.951,
+            "confidence_breakdown": {
+              "ocr": 0.876,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.951
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "7.2",
+            "text": "A 24-year-old man is taking two medications to help with the symptoms of allergic rhinitis.\nHe is noted to have a blood pressure of 150/70 mm Hg.The clinician notes that one of the\nmedications may be responsible for the new-onset hypertension. The most likely aetiology\niswhich of thefollowing?",
+            "type": "MCQ",
+            "part": "PART-B",
+            "heading": "Multiple choice questions.",
+            "options": [
+              {
+                "label": "a",
+                "text": "Inhaled sodiumcromoglycate"
+              },
+              {
+                "label": "b",
+                "text": "Inhaledglucocorticoids"
+              },
+              {
+                "label": "c",
+                "text": "Oraldiphenhydramine"
+              },
+              {
+                "label": "d",
+                "text": "Oralpseudoephedrine"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.951,
+            "confidence_breakdown": {
+              "ocr": 0.876,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.951
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "7.3",
+            "text": "A 60-year-old patient develops persistent muscle spasticity following a stroke.Which of\nreducespasticity?",
+            "type": "MCQ",
+            "part": "PART-B",
+            "heading": "Multiple choice questions.",
+            "options": [
+              {
+                "label": "a",
+                "text": "Baclofen"
+              },
+              {
+                "label": "b",
+                "text": "Dantrolenesodium"
+              },
+              {
+                "label": "c",
+                "text": "Tizanidine"
+              },
+              {
+                "label": "d",
+                "text": "Succinylcholine"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.951,
+            "confidence_breakdown": {
+              "ocr": 0.876,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.951
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "7.4",
+            "text": "Essential drug list is a:",
+            "type": "MCQ",
+            "part": "PART-B",
+            "heading": "Multiple choice questions.",
+            "options": [
+              {
+                "label": "a",
+                "text": "List of life saving drug"
+              },
+              {
+                "label": "b",
+                "text": "Listofdrugsrequiredforpriorityneedsof population"
+              },
+              {
+                "label": "c",
+                "text": "List of drugs by generic names"
+              },
+              {
+                "label": "d",
+                "text": "Listofdrugsforcommonailments"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.951,
+            "confidence_breakdown": {
+              "ocr": 0.876,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.951
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "7.5",
+            "text": "Which of following is contraindicated in patient with hyperkalaemia?",
+            "type": "MCQ",
+            "part": "PART-B",
+            "heading": "Multiple choice questions.",
+            "options": [
+              {
+                "label": "a",
+                "text": "Acetazolamide"
+              },
+              {
+                "label": "b",
+                "text": "Chlorthalidone"
+              },
+              {
+                "label": "c",
+                "text": "Ethacrynicacid"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.951,
+            "confidence_breakdown": {
+              "ocr": 0.876,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.951
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": null,
+        "parts": [
+          "PART-B"
+        ],
+        "raw_text": "UHSR EXAMINATIONS\n5. A 60-year-old man with osteoarthritis has a history of NSAID induced peptic ulcer. He\nrequires an analgesic with relatively lower gastrointestinal toxicity Which of the following\ndrugs would be preferable?\n(a)Indomethacin\n(b)Ketorolac\n(c)Aspirin\n.(d)Celecoxib\nPART-B\nQ5 Enumerate hypolipidemic drugs. Write down the mechanism of action, clinical uses & adverse effects 3+2+3+2=10\nofstatins. 7x5=35\nQ.6 Writeshort notes on thefollowing:\n(a)RoleofCorticosteroidsinbronchialasthma\n(b)Phase/Vclinicaltrial\n(C)Drug therapyof megaloblasticanaemia\n(d)Managementofatropinepoisoning\n(e)Pharmacovigilanceprogramof India\n()Drugtreatmentofhypertensioninpregnantladies\n(g)Clinicaluses &adverse effects of Mannitol 1x5=5\nQ.7 Multiple choice questions.\n1. Which of the following drugs would be best for treatment of an acute attack of asthma?\nayInhaled albuterol\n(b)Oralalbuterol\n(c)Oral dexamethasone\nd)Oralsalmeterol\n2, A 24-year-old man is taking two medications to help with the symptoms of allergic rhinitis.\nHe is noted to have a blood pressure of 150/70 mm Hg.The clinician notes that one of the\nmedications may be responsible for the new-onset hypertension. The most likely aetiology\niswhich of thefollowing?\n(a)Inhaled sodiumcromoglycate\n(b)Inhaledglucocorticoids\n(c)Oraldiphenhydramine\n(d)Oralpseudoephedrine\n3.A 60-year-old patient develops persistent muscle spasticity following a stroke.Which of\nreducespasticity?\n(a)Baclofen\n(b)Dantrolenesodium\n(c)Tizanidine\n(d)Succinylcholine\n4.Essential drug list is a:\n(a) List of life saving drug\n-(b)Listofdrugsrequiredforpriorityneedsof population\n(c) List of drugs by generic names\n(d)Listofdrugsforcommonailments\nWhich of following is contraindicated in patient with hyperkalaemia?\n(a)Acetazolamide\n(b)Chlorthalidone\n(c)Ethacrynicacid\n:(d)Eplerenone",
+        "confidence": {
+          "ocr_confidence": 0.876,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.35,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.65,
+          "overall_confidence": 0.58
+        },
+        "confidence_level": "LOW",
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_numbering_gap"
+        ],
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "First extracted question is Q5; expected Q1. Initial questions appear lost or unsegmented."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "vision_verified": true,
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "needs_manual_review": false
+      }
+    ],
+    "page_audits": [
+      {
+        "page": 1,
+        "confidence": {
+          "ocr_confidence": 0.876,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.35,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.65,
+          "overall_confidence": 0.58
+        },
+        "status": "LOW",
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "First extracted question is Q5; expected Q1. Initial questions appear lost or unsegmented."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_numbering_gap"
+        ],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      }
+    ],
+    "processing_notes": [
+      "Paper 1: [HIGH] First extracted question is Q5; expected Q1. Initial questions appear lost or unsegmented.",
+      "Paper 1: Overall confidence 58.0% (LOW) \u2014 visual review recommended."
+    ],
+    "needs_visual_verification": true,
+    "visual_verification_reasons": [
+      "question_numbering_gap"
+    ],
+    "vision_verified_pages": [
+      1
+    ],
+    "needs_manual_review": false
+  },
+  "created_at": "2026-10-03T13:01:41.257499"
+}

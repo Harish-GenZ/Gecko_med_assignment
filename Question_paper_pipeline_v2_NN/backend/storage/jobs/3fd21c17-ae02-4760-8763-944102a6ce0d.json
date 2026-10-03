@@ -1,0 +1,11 @@
+{
+  "job_id": "3fd21c17-ae02-4760-8763-944102a6ce0d",
+  "status": "processing",
+  "filename": "WhatsApp Image 2026-09-26 at 06.32.05 (1).jpeg",
+  "progress": 10,
+  "current_step": "OCR page 1/1",
+  "error": null,
+  "pages_info": [],
+  "result": null,
+  "created_at": "2026-10-03T13:02:16.172750"
+}

@@ -108,11 +108,13 @@ class VisionCorrectionItem(BaseModel):
 
 class VisionQuestionCorrection(BaseModel):
     question_number: str
-    action: str  # "ADD", "MODIFY", "REMOVE", "MOVE"
+    action: str  # "ADD", "MODIFY", "REMOVE", "MOVE", "REPLACE"
     section: Optional[str] = None
     text: Optional[str] = None
     heading: Optional[str] = None
     marks: Optional[str] = None
+    options: Optional[List[MCQOption]] = None
+    type: Optional[str] = None
     confidence: float = 0.90
 
 
@@ -137,6 +139,7 @@ class VisionVerificationResult(BaseModel):
     question_corrections: List[VisionQuestionCorrection] = []
     instruction_corrections: List[VisionInstructionCorrection] = []
     metadata_corrections: List[VisionMetadataCorrection] = []
+    instructions: Optional[List[str]] = None
     needs_manual_review: bool = False
     review_reason: Optional[str] = None
     raw_explanation: Optional[str] = None

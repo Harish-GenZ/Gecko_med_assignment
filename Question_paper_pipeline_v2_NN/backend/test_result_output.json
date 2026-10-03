@@ -1,0 +1,254 @@
+{
+  "document": "38112463-13f7-45d6-9a24-3e1963d225ec.jpeg",
+  "total_pages": 1,
+  "question_papers": [
+    {
+      "paper_index": 0,
+      "page_range": [
+        1,
+        1
+      ],
+      "metadata": {
+        "university": "UHSR",
+        "exam_month": "September",
+        "exam_year": "2026",
+        "session_code": "MBY2P6",
+        "subject": "Pharmacology (Paper-2)",
+        "paper_code": "1726N",
+        "max_marks": "100",
+        "duration": "3 hours",
+        "confidence": 1.0,
+        "status": "ok",
+        "missing_fields": []
+      },
+      "questions": [
+        {
+          "number": "1",
+          "text": "A patient underwent a prolonged abdominal surgery under general anaesthesia, at the termination of the operation the anaesthetic agent was discontinued, and the patient was allowed to breathe air spontaneously. Within a few minutes pt. became cyanosed though his breathing was normal (a) Name the most likely anaesthetic agent used & it belongs to which class of general anaesthetics? (b) What is this phenomenon called & explain the underlying mechanism? (c) How will you prevent such an incident? (d) Enumerate general anaesthetics which are given intravenously.",
+          "type": "Essay",
+          "part": "PART-A",
+          "heading": null,
+          "options": null,
+          "marks": "11",
+          "confidence": 0.955,
+          "confidence_breakdown": {
+            "ocr": 0.848,
+            "boundary": 1.0,
+            "classification": 0.98,
+            "overall": 0.955
+          },
+          "status": "ok",
+          "confidence_level": "HIGH",
+          "anomalies": []
+        },
+        {
+          "number": "2",
+          "text": "(a) Uses and adverse effects of Phenytoin (b) Uses and adverse effects of Opioids (c) Uses and adverse effects of Corticosteroids (d) Cotrimoxazole (e) Are there exceptions to full disclosure? Can family members request withholding of information from patient?",
+          "type": "Essay",
+          "part": "PART-A",
+          "heading": "Write short notes on:",
+          "options": null,
+          "marks": "25",
+          "confidence": 0.955,
+          "confidence_breakdown": {
+            "ocr": 0.848,
+            "boundary": 1.0,
+            "classification": 0.98,
+            "overall": 0.955
+          },
+          "status": "ok",
+          "confidence_level": "HIGH",
+          "anomalies": []
+        },
+        {
+          "number": "3",
+          "text": "(a) Levodopa is combined with carbidopa for the treatment of Parkinson's disease. (b) Fluoroquinolones are not preferred in children and elderly age. (c) Oxytocin is preferred over ergometrine for the induction of labour",
+          "type": "Essay",
+          "part": "PART-A",
+          "heading": "Explain why?",
+          "options": null,
+          "marks": "9",
+          "confidence": 0.955,
+          "confidence_breakdown": {
+            "ocr": 0.848,
+            "boundary": 1.0,
+            "classification": 0.98,
+            "overall": 0.955
+          },
+          "status": "ok",
+          "confidence_level": "HIGH",
+          "anomalies": []
+        },
+        {
+          "number": "4.1",
+          "text": "An 82-year-old hospitalized patient with creatinine clearance of 25 mL/min has a microbial infection requiring treatment with antibiotics. Which one of the following drugs is least likely to require a dosage adjustment, either a smaller dose than usual or an increased interval between doses?",
+          "type": "MCQ",
+          "part": "PART-A",
+          "heading": "Multiple choice questions.",
+          "options": [
+            {
+              "label": "a",
+              "text": "Amnphotericin B"
+            },
+            {
+              "label": "b",
+              "text": "Erythromycin"
+            },
+            {
+              "label": "c",
+              "text": "Gentamicin"
+            },
+            {
+              "label": "d",
+              "text": "Vancomycin"
+            }
+          ],
+          "marks": "1",
+          "confidence": 0.955,
+          "confidence_breakdown": {
+            "ocr": 0.848,
+            "boundary": 1.0,
+            "classification": 0.98,
+            "overall": 0.955
+          },
+          "status": "ok",
+          "confidence_level": "HIGH",
+          "anomalies": []
+        },
+        {
+          "number": "4.2",
+          "text": "A 30-year-old patient with uncomplicated P. Falciparum malaria from a region with chloroquine resistance is prescribed artemether-lumefantrine. Why is combination therapy preferred over artemisinin monotherapy?",
+          "type": "MCQ",
+          "part": "PART-A",
+          "heading": "Multiple choice questions.",
+          "options": [
+            {
+              "label": "a",
+              "text": "It prevents all adverse effects of artemisinin"
+            },
+            {
+              "label": "b",
+              "text": "It delays development of resistance & improves efficacy"
+            },
+            {
+              "label": "c",
+              "text": "Lumefantrine increases renal elimination of artemisinin"
+            },
+            {
+              "label": "d",
+              "text": "Artemisinin is inactive against P. Falciparum"
+            }
+          ],
+          "marks": "1",
+          "confidence": 0.955,
+          "confidence_breakdown": {
+            "ocr": 0.848,
+            "boundary": 1.0,
+            "classification": 0.98,
+            "overall": 0.955
+          },
+          "status": "ok",
+          "confidence_level": "HIGH",
+          "anomalies": []
+        },
+        {
+          "number": "4.3",
+          "text": "A patient undergoing cancer chemotherapy has an increase in urinary frequency with discomfort. No specific findings are apparent on physical examination. Laboratory results include haematuria and mild leukopenia but no bacteria or crystals in urine. If the symptoms experienced by the patient are drug related, the most likely cause is:",
+          "type": "MCQ",
+          "part": "PART-A",
+          "heading": "Multiple choice questions.",
+          "options": [
+            {
+              "label": "a",
+              "text": "Cyclophosphamide"
+            },
+            {
+              "label": "b",
+              "text": "5-FU"
+            },
+            {
+              "label": "c",
+              "text": "Methotrexate"
+            },
+            {
+              "label": "d",
+              "text": "Prednisone"
+            }
+          ],
+          "marks": "1",
+          "confidence": 0.955,
+          "confidence_breakdown": {
+            "ocr": 0.848,
+            "boundary": 1.0,
+            "classification": 0.98,
+            "overall": 0.955
+          },
+          "status": "ok",
+          "confidence_level": "HIGH",
+          "anomalies": []
+        }
+      ],
+      "instructions": [
+        "1. Attempt all of the following questions. Preferably attempt all the questions serially.",
+        "2. Part-A and Part-B are to be attempted in separate answer booklets.(Two answer booklets to be used)",
+        "3. Do not leave blank spaces of more than two lines in the writing area on the answer sheet; cross any blank spaces of more than two lines before the END stamp after you finish the exam.",
+        "4. Do not use black lead/graphite pencil on the answer booklets for answering the questions.",
+        "A case of use of Unfairmeans will be made if instructions at 2, 3 & 4 are not complied."
+      ],
+      "parts": [
+        "PART-A"
+      ],
+      "raw_text": "ANQP Code: MBY2PA September,2026 Ode: MBY2P3\nIMP Septembar,202F\nUHSR EXAMINATIONS\nQ.P. Code: 1726N\nANQP Code: MBY2P6\n15h September, 2026 MBBS 2nd Prof.\nPharmacology (Paper-2) Roll No..\nTirme: 3 hours M. Marks: 100\n++* IMPORTANT NOTE:\n1. Attempt all of the following questions. Preferabiy attempt all the questions serially.\nany blank spaces of more than two lines before the END stamp affer you finish the exam.\nA case of use of Unfairmeans will be made if instructions at 2. 3 & 4 are not complied.\nPART-A\nQ.1\nthe operation the anaesthetic agent was discontinued, and the patient was allowed to breathe air\nspontaneously. Within a few minutes pt. became cyanosed though his breathing was normal\n(b) What is this phenomenon called & explain the underlying mechanism?\n(c)Howwill youpreventsuchan incident?\n5x5=25\nQ.2 Write short notes on:\nUsesandadverseeffectsofPhenytoin\nUsesandadverseeffects of Opioids\nUses and adverse effects af Corticosteroids\n(d)Cotrimoxazole\n(e) Are there exceptions to fuli disclosure? Can family members request withholding of information from\npatient? 3x3=9\nQ.3 Explain why?\n(a) Levodopa is combined with carbidopaforthetreatmentof Parkinson's disease.\n(b) Fluoroquinolones are not preferred in children and elderly age.\n(c)Oxytocin is preferred overergometrinefor the induction of labour 1x5=5\nQ.4 Multiple choice guestions.\n1. An 82-year-old hospitalized patient with creatinine clearance of 25 mL/min has a microbial\nInfection requiring treatment with antibiotics. Which one of the following drugs is least likely to\nrequire a dosage adjustment, either a smaller dose than usual or an increased interval between\ndoses?\n(a)AmnphotericinB\n(b)Erythromycin\n()Gentamicin\n2. A 30-year-old patient with uncomplicated P Falciparum malaria from a region with (d)Vancomycin\npreferred over artemisinin monotherapy?\n(a) It prevents all adverse effects ofartemisinin\n(b)ll delays development of resistance & improves efficacy\n(c) Lumefantrine increases renal elimination of artemisinin\n(d)Artenmsinin is inactive against P.Falciparum\n-(a)Cyclophosphamide\n(b)5-FU\n(c) Methotrexate\nIo) Predrisone",
+      "confidence": {
+        "ocr_confidence": 0.848,
+        "ocr_confidence_available": true,
+        "structure_confidence": 1.0,
+        "segmentation_confidence": 1.0,
+        "metadata_confidence": 1.0,
+        "classification_confidence": 0.98,
+        "consistency_confidence": 1.0,
+        "overall_confidence": 0.968
+      },
+      "confidence_level": "HIGH",
+      "needs_visual_verification": false,
+      "visual_verification_reasons": [],
+      "anomalies": [],
+      "vision_verified": true,
+      "vision_confidence": 0.98,
+      "vision_status": "CORRECTED",
+      "needs_manual_review": false
+    }
+  ],
+  "page_audits": [
+    {
+      "page": 1,
+      "confidence": {
+        "ocr_confidence": 0.848,
+        "ocr_confidence_available": true,
+        "structure_confidence": 1.0,
+        "segmentation_confidence": 1.0,
+        "metadata_confidence": 1.0,
+        "classification_confidence": 0.98,
+        "consistency_confidence": 1.0,
+        "overall_confidence": 0.968
+      },
+      "status": "HIGH",
+      "anomalies": [],
+      "needs_visual_verification": false,
+      "visual_verification_reasons": [],
+      "processing_state": "FINALIZED",
+      "vision_confidence": 0.98,
+      "vision_status": "CORRECTED",
+      "vision_error": null,
+      "needs_manual_review": false,
+      "corrections_applied": 6
+    }
+  ],
+  "processing_notes": [],
+  "needs_visual_verification": false,
+  "visual_verification_reasons": [],
+  "vision_verified_pages": [
+    1
+  ],
+  "needs_manual_review": false
+}

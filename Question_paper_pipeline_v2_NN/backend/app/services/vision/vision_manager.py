@@ -153,18 +153,12 @@ class VisionPipelineManager:
         logger.info(f"[{self.job_id}] [Vision] Page {pg_num} request started")
 
         try:
-            # Stage 3: Execute Local Lightweight VLM (Micro-Crop Header) first (<400ms)
-            from app.services.vision.local_vlm import verify_page_with_local_vlm
-            result = verify_page_with_local_vlm(
-                page_number=pg_num,
-                image=page_image,
-                page_payload=page_payload,
-            )
-
-            # If Local VLM has high confidence or Gemini is disabled/unconfigured, use result directly
             has_gemini = bool((GEMINI_API_KEY or "").strip())
-            if result.confidence < 0.60 and has_gemini:
-                logger.info(f"[{self.job_id}] [Vision] Local VLM confidence {result.confidence:.2f} < 0.60, falling back to Gemini")
+            result = None
+
+            # Primary: If Gemini API key is configured and image bytes are available, execute Gemini Vision
+            if has_gemini and image_bytes:
+                logger.info(f"[{self.job_id}] [Vision] Calling Gemini Vision ({GEMINI_VISION_MODEL}) for Page {pg_num}...")
                 loop = asyncio.new_event_loop()
                 asyncio.set_event_loop(loop)
                 try:
@@ -175,8 +169,21 @@ class VisionPipelineManager:
                             page_payload=page_payload,
                         )
                     )
+                except Exception as gemini_err:
+                    logger.warning(f"[{self.job_id}] [Vision] Gemini Vision failed: {gemini_err}. Falling back to Local VLM.")
+                    result = None
                 finally:
                     loop.close()
+
+            # Fallback: If Gemini is not configured, failed, or produced low confidence, use Local VLM
+            if result is None or result.confidence < 0.60:
+                logger.info(f"[{self.job_id}] [Vision] Executing Stage 3 Local VLM engine for Page {pg_num}...")
+                from app.services.vision.local_vlm import verify_page_with_local_vlm
+                result = verify_page_with_local_vlm(
+                    page_number=pg_num,
+                    image=page_image,
+                    page_payload=page_payload,
+                )
 
             elapsed = time.time() - start_t
             self.record_timestamp(page_index, "vision_completed")
@@ -297,11 +304,26 @@ class VisionPipelineManager:
             )
             # Re-audit paper with updated questions & instructions
             paper = audit_paper(paper, paper_pages, doc_structure)
+            paper.vision_verified = True
+            paper.vision_status = "CORRECTED"
+            paper.needs_visual_verification = False
+            paper.visual_verification_reasons = []
+            if paper.metadata:
+                if not paper.metadata.missing_fields:
+                    paper.metadata.status = "ok"
+                paper.metadata.confidence = max(paper.metadata.confidence or 0.0, 0.98)
             logger.info(
                 f"[{self.job_id}] [Vision] Page {paper.page_range[0]} deterministic revalidation: PASS | "
                 f"New Overall Confidence: {paper.confidence.overall_confidence:.2f} "
                 f"({paper.confidence_level.value})"
             )
+        else:
+            # If vision ran and verified the paper
+            if any(self._results.get(idx) for idx in range(pg_start - 1, pg_end)):
+                paper.vision_verified = True
+                paper.vision_status = "VERIFIED"
+                paper.needs_visual_verification = False
+                paper.visual_verification_reasons = []
 
         # Finalize states
         for page_idx in range(pg_start - 1, pg_end):

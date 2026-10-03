@@ -44,9 +44,9 @@ def ingest_pdf(pdf_path: Path) -> List[dict]:
         else:
             page_type = PageType.SCANNED
 
-        # Always render to image (OCR needs it for scanned; digital uses native_text)
-        pix  = page.get_pixmap(matrix=mat, colorspace=fitz.csGRAY)
-        img  = Image.frombytes("L", [pix.width, pix.height], pix.samples)
+        # Always render to image in RGB (needed for both OCR and Vision models)
+        pix  = page.get_pixmap(matrix=mat, colorspace=fitz.csRGB)
+        img  = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
 
         pages.append({
             "page_index":  page_index,
@@ -67,7 +67,7 @@ def ingest_images(image_paths: List[Path]) -> List[dict]:
     """
     pages = []
     for idx, img_path in enumerate(sorted(image_paths)):
-        img = Image.open(img_path).convert("L")  # grayscale
+        img = Image.open(img_path).convert("RGB")
         pages.append({
             "page_index":  idx,
             "page_type":   PageType.SCANNED,

@@ -112,4 +112,14 @@ def cancel_job(job_id: str):
 
 @router.get("/health")
 def health():
-    return {"status": "ok"}
+    from app.services.ocr.ocr_engine import _rapid_ocr
+    from app.services.classification.question_classifier import _embedding_model
+    from app.services.layout.layout_detector import _layout_detector
+    return {
+        "status": "ok",
+        "neural_engine": {
+            "layout_detector": "loaded" if _layout_detector is not None else "ready",
+            "rapid_ocr_onnx": "loaded" if _rapid_ocr is not None else "ready",
+            "semantic_classifier": "loaded" if _embedding_model is not None else "ready",
+        }
+    }
