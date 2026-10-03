@@ -61,9 +61,10 @@ RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir --force-reinstall --no-deps opencv-python-headless && \
     python -c "import cv2; print('OpenCV headless verified:', cv2.__version__)"
 
-# Pre-download and cache RapidOCR ONNX models into the image layer
+# Pre-download and cache RapidOCR ONNX models and Stage 4 MiniLM Neural Embedding model into the image layer
 # Eliminates cold-start runtime model downloads on container boot
-RUN python -c "from rapidocr_onnxruntime import RapidOCR; RapidOCR()"
+RUN python -c "from rapidocr_onnxruntime import RapidOCR; RapidOCR()" && \
+    python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('all-MiniLM-L6-v2')"
 
 # Copy backend application source
 COPY backend/ /app/
