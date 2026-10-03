@@ -37,7 +37,12 @@ def _get_rapid_ocr():
         try:
             from rapidocr_onnxruntime import RapidOCR
             _rapid_ocr = RapidOCR()
-            logger.info("[OCR Engine] RapidOCR ONNX Runtime engine initialized successfully.")
+            # Fine-tune DBNet text detector postprocess parameters for high sensitivity on medical papers
+            if hasattr(_rapid_ocr, "text_detector") and hasattr(_rapid_ocr.text_detector, "postprocess_op"):
+                _rapid_ocr.text_detector.postprocess_op.thresh = 0.22
+                _rapid_ocr.text_detector.postprocess_op.box_thresh = 0.45
+                _rapid_ocr.text_detector.postprocess_op.unclip_ratio = 1.8
+            logger.info("[OCR Engine] RapidOCR ONNX Runtime engine initialized successfully with enhanced sensitivity.")
         except Exception as e:
             logger.warning(f"[OCR Engine] RapidOCR init failed: {e}. Checking fallback.")
     return _rapid_ocr

@@ -199,6 +199,8 @@ def run_pipeline(file_path: Path, job_id: str) -> None:
                 page["text"] = res["text"]
                 page["ocr_conf"] = res["ocr_conf"]
                 page["ocr_used"] = res["ocr_used"]
+                if res.get("image") is not None:
+                    page["image"] = res["image"]
                 vision_manager.set_page_state(idx, PageProcessingState.OCR_COMPLETE)
                 vision_manager.record_timestamp(idx, "ocr_completed")
                 _evaluate_and_trigger_page_vision(page, idx, vision_manager, job_id, total_pages=total_pages)
@@ -263,6 +265,8 @@ def run_pipeline(file_path: Path, job_id: str) -> None:
                         page["text"] = res["text"]
                         page["ocr_conf"] = res["ocr_conf"]
                         page["ocr_used"] = res["ocr_used"]
+                        if res.get("image") is not None:
+                            page["image"] = res["image"]
                         vision_manager.set_page_state(idx, PageProcessingState.OCR_COMPLETE)
                         vision_manager.record_timestamp(idx, "ocr_completed")
 
@@ -321,6 +325,8 @@ def run_pipeline(file_path: Path, job_id: str) -> None:
                         page["text"] = res["text"]
                         page["ocr_conf"] = res["ocr_conf"]
                         page["ocr_used"] = res["ocr_used"]
+                        if res.get("image") is not None:
+                            page["image"] = res["image"]
                         vision_manager.set_page_state(idx, PageProcessingState.OCR_COMPLETE)
                         vision_manager.record_timestamp(idx, "ocr_completed")
                         _evaluate_and_trigger_page_vision(page, idx, vision_manager, job_id, total_pages=total_pages)

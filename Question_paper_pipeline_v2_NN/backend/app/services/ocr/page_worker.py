@@ -104,6 +104,7 @@ def process_single_page_worker(task_data: Dict[str, Any]) -> Dict[str, Any]:
             "text": ocr_result["text"],
             "ocr_conf": ocr_result["confidence"],
             "ocr_used": ocr_result["ocr_used"],
+            "image": preprocessed if page_type != PageType.DIGITAL else None,
         }
     except Exception as e:
         duration = time.time() - start_time
