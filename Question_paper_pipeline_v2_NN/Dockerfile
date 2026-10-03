@@ -60,16 +60,9 @@ RUN pip install --no-cache-dir --upgrade pip && \
     pip uninstall -y opencv-python opencv-contrib-python && \
     pip install --no-cache-dir opencv-python-headless
 
-# Pre-download and cache RapidOCR ONNX models and SentenceTransformer neural models into the image layer
+# Pre-download and cache RapidOCR ONNX models into the image layer
 # Eliminates cold-start runtime model downloads on container boot
-RUN python -c "\
-from rapidocr_onnxruntime import RapidOCR; RapidOCR(); \
-try:\
-    from sentence_transformers import SentenceTransformer; SentenceTransformer('all-MiniLM-L6-v2'); \
-    print('Neural models pre-cached successfully into Docker image layer.'); \
-except Exception as e:\
-    print(f'SentenceTransformer pre-cache notice: {e}'); \
-"
+RUN python -c "from rapidocr_onnxruntime import RapidOCR; RapidOCR()"
 
 # Copy backend application source
 COPY backend/ /app/
