@@ -56,9 +56,11 @@ class SignboardOCRService:
                 return
 
             try:
+                import warnings
+                warnings.filterwarnings("ignore", category=UserWarning)
                 import easyocr
                 logger.info("Initializing EasyOCR reader for signboard text extraction...")
-                self.reader = easyocr.Reader(["en"], gpu=False, verbose=False)
+                self.reader = easyocr.Reader(["en"], gpu=False, verbose=False, quantize=False)
                 self._is_loaded = True
                 logger.info("EasyOCR reader successfully initialized.")
             except Exception as exc:

@@ -1,3 +1,6 @@
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning)
+
 from collections.abc import AsyncGenerator
 from contextlib import asynccontextmanager
 from fastapi import FastAPI

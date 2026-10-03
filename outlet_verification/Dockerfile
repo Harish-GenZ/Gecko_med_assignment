@@ -18,9 +18,17 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Python requirements
+# Install PyTorch CPU-only wheel (reduces image size by 3GB and prevents cloud OOM memory kill)
+RUN pip install --no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cpu
+
+# Install remaining Python dependencies
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
+
+# Pre-cache AI model weights directly into the container layer for instant startup
+RUN python -c "import easyocr; easyocr.Reader(['en'], gpu=False, quantize=False, verbose=False)"
+RUN python -c "from transformers import CLIPModel, CLIPProcessor; CLIPModel.from_pretrained('openai/clip-vit-base-patch32'); CLIPProcessor.from_pretrained('openai/clip-vit-base-patch32')"
+RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('sentence-transformers/paraphrase-multilingual-mpnet-base-v2')"
 
 # Copy backend application code
 COPY app/ ./app
@@ -35,4 +43,4 @@ EXPOSE 8000
 ENV PORT=8000
 ENV HOST=0.0.0.0
 
-CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT}"]
+CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
