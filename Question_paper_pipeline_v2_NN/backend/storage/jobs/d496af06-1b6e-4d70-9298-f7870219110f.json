@@ -1,0 +1,11 @@
+{
+  "job_id": "d496af06-1b6e-4d70-9298-f7870219110f",
+  "status": "processing",
+  "filename": "CM (internal & send up)_250323_115238.pdf",
+  "progress": 10,
+  "current_step": "OCR page 1/20",
+  "error": null,
+  "pages_info": [],
+  "result": null,
+  "created_at": "2026-10-02T03:26:29.608937"
+}

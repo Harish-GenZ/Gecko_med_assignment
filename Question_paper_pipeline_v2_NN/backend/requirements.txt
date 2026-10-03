@@ -1,0 +1,42 @@
+# Gecko Med — Question Paper Extraction Pipeline (v2 Neural Network Architecture)
+# Production Backend Dependencies
+
+# Web framework & server
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9   # Required for file uploads
+
+# Data validation & schemas
+pydantic>=2.8.0
+
+# PDF & document processing
+pymupdf>=1.24.0           # High-speed PDF rasterisation and text extraction
+
+# Computer Vision & Image Processing
+opencv-python-headless>=4.8.0  # Headless OpenCV for server/Docker (no X11/GUI dependencies)
+Pillow>=10.0.0            # Image manipulation and format conversions
+
+# NN Stage 1: Document Layout Analysis (YOLOv8-DocLayNet / RT-DETR)
+ultralytics>=8.2.0        # High-speed visual layout segmentation (<30ms)
+torch>=2.0.0              # PyTorch inference engine
+torchvision>=0.15.0       # Vision transforms and operations
+
+# NN Stage 2: High-Speed Neural OCR (RapidOCR / ONNX Runtime INT8)
+onnxruntime>=1.18.0       # Vectorized multi-threaded C++ runtime (AVX2/AVX-512)
+rapidocr-onnxruntime>=1.2.0  # Ultra-fast PP-OCRv4 ONNX model engine (~1.0s / page)
+shapely>=2.0.0
+pyclipper>=1.3.0
+
+# NN Stage 3: Local Lightweight Visual-Language Model (Micro-Crop Masthead)
+transformers>=4.40.0      # HuggingFace transformers for Florence-2 / Qwen2-VL
+accelerate>=0.28.0        # Efficient device mapping & low-memory loading
+huggingface-hub>=0.20.0
+
+# NN Stage 4: Question Semantic Classification & Embeddings
+sentence-transformers>=3.0.0  # Fast BGE-small / MiniLM question embeddings
+scikit-learn>=1.3.0
+numpy>=1.24.0
+
+# Networking & Fallback APIs
+httpx>=0.27.0             # Async HTTP client
+python-dotenv>=1.0.0      # Environment configuration

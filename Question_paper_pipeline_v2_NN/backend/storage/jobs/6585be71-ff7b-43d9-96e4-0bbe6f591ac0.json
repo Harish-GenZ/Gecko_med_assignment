@@ -1,0 +1,241 @@
+{
+  "job_id": "6585be71-ff7b-43d9-96e4-0bbe6f591ac0",
+  "status": "completed",
+  "filename": "forensic_medicine_test.pdf",
+  "progress": 100,
+  "current_step": "Completed",
+  "error": null,
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "digital",
+      "ocr_used": false,
+      "char_count": 1089,
+      "processing_state": "VISION_FAILED"
+    }
+  ],
+  "result": {
+    "document": "209ced92-4543-4d0d-b8fd-9e49ebc6d551.pdf",
+    "total_pages": 1,
+    "question_papers": [
+      {
+        "paper_index": 0,
+        "page_range": [
+          1,
+          1
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": null,
+          "exam_year": "2011",
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "40",
+          "duration": "Three Hours",
+          "confidence": 0.9,
+          "status": "ok",
+          "missing_fields": [
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "2",
+            "text": "a. Vicarious responsibility.\nb. Functions of Indian Medical Council (Marks: 3 each)",
+            "type": "Short Notes",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.982,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.982
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Write in brief on the following:\na. Delusion\nb. Feigned insanity\nc. Testamentary capacity. (Marks: 2 each)",
+            "type": "Short Notes",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.982,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.982
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Attempt all questions. (PART-A) Maximum Marks -20 Classify mechanical injuries. Describe the pattern of entry wound of a firearm fired from different distances. (8 marks)",
+          "2. Write notes on the following: a. Superimposition technique. b. Police inquest. (Marks: 3 each)",
+          "3. Write notes on the followings: a. Hermaphrodite b. Medico-legal importance of 12 years of age c. Dying declaration. (Marks: 2 each) (PART-B) Maximum Marks-20",
+          "1. A 25 years old female's charred dead body with pugilistic attitude was recovered by police from a house. How will you arrive to a conclusion that the cause of death was asphyxia as a result of ante mortem burn? (Marks-8)"
+        ],
+        "parts": null,
+        "raw_text": "f1/2011/51 04103/2011 Cl2 04/03/11\n10\nROHILKHAND MEDICAL COLLEGE, BAREILLY\nFirst Terminal Examination D\nM.B.B.S. (2009 Batch)\nFORENSIC MEDICINE AND TOXICOLOGY\nTime: Three Hours] [Maximum Marks: 40\nNote: Attempt all questions.\n(PART-A)\nMaximum Marks -20\nClassify mechanical injuries. Describe the pattern of entry wound of a firearm\nfired from different distances. (8 marks)\n2. Write notes on the following:\na. Superimposition technique.\nb. Police inquest. (Marks: 3 each)\n3. Write notes on the followings:\na. Hermaphrodite\nb. Medico-legal importance of 12 years of age\nc. Dying declaration. (Marks: 2 each)\n(PART-B)\nMaximum Marks-20\n1. A 25 years old female's charred dead body with pugilistic attitude was recovered\nby police from a house. How will you arrive to a conclusion that the cause of\ndeath was asphyxia as a result of ante mortem burn?\n(Marks-8)\n2. Write short notes on the following:\na. Vicarious responsibility.\nb. Functions of Indian Medical Council (Marks: 3 each)\n3. Write in brief on the following:\na. Delusion\nb. Feigned insanity\nc. Testamentary capacity. (Marks: 2 each)",
+        "confidence": {
+          "ocr_confidence": 1.0,
+          "ocr_confidence_available": true,
+          "structure_confidence": 0.05,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.65,
+          "overall_confidence": 0.2
+        },
+        "confidence_level": "REVIEW_REQUIRED",
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_like_text_in_instructions",
+          "excessive_instruction_text_ratio",
+          "question_numbering_gap",
+          "low_structure_confidence"
+        ],
+        "anomalies": [
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "critical",
+            "text_preview": "Attempt all questions. (PART-A) Maximum Marks -20 Classify mechanical injuries. Describe the pattern of entry wound of a",
+            "reason": "Instruction item 1 contains per-question marks allocation '(8 marks)', proving real questions were trapped inside instructions."
+          },
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "critical",
+            "text_preview": "2. Write notes on the following: a. Superimposition technique. b. Police inquest. (Marks: 3 each)",
+            "reason": "Instruction item 2 contains per-question marks allocation '(Marks: 3', proving real questions were trapped inside instructions."
+          },
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "critical",
+            "text_preview": "3. Write notes on the followings: a. Hermaphrodite b. Medico-legal importance of 12 years of age c. Dying declaration. (",
+            "reason": "Instruction item 3 contains per-question marks allocation '(Marks: 2', proving real questions were trapped inside instructions."
+          },
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "critical",
+            "text_preview": "1. A 25 years old female's charred dead body with pugilistic attitude was recovered by police from a house. How will you",
+            "reason": "Instruction item 4 contains per-question marks allocation '(Marks-8', proving real questions were trapped inside instructions."
+          },
+          {
+            "type": "excessive_instruction_text_ratio",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "Instructions contain 650 characters while extracted questions contain only 189 characters. Content is trapped in header/instructions."
+          },
+          {
+            "type": "question_numbering_gap",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "First extracted question is Q2; expected Q1. Initial questions appear lost or unsegmented."
+          }
+        ],
+        "vision_verified": true,
+        "vision_confidence": 0.4,
+        "vision_status": "MANUAL_REVIEW",
+        "needs_manual_review": true
+      }
+    ],
+    "page_audits": [
+      {
+        "page": 1,
+        "confidence": {
+          "ocr_confidence": 1.0,
+          "ocr_confidence_available": true,
+          "structure_confidence": 0.05,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.65,
+          "overall_confidence": 0.2
+        },
+        "status": "REVIEW_REQUIRED",
+        "anomalies": [
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "critical",
+            "text_preview": "Attempt all questions. (PART-A) Maximum Marks -20 Classify mechanical injuries. Describe the pattern of entry wound of a",
+            "reason": "Instruction item 1 contains per-question marks allocation '(8 marks)', proving real questions were trapped inside instructions."
+          },
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "critical",
+            "text_preview": "2. Write notes on the following: a. Superimposition technique. b. Police inquest. (Marks: 3 each)",
+            "reason": "Instruction item 2 contains per-question marks allocation '(Marks: 3', proving real questions were trapped inside instructions."
+          },
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "critical",
+            "text_preview": "3. Write notes on the followings: a. Hermaphrodite b. Medico-legal importance of 12 years of age c. Dying declaration. (",
+            "reason": "Instruction item 3 contains per-question marks allocation '(Marks: 2', proving real questions were trapped inside instructions."
+          },
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "critical",
+            "text_preview": "1. A 25 years old female's charred dead body with pugilistic attitude was recovered by police from a house. How will you",
+            "reason": "Instruction item 4 contains per-question marks allocation '(Marks-8', proving real questions were trapped inside instructions."
+          },
+          {
+            "type": "excessive_instruction_text_ratio",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "Instructions contain 650 characters while extracted questions contain only 189 characters. Content is trapped in header/instructions."
+          },
+          {
+            "type": "question_numbering_gap",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "First extracted question is Q2; expected Q1. Initial questions appear lost or unsegmented."
+          }
+        ],
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_like_text_in_instructions",
+          "excessive_instruction_text_ratio",
+          "question_numbering_gap",
+          "low_structure_confidence"
+        ],
+        "processing_state": "VISION_FAILED",
+        "vision_confidence": 0.4,
+        "vision_status": "MANUAL_REVIEW",
+        "vision_error": null,
+        "needs_manual_review": true,
+        "corrections_applied": 0
+      }
+    ],
+    "processing_notes": [
+      "Paper 1: [CRITICAL] Instruction item 1 contains per-question marks allocation '(8 marks)', proving real questions were trapped inside instructions.",
+      "Paper 1: [CRITICAL] Instruction item 2 contains per-question marks allocation '(Marks: 3', proving real questions were trapped inside instructions.",
+      "Paper 1: [CRITICAL] Instruction item 3 contains per-question marks allocation '(Marks: 2', proving real questions were trapped inside instructions.",
+      "Paper 1: [CRITICAL] Instruction item 4 contains per-question marks allocation '(Marks-8', proving real questions were trapped inside instructions.",
+      "Paper 1: [HIGH] Instructions contain 650 characters while extracted questions contain only 189 characters. Content is trapped in header/instructions.",
+      "Paper 1: [HIGH] First extracted question is Q2; expected Q1. Initial questions appear lost or unsegmented.",
+      "Paper 1: Overall confidence 20.0% (REVIEW_REQUIRED) \u2014 visual review recommended."
+    ],
+    "needs_visual_verification": true,
+    "visual_verification_reasons": [
+      "question_like_text_in_instructions",
+      "excessive_instruction_text_ratio",
+      "question_numbering_gap",
+      "low_structure_confidence"
+    ],
+    "vision_verified_pages": [
+      1
+    ],
+    "needs_manual_review": true
+  },
+  "created_at": "2026-10-02T12:51:07.720567"
+}

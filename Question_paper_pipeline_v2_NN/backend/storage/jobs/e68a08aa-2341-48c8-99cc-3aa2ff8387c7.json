@@ -1,0 +1,18 @@
+{
+  "job_id": "e68a08aa-2341-48c8-99cc-3aa2ff8387c7",
+  "status": "failed",
+  "filename": "WhatsApp Image 2026-09-26 at 06.32.04 (1).jpeg",
+  "progress": 76,
+  "current_step": "Failed",
+  "error": "'ExamMetadata' object has no attribute 'university_name'",
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0
+    }
+  ],
+  "result": null,
+  "created_at": "2026-10-02T08:15:45.623110"
+}

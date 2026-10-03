@@ -1,0 +1,162 @@
+{
+  "job_id": "c108419a-974a-471e-8888-10b01c832600",
+  "status": "completed",
+  "filename": "CM (internal & send up)_250323_115238.pdf",
+  "progress": 100,
+  "current_step": "Completed",
+  "error": null,
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0
+    },
+    {
+      "page_number": 2,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0
+    },
+    {
+      "page_number": 3,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0
+    },
+    {
+      "page_number": 4,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0
+    },
+    {
+      "page_number": 5,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0
+    },
+    {
+      "page_number": 6,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0
+    },
+    {
+      "page_number": 7,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0
+    },
+    {
+      "page_number": 8,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0
+    },
+    {
+      "page_number": 9,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0
+    },
+    {
+      "page_number": 10,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0
+    },
+    {
+      "page_number": 11,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0
+    },
+    {
+      "page_number": 12,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0
+    },
+    {
+      "page_number": 13,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0
+    },
+    {
+      "page_number": 14,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0
+    },
+    {
+      "page_number": 15,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0
+    },
+    {
+      "page_number": 16,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0
+    },
+    {
+      "page_number": 17,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0
+    },
+    {
+      "page_number": 18,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0
+    },
+    {
+      "page_number": 19,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0
+    },
+    {
+      "page_number": 20,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0
+    }
+  ],
+  "result": {
+    "document": "a17056b6-ccff-4ba5-957b-4058dda41a91.pdf",
+    "total_pages": 20,
+    "question_papers": [
+      {
+        "paper_index": 0,
+        "page_range": [
+          1,
+          20
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": null,
+          "exam_year": null,
+          "session_code": null,
+          "subject": null,
+          "paper_code": null,
+          "max_marks": null,
+          "duration": null,
+          "confidence": 0.0,
+          "status": "needs_review"
+        },
+        "questions": [],
+        "raw_text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+      }
+    ],
+    "processing_notes": [
+      "Paper 0: low metadata confidence (0.00) \u2014 manual review needed.",
+      "Paper 0: no questions extracted."
+    ]
+  },
+  "created_at": "2026-10-01T18:09:20.062668"
+}

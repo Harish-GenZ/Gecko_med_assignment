@@ -1,0 +1,18 @@
+{
+  "job_id": "64a8f16f-5d9d-4c99-8a35-f3623faa9298",
+  "status": "failed",
+  "filename": "WhatsApp Image 2026-09-26 at 06.32.03.jpeg",
+  "progress": 76,
+  "current_step": "Failed",
+  "error": "name 'QuestionType' is not defined",
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 3220
+    }
+  ],
+  "result": null,
+  "created_at": "2026-10-02T03:20:06.510433"
+}

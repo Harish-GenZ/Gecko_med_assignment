@@ -1,0 +1,1798 @@
+{
+  "job_id": "873886b4-0009-4902-97e6-ced14311dab3",
+  "status": "completed",
+  "filename": "FMT (Internal Assessment  & Send Up).pdf",
+  "progress": 100,
+  "current_step": "Completed",
+  "error": null,
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 1092
+    },
+    {
+      "page_number": 2,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 1064
+    },
+    {
+      "page_number": 3,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 838
+    },
+    {
+      "page_number": 4,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 740
+    },
+    {
+      "page_number": 5,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 606
+    },
+    {
+      "page_number": 6,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 713
+    },
+    {
+      "page_number": 7,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 669
+    },
+    {
+      "page_number": 8,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 944
+    },
+    {
+      "page_number": 9,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 850
+    },
+    {
+      "page_number": 10,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 689
+    },
+    {
+      "page_number": 11,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 806
+    },
+    {
+      "page_number": 12,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 893
+    },
+    {
+      "page_number": 13,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 1007
+    },
+    {
+      "page_number": 14,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 1254
+    },
+    {
+      "page_number": 15,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 2079
+    },
+    {
+      "page_number": 16,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 2434
+    },
+    {
+      "page_number": 17,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 5379
+    },
+    {
+      "page_number": 18,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 3233
+    }
+  ],
+  "result": {
+    "document": "5ba9df68-dbd8-43b4-a5da-bc9c6c3d98d9.pdf",
+    "total_pages": 18,
+    "question_papers": [
+      {
+        "paper_index": 0,
+        "page_range": [
+          1,
+          1
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": null,
+          "exam_year": "2011",
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "40",
+          "duration": "Three Hours",
+          "confidence": 0.5,
+          "status": "ok"
+        },
+        "questions": [
+          {
+            "number": "2",
+            "text": "a. Vicarious responsibility.\nb. Functions of Indian Medical Council (Marks: 3 each)",
+            "type": "Short Notes",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "Write in brief on the following:\na. Delusion\nb. Feigned insanity\nc. Testamentary capacity. (Marks: 2 each)",
+            "type": "Short Notes",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "instructions": [
+          "Attempt all questions. (PART-A) Maximum Marks -20 X. Classify mechanical injuries. Describe the pattern of entry wound of a firearm fired from different distances. (8 marks)",
+          "2. Write notes on the following: a. Superimposition technique. b. Police inquest. (Marks: 3 each)",
+          "3. Write notes on the followings: a. Hermaphrodite b. Medico-legal importance of 12 years of age c. Dying declaration. (Marks: 2 each) (PART-B) Maximum Marks-20",
+          "1. A 25 years old female's charred dead body with pugilistic attitude was recovered by police from a house. How will you arrive to a conclusion that the cause of death was asphyxia as a result of ante mortem burn? (Marks-8)"
+        ],
+        "parts": null,
+        "raw_text": "f1/2011/51 0410312011 clL 04/03/11\n10\nROHILKHAND MEDICAL COLLEGE, BAREILLY\nFirst Terminal Examination D\nM.B.B.S. (2009 Batch)\nFORENSIC MEDICINE AND TOXICOLOGY\nTime: Three Hours] [Maximum Marks: 40\nNote: Attempt all questions.\n(PART-A)\nMaximum Marks -20\nX. Classify mechanical injuries. Describe the pattern of entry wound of a firearm\nfired from different distances. (8 marks)\n2. Write notes on the following:\na. Superimposition technique.\nb. Police inquest. (Marks: 3 each)\n3. Write notes on the followings:\na. Hermaphrodite\nb. Medico-legal importance of 12 years of age\nc. Dying declaration. (Marks: 2 each)\n(PART-B)\nMaximum Marks-20\n1. A 25 years old female's charred dead body with pugilistic attitude was recovered\nby police from a house. How will you arrive to a conclusion that the cause of\ndeath was asphyxia as a result of ante mortem burn?\n(Marks-8)\n2. Write short notes on the following:\na. Vicarious responsibility.\nb. Functions of Indian Medical Council (Marks: 3 each)\n3. Write in brief on the following:\na. Delusion\nb. Feigned insanity\nc. Testamentary capacity. (Marks: 2 each)"
+      },
+      {
+        "paper_index": 1,
+        "page_range": [
+          2,
+          2
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": "February",
+          "exam_year": "2010",
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "40",
+          "duration": "Three Hours",
+          "confidence": 0.75,
+          "status": "ok"
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Define Drowning. Mention various types of drowning. Describe the post-\nmortem findings in a case of wet drowning?",
+            "type": "Essay",
+            "part": "SECTION-A",
+            "heading": null,
+            "options": null,
+            "marks": "20",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "2",
+            "text": "Outline the Differences between:\n(i) . Dying Declaration and Dying Deposition\n(ii) . Hanging and Ligature Strangulation",
+            "type": "Essay",
+            "part": "SECTION-A",
+            "heading": null,
+            "options": null,
+            "marks": "6",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "(i).Fingerprints and its Medico-legal importance\n(i) . Cafe Coronary\n(ii) . Magistrate's Inquest.",
+            "type": "Short Notes",
+            "part": "SECTION-A",
+            "heading": null,
+            "options": null,
+            "marks": "6",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "1",
+            "text": "Classify Mechanical injuries. Describe the various types of Abrasions and its\nMedico-legal importance.",
+            "type": "Essay",
+            "part": "SECTION-B",
+            "heading": null,
+            "options": null,
+            "marks": "20",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "2",
+            "text": "Write short answers on the following: (2X3.=6)\n(i) . Criminal Negligence\n(ii) . Brain Death and its Medico-legal importance",
+            "type": "Essay",
+            "part": "SECTION-B",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "(i). Functions of Medical Council of India\n(ii) . Informed Consent\n(iii) . Vicarious liability.",
+            "type": "Short Notes",
+            "part": "SECTION-B",
+            "heading": null,
+            "options": null,
+            "marks": "6",
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "instructions": [
+          "Attempt all questions."
+        ],
+        "parts": [
+          "SECTION-A",
+          "SECTION-B"
+        ],
+        "raw_text": "11\nROHILKHAND MEDICAL COLLEGE, BAREILLY\nDEPARTMENT OF FORENSIC MEDICINE & TOXICOLOGY\nM.B.B.S. (II PROFESSIONAL, 3rd SEMESTER) D\nFIRST TERMINAL EXAMINATION, 19th February, 2010\nTime: Three Hours] [Max. Marks: 40\nNote: Attempt all questions.\nSECTION-A\n(Marks: 20)\n1. Define Drowning. Mention various types of drowning. Describe the post-\nmortem findings in a case of wet drowning? (1+2+5=8)\n2. Outline the Differences between: (2X3=6)\n(i). Dying Declaration and Dying Deposition\n(ii). Hanging and Ligature Strangulation\n3. Write short notes on the following: (3X2=6)\n(i).Fingerprints and its Medico-legal importance\n(i). Cafe Coronary\n(ii). Magistrate's Inquest.\nSECTION-B\n(Marks: 20)\n1. Classify Mechanical injuries. Describe the various types of Abrasions and its\nMedico-legal importance. (3+3+2=8)\n2. Write short answers on the following: (2X3.=6)\n(i). Criminal Negligence\n(ii). Brain Death and its Medico-legal importance\n3. Write short notes on the following: (3X2=6)\n(i). Functions of Medical Council of India\n(ii). Informed Consent\n(iii). Vicarious liability."
+      },
+      {
+        "paper_index": 2,
+        "page_range": [
+          3,
+          3
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": "Sep",
+          "exam_year": null,
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "40",
+          "duration": "Three Hours",
+          "confidence": 0.5,
+          "status": "ok"
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Define Rape. Write procedure of examination of a victim of Rape. (Marks: 3+5)",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "2",
+            "text": "Write differences between:\na. Hanging & Strangulation\nb. Burns & Scalds. (Marks: 3 each)",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "Write notes on the following:\na. Caf\u00e9 Coronary\nb. Masochism\nc. Joule Burn. (Marks: 2 each)\n(PART-B)\nMaximum Marks-20",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "1",
+            "text": "Classify Mechanical Injuries. Write 8 clauses of Grievous Injuries. (Marks: 3+5)",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "2",
+            "text": "Write difference between:\na. Wounds of Entry & Exit caused by a Bullet\nb. Virginity & Defloration. (Marks: 3 each)",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "Write notes on the following:\na. Indecent Assault\nb. The MTP Act, 1971\nc. Sudden Infant Death Syndrome. (Marks: 2 each)",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "instructions": [
+          "Attempt all questions. (PART-A) Maximum Marks-20",
+          "1. Define Rape. Write procedure of examination of a victim of Rape. (Marks: 3+5)",
+          "2. Write differences between: a. Hanging & Strangulation b. Burns & Scalds. (Marks: 3 each)",
+          "3. Write notes on the following: a. Caf\u00e9 Coronary b. Masochism c. Joule Burn. (Marks: 2 each) (PART-B) Maximum Marks-20",
+          "1. Classify Mechanical Injuries. Write 8 clauses of Grievous Injuries. (Marks: 3+5)",
+          "2. Write difference between: a. Wounds of Entry & Exit caused by a Bullet b. Virginity & Defloration. (Marks: 3 each)",
+          "3. Write notes on the following: a. Indecent Assault b. The MTP Act, 1971 c. Sudden Infant Death Syndrome. (Marks: 2 each)"
+        ],
+        "parts": null,
+        "raw_text": "ROHILKHAND MEDICAL COLLEGE, BAREILLY\nM.B.B.S. 4th Semester Terminal Examination, 13th Sept. 2011\nFORENSIC MEDICINE & TOXICOLOGY\nTime: Three Hours] [Maximum Marks: 40\nNote: Attempt all questions.\n(PART-A)\nMaximum Marks-20\n1. Define Rape. Write procedure of examination of a victim of Rape. (Marks: 3+5)\n2. Write differences between:\na. Hanging & Strangulation\nb. Burns & Scalds. (Marks: 3 each)\n3. Write notes on the following:\na. Caf\u00e9 Coronary\nb. Masochism\nc. Joule Burn. (Marks: 2 each)\n(PART-B)\nMaximum Marks-20\n1. Classify Mechanical Injuries. Write 8 clauses of Grievous Injuries. (Marks: 3+5)\n2. Write difference between:\na. Wounds of Entry & Exit caused by a Bullet\nb. Virginity & Defloration. (Marks: 3 each)\n3. Write notes on the following:\na. Indecent Assault\nb. The MTP Act, 1971\nc. Sudden Infant Death Syndrome. (Marks: 2 each)"
+      },
+      {
+        "paper_index": 3,
+        "page_range": [
+          4,
+          4
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": null,
+          "exam_year": "2010",
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "50",
+          "duration": null,
+          "confidence": 0.5,
+          "status": "ok"
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "a. Indecent assault\nb. Sexual asphyxia\nc. Throttling\nd. Section 375 IPC\ne. Tardieu's spot.\nEnumerate:\na. Types of hanging\nb. Sexual perversions.",
+            "type": "Short Notes",
+            "part": null,
+            "heading": "Write short notes on:",
+            "options": null,
+            "marks": "4",
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "instructions": [
+          "1) Attempt all questions.",
+          "2) Allotted marks are displayed in front of the questions.",
+          "1. Classify violent asphyxial deaths. How will you establish antemortem drowning in a body recovered from water? Discuss estimation of time since death in submerged bodies. (4+8+4)",
+          "2. Write the differences between: (2x5=10) a. Hanging and strangulation by ligature b. True and false virginity."
+        ],
+        "parts": null,
+        "raw_text": "ROHILKHAND MEDICAL COLLEGE, BAREILLY\nMBBS 4d semester (2010 Batch)\nInternal Assessment Test-l, May 10th, 2012\ne: 100 Min] Forensic Medicine and Toxicology [Total Marks: 50\nNote: 1) Attempt all questions.\n2) Allotted marks are displayed in front of the questions.\n1. Classify violent asphyxial deaths. How will you establish antemortem drowning in a body recovered from\nwater? Discuss estimation of time since death in submerged bodies. (4+8+4)\n2. Write the differences between: (2x5=10)\na. Hanging and strangulation by ligature\nb. True and false virginity.\nWrite short notes on: (4x5=20)\na. Indecent assault\nb. Sexual asphyxia\nc. Throttling\nd. Section 375 IPC\ne. Tardieu's spot.\nEnumerate: (2\u00d72=4)\na. Types of hanging\nb. Sexual perversions."
+      },
+      {
+        "paper_index": 4,
+        "page_range": [
+          5,
+          5
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": "June",
+          "exam_year": "2012",
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "50",
+          "duration": null,
+          "confidence": 0.75,
+          "status": "ok"
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "a. Defences against the charge of negligence\nb. Advertising\nc. Privileged communication\nd. Informed consent.",
+            "type": "Short Notes",
+            "part": null,
+            "heading": "1: Write Short Notes on: (4X",
+            "options": null,
+            "marks": "20",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "2",
+            "text": "Write in Brief about:\na. Lucid interval\nb. Civil responsibility of insane\nc. Feigned insanity\nd. Melancholia.",
+            "type": "Short Notes",
+            "part": null,
+            "heading": "1: Write Short Notes on: (4X",
+            "options": null,
+            "marks": "20",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "Enumerate: \u00bd=10)\na. Impulsive disorders\nb. Indications of Magistrate inquest\nc. Sentences authorised by Law\nd. Types of Hallucination.",
+            "type": "Short Notes",
+            "part": null,
+            "heading": "1: Write Short Notes on: (4X",
+            "options": null,
+            "marks": "20",
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "instructions": [
+          "Attempt all questions."
+        ],
+        "parts": null,
+        "raw_text": "ROHILKHAND MEDICAL COLLEGE, BAREILLY\nM.B.B.S. 4th Semester, Internal Assessment Test-II, 30th June, 2012\nFORENSIC MEDICINE & TOXICOLOGY\nTime: One Hour] [Maximum Marks: 50\nNote: Attempt all questions.\n1: Write Short Notes on: (4X5=20)\na. Defences against the charge of negligence\nb. Advertising\nc. Privileged communication\nd. Informed consent. (4X5=20)\n2. Write in Brief about:\na. Lucid interval\nb. Civil responsibility of insane\nc. Feigned insanity\nd. Melancholia.\n3. Enumerate: (4X2\u00bd=10)\na. Impulsive disorders\nb. Indications of Magistrate inquest\nc. Sentences authorised by Law\nd. Types of Hallucination."
+      },
+      {
+        "paper_index": 5,
+        "page_range": [
+          6,
+          6
+        ],
+        "metadata": {
+          "university": "BAREILLY,",
+          "exam_month": "July",
+          "exam_year": "2012",
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "50",
+          "duration": null,
+          "confidence": 0.75,
+          "status": "ok"
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "a. Age of contusions\nb. Grievous hurt\nc. Mechanism of Contrecoup injuries\nd. Whinlash injury\ne. Contact shot.",
+            "type": "Short Notes",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "20",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "2",
+            "text": "Write differences between\na. Antemortem and post mortem wounds\nb. Incised wound and lacerated wound\nc. True bruise and artificial bruise\nd. Entry wound and exit wound of a gunshot\ne. Drunk and concussed.",
+            "type": "Short Notes",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "20",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "Enumerate: \u00bd=10)\na. Types of skull fracture\nb. Types oflaceration\nc. Types ofintracranial hemorrhazes\nd. IPCs associated with injuries.",
+            "type": "Short Notes",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "20",
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "instructions": [
+          "te: Attempt all questions."
+        ],
+        "parts": null,
+        "raw_text": "ROHILKHAND MEDICAL COLLEGE, BAREILLY,\nInternal Assessment Test-III, 14th July, 2012,\nM.B.B.S. 4th Semester (2010 batch)\nFORENSIC MEDICINE & TOXICOLOGY\nne: One Hour] [Maximum Marks: 50\nte: Attempt all questions.\n1. Write Short Notes on: (5X4=20)\na. Age of contusions\nb. Grievous hurt\nc. Mechanism of Contrecoup injuries\nd. Whinlash injury\ne. Contact shot.\n2. Write differences between (5X4=20)\na. Antemortem and post mortem wounds\nb. Incised wound and lacerated wound\nc. True bruise and artificial bruise\nd. Entry wound and exit wound of a gunshot\ne. Drunk and concussed.\n3. Enumerate: (4X2\u00bd=10)\na. Types of skull fracture\nb. Types oflaceration\nc. Types ofintracranial hemorrhazes\nd. IPCs associated with injuries."
+      },
+      {
+        "paper_index": 6,
+        "page_range": [
+          7,
+          7
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": null,
+          "exam_year": "2010",
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "50",
+          "duration": null,
+          "confidence": 0.5,
+          "status": "ok"
+        },
+        "questions": [
+          {
+            "number": "3",
+            "text": "a. Tardieu's spot\nb. Garroting\nC. Lust murder\nd. Emphysema aquosum\ne. Overlaying.",
+            "type": "Short Notes",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "20",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "4",
+            "text": "Enumerate:\na. Types of drowning\nb. Causes of death in cases of hanging",
+            "type": "Short Notes",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "4",
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "instructions": [
+          "1) Attempt all questions.",
+          "2) Allotted marks are displayed in front of the questions.",
+          "1. axae y ex ve euc important negative findings suggesting a non-consented act. (4+8+4)",
+          "2. Write the differences between: (2x5=10) a. Antemortem and Postmortem hanging b. Fresh water and salt water drowning."
+        ],
+        "parts": null,
+        "raw_text": "ROHILKHAND MEDICAL COLLEGE, BAREILLY\nMBBS 4d semester (2010 Batch)\nInternal Assessment Test-I, May 9th, 2012\nne: 100 Min] Forensic Medicine and Toxicology [Total Marks: 50\nNote: 1) Attempt all questions.\n2) Allotted marks are displayed in front of the questions.\n1. axae y ex  ve euc\nimportant negative findings suggesting a non-consented act. (4+8+4)\n2. Write the differences between: (2x5=10)\na. Antemortem and Postmortem hanging\nb. Fresh water and salt water drowning.\n3. Write short notes on: (4x5=20)\na. Tardieu's spot\nb. Garroting\nC. Lust murder\nd. Emphysema aquosum\ne. Overlaying.\n4. Enumerate: (2x2=4)\na. Types of drowning\nb. Causes of death in cases of hanging"
+      },
+      {
+        "paper_index": 7,
+        "page_range": [
+          8,
+          8
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": "Dec",
+          "exam_year": null,
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "40",
+          "duration": "Two Hours",
+          "confidence": 0.5,
+          "status": "ok"
+        },
+        "questions": [
+          {
+            "number": "2",
+            "text": "Write differences between:\na. Postmortem staining & Bruise\nb. Burns due to Dry heat & Moist heat. (Marks: 3 each)",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "Write notes on the following:\na. Exhumation\na. Medico-legal importance of age\nb. The Consumer Protection Act. (Marks: 2 each)\n(PART-B)\nMaximum Marks: 20",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "1",
+            "text": "What are the duties of a Casualty Medical Officer in a case of suspected\npoisoning? Discuss clinical features and management of a case of Methyl alcohol\npoisoning. (Marks: 3+5)",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "2",
+            "text": "Write in brief on the following:\na. Snake Venom\nb. Warning notice. (Marks: 3 each)",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "Write notes on the following:\na. Res ipsa loquitur\nb. Artificial Insemination\nc. Delusions. (Marks: 2 each)",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "instructions": [
+          "Attempt all questions. (PART-A) Maximum Marks: 20 mortem hanging from that of a post mortem hanging? Discuss in detail. (Marks: 2+6)",
+          "2. Write differences between: a. Postmortem staining & Bruise b. Burns due to Dry heat & Moist heat. (Marks: 3 each)",
+          "3. Write notes on the following: a. Exhumation a. Medico-legal importance of age b. The Consumer Protection Act. (Marks: 2 each) (PART-B) Maximum Marks: 20",
+          "1. What are the duties of a Casualty Medical Officer in a case of suspected poisoning? Discuss clinical features and management of a case of Methyl alcohol poisoning. (Marks: 3+5)",
+          "2. Write in brief on the following: a. Snake Venom b. Warning notice. (Marks: 3 each)",
+          "3. Write notes on the following: a. Res ipsa loquitur b. Artificial Insemination c. Delusions. (Marks: 2 each)"
+        ],
+        "parts": null,
+        "raw_text": "ROHILKHAND MEDICAL COLLEGE, BAREILLY\nM.B.B.S. 5th Semester Internal assessment Test-5, 17th Dec. 2012\nFORENSIC MEDICINE\nTime: Two Hours] [Maximum Marks: 40\nNote: Attempt all questions.\n(PART-A)\nMaximum Marks: 20\nmortem hanging from that of a post mortem hanging? Discuss in detail.\n(Marks: 2+6)\n2. Write differences between:\na. Postmortem staining & Bruise\nb. Burns due to Dry heat & Moist heat. (Marks: 3 each)\n3. Write notes on the following:\na. Exhumation\na. Medico-legal importance of age\nb. The Consumer Protection Act. (Marks: 2 each)\n(PART-B)\nMaximum Marks: 20\n1. What are the duties of a Casualty Medical Officer in a case of suspected\npoisoning? Discuss clinical features and management of a case of Methyl alcohol\npoisoning. (Marks: 3+5)\n2. Write in brief on the following:\na. Snake Venom\nb. Warning notice. (Marks: 3 each)\n3. Write notes on the following:\na. Res ipsa loquitur\nb. Artificial Insemination\nc. Delusions. (Marks: 2 each)"
+      },
+      {
+        "paper_index": 8,
+        "page_range": [
+          9,
+          9
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": "Dec",
+          "exam_year": null,
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "40",
+          "duration": "Two Hours",
+          "confidence": 0.5,
+          "status": "ok"
+        },
+        "questions": [
+          {
+            "number": "2",
+            "text": "Write differences between:\na. Rigor Mortis & Cadaveric Spasm (Marks: 3 each)\nb. Antemortem & Postmortem Drowning.",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "Write notes on the following:\na. Police Inquest\na. Battered baby syndrome\nb. The Workmen's Compensation Act. (Marks: 2 each)\n(PART-B)\nMaximum Marks: 20",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "1",
+            "text": "Classify poisons. Discuss clinical features and management of a case of\nOrganophosphate poisoning. (Marks: 3+5)",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "2",
+            "text": "Write in brief on the following:\na. Cobra Envenomation\nb. Functions of State Medical Council. (Marks: 3 each)",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "Write notes on the following:\na. Novus Actus Interveniens\nb. Sodomy\nc. Mc Naughten's Rule. (Marks: 2 each)",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "instructions": [
+          "Attempt all questions. (PART-A) Maximum Marks: 20 mortem burns? (Marks: 2+3+3)",
+          "2. Write differences between: a. Rigor Mortis & Cadaveric Spasm (Marks: 3 each) b. Antemortem & Postmortem Drowning.",
+          "3. Write notes on the following: a. Police Inquest a. Battered baby syndrome b. The Workmen's Compensation Act. (Marks: 2 each) (PART-B) Maximum Marks: 20",
+          "1. Classify poisons. Discuss clinical features and management of a case of Organophosphate poisoning. (Marks: 3+5)",
+          "2. Write in brief on the following: a. Cobra Envenomation b. Functions of State Medical Council. (Marks: 3 each)",
+          "3. Write notes on the following: a. Novus Actus Interveniens b. Sodomy c. Mc Naughten's Rule. (Marks: 2 each)"
+        ],
+        "parts": null,
+        "raw_text": "ROHILKHAND MEDICAL COLLEGE, BAREILLY\nM.B.B.S. 5th Semester Internal assessment Test-5, 18th Dec. 2012\nFORENSIC MEDICINE\nTime: Two Hours] [Maximum Marks: 40\nNote: Attempt all questions.\n(PART-A)\nMaximum Marks: 20\nmortem burns? (Marks: 2+3+3)\n2. Write differences between:\na. Rigor Mortis & Cadaveric Spasm (Marks: 3 each)\nb. Antemortem & Postmortem Drowning.\n3. Write notes on the following:\na. Police Inquest\na. Battered baby syndrome\nb. The Workmen's Compensation Act. (Marks: 2 each)\n(PART-B)\nMaximum Marks: 20\n1. Classify poisons. Discuss clinical features and management of a case of\nOrganophosphate poisoning. (Marks: 3+5)\n2. Write in brief on the following:\na. Cobra Envenomation\nb. Functions of State Medical Council. (Marks: 3 each)\n3. Write notes on the following:\na. Novus Actus Interveniens\nb. Sodomy\nc. Mc Naughten's Rule. (Marks: 2 each)"
+      },
+      {
+        "paper_index": 9,
+        "page_range": [
+          10,
+          10
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": "May",
+          "exam_year": "2013",
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "50",
+          "duration": "Two Hours",
+          "confidence": 0.75,
+          "status": "ok"
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Tabulate the putrefactive changes with respect to postmortem interval in the dead\nbody of a person died during this season? (Marks: 10)",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "2",
+            "text": "Write differences between: (Marks:\na. Rigor mortis & Cadaveric spasm\nb. Antemortem bruise & Postmortem hyposatasis",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "Write notes on the following: (Marks:\na. Adipocere\nb. Exhumation\nc. Diagnosis of Brain Death\nd. Universal work precautions\ne. Aims and Objectives of autopsy\nf. Preservation of viscera in a case of death due to suspected poisoning.",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "30",
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "instructions": [
+          "Attempt all questions.",
+          "1. Tabulate the putrefactive changes with respect to postmortem interval in the dead body of a person died during this season? (Marks: 10)",
+          "2. Write differences between: (Marks: 2x5=10) a. Rigor mortis & Cadaveric spasm b. Antemortem bruise & Postmortem hyposatasis",
+          "3. Write notes on the following: (Marks: 6x5=30) a. Adipocere b. Exhumation c. Diagnosis of Brain Death d. Universal work precautions e. Aims and Objectives of autopsy f. Preservation of viscera in a case of death due to suspected poisoning."
+        ],
+        "parts": null,
+        "raw_text": "ROHILKHAND MEDICAL COLLEGE, BAREILLY\nM.B.B.S. 4th Semester Internal assessment Test-2, 8th May 2013\nFORENSIC MEDICINE\nTime: Two Hours] [Maximum Marks: 50\nNote: Attempt all questions.\n1. Tabulate the putrefactive changes with respect to postmortem interval in the dead\nbody of a person died during this season? (Marks: 10)\n2. Write differences between: (Marks: 2x5=10)\na. Rigor mortis & Cadaveric spasm\nb. Antemortem bruise & Postmortem hyposatasis\n3. Write notes on the following: (Marks: 6x5=30)\na. Adipocere\nb. Exhumation\nc. Diagnosis of Brain Death\nd. Universal work precautions\ne. Aims and Objectives of autopsy\nf. Preservation of viscera in a case of death due to suspected poisoning."
+      },
+      {
+        "paper_index": 10,
+        "page_range": [
+          11,
+          11
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": null,
+          "exam_year": "2011",
+          "session_code": null,
+          "subject": "Medicine",
+          "paper_code": null,
+          "max_marks": "40",
+          "duration": "THREE HOURS",
+          "confidence": 0.5,
+          "status": "ok"
+        },
+        "questions": [
+          {
+            "number": "4",
+            "text": "Discuss the medico- legal importance of Age 3\u00d72\n. Discuss differences between\na. Hanging and strangulation by ligature\nb. Professional negligence & misconduct by a doctor 2x3",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "Write Notes On\na. Rigor Mortis as an indicator of PM Interval\nb. Brain Death\nC.\nDelusion\n(PART-B)\nMaxim\u00f9m Marks- 20",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "4",
+            "text": "Write name of courts starting from the highest to lowest in that order and discuss their 8\npowers 3\u00d72\nDiscuss differences between\na. Temporary teeth and permanent teeth\nb. Bruise and PM Lividity 2\u00d73\n. Write notes on\na. Dactylography\nb. Preservation of sample'for DNA fingerprinting\nC. Doctrine of Res Ipsa Loquitur",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "instructions": null,
+        "parts": null,
+        "raw_text": "ROHILKHAND MEDICAL COLLEGE, BAREILLY\nM.B.B.S 2011 BATCH, 3D SEMESTER TERM END EXAMINATION 5/02/2013\nTIME-THREE HOURS .ENSIC MEDICINE & TOXICOLOGY\nMAXIMUM MARKS-40\n(PART-A)\nMaximum marks- 20 8\n4. Discuss the medico- legal importance of Age 3\u00d72\n. Discuss differences between\na. Hanging and strangulation by ligature\nb. Professional negligence & misconduct by a doctor 2x3\n3. Write Notes On\na. Rigor Mortis as an indicator of PM Interval\nb. Brain Death\nC.\nDelusion\n(PART-B)\nMaxim\u00f9m Marks- 20\n4. Write name of courts starting from the highest to lowest in that order and discuss their 8\npowers 3\u00d72\nDiscuss differences between\na. Temporary teeth and permanent teeth\nb. Bruise and PM Lividity 2\u00d73\n. Write notes on\na. Dactylography\nb. Preservation of sample'for DNA fingerprinting\nC. Doctrine of Res Ipsa Loquitur"
+      },
+      {
+        "paper_index": 11,
+        "page_range": [
+          12,
+          12
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": null,
+          "exam_year": "2011",
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "40",
+          "duration": "THREE HOURS",
+          "confidence": 0.5,
+          "status": "ok"
+        },
+        "questions": [
+          {
+            "number": "4",
+            "text": "Discuss the medico-legal importance of Age 8\n. Discuss differences between Notes on 3\u00d72\na. Hanging and strangulation by ligature\nb. Professional negligence & misconduct by a doctor 2x3\nB. Write Notes On\na. Rigor Mortis as an indicator of PM Interval\nb. Brain Death\nc. Delusion\n(PART-B)\nMaximum Marks- 20",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "4",
+            "text": "Write name of courts starting from the highest to lowest in that order and discuss their 8\npowers 3x2\nDiscuss differences between\na. Temporary teeth and permanent teeth\nb. Bruise and PM Lividity",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "Write notes on 2x3\na. Fingerprint\nb. Preservation of sample for DNA fingerprinting\nc. Doctrine of Res Ipsa Loquitur",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "instructions": [
+          "ATTEMPT ALL QUESTIONS AND WRITE IN YOUR OWN WORDS AS FAR AS IT IS PRACTICABLE (PART-A) Maximum marks-20",
+          "4. Discuss the medico-legal importance of Age 8 . Discuss differences between Notes on 3\u00d72 a. Hanging and strangulation by ligature b. Professional negligence & misconduct by a doctor 2x3 B. Write Notes On a. Rigor Mortis as an indicator of PM Interval b. Brain Death c. Delusion (PART-B) Maximum Marks- 20",
+          "4. Write name of courts starting from the highest to lowest in that order and discuss their 8 powers 3x2 Discuss differences between a. Temporary teeth and permanent teeth b. Bruise and PM Lividity",
+          "3. Write notes on 2x3 a. Fingerprint b. Preservation of sample for DNA fingerprinting c. Doctrine of Res Ipsa Loquitur"
+        ],
+        "parts": null,
+        "raw_text": "ROHILKHAND MEDICAL COLLEGE, BAREILLY\nM.B.B.S 2011 BATCH, 3D SEMESTER TERM END EXAMINATION 25/02/2013\nFORENSIC MEDICINE & TOXICOLOGY\nTIME-THREE HOURS MAXIMUM MARKS-40\nATTEMPT ALL QUESTIONS AND WRITE IN YOUR OWN WORDS AS FAR AS IT IS PRACTICABLE\n(PART-A)\nMaximum marks-20\n4. Discuss the medico-legal importance of Age 8\n. Discuss differences between Notes on 3\u00d72\na. Hanging and strangulation by ligature\nb. Professional negligence & misconduct by a doctor 2x3\nB. Write Notes On\na. Rigor Mortis as an indicator of PM Interval\nb. Brain Death\nc. Delusion\n(PART-B)\nMaximum Marks- 20\n4. Write name of courts starting from the highest to lowest in that order and discuss their 8\npowers 3x2\nDiscuss differences between\na. Temporary teeth and permanent teeth\nb. Bruise and PM Lividity\n3. Write notes on 2x3\na. Fingerprint\nb. Preservation of sample for DNA fingerprinting\nc. Doctrine of Res Ipsa Loquitur"
+      },
+      {
+        "paper_index": 12,
+        "page_range": [
+          13,
+          13
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": "Jan",
+          "exam_year": null,
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "40",
+          "duration": "Three Hours",
+          "confidence": 0.5,
+          "status": "ok"
+        },
+        "questions": [
+          {
+            "number": "2",
+            "text": "Use separate answer booklet for Part A and B.\n(PART-A)\nMaximum Marks: 20\n(Marks:",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "8",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "2",
+            "text": "Write differences between: (Marks:\na. Dying declaration & Dying deposition\nb. Incised wound & Incised looking wound.",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "6",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "Write note on the following: (Marks:\na. Male and female pseudohermaphroditism\nb. Dactylography\nc. Grievous Injury.\n(PART-B)\nMaximum Marks: 20",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "6",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "1",
+            "text": "Enumerate functions of State Medical Council. Discuss salient features of Indian\nMedical Council (Professional conduct, Etiquette and Ethics) Regulation, 2002 as\nit applies to doctors. (Marks:",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "8",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "2",
+            "text": "Write differences between: (Marks:\na. Professional misconduct & Medical negligence\nb. True & Feigned insanity.",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "6",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "Write note on the following: (Marks:\na. Delusion\nb. Hallucination\nc. Gun powder.",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "6",
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "instructions": [
+          "1. Attempt all questions.",
+          "2. Use separate answer booklet for Part A and B. (PART-A) Maximum Marks: 20 (Marks: 2+6=8)",
+          "2. Write differences between: (Marks: 2X3=6) a. Dying declaration & Dying deposition b. Incised wound & Incised looking wound.",
+          "3. Write note on the following: (Marks: 3X2=6) a. Male and female pseudohermaphroditism b. Dactylography c. Grievous Injury. (PART-B) Maximum Marks: 20",
+          "1. Enumerate functions of State Medical Council. Discuss salient features of Indian Medical Council (Professional conduct, Etiquette and Ethics) Regulation, 2002 as it applies to doctors. (Marks:2+6=8)",
+          "2. Write differences between: (Marks: 3X2=6) a. Professional misconduct & Medical negligence b. True & Feigned insanity.",
+          "3. Write note on the following: (Marks: 3X2=6) a. Delusion b. Hallucination c. Gun powder."
+        ],
+        "parts": null,
+        "raw_text": "ROHILKHAND MEDICAL COLLEGE, BAREILLY\nM.B.B.S. Second Professional ((2012 Batch)\nFirst Terminal Examination, 30th Jan. 2014\nFORENSIC MEDICINE & TOXICOLOGY\nTime: Three Hours] [Maximum Marks: 40\nNote: 1. Attempt all questions.\n2. Use separate answer booklet for Part A and B.\n(PART-A)\nMaximum Marks: 20\n(Marks: 2+6=8)\n2. Write differences between: (Marks: 2X3=6)\na. Dying declaration & Dying deposition\nb. Incised wound & Incised looking wound.\n3. Write note on the following: (Marks: 3X2=6)\na. Male and female pseudohermaphroditism\nb. Dactylography\nc. Grievous Injury.\n(PART-B)\nMaximum Marks: 20\n1. Enumerate functions of State Medical Council. Discuss salient features of Indian\nMedical Council (Professional conduct, Etiquette and Ethics) Regulation, 2002 as\nit applies to doctors. (Marks:2+6=8)\n2. Write differences between: (Marks: 3X2=6)\na. Professional misconduct & Medical negligence\nb. True & Feigned insanity.\n3. Write note on the following: (Marks: 3X2=6)\na. Delusion\nb. Hallucination\nc. Gun powder."
+      },
+      {
+        "paper_index": 13,
+        "page_range": [
+          14,
+          14
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": "April",
+          "exam_year": "2022",
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "80",
+          "duration": "45 Minutes",
+          "confidence": 0.5,
+          "status": "ok"
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Enumerate and discuss the principles of Bioethics. [4+6]",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "2",
+            "text": "Enumerate positive signs of pregnancy. [5]",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "Enlist professional misconduct as per the Indian Medical Council (Professional\nConduct, Etiquette & Ethics) Regulation 2002. [8]",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "4",
+            "text": "Define injury and hurt. Mention any TWO examples of grievous hurt caused in the\neyes. [3+3+3]",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "5",
+            "text": "Define impotence and sterility. How is it possible for an impotent person to commit\nrape? [3+3+4]\n\u2192397(9B) 6. What are the contents of the SAFE KIT? Present their usefulness in sexual offence cases\n\u2192181CP) in tabulated form. [6+6]\n\u20147. How will you help to establish the paternity of the child in question? [5]",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "8",
+            "text": "How will you differentiate between the ncised wound and the lacerated wound? [8]",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "9",
+            "text": "Tabulate chronology of appearance of permanent teeth. How will you differentiate\ntemporary teeth from permanent teeth during the period of mixed dentition with the\nhelp of a Dental Panoramic Tomograph? [4+4]",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "10",
+            "text": "What are the indications of medical termination of pregnancy beyond 20 weeks? [5]",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "instructions": [
+          "Attempt all questions. Marks are given in square brackets.",
+          "1. Enumerate and discuss the principles of Bioethics. [4+6]",
+          "2. Enumerate positive signs of pregnancy. [5]",
+          "3. Enlist professional misconduct as per the Indian Medical Council (Professional Conduct, Etiquette & Ethics) Regulation 2002. [8]",
+          "4. Define injury and hurt. Mention any TWO examples of grievous hurt caused in the eyes. [3+3+3]",
+          "5. Define impotence and sterility. How is it possible for an impotent person to commit rape? [3+3+4] \u2192397(9B) 6. What are the contents of the SAFE KIT? Present their usefulness in sexual offence cases \u2192181CP) in tabulated form. [6+6] \u20147. How will you help to establish the paternity of the child in question? [5]",
+          "8. How will you differentiate between the ncised wound and the lacerated wound? [8]",
+          "9. Tabulate chronology of appearance of permanent teeth. How will you differentiate temporary teeth from permanent teeth during the period of mixed dentition with the help of a Dental Panoramic Tomograph? [4+4]",
+          "10. What are the indications of medical termination of pregnancy beyond 20 weeks? [5]"
+        ],
+        "parts": null,
+        "raw_text": "ROHILKHAND MEDICAL COLLEGE & HOSPITAL\nMBBS Phase 3 Part 1, 2nd Internal Assessment, 23rd April 2022\nFORENSIC MEDICINE & TOXICOLOGY\n[TIME: 45 Minutes] [Marks:80]\nNote: Attempt all questions. Marks are given in square brackets.\n1. Enumerate and discuss the principles of Bioethics. [4+6]\n2. Enumerate positive signs of pregnancy. [5]\n3. Enlist professional misconduct as per the Indian Medical Council (Professional\nConduct, Etiquette & Ethics) Regulation 2002. [8]\n4. Define injury and hurt. Mention any TWO examples of grievous hurt caused in the\neyes. [3+3+3]\n5. Define impotence and sterility. How is it possible for an impotent person to commit\nrape? [3+3+4]\n\u2192397(9B) 6. What are the contents of the SAFE KIT? Present their usefulness in sexual offence cases\n\u2192181CP) in tabulated form. [6+6]\n\u20147. How will you help to establish the paternity of the child in question? [5]\n8. How will you differentiate between the ncised wound and the lacerated wound? [8]\n9. Tabulate chronology of appearance of permanent teeth. How will you differentiate\ntemporary teeth from permanent teeth during the period of mixed dentition with the\nhelp of a Dental Panoramic Tomograph? [4+4]\n10. What are the indications of medical termination of pregnancy beyond 20 weeks? [5]"
+      },
+      {
+        "paper_index": 14,
+        "page_range": [
+          15,
+          15
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": "May",
+          "exam_year": "2023",
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": null,
+          "duration": null,
+          "confidence": 0.5,
+          "status": "ok"
+        },
+        "questions": [
+          {
+            "number": "2",
+            "text": "Use separate answer sheets for Sections A & B.",
+            "type": "MCQ",
+            "part": null,
+            "heading": "Time: 3 Hours including MCQs [Maximum marks:]",
+            "options": null,
+            "marks": "100",
+            "confidence": 0.95,
+            "status": "needs_review"
+          },
+          {
+            "number": "1",
+            "text": "Define injury and classify mechanical injuries. Discuss the pathophysiology of\ndevelopment & various medicolegal importance of contusion in detail. Add a note on 943\ngrievous hurt. []",
+            "type": "Essay",
+            "part": "SECTION-A",
+            "heading": "Time: 3 Hours including MCQs [Maximum marks:]",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "2",
+            "text": "Differentiate between: []\nA. Entry and Exit wound of firearm\nB. Temporary teeth and Secondary teeth\nC. Caput Succedaneum and Cephalohematoma\nD. Civil and Criminal negligence [5] 3",
+            "type": "Essay",
+            "part": "SECTION-A",
+            "heading": "Time: 3 Hours including MCQs [Maximum marks:]",
+            "options": null,
+            "marks": "20",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "A juvenile offender was brought by the police for age estimation. His X-ray elbow joint 2\nrevealed the appearance of the head of radius, proximal part of ulna, medial epicondyle,\nand conjoint epiphysis which were yet not fused with the shaft of their respective long\nbones.\nWhat could be the probable age of the individual? Discuss about the age of appearance\nand fusion of the secondary centres around the elbow joint. []",
+            "type": "Short Notes",
+            "part": "SECTION-A",
+            "heading": "Write a short note on recent advancements in Virtual autopsy.",
+            "options": null,
+            "marks": "5",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "1",
+            "text": "Describe Locard's principle of exchange with examples of various crimes. Discuss the\nprocedure to be followed for the collection, preservation and transport of samples for\nchemical analysis to the forensic science laboratory in case of death due to suspected\npoisoning. []",
+            "type": "Essay",
+            "part": "Section-B",
+            "heading": "Write a short note on recent advancements in Virtual autopsy.",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "2",
+            "text": "the following: 3 []\nA. Euthanasia: Recent guidelines in India.\nB. Criminal responsibility of a mentally ill person. 3\nC. Principles of Bioethics 3\nD. Disclosure of medical error 3",
+            "type": "Short Notes",
+            "part": "Section-B",
+            "heading": "Write a short note on recent advancements in Virtual autopsy.",
+            "options": null,
+            "marks": "20",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "What do you understand by informed refusal? Explain by giving an example in the 3\nclinical seenario. What are the consequences of not documenting an informed refusal?",
+            "type": "Short Notes",
+            "part": "Section-B",
+            "heading": "Write a short note on recent advancements in Virtual autopsy.",
+            "options": null,
+            "marks": "20",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "4",
+            "text": "A dead fetus was brought to District Mortuary which had a 50 cm Crown-Rump length. 2\nWhat maximum information from post-mortem examination, you could provide to the\npolice officer, that can help in the investigation? Discuss in brief. [5] t",
+            "type": "Short Notes",
+            "part": "Section-B",
+            "heading": "Write a short note on recent advancements in Virtual autopsy.",
+            "options": null,
+            "marks": "5",
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "instructions": null,
+        "parts": [
+          "SECTION-A",
+          "Section-B"
+        ],
+        "raw_text": "ROHILKHAND MEDICAL COLLEGE & HOSPITAL\nFORENSIC MEDICINE & TOXICOLOGY\nMBBS 3rd Prof (Part 1) Internal Assessment Examination May 2023\nTime: 3 Hours including MCQs [Maximum marks: 80+20=100]\nNote: 1. Attempt all questions.\n2. Use separate answer sheets for Sections A & B.\nSECTION-A\n1. Define injury and classify mechanical injuries. Discuss the pathophysiology of\ndevelopment & various medicolegal importance of contusion in detail. Add a note on 943\ngrievous hurt. [3+4+3=10]\n2. Differentiate between: [5x4=20]\nA. Entry and Exit wound of firearm\nB. Temporary teeth and Secondary teeth\nC. Caput Succedaneum and Cephalohematoma\nD. Civil and Criminal negligence [5] 3\nWrite a short note on recent advancements in Virtual autopsy.\nA juvenile offender was brought by the police for age estimation. His X-ray elbow joint 2\nrevealed the appearance of the head of radius, proximal part of ulna, medial epicondyle,\nand conjoint epiphysis which were yet not fused with the shaft of their respective long\nbones.\nWhat could be the probable age of the individual? Discuss about the age of appearance\nand fusion of the secondary centres around the elbow joint. [2+3=5]\nSection-B\n1. Describe Locard's principle of exchange with examples of various crimes. Discuss the\nprocedure to be followed for the collection, preservation and transport of samples for\nchemical analysis to the forensic science laboratory in case of death due to suspected\npoisoning. [3+7=10]\n2. Write a short note on the following: 3 [5X4=20]\nA. Euthanasia: Recent guidelines in India.\nB. Criminal responsibility of a mentally ill person. 3\nC. Principles of Bioethics 3\nD. Disclosure of medical error 3\n3. What do you understand by informed refusal? Explain by giving an example in the 3\nclinical seenario. What are the consequences of not documenting an informed refusal?\n[3+2=5]\n4. A dead fetus was brought to District Mortuary which had a 50 cm Crown-Rump length. 2\nWhat maximum information from post-mortem examination, you could provide to the\npolice officer, that can help in the investigation? Discuss in brief. [5] t"
+      },
+      {
+        "paper_index": 15,
+        "page_range": [
+          16,
+          16
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": null,
+          "exam_year": "2020",
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "80",
+          "duration": "2 Hours 40 Minutes",
+          "confidence": 0.25,
+          "status": "needs_review"
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Enumerate the changes after death. Describe pathophysiology of development of rigor mortis and factors\naffecting it. Discuss in detail about medicolegal significance of rigor mortis. 6 []",
+            "type": "Essay",
+            "part": "SECTION-A",
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "2",
+            "text": "the following: []\nA. Documentation of Dying declaration and role of a doctor./\nB. Medicolegal importance of age in relation to informed consent in medical examinations and interventions. ()\nC.Contents of SAFE KIT and its stepwise use during examination of a survivor of sexual offence. 1",
+            "type": "Short Notes",
+            "part": "SECTION-A",
+            "heading": null,
+            "options": null,
+            "marks": "15",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "Differentiate between: []\nA. Lungs of a live born and still born foetus. 3\nB.Antemortem and Post-mortem drowning.3\n4 A 25 year-male patient presented in casualty with alleged history of assault 1 hour before and multiple injuries\nover his body in the form of abrasions and a linear bruise on his back. On examination, the colour of the bruise\nwas greenish and the abrasions were dark brown and dried shrinking from periphery. 1-9\nWhat could be the age of the injuries in this case? Discuss how abrasion and bruise are helpful in estimating\ntime since infliction. 1 []",
+            "type": "Short Notes",
+            "part": "SECTION-A",
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "4",
+            "text": "R 1. A 40-year-old male labourer was brought to the emergency with a history of snake bite 15 minutes before. The\n5 0 patient was anxious and apprehensive and couldn't identify the snake. []\nA. How will you assure the patient in such case? 2\nB: Describe constituents of snake venom and their effects on the human body after envenomation. y2\n. Discuss signs & symptoms of common poisonous snakes' bite. 1\nD. Outline management of snake bite with the help of a flow chart. 2",
+            "type": "Essay",
+            "part": "SECTION-B",
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "2",
+            "text": "the following: []\nA.Drunkenness and opinion framing in an examination report of a drunken person. 2\nB. Certification of brain stem death and its medicolegal importance.\nC. Skin incisions and organ dissection techniques during autopsy. 1",
+            "type": "Short Notes",
+            "part": "SECTION-B",
+            "heading": null,
+            "options": null,
+            "marks": "15",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "Differentiate between: []\nA. Civil and Criminal negligence 3\nB. True and Feigned insanity",
+            "type": "Short Notes",
+            "part": "SECTION-B",
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "4",
+            "text": "What do you mean by medical errors in clinical care? Explain with an example. Discuss the ethical standards in\ndealing with medical errors. []",
+            "type": "Short Notes",
+            "part": "SECTION-B",
+            "heading": null,
+            "options": null,
+            "marks": "5",
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "instructions": [
+          "1. Attempt all questions.",
+          "2. Use separate answer sheets for Sections A & B.",
+          "3. Answer the questions in serial manner in the answer booklet."
+        ],
+        "parts": [
+          "SECTION-A",
+          "SECTION-B"
+        ],
+        "raw_text": "ROHILKHAND MEDICAL COLLEGE & HOSPITAL\nFORENSIC MEDICINE & TOXICOLOGY\nSent up Examination, MBBS 2020 Batch, Nov 04, 2023\nTime: 2 Hours 40 Minutes] [Maximum marks: 80]\nNote: 1. Attempt all questions.\n2. Use separate answer sheets for Sections A & B.\n3. Answer the questions in serial manner in the answer booklet.\nSECTION-A\n1. Enumerate the changes after death. Describe pathophysiology of development of rigor mortis and factors\naffecting it. Discuss in detail about medicolegal significance of rigor mortis. 6 [2+3+5=10]\n2. Write a short note on the following: [5x3=15]\nA. Documentation of Dying declaration and role of a doctor./\nB. Medicolegal importance of age in relation to informed consent in medical examinations and interventions. ()\nC.Contents of SAFE KIT and its stepwise use during examination of a survivor of sexual offence. 1\n3. Differentiate between: [5x2=10]\nA. Lungs of a live born and still born foetus. 3\nB.Antemortem and Post-mortem drowning.3\n4 A 25 year-male patient presented in casualty with alleged history of assault 1 hour before and multiple injuries\nover his body in the form of abrasions and a linear bruise on his back. On examination, the colour of the bruise\nwas greenish and the abrasions were dark brown and dried shrinking from periphery. 1-9\nWhat could be the age of the injuries in this case? Discuss how abrasion and bruise are helpful in estimating\ntime since infliction. 1 [1+2+2=5]\nSECTION-B\nR 1. A 40-year-old male labourer was brought to the emergency with a history of snake bite 15 minutes before. The\n5 0 patient was anxious and apprehensive and couldn't identify the snake. [2+2+3+3=10]\nA. How will you assure the patient in such case? 2\nB: Describe constituents of snake venom and their effects on the human body after envenomation. y2\n. Discuss signs & symptoms of common poisonous snakes' bite. 1\nD. Outline management of snake bite with the help of a flow chart. 2\n2. Write a short note on the following: [5X3=15]\nA.Drunkenness and opinion framing in an examination report of a drunken person. 2\nB. Certification of brain stem death and its medicolegal importance.\nC. Skin incisions and organ dissection techniques during autopsy. 1\n3. Differentiate between: [5X2=10]\nA. Civil and Criminal negligence 3\nB. True and Feigned insanity\n4. What do you mean by medical errors in clinical care? Explain with an example. Discuss the ethical standards in\ndealing with medical errors. [2+3=5]"
+      },
+      {
+        "paper_index": 16,
+        "page_range": [
+          17,
+          17
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": null,
+          "exam_year": "2022",
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": null,
+          "duration": null,
+          "confidence": 0.25,
+          "status": "needs_review"
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "death has occurred\nB. Choose the correct/most appropriate response and fill in b) R.M.P. nominated from the panel of names sent by the\nthe OMR sheet appropriately. hospitals and approved by the Appropriate Authority\neJ R.M.P. being family physician of the recipient",
+            "type": "MCQ",
+            "part": null,
+            "heading": "A. Attempt all MCQs as there will be no negative marking. a) R.M.P. In-charge of the hospital in which brain-stem",
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "needs_review"
+          },
+          {
+            "number": "1",
+            "text": "Which of the following is the most reliable method of d) R.M.P. treating the aforesaid deceased person\nidentification for a human being? 12. Which of the following solution is used to preserve viscera for",
+            "type": "MCQ",
+            "part": null,
+            "heading": "A. Attempt all MCQs as there will be no negative marking. a) R.M.P. In-charge of the hospital in which brain-stem",
+            "options": [
+              {
+                "label": "a",
+                "text": "Gustafson method b) DNA profiling histopathological examination during autopsy?"
+              },
+              {
+                "label": "c",
+                "text": "ABO-Rh blood group d) Fingerprinting a)Normal saline"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "2",
+            "text": "Ossification of which of the following bones can be b) Saturated saline solution\nc)\ncorrelated with the age of viability of a foetus? Super saturated saline solution",
+            "type": "MCQ",
+            "part": null,
+            "heading": "A. Attempt all MCQs as there will be no negative marking. a) R.M.P. In-charge of the hospital in which brain-stem",
+            "options": [
+              {
+                "label": "a",
+                "text": "Cuboid b) Talus d) 10% Formaldehyde solution"
+              },
+              {
+                "label": "c",
+                "text": "Calcaneum d) Upper end of t\u00edbia 13. A person saw a snake hanging from the tree, where only the rope"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "Which of the following is the characteristic post-mortem findings was hanging. Which of the following psychiatric disorder he was\nin deaths due to starvation? suffering from?",
+            "type": "MCQ",
+            "part": null,
+            "heading": "A. Attempt all MCQs as there will be no negative marking. a) R.M.P. In-charge of the hospital in which brain-stem",
+            "options": [
+              {
+                "label": "a",
+                "text": "Scaphoid abdomen and hepatomegaly a) Delusion"
+              },
+              {
+                "label": "b",
+                "text": "Absence of fat from around internal organs and b) Illusion"
+              },
+              {
+                "label": "c",
+                "text": "Impulse"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "4",
+            "text": "splenomegaly d) Hallucination\nc) Intestinal walls appear like tissue paper and distended 14. A man aged 70 years with chronic duodenal ulceration died of\ngall bladder peritonitis 2 days after an operation for duodenal perforation.\non section year. What will be mentioned in the antecedent cause of death\n4 Burking is a type of asphyxial death comprising of: (Column I b of FORM No. 4) while preparing his Medical",
+            "type": "MCQ",
+            "part": null,
+            "heading": "A. Attempt all MCQs as there will be no negative marking. a) R.M.P. In-charge of the hospital in which brain-stem",
+            "options": [
+              {
+                "label": "d",
+                "text": "Collapsed lungs and exudes a good amount of blood He was also suffering from Carcinoma of bronchus for the past 1"
+              },
+              {
+                "label": "a",
+                "text": "Smothering & Gagging Certification of Cause of Death?"
+              },
+              {
+                "label": "b",
+                "text": "Smothering & Manual strangulation a) Peritonitis"
+              },
+              {
+                "label": "c",
+                "text": "Smothering & Traumatic asphyxia b) Duodenal perforation"
+              },
+              {
+                "label": "d",
+                "text": "Smothering & Ligature strangulation c) Carcinoma of bronchus"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "5",
+            "text": "A cut hair without root was recovered from a scene of the crime d) None of the above\nand sent to FSL. Which of the following component in the hair 15. Under the MTP Amendment Act 2021, at what gestational age the\nwill be helpful in establishing identity? opinion of two registered medical practitioners' is required for",
+            "type": "MCQ",
+            "part": null,
+            "heading": "A. Attempt all MCQs as there will be no negative marking. a) R.M.P. In-charge of the hospital in which brain-stem",
+            "options": [
+              {
+                "label": "a",
+                "text": "Nuclear DNA termination ofpregnancy?"
+              },
+              {
+                "label": "b",
+                "text": "Mitochondrial DNA a) Up to 12 Weeks b) 12 - 20 Weeks"
+              },
+              {
+                "label": "c",
+                "text": "Nuclear & Mitochondrial DNA c) 20-24weeksd) 12-24 Weeks"
+              },
+              {
+                "label": "d",
+                "text": "Blood group antigen 16. What should be the minimum age of the survivor of a sexual"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "6",
+            "text": "In freshwater drowning, the death occurs within 4-5 minutes of offence for giving valid consent to undergo a medicolegal\nsubmersion due to ventricular fibrillation. Which of the examination?\nfollowing pathophysiological reasons is attributed to this? a) She must have attained the age of 7 years",
+            "type": "MCQ",
+            "part": null,
+            "heading": "A. Attempt all MCQs as there will be no negative marking. a) R.M.P. In-charge of the hospital in which brain-stem",
+            "options": [
+              {
+                "label": "a",
+                "text": "Total asphyxia is produced due to fresh water b) She must have attained the age of 12 years."
+              },
+              {
+                "label": "b",
+                "text": "Laryngospasm causing vagal inhibition c) She must have attained the age of 16 years"
+              },
+              {
+                "label": "c",
+                "text": "Haemoconcentration of blood caused by the osmotic d) She must have attained the age of 18 years"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "7",
+            "text": "pressure effects 17. Ms. Shilpa chopped the right ear pinna of Kashi. Which of the\nd) Haemodilution, overloading of heart and haemolysis following Sections will be applicable for the Offence &\ncausing hyperkalaemia Punishment in this case?",
+            "type": "MCQ",
+            "part": null,
+            "heading": "A. Attempt all MCQs as there will be no negative marking. a) R.M.P. In-charge of the hospital in which brain-stem",
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "needs_review"
+          },
+          {
+            "number": "7",
+            "text": "What would have been the race of an individual if skull bone has a) S. 319 & S. 325 IPC\nrounded nasal opening and horse shoe shaped palette, round b) S. 320 & S 324 IPC\norbit, and cephalic index above 80? e) S. 320 & 325 IPC",
+            "type": "MCQ",
+            "part": null,
+            "heading": "A. Attempt all MCQs as there will be no negative marking. a) R.M.P. In-charge of the hospital in which brain-stem",
+            "options": [
+              {
+                "label": "a",
+                "text": "Negro d) S. 320 & 326 IPC"
+              },
+              {
+                "label": "b",
+                "text": "Mongol 18. Which of the following test is done for detecting vaginal"
+              },
+              {
+                "label": "c",
+                "text": "Europeans epithelial cells from the accused in a case of sexual assault?"
+              },
+              {
+                "label": "d",
+                "text": "Aryans a) Lugol's iodine"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "8",
+            "text": "Perjury is an offence defined under Section 555355152555 and b) Phenolphthalein\npunishment is given as per the Section. c) Toluidine blue",
+            "type": "MCQ",
+            "part": null,
+            "heading": "A. Attempt all MCQs as there will be no negative marking. a) R.M.P. In-charge of the hospital in which brain-stem",
+            "options": [
+              {
+                "label": "a",
+                "text": "S. 174 IPC & S. 176 IPC d) Methylene blue"
+              },
+              {
+                "label": "b",
+                "text": "S. 174 CrPC & S. 176 CrPC 19. Which of the following autonomous board under National"
+              },
+              {
+                "label": "c",
+                "text": "S. 191 IPC & S. 193 IPC Medical Commission has appellate powers with respect to the"
+              },
+              {
+                "label": "d",
+                "text": "S. 197 IPC & S. 198 IPC actions taken by the State Medical Council?"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "9",
+            "text": "What could be the cause of death if post-mortem staining is of a) Undergraduate Medical Education Board\nbluish green colour? b) Postgraduate Medical Education Board",
+            "type": "MCQ",
+            "part": null,
+            "heading": "A. Attempt all MCQs as there will be no negative marking. a) R.M.P. In-charge of the hospital in which brain-stem",
+            "options": [
+              {
+                "label": "a",
+                "text": "Carbon monoxide poisoning c) Medical Assessment and Rating Board"
+              },
+              {
+                "label": "b",
+                "text": "Cyanide poisoning d) Ethics and Medical Registration Board"
+              },
+              {
+                "label": "c",
+                "text": "Hydrogen sulphide poisoning 20. In which of the following poisoning 'Silver Nitrate Paper Test"
+              },
+              {
+                "label": "d",
+                "text": "Phosphorus poisoning. is done as bed side test?"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "10",
+            "text": "Which of the following poisoning may present with \"smoky a) Methyl alcohol\nstool syndrome\"? b) Organophosphate",
+            "type": "MCQ",
+            "part": null,
+            "heading": "A. Attempt all MCQs as there will be no negative marking. a) R.M.P. In-charge of the hospital in which brain-stem",
+            "options": [
+              {
+                "label": "a",
+                "text": "Iodine c) Barium c) Hydrogen cyanide"
+              },
+              {
+                "label": "b",
+                "text": "Phosphorus d) CuSO4 d) Aluminium phosphide"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "instructions": null,
+        "parts": null,
+        "raw_text": "ROHILKHAND MEDICAL COLLEGE & HOSPITAL\nFORENSIC MEDICINE & TOXICOLOGY\nSend Up Examination, MBBS Phase 3 (Part 1), Dec. 2022\nMULTIPLE CHOICE QUESTIONS 11. Which of the following DOES NQT comprise a part of the boar\n[Time: 20 Min.] [Max Marks=20] of medical experts certifying brain-stem death as per the\nINSTRUCTIONS: Transplantation of Human Organs and Tissues Rules, 2014?\nA. Attempt all MCQs as there will be no negative marking. a) R.M.P. In-charge of the hospital in which brain-stem\ndeath has occurred\nB. Choose the correct/most appropriate response and fill in b) R.M.P. nominated from the panel of names sent by the\nthe OMR sheet appropriately. hospitals and approved by the Appropriate Authority\neJ R.M.P. being family physician of the recipient\n1. Which of the following is the most reliable method of d) R.M.P. treating the aforesaid deceased person\nidentification for a human being? 12. Which of the following solution is used to preserve viscera for\na) Gustafson method b) DNA profiling histopathological examination during autopsy?\nc) ABO-Rh blood group d) Fingerprinting a)Normal saline\n2. Ossification of which of the following bones can be b) Saturated saline solution\nc)\ncorrelated with the age of viability of a foetus? Super saturated saline solution\na) Cuboid b) Talus d) 10% Formaldehyde solution\nc) Calcaneum d) Upper end of t\u00edbia 13. A person saw a snake hanging from the tree, where only the rope\n3. Which of the following is the characteristic post-mortem findings was hanging. Which of the following psychiatric disorder he was\nin deaths due to starvation? suffering from?\na) Scaphoid abdomen and hepatomegaly a) Delusion\nb) Absence of fat from around internal organs and b) Illusion\nc) Impulse\nsplenomegaly d) Hallucination\nc) Intestinal walls appear like tissue paper and distended 14. A man aged 70 years with chronic duodenal ulceration died of\ngall bladder peritonitis 2 days after an operation for duodenal perforation.\nd) Collapsed lungs and exudes a good amount of blood He was also suffering from Carcinoma of bronchus for the past 1\non section year. What will be mentioned in the antecedent cause of death\n4 Burking is a type of asphyxial death comprising of: (Column I b of FORM No. 4) while preparing his Medical\na) Smothering & Gagging Certification of Cause of Death?\nb) Smothering & Manual strangulation a) Peritonitis\nc) Smothering & Traumatic asphyxia b) Duodenal perforation\nd) Smothering & Ligature strangulation c) Carcinoma of bronchus\n5. A cut hair without root was recovered from a scene of the crime d) None of the above\nand sent to FSL. Which of the following component in the hair 15. Under the MTP Amendment Act 2021, at what gestational age the\nwill be helpful in establishing identity? opinion of two registered medical practitioners' is required for\na) Nuclear DNA termination ofpregnancy?\nb) Mitochondrial DNA a) Up to 12 Weeks b) 12 - 20 Weeks\nc) Nuclear & Mitochondrial DNA c) 20-24weeksd) 12-24 Weeks\nd) Blood group antigen 16. What should be the minimum age of the survivor of a sexual\n6. In freshwater drowning, the death occurs within 4-5 minutes of offence for giving valid consent to undergo a medicolegal\nsubmersion due to ventricular fibrillation. Which of the examination?\nfollowing pathophysiological reasons is attributed to this? a) She must have attained the age of 7 years\na) Total asphyxia is produced due to fresh water b) She must have attained the age of 12 years.\nb) Laryngospasm causing vagal inhibition c) She must have attained the age of 16 years\nc) Haemoconcentration of blood caused by the osmotic d) She must have attained the age of 18 years\npressure effects 17. Ms. Shilpa chopped the right ear pinna of Kashi. Which of the\nd) Haemodilution, overloading of heart and haemolysis following Sections will be applicable for the Offence &\ncausing hyperkalaemia Punishment in this case?\n7. What would have been the race of an individual if skull bone has a) S. 319 & S. 325 IPC\nrounded nasal opening and horse shoe shaped palette, round b) S. 320 & S 324 IPC\norbit, and cephalic index above 80? e) S. 320 & 325 IPC\na) Negro d) S. 320 & 326 IPC\nb) Mongol 18. Which of the following test is done for detecting vaginal\nc) Europeans epithelial cells from the accused in a case of sexual assault?\nd) Aryans a) Lugol's iodine\n8. Perjury is an offence defined under Section 555355152555 and b) Phenolphthalein\npunishment is given as per the Section. c) Toluidine blue\na) S. 174 IPC & S. 176 IPC d) Methylene blue\nb) S. 174 CrPC & S. 176 CrPC 19. Which of the following autonomous board under National\nc) S. 191 IPC & S. 193 IPC Medical Commission has appellate powers with respect to the\nd) S. 197 IPC & S. 198 IPC actions taken by the State Medical Council?\n9. What could be the cause of death if post-mortem staining is of a) Undergraduate Medical Education Board\nbluish green colour? b) Postgraduate Medical Education Board\na) Carbon monoxide poisoning c) Medical Assessment and Rating Board\nb) Cyanide poisoning d) Ethics a"
+      },
+      {
+        "paper_index": 17,
+        "page_range": [
+          18,
+          18
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": null,
+          "exam_year": "2022",
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "80",
+          "duration": "2 Hours 40 Minutes",
+          "confidence": 0.25,
+          "status": "needs_review"
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "offence. Describe sample collection and preservation as evidentiary material in such a case.",
+            "type": "Essay",
+            "part": "SECTION-A",
+            "heading": null,
+            "options": null,
+            "marks": "12",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "2",
+            "text": "Discuss in brief about the following: []\nA. Ligature strangulation: Definition, postmortem findings and causes of death\nB. Brain stem death: Declaration and its medicolegal importance\nC. Patient's autonomy and paternalism in medical practice. []",
+            "type": "Essay",
+            "part": "SECTION-A",
+            "heading": null,
+            "options": null,
+            "marks": "15",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "How will you differentiate between:\nA. Bruise & Postmortem staining during autopsy?\nB. Incised wound and Lacerated wound during clinical examination?",
+            "type": "Essay",
+            "part": "SECTION-A",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "4",
+            "text": "A 28 years old married female presented to emergency department with lower abdominal pain with\n9 lunar months of pregnancy. She had h/o previous one lower segment caesarian section 1 year back.\nOn per abdomen examination, tender uterine scar was noted by the Obstetrician and advised for\nadmission under observation with strict bed rest and conservative treatment. After 1 hour patient felt\nbetter and her husband insisted for discharge but Obstetrician insisted to stay admitted explaining risk\nof impending uterine rupture and absolute need for continuous monitoring and necessity of early\nsurgical intervention if indicated. In spite of explaining the risks, the attendant took the patient home\nagainst medical advice. After 2 hours, the patient's attendant brought the patient to the hospital with\nh/o sudden severe pain in the lower abdomen and bleeding per vaginum half an hour before. On\nexamination the patient was brought dead and there were no signs of fetus being alive.\nWhat precaution could have been taken by the Obstetrician in such case to avoid charges of\nnegligence. What formalities are desired to be done by a doctor in casualty in a brought dead case?",
+            "type": "Essay",
+            "part": "SECTION-A",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "1",
+            "text": "Describe in brief about components and their toxic effects of snake venom. Discuss signs &\nsymptoms, and management of a case of cobra envenomation. []",
+            "type": "Essay",
+            "part": "SECTION-B",
+            "heading": null,
+            "options": null,
+            "marks": "5",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "2",
+            "text": "Discuss in brief about the following: []\nA. 3,4 Methylene Dioxy Meth Amphetamine (Ecstasy): Mode of action, signs & symptoms,\nmanagement, and medicolegal importance ReD Automietism\nB. Methyl alcohol: Mode of action, signs & symptoms, and management\nC. Precipitate labor and its medicolegal importance Folble theepy",
+            "type": "Essay",
+            "part": "SECTION-B",
+            "heading": null,
+            "options": null,
+            "marks": "15",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "Comment with appropriate explanation on the following questions: []\nA. How a slurry of activated charcoal with sorbitol will be helpful in an acute aluminium\nphosphide poisoning case?\nB. If a person of unsound mind murders his colleague, what would be the status of his criminal\nresponsibility in the courts of law?",
+            "type": "Essay",
+            "part": "SECTION-B",
+            "heading": null,
+            "options": null,
+            "marks": "8",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "4",
+            "text": "A boy after allegedly committing a crime, was brought by the police to the casualty department for\nmedicolegal examination and determination of his age. His dental panoramic tomograph showed\nthe boy have been in the age of mixed dentition and only permanent first molar, central and lateral\nincisors have been appeared.\nWhat could be the age of the boy? What are the provisions on offences committed by a boy of this\nage? Discuss in brief. []",
+            "type": "Essay",
+            "part": "SECTION-B",
+            "heading": null,
+            "options": null,
+            "marks": "5",
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "instructions": [
+          "1. Attempt all questions.",
+          "2. Use separate answer booklet for Sections A & B."
+        ],
+        "parts": [
+          "SECTION-A",
+          "SECTION-B"
+        ],
+        "raw_text": "ROHILKHAND MEDICAL COLLEGE & HOSPITAL\nFORENSIC MEDICINE & TOXICOLOGY\nSend Up Examination, MBBS Phase 3 (Part 1), Dec. 2022\nTime: 2 Hours 40 Minutes] [Maximum marks:80]\nNote: 1. Attempt all questions.\n2. Use separate answer booklet for Sections A & B.\nSECTION-A\noffence. Describe sample collection and preservation as evidentiary material in such a case.\n[3+5+4=12]\n2. Discuss in brief about the following: [5X3=15]\nA. Ligature strangulation: Definition, postmortem findings and causes of death\nB. Brain stem death: Declaration and its medicolegal importance\nC. Patient's autonomy and paternalism in medical practice. [4X2=8]\n3. How will you differentiate between:\nA. Bruise & Postmortem staining during autopsy?\nB. Incised wound and Lacerated wound during clinical examination?\n4. A 28 years old married female presented to emergency department with lower abdominal pain with\n9 lunar months of pregnancy. She had h/o previous one lower segment caesarian section 1 year back.\nOn per abdomen examination, tender uterine scar was noted by the Obstetrician and advised for\nadmission under observation with strict bed rest and conservative treatment. After 1 hour patient felt\nbetter and her husband insisted for discharge but Obstetrician insisted to stay admitted explaining risk\nof impending uterine rupture and absolute need for continuous monitoring and necessity of early\nsurgical intervention if indicated. In spite of explaining the risks, the attendant took the patient home\nagainst medical advice. After 2 hours, the patient's attendant brought the patient to the hospital with\nh/o sudden severe pain in the lower abdomen and bleeding per vaginum half an hour before. On\nexamination the patient was brought dead and there were no signs of fetus being alive.\nWhat precaution could have been taken by the Obstetrician in such case to avoid charges of\nnegligence. What formalities are desired to be done by a doctor in casualty in a brought dead case?\n[2+3=5]\nSECTION-B\n1. Describe in brief about components and their toxic effects of snake venom. Discuss signs &\nsymptoms, and management of a case of cobra envenomation. [3+5+4=12]\n2. Discuss in brief about the following: [5X3=15]\nA. 3,4 Methylene Dioxy Meth Amphetamine (Ecstasy): Mode of action, signs & symptoms,\nmanagement, and medicolegal importance ReD Automietism\nB. Methyl alcohol: Mode of action, signs & symptoms, and management\nC. Precipitate labor and its medicolegal importance Folble theepy\n3. Comment with appropriate explanation on the following questions: [4X2=8]\nA. How a slurry of activated charcoal with sorbitol will be helpful in an acute aluminium\nphosphide poisoning case?\nB. If a person of unsound mind murders his colleague, what would be the status of his criminal\nresponsibility in the courts of law?\n4. A boy after allegedly committing a crime, was brought by the police to the casualty department for\nmedicolegal examination and determination of his age. His dental panoramic tomograph showed\nthe boy have been in the age of mixed dentition and only permanent first molar, central and lateral\nincisors have been appeared.\nWhat could be the age of the boy? What are the provisions on offences committed by a boy of this\nage? Discuss in brief. [2+3=5]"
+      }
+    ],
+    "processing_notes": [
+      "Paper 14, Q2: classified as MCQ but no options found \u2014 review needed.",
+      "Paper 15: low metadata confidence (0.25) \u2014 manual review needed.",
+      "Paper 16: low metadata confidence (0.25) \u2014 manual review needed.",
+      "Paper 16, Q1: classified as MCQ but no options found \u2014 review needed.",
+      "Paper 16, Q7: classified as MCQ but no options found \u2014 review needed.",
+      "Paper 17: low metadata confidence (0.25) \u2014 manual review needed."
+    ]
+  },
+  "created_at": "2026-10-02T11:23:21.407552"
+}

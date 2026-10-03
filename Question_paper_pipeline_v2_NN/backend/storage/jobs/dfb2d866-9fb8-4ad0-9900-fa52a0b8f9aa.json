@@ -1,0 +1,326 @@
+{
+  "job_id": "dfb2d866-9fb8-4ad0-9900-fa52a0b8f9aa",
+  "status": "completed",
+  "filename": "WhatsApp Image 2026-09-28 at 21.21.48.jpeg",
+  "progress": 100,
+  "current_step": "Completed",
+  "error": null,
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 2295,
+      "processing_state": "FINALIZED"
+    }
+  ],
+  "result": {
+    "document": "cf300446-91ac-474a-88d2-40e8d5273321.jpeg",
+    "total_pages": 1,
+    "question_papers": [
+      {
+        "paper_index": 0,
+        "page_range": [
+          1,
+          1
+        ],
+        "metadata": {
+          "university": "UHSR EXAMINATIONS",
+          "exam_month": "August",
+          "exam_year": "2026",
+          "session_code": "1744N",
+          "subject": "Community Medicine",
+          "paper_code": null,
+          "max_marks": "100",
+          "duration": "3 hours",
+          "confidence": 1.0,
+          "status": "ok",
+          "missing_fields": []
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "How will you diagnose and treat an adult patient with drug-sensitive pulmonary tuberculosis according to the National Tuberculosis Elimination Programme (NTEP) guidelines? Discuss the initiatives undertaken by the Government of India for tuberculosis elimination.",
+            "type": "Essay",
+            "part": "PART-A",
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.992,
+            "confidence_breakdown": {
+              "ocr": 0.994,
+              "boundary": 1.0,
+              "classification": 0.981,
+              "overall": 0.992
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Write short note on the following: (a) Management of a child with some dehydration as per IMNCI guidelines (b) Role of UNICEF in promoting public health (c) Prevention and control of health problems due to lifestyle changes (d) Validity of a screening test (e) Health problems of elderly",
+            "type": "Short Notes",
+            "part": "PART-A",
+            "heading": null,
+            "options": null,
+            "marks": "25",
+            "confidence": 0.992,
+            "confidence_breakdown": {
+              "ocr": 0.994,
+              "boundary": 1.0,
+              "classification": 0.981,
+              "overall": 0.992
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "(a) Differentiate between: (1) Essential medicine and Counterfeit Medicine (2) Incidence and prevalence (3) Elimination and Eradication (b) Give reasons, why? (1) MR vaccine is not used after 4 hours of reconstitution (2) The trend of diseases should be followed",
+            "type": "Short Notes",
+            "part": "PART-A",
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.841,
+            "confidence_breakdown": {
+              "ocr": 0.994,
+              "boundary": 1.0,
+              "classification": 0.55,
+              "overall": 0.841
+            },
+            "status": "needs_review",
+            "confidence_level": "MEDIUM",
+            "anomalies": []
+          },
+          {
+            "number": "4",
+            "text": "Multiple choice questions. 1. A person is said to be diabetic when the plasma fasting glucose is more than or equal to (mg/dl): (a) 126 (b) 200 (c) 220 (d) 260 2. The insecticide used for impregnation of mosquito nets is: (a) DDT (b) Deltamethrin (c) Malathion (d) Diazinon 3. In an outbreak of cholera in a village of 2000 population, 20 cases have occurred and 5 died. What is the Case fatality rate? (a) 0.4% (b) 0.25% (c) 4% (d) 25% 4. If a new drug is invented which prevent the mortality from the diseases but does not affect the cure then which of the following will happen: (a) Incidence will increase (b) Incidence will decrease (c) Prevalence will decrease (d) Prevalence will increase",
+            "type": "Short Notes",
+            "part": "PART-A",
+            "heading": "Multiple choice questions",
+            "options": null,
+            "marks": "5",
+            "confidence": 0.981,
+            "confidence_breakdown": {
+              "ocr": 0.994,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.981
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4.1",
+            "text": "A person is said to be diabetic when the plasma fasting glucose is more than or\nequal to (mg/dl):",
+            "type": "MCQ",
+            "part": "PART-A",
+            "heading": null,
+            "options": [
+              {
+                "label": "a",
+                "text": "126"
+              },
+              {
+                "label": "b",
+                "text": "200"
+              },
+              {
+                "label": "c",
+                "text": "220"
+              },
+              {
+                "label": "d",
+                "text": "260"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.992,
+            "confidence_breakdown": {
+              "ocr": 0.994,
+              "boundary": 1.0,
+              "classification": 0.981,
+              "overall": 0.992
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4.2",
+            "text": "The insecticide used for impregnation of mosquito nets is:",
+            "type": "MCQ",
+            "part": "PART-A",
+            "heading": null,
+            "options": [
+              {
+                "label": "a",
+                "text": "DDT"
+              },
+              {
+                "label": "b",
+                "text": "Deltamethrin"
+              },
+              {
+                "label": "c",
+                "text": "Malathion"
+              },
+              {
+                "label": "d",
+                "text": "Diazinon"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.992,
+            "confidence_breakdown": {
+              "ocr": 0.994,
+              "boundary": 1.0,
+              "classification": 0.981,
+              "overall": 0.992
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4.3",
+            "text": "In an outbreak of cholera in a village of 2000 population, 20 cases have occurred\nand 5 died. What is the Case fatality rate?",
+            "type": "MCQ",
+            "part": "PART-A",
+            "heading": null,
+            "options": [
+              {
+                "label": "a",
+                "text": "0.4%"
+              },
+              {
+                "label": "b",
+                "text": "0.25%"
+              },
+              {
+                "label": "c",
+                "text": "4%"
+              },
+              {
+                "label": "d",
+                "text": "25%"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.992,
+            "confidence_breakdown": {
+              "ocr": 0.994,
+              "boundary": 1.0,
+              "classification": 0.981,
+              "overall": 0.992
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4.4",
+            "text": "If a new drug is invented which prevent the mortality from the diseases but does\nnot affect the cure then which of the following will happen:",
+            "type": "MCQ",
+            "part": "PART-A",
+            "heading": null,
+            "options": [
+              {
+                "label": "a",
+                "text": "Incidence will increase"
+              },
+              {
+                "label": "b",
+                "text": "Incidence will decrease"
+              },
+              {
+                "label": "c",
+                "text": "Prevalence will decrease"
+              },
+              {
+                "label": "d",
+                "text": "Prevalence will increase"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.992,
+            "confidence_breakdown": {
+              "ocr": 0.994,
+              "boundary": 1.0,
+              "classification": 0.981,
+              "overall": 0.992
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "1. Attempt all of the following questions. Preferably attempt all the questions serially.",
+          "2. Part-A and Part-B are to be attempted in separate answer booklets.(Two answer booklets to be used)",
+          "3. Do not leave blank spaces of more than two lines in the writing area on the answer sheet, cross any blank spaces of more than two lines before the END stamp after you finish the exam.",
+          "4. Do not use black lead/graphite pencil on the answer booklets for answering the questions. A case of use of Unfairmeans will be made if instructions at 2, 3 & 4 are not complied."
+        ],
+        "parts": [
+          "PART-A"
+        ],
+        "raw_text": "UHSREXAMINATIONS\nANQP Code: MBY3P4 Q.P. Code: 1744N\n14th August, 2026 MBBS 3rd Prof. Part-1\nCommunity Medicine (Paper-2)\nTime: 3 hours M. Marks: 100 Roll No.\n*** IMPORTANT NOTE:\n1. Attempt all of the following questions. Preferably attempt all the questions serially.\n2. Part-A and Part-B are to be attempted in separate answer booklets.(Two answer booklets to be used)\n3. Do not leave blank spaces of more than two lines in the writing area on the answer sheet, cross\nany blank spaces of more than two lines before the END stamp after you finish the exam.\n4. Do not use black lead/graphite pencil on the answer booklets for answering the questions.\nA case of use of Unfairmeans will be made if instructions at 2, 3 & 4 are not complied.\nPART-A\nQ.1 How will you diagnose and treat an adult patient with drug-sensitive pulmonary 6+4=10\ntuberculosis according to the National Tuberculosis Elimination Programme (NTEP)\nguidelines? Discuss the initiatives undertaken by the Government of India for\ntuberculosis elimination.\nQ.2 Write short note on the following: 5x5=25\n(a) Management of a child with some dehydration as per IMNCl guidelines\n(b) Role of UNICEF in promoting public health\n(c) Prevention and control of health problems due to lifestyle changes\n(d) Validity of a screening test\n(e) Health problems of elderly\nQ.3 (a) Differentiate between: 2x5=10\n(1) Essential medicine and Counterfeit Medicine\n(2) Incidence and prevalence\n(3) Elimination and Eradication\n(b) Give reasons, why?\n(1) MR vaccine is not used after 4 hours of reconstitution\n(2) The trend of diseases should be followed\nQ.4 Multiple choice questions. 1x5=5\n1. A person is said to be diabetic when the plasma fasting glucose is more than or\nequal to (mg/dl):\n(a) 126\n(b) 200\n(c) 220\n(d) 260\nThe insecticide used for impregnation of mosquito nets is:\n(a) DDT\n(b) Deltamethrin\n(c) Malathion\n(d) Diazinon\n3. In an outbreak of cholera in a village of 2000 population, 20 cases have occurred\nand 5 died. What is the Case fatality rate?\n(a) 0.4%\n(b) 0.25%\n(c) 4%\n(d) 25%\n4. If a new drug is invented which prevent the mortality from the diseases but does\nnot affect the cure then which of the following will happen:\n(a) Incidence will increase\n(b) Incidence will decrease\n(c) Prevalence will decrease\n(d) Prevalence will increase",
+        "confidence": {
+          "ocr_confidence": 0.994,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 1.0,
+          "classification_confidence": 0.923,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.991
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [],
+        "vision_verified": true,
+        "vision_confidence": 0.95,
+        "vision_status": "CORRECTED",
+        "needs_manual_review": false
+      }
+    ],
+    "page_audits": [
+      {
+        "page": 1,
+        "confidence": {
+          "ocr_confidence": 0.994,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 1.0,
+          "classification_confidence": 0.923,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.991
+        },
+        "status": "HIGH",
+        "anomalies": [],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.95,
+        "vision_status": "CORRECTED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 4
+      }
+    ],
+    "processing_notes": [],
+    "needs_visual_verification": false,
+    "visual_verification_reasons": [],
+    "vision_verified_pages": [
+      1
+    ],
+    "needs_manual_review": false
+  },
+  "created_at": "2026-10-02T16:29:50.157880"
+}

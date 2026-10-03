@@ -1,0 +1,157 @@
+{
+  "job_id": "8cca01ab-fd75-4ac5-bd71-7e584372d807",
+  "status": "completed",
+  "filename": "WhatsApp Image 2026-09-26 at 06.32.04 (1).jpeg",
+  "progress": 100,
+  "current_step": "Completed",
+  "error": null,
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 2726
+    }
+  ],
+  "result": {
+    "document": "3565c5a0-150e-468c-9c8c-42908f176405.jpeg",
+    "total_pages": 1,
+    "question_papers": [
+      {
+        "paper_index": 0,
+        "page_range": [
+          1,
+          1
+        ],
+        "metadata": {
+          "university": "UHSR EXAMINATIONS",
+          "exam_month": "September",
+          "exam_year": "2026",
+          "session_code": "MBY2P4",
+          "subject": "Pharmacology",
+          "paper_code": null,
+          "max_marks": "100",
+          "duration": "3 hours",
+          "confidence": 1.0,
+          "status": "ok"
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "the operation the anaesthetic agent was discontinued, and the patient was allowed to breathe air\nspontaneously. Within a few minutes pt. became cyanosed though his breathing was normal\n(a) Name the most likely anaesthetic agent used & it belongs to which class of general anaesthetics?\n(b) What is this phenomenon called & explain the underlying mechanism?\n(c) How will you prevent such an incident?\n(d) Enumerate general anaesthetics which are given intravenously.",
+            "type": "Essay",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "2",
+            "text": "(a) Uses and adverse effects of Phenytoin\n(b) Uses and adverse effects of Opioids\n(c) Uses and adverse effects of Corticosteroids\n(d) Cotrimoxazole\n(e) Are there exceptions to full disclosure? Can family members request withholding of information from\npatient?",
+            "type": "Short Notes",
+            "heading": "Write short notes on:",
+            "options": null,
+            "marks": "25",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "(a) Levodopa is combined with carbidopa for the treatment of Parkinson's disease.\n(b) Fluoroquinolones are not preferred in children and elderly age.\n(c) Oxytocin is preferred over ergometrine for the induction of labour",
+            "type": "Short Notes",
+            "heading": "Explain why?",
+            "options": null,
+            "marks": "9",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "4.1",
+            "text": "An 82-year-old hospitalized patient with creatinine clearance of 25 mL/min has a microbial\nInfection requiring treatment with antibiotics. Which one of the following drugs is least likely to\nrequire a dosage adjustment, either a smaller dose than usual or an increased interval between\ndoses?",
+            "type": "MCQ",
+            "heading": null,
+            "options": [
+              {
+                "label": "a",
+                "text": "Amnphotericin B"
+              },
+              {
+                "label": "b",
+                "text": "Erythromycin"
+              },
+              {
+                "label": "c",
+                "text": "Gentamicin"
+              },
+              {
+                "label": "d",
+                "text": "Vancomycin"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "4.2",
+            "text": "A 30-year-old patient with uncomplicated P. Falciparum malaria from a region with\nchloroquine resistance is prescribed artemether-lumefantrine. Why is combination therapy\npreferred over artemisinin monotherapy?",
+            "type": "MCQ",
+            "heading": null,
+            "options": [
+              {
+                "label": "a",
+                "text": "It prevents all adverse effects of artemisinin"
+              },
+              {
+                "label": "b",
+                "text": "It delays development of resistance & improves efficacy"
+              },
+              {
+                "label": "c",
+                "text": "Lumefantrine increases renal elimination of artemisinin"
+              },
+              {
+                "label": "d",
+                "text": "Artemisinin is inactive against P. Falciparum"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "4.3",
+            "text": "symptoms experienced by the patient are drug related, the most likely cause is:",
+            "type": "MCQ",
+            "heading": null,
+            "options": [
+              {
+                "label": "a",
+                "text": "Cyclophosphamide"
+              },
+              {
+                "label": "b",
+                "text": "5-FU"
+              },
+              {
+                "label": "c",
+                "text": "Methotrexate"
+              },
+              {
+                "label": "d",
+                "text": "Prednisone"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "raw_text": "Code: MBY2P3\nSeptember, 2026\nTime: 3 hours\nANQP Code: MBY2P4\nUH.\n7th September, 2026\nM. Mar\nTime: 3 hou\nUHSR EXAMINATIONS\nQ.P.Code:1726N\nANQP Code: MBY2P6\nMBBS 2nd Prof.\n15th September, 2026\n207289\nPharmacology (Paper-2)\nRoll No.\nTime: 3 hours M. Marks: 100\n*** IMPORTANT NOTE:\n1. Attempt all of the following questions. Preferably attempt all the questions serially.\n2. Part-A and Part-B are to be attempted in separate answer booklets.(Two answer booklets to be used)\nany blank spaces of more than two lines before the END stamp after you finish the exam.\n4. Do not use black lead/graphite pencil on the answer booklets for answering the questions.\nA case of use of Unfairmeans will be made if instructions at 2, 3 & 4 are not complied.\nPART-A\nthe operation the anaesthetic agent was discontinued, and the patient was allowed to breathe air\nspontaneously. Within a few minutes pt. became cyanosed though his breathing was normal\n(a) Name the most likely anaesthetic agent used & it belongs to which class of general anaesthetics?\n(b) What is this phenomenon called & explain the underlying mechanism?\n(c) How will you prevent such an incident?\n(d) Enumerate general anaesthetics which are given intravenously.\n5x5=25\nWrite short notes on:\nQ.2\n(a) Uses and adverse effects of Phenytoin\n(b) Uses and adverse effects of Opioids\n(c) Uses and adverse effects of Corticosteroids\n(d) Cotrimoxazole\n(e) Are there exceptions to full disclosure? Can family members request withholding of information from\npatient?\n3x3=9\nExplain why?\nQ.3\n(a) Levodopa is combined with carbidopa for the treatment of Parkinson's disease.\n(b) Fluoroquinolones are not preferred in children and elderly age.\n(c) Oxytocin is preferred over ergometrine for the induction of labour\n1x5=5\nMultiple choice questions.\nQ.4\n1. An 82-year-old hospitalized patient with creatinine clearance of 25 mL/min has a microbial\nInfection requiring treatment with antibiotics. Which one of the following drugs is least likely to\nrequire a dosage adjustment, either a smaller dose than usual or an increased interval between\ndoses?\n(a) Amnphotericin B\n(b) Erythromycin\n(c) Gentamicin\n(d) Vancomycin\n2. A 30-year-old patient with uncomplicated P. Falciparum malaria from a region with\nchloroquine resistance is prescribed artemether-lumefantrine. Why is combination therapy\npreferred over artemisinin monotherapy?\n(a) It prevents all adverse effects of artemisinin\n(b) It delays development of resistance & improves efficacy\n(c) Lumefantrine increases renal elimination of artemisinin\n(d) Artemisinin is inactive against P. Falciparum\nsymptoms experienced by the patient are drug related, the most likely cause is:\n(a) Cyclophosphamide\n(b) 5-FU\n(c) Methotrexate\n(d) Prednisone"
+      }
+    ],
+    "processing_notes": []
+  },
+  "created_at": "2026-10-02T05:26:33.520067"
+}

@@ -1,0 +1,47 @@
+{
+  "job_id": "5442a983-2186-478b-85e2-264ba71b27a1",
+  "status": "completed",
+  "filename": "WhatsApp Image 2026-09-26 at 06.32.03.jpeg",
+  "progress": 100,
+  "current_step": "Completed",
+  "error": null,
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 578
+    }
+  ],
+  "result": {
+    "document": "dcf03cff-4fd4-497a-9488-4c03ccb4e4ec.jpeg",
+    "total_pages": 1,
+    "question_papers": [
+      {
+        "paper_index": 0,
+        "page_range": [
+          1,
+          1
+        ],
+        "metadata": {
+          "university": "UHSR EXAMINATIONS",
+          "exam_month": "September",
+          "exam_year": "2026",
+          "session_code": "MBY2P5",
+          "subject": "Pharmacology",
+          "paper_code": null,
+          "max_marks": "100",
+          "duration": "3 hours",
+          "confidence": 1.0,
+          "status": "needs_review"
+        },
+        "questions": [],
+        "raw_text": "UHSR EXAMINATIONS\nANQP Code: MBY2P5\nQ.P. Code: 1725N\n10* September, 2026\nMBBS 2 Prof.\nPharmacology (Paper-t)\nRoll No.2.n.2.2.89.\nTime: 3 hours M. Marks: 100\nIMPORTANT NOTE;\nA case of use of Unfairmeans will be made If instructions at 2. 3 & 4 are not complled\nPARTA\n3+3+3+2=11\n(a) Pharmacotherapy of Status asthmatics\n(d) Role ol low dose aspirin for coronary artery disease\nMultiple choice questions.\n(d) Nicardipine\n(a) Activation of adenylate cyclase\n(b) Activation of guanylate cyclasa\n(d) Inhibrion of cGMP phosphodiesterase\nthis agent?\nal diluting segment of loop of Henle"
+      }
+    ],
+    "processing_notes": [
+      "Paper 0: no questions extracted."
+    ]
+  },
+  "created_at": "2026-10-02T02:42:52.960584"
+}

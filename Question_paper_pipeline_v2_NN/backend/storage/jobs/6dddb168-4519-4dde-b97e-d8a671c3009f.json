@@ -1,0 +1,11 @@
+{
+  "job_id": "6dddb168-4519-4dde-b97e-d8a671c3009f",
+  "status": "failed",
+  "filename": "PSM PYQ_240822_220018.pdf",
+  "progress": 10,
+  "current_step": "Failed",
+  "error": "A process in the process pool was terminated abruptly while the future was running or pending.",
+  "pages_info": [],
+  "result": null,
+  "created_at": "2026-10-02T14:34:53.853172"
+}

@@ -1,0 +1,11 @@
+{
+  "job_id": "b722d1c8-78cf-435c-b496-5d0a576da5df",
+  "status": "cancelled",
+  "filename": "biochemistry pyqs.pdf",
+  "progress": 67,
+  "current_step": "Cancelled by user",
+  "error": null,
+  "pages_info": [],
+  "result": null,
+  "created_at": "2026-10-03T11:58:37.540631"
+}

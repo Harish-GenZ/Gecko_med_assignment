@@ -1,0 +1,177 @@
+{
+  "job_id": "249b07c6-bd78-4ac8-b4db-ff17b68217ff",
+  "status": "completed",
+  "filename": "WhatsApp Image 2026-09-26 at 06.32.03.jpeg",
+  "progress": 100,
+  "current_step": "Completed",
+  "error": null,
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 3220
+    }
+  ],
+  "result": {
+    "document": "WhatsApp Image 2026-09-26 at 06.32.03.jpeg",
+    "total_pages": 1,
+    "question_papers": [
+      {
+        "paper_index": 0,
+        "page_range": [
+          1,
+          1
+        ],
+        "metadata": {
+          "university": "UHSR EXAMINATIONS",
+          "exam_month": "September",
+          "exam_year": "2026",
+          "session_code": "MBY2P5",
+          "subject": "Pharmacology",
+          "paper_code": null,
+          "max_marks": "100",
+          "duration": "3 hours",
+          "confidence": 1.0,
+          "status": "ok"
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "A 40-year-old farmer presented to the emergency with complaints of abdominal cramps, vomiting,\ndiarrhoea and breathlessness. On examination there was drooling of saliva, constricted pupils, moist\nskin and rapid pulse with slow volume. It was diagnosed as a case of organophosphate poisoning.\n(a) Write down the pharmacotherapy for this patient.\n(b) Write down the pharmacological basis of prescribed drugs.\n(c) Why Oximes are not effective for carbamate poisoning?\n(d) Enumerate other uses of antimuscarinic drugs.",
+            "type": "Essay",
+            "options": null,
+            "marks": "11",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "2",
+            "text": "(a) Pharmacotherapy of Status asthmatics\n(b) Adverse effect and contraindications of beta blockers\n(c) Kinetics of elimination\n(d) Role of low dose aspirin for coronary artery disease\n(e) Principles of bioethics",
+            "type": "Short Notes",
+            "options": null,
+            "marks": "25",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "Explain why?\n(a) Dopamine is preferred over Adrenaline for the treatment of cardiogenic shock.\n(b) Volume of distribution of certain drugs exceeds total blood volume.\n(c) Thrombolysis should be done as early as possible, within first few hours after myocardial infarction",
+            "type": "Short Notes",
+            "options": null,
+            "marks": "9",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "4.1",
+            "text": "A 58-year-old woman with hypertension and paroxysmal supraventricular tachycardia\nrequires a calcium channel blocker that balances peripheral vasodilation with AV node\nconduction slowing. Which benzothiazepine derivative is most appropriate?",
+            "type": "MCQ",
+            "options": [
+              {
+                "label": "a",
+                "text": "Nifedipine"
+              },
+              {
+                "label": "b",
+                "text": "Verapamil"
+              },
+              {
+                "label": "c",
+                "text": "Diltiazem"
+              },
+              {
+                "label": "d",
+                "text": "Nicardipine"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "4.2",
+            "text": "A 32-year-old Caucasian woman experiences chest pain with exertion. She reports having\nsimilar episodes in the past. It is determined that she is experiencing stable angina. She is\ngiven nitro-glycerine to relax her vascular smooth musculature. Which best describes a\nstep on nitro-glycerine's mechanism of action?",
+            "type": "MCQ",
+            "options": [
+              {
+                "label": "a",
+                "text": "Activation of adenylate cyclase"
+              },
+              {
+                "label": "b",
+                "text": "Activation of guanylate cyclase"
+              },
+              {
+                "label": "c",
+                "text": "Inhibition of calcium channels"
+              },
+              {
+                "label": "d",
+                "text": "Inhibition of cGMP phosphodiesterase"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "4.3",
+            "text": "Why is the onset of action of lidocaine delayed in infected tissue?\n62-year-old man with congestive heart failure has been taking a loop diuretic to reduce",
+            "type": "MCQ",
+            "options": [
+              {
+                "label": "a",
+                "text": "Increased hepatic clearance"
+              },
+              {
+                "label": "b",
+                "text": "Decreased un-ionized drug available to cross the nerve membrane"
+              },
+              {
+                "label": "c",
+                "text": "Rapid degradation by tissue esterases"
+              },
+              {
+                "label": "d",
+                "text": "Downregulation of voltage-gated sodium channels"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "4.4",
+            "text": "diuretic, triamterene, is added to his regimen. Which of the following is the site of action of\nthis agent?",
+            "type": "MCQ",
+            "options": [
+              {
+                "label": "a",
+                "text": "Thick ascending limb of loop of Henle"
+              },
+              {
+                "label": "b",
+                "text": "Collecting tubule"
+              },
+              {
+                "label": "c",
+                "text": "Proximal Convoluted Tubule"
+              },
+              {
+                "label": "d",
+                "text": "Cortical diluting segment of loop of Henle"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "raw_text": "UHSR EXAMINATIONS\nQ.P. Code: 1725N\nANQP Code: MBY2P5\nMBBS 2nd Prof.\n10th September, 2026\nPharmacology (Paper-1)\nRoll No..2.0.7..2..8 9 .\nTime: 3 hours M. Marks: 100\nIMPORTANT NOTE:\n1. Attempt all of the following questions. Preferably attempt all the questions serially.\n2. Part-A and Part-B are to be attempted in separate answer booklets.(Two answer booklets to be used)\n3. Do not leave blank spaces of more than two lines in the writing area on the answer sheet, cross\nany blank spaces of more than two lines before the END stamp after you finish the exam.\n4. Do not use black lead/graphite pencil on the answer booklets for answering the questions.\nA case of use of Unfairmeans will be made if instructions at 2, 3 & 4 are not complied.\nPART-A\n3+3+3+2=11\nA 40-year-old farmer presented to the emergency with complaints of abdominal cramps, vomiting,\nQ.1\ndiarrhoea and breathlessness. On examination there was drooling of saliva, constricted pupils, moist\nskin and rapid pulse with slow volume. It was diagnosed as a case of organophosphate poisoning.\n(a) Write down the pharmacotherapy for this patient.\n(b) Write down the pharmacological basis of prescribed drugs.\n(c) Why Oximes are not effective for carbamate poisoning?\n(d) Enumerate other uses of antimuscarinic drugs.\n5x5=25\nWrite short notes on:\nQ.2\n(a) Pharmacotherapy of Status asthmatics\n(b) Adverse effect and contraindications of beta blockers\n(c) Kinetics of elimination\n(d) Role of low dose aspirin for coronary artery disease\n(e) Principles of bioethics\n3x3=9\nQ.3\nExplain why?\n(a) Dopamine is preferred over Adrenaline for the treatment of cardiogenic shock.\n(b) Volume of distribution of certain drugs exceeds total blood volume.\n(c) Thrombolysis should be done as early as possible, within first few hours after myocardial infarction\n1x5=5\nMultiple choice questions.\nQ.4\n1. A 58-year-old woman with hypertension and paroxysmal supraventricular tachycardia\nrequires a calcium channel blocker that balances peripheral vasodilation with AV node\nconduction slowing. Which benzothiazepine derivative is most appropriate?\n(a) Nifedipine\n(b) Verapamil\n(c) Diltiazem\n(d) Nicardipine\n2. A 32-year-old Caucasian woman experiences chest pain with exertion. She reports having\nsimilar episodes in the past. It is determined that she is experiencing stable angina. She is\ngiven nitro-glycerine to relax her vascular smooth musculature. Which best describes a\nstep on nitro-glycerine's mechanism of action?\n(a) Activation of adenylate cyclase\n. (b) Activation of guanylate cyclase\n(c) Inhibition of calcium channels\n(d) Inhibition of cGMP phosphodiesterase\n3. Why is the onset of action of lidocaine delayed in infected tissue?\n(a) Increased hepatic clearance\n(b) Decreased un-ionized drug available to cross the nerve membrane\n(c) Rapid degradation by tissue esterases\n(d) Downregulation of voltage-gated sodium channels\n62-year-old man with congestive heart failure has been taking a loop diuretic to reduce\n4.\ndiuretic, triamterene, is added to his regimen. Which of the following is the site of action of\nthis agent?\n(a) Thick ascending limb of loop of Henle\n-(b) Collecting tubule\n(c) Proximal Convoluted Tubule\n(d) Cortical diluting segment of loop of Henle"
+      }
+    ],
+    "processing_notes": []
+  },
+  "created_at": "2026-10-02T03:28:14.486523"
+}

@@ -1,0 +1,249 @@
+{
+  "job_id": "f75445dd-858a-4655-9d0b-ff50ca99d649",
+  "status": "completed",
+  "filename": "sample_2pages.pdf",
+  "progress": 100,
+  "current_step": "Completed",
+  "error": null,
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 693
+    },
+    {
+      "page_number": 2,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 942
+    }
+  ],
+  "result": {
+    "document": "a8d73ecf-a3b0-4084-92b5-fd94d13faff1.pdf",
+    "total_pages": 2,
+    "question_papers": [
+      {
+        "paper_index": 0,
+        "page_range": [
+          1,
+          1
+        ],
+        "metadata": {
+          "university": "University Examination \u2013 February 2021",
+          "exam_month": "February",
+          "exam_year": "2021",
+          "session_code": "11016",
+          "subject": null,
+          "paper_code": null,
+          "max_marks": "60",
+          "duration": null,
+          "confidence": 0.7,
+          "status": "ok",
+          "missing_fields": [
+            "subject"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": ".1.\nInfluenza.\nDefine screening. What are the uses of screening?\numerate the tools of measurement in epidemiology. Briefly describe each.\nBalanced Diet\nIncubation period",
+            "type": "Essay",
+            "part": "Part A",
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.981,
+            "confidence_breakdown": {
+              "ocr": 0.993,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.981
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": null,
+        "parts": [
+          "Part A"
+        ],
+        "raw_text": "Paper Code : 11016\nUniversity Examination \u2013 February 2021\nMBBS 3dProfessional Part-I\nCommunityMedicine\nME: 3 hours First Paper\nMaximum marks: 60\nPart A and Part B. Explain your answers with appropriate diagrams.\nPart A\n.1. (30 Marks)\nInfluenza.\nDefine screening. What are the uses of screening? (10 Marks)\n(5 Marks)\numerate the tools of measurement in epidemiology. Briefly describe each.\nBalanced Diet (5 Marks)\n(5 Marks)\nIncubation period (5 Marks)\nPart B\n(30 Marks)\nDescribe methods of chlorination. What is the role of residual chlorine in\ndrinking water? (10 Marks)\nAcculturation (5 Marks)\nUses of Growth Chart (5 Marks)\nHealth Hazards of health care waste (5 Marks)\nSchick Test (5 Marks)",
+        "confidence": {
+          "ocr_confidence": 0.993,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.7,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.964
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ]
+      },
+      {
+        "paper_index": 1,
+        "page_range": [
+          2,
+          2
+        ],
+        "metadata": {
+          "university": "University Examination - February 2021",
+          "exam_month": "February",
+          "exam_year": "2021",
+          "session_code": "11017",
+          "subject": "Community Medicine",
+          "paper_code": null,
+          "max_marks": "60",
+          "duration": null,
+          "confidence": 0.95,
+          "status": "ok",
+          "missing_fields": []
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Define Couple protection rate and discuss the various contraceptive methods\nClassify hormonal contraceptives. Write briefly about their side effects.\nWhat is a growth chart? Enumerate the uses of the growth chart.",
+            "type": "Essay",
+            "part": "Part A",
+            "heading": null,
+            "options": null,
+            "marks": "5",
+            "confidence": 0.981,
+            "confidence_breakdown": {
+              "ocr": 0.993,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.981
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Define Primary Health Care. Enumerate and describe the principles of primary\nist Nutritional Assessment methods and describe in brief Anthropometry.\nManagement of dog bite\nOVID-19pandemic",
+            "type": "Essay",
+            "part": "Part B",
+            "heading": null,
+            "options": null,
+            "marks": "5",
+            "confidence": 0.981,
+            "confidence_breakdown": {
+              "ocr": 0.993,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.981
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Attempt all questions. Write answers in separate answer sheets for Part A and Part B. Explain your answers with appropriate diagrams."
+        ],
+        "parts": [
+          "Part A",
+          "Part B"
+        ],
+        "raw_text": "Paper Code : 11017\nUniversity Examination - February 2021\nMBBS 3d Professional Part-I\nCommunity Medicine\n:3 hours Second Paper\nMaximum marks: 60\nAttempt all questions. Write answers in separate answer sheets for\nPart A and Part B. Explain your answers with appropriate diagrams.\nPart A\n(30 Marks)\nDefine Couple protection rate and discuss the various contraceptive methods\nused for family planning. (10 Marks)\nOutline the Radical treatment for malaria (5 Marks)\nCost-benefit analysis (5 Marks)\nClassify hormonal contraceptives. Write briefly about their side effects.\n(5 Marks)\nWhat is a growth chart? Enumerate the uses of the growth chart. (5 Marks)\n(30 Marks)\nPart B\nDefine Primary Health Care. Enumerate and describe the principles of primary\nhealth care. (10 Marks)\nsickness absenteeism (5 Marks)\nist Nutritional Assessment methods and describe in brief Anthropometry.\n(5 Marks)\nManagement of dog bite (5 Marks)\n(5 Marks)\nOVID-19pandemic",
+        "confidence": {
+          "ocr_confidence": 0.993,
+          "ocr_confidence_available": true,
+          "structure_confidence": 0.75,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.95,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.58
+        },
+        "confidence_level": "LOW",
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_like_text_in_instructions"
+        ],
+        "anomalies": [
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "high",
+            "text_preview": "Attempt all questions. Write answers in separate answer sheets for Part A and Part B. Explain your answers with appropri",
+            "reason": "Instruction item 1 contains question action verbs and structured question numbering/subparts."
+          }
+        ]
+      }
+    ],
+    "page_audits": [
+      {
+        "page": 1,
+        "confidence": {
+          "ocr_confidence": 0.993,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.7,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.964
+        },
+        "status": "HIGH",
+        "anomalies": [
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": []
+      },
+      {
+        "page": 2,
+        "confidence": {
+          "ocr_confidence": 0.993,
+          "ocr_confidence_available": true,
+          "structure_confidence": 0.75,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.95,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.58
+        },
+        "status": "LOW",
+        "anomalies": [
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "high",
+            "text_preview": "Attempt all questions. Write answers in separate answer sheets for Part A and Part B. Explain your answers with appropri",
+            "reason": "Instruction item 1 contains question action verbs and structured question numbering/subparts."
+          }
+        ],
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_like_text_in_instructions"
+        ]
+      }
+    ],
+    "processing_notes": [
+      "Paper 2: [HIGH] Instruction item 1 contains question action verbs and structured question numbering/subparts.",
+      "Paper 2: Overall confidence 58.0% (LOW) \u2014 visual review recommended."
+    ],
+    "needs_visual_verification": true,
+    "visual_verification_reasons": [
+      "question_like_text_in_instructions"
+    ]
+  },
+  "created_at": "2026-10-02T12:22:16.598438"
+}

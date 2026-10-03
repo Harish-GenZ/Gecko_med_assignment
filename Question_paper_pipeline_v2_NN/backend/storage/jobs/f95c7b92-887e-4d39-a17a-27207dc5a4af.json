@@ -1,0 +1,118 @@
+{
+  "job_id": "f95c7b92-887e-4d39-a17a-27207dc5a4af",
+  "status": "completed",
+  "filename": "sample_2pages.pdf",
+  "progress": 100,
+  "current_step": "Completed",
+  "error": null,
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 693
+    },
+    {
+      "page_number": 2,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 942
+    }
+  ],
+  "result": {
+    "document": "376064bf-fbba-492b-8507-948c7bdf9695.pdf",
+    "total_pages": 2,
+    "question_papers": [
+      {
+        "paper_index": 0,
+        "page_range": [
+          1,
+          1
+        ],
+        "metadata": {
+          "university": "University Examination \u2013 February 2021",
+          "exam_month": "February",
+          "exam_year": "2021",
+          "session_code": "11016",
+          "subject": null,
+          "paper_code": null,
+          "max_marks": "60",
+          "duration": null,
+          "confidence": 1.0,
+          "status": "ok"
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": ".1.\nInfluenza.\nDefine screening. What are the uses of screening?\numerate the tools of measurement in epidemiology. Briefly describe each.\nBalanced Diet\nIncubation period",
+            "type": "Essay",
+            "part": "Part A",
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "instructions": null,
+        "parts": [
+          "Part A"
+        ],
+        "raw_text": "Paper Code : 11016\nUniversity Examination \u2013 February 2021\nMBBS 3dProfessional Part-I\nCommunityMedicine\nME: 3 hours First Paper\nMaximum marks: 60\nPart A and Part B. Explain your answers with appropriate diagrams.\nPart A\n.1. (30 Marks)\nInfluenza.\nDefine screening. What are the uses of screening? (10 Marks)\n(5 Marks)\numerate the tools of measurement in epidemiology. Briefly describe each.\nBalanced Diet (5 Marks)\n(5 Marks)\nIncubation period (5 Marks)\nPart B\n(30 Marks)\nDescribe methods of chlorination. What is the role of residual chlorine in\ndrinking water? (10 Marks)\nAcculturation (5 Marks)\nUses of Growth Chart (5 Marks)\nHealth Hazards of health care waste (5 Marks)\nSchick Test (5 Marks)"
+      },
+      {
+        "paper_index": 1,
+        "page_range": [
+          2,
+          2
+        ],
+        "metadata": {
+          "university": "University Examination - February 2021",
+          "exam_month": "February",
+          "exam_year": "2021",
+          "session_code": "11017",
+          "subject": "Community Medicine",
+          "paper_code": null,
+          "max_marks": "60",
+          "duration": null,
+          "confidence": 1.0,
+          "status": "ok"
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Define Couple protection rate and discuss the various contraceptive methods\nClassify hormonal contraceptives. Write briefly about their side effects.\nWhat is a growth chart? Enumerate the uses of the growth chart.",
+            "type": "Essay",
+            "part": "Part A",
+            "heading": null,
+            "options": null,
+            "marks": "5",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "2",
+            "text": "Define Primary Health Care. Enumerate and describe the principles of primary\nist Nutritional Assessment methods and describe in brief Anthropometry.\nManagement of dog bite\nOVID-19pandemic",
+            "type": "Essay",
+            "part": "Part B",
+            "heading": null,
+            "options": null,
+            "marks": "5",
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "instructions": [
+          "Attempt all questions. Write answers in separate answer sheets for Part A and Part B. Explain your answers with appropriate diagrams."
+        ],
+        "parts": [
+          "Part A",
+          "Part B"
+        ],
+        "raw_text": "Paper Code : 11017\nUniversity Examination - February 2021\nMBBS 3d Professional Part-I\nCommunity Medicine\n:3 hours Second Paper\nMaximum marks: 60\nAttempt all questions. Write answers in separate answer sheets for\nPart A and Part B. Explain your answers with appropriate diagrams.\nPart A\n(30 Marks)\nDefine Couple protection rate and discuss the various contraceptive methods\nused for family planning. (10 Marks)\nOutline the Radical treatment for malaria (5 Marks)\nCost-benefit analysis (5 Marks)\nClassify hormonal contraceptives. Write briefly about their side effects.\n(5 Marks)\nWhat is a growth chart? Enumerate the uses of the growth chart. (5 Marks)\n(30 Marks)\nPart B\nDefine Primary Health Care. Enumerate and describe the principles of primary\nhealth care. (10 Marks)\nsickness absenteeism (5 Marks)\nist Nutritional Assessment methods and describe in brief Anthropometry.\n(5 Marks)\nManagement of dog bite (5 Marks)\n(5 Marks)\nOVID-19pandemic"
+      }
+    ],
+    "processing_notes": []
+  },
+  "created_at": "2026-10-02T11:13:15.533465"
+}

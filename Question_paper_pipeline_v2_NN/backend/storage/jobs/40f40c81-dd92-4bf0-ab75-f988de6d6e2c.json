@@ -1,0 +1,4222 @@
+{
+  "job_id": "40f40c81-dd92-4bf0-ab75-f988de6d6e2c",
+  "status": "completed",
+  "filename": "FMT (Internal Assessment  & Send Up).pdf",
+  "progress": 100,
+  "current_step": "Completed",
+  "error": null,
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 970,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 2,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 845,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 3,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 738,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 4,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 599,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 5,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 522,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 6,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 678,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 7,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 618,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 8,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 736,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 9,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 766,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 10,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 591,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 11,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 689,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 12,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 712,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 13,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 914,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 14,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 1112,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 15,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 1848,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 16,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 2221,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 17,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 5023,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 18,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 2585,
+      "processing_state": "FINALIZED"
+    }
+  ],
+  "result": {
+    "document": "ed42f69b-dd6e-4844-bc30-0d2dc6b87cd3.pdf",
+    "total_pages": 18,
+    "question_papers": [
+      {
+        "paper_index": 0,
+        "page_range": [
+          1,
+          1
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": null,
+          "exam_year": "2009",
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "40",
+          "duration": "Three Hours",
+          "confidence": 0.9,
+          "status": "needs_review",
+          "missing_fields": [
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "2",
+            "text": "Write notes on the following:\na. Superimposition technique.\nb. Police inquest. (Marks: 3 each)",
+            "type": "Essay",
+            "part": "PART-A",
+            "heading": null,
+            "options": null,
+            "marks": "8",
+            "confidence": 0.952,
+            "confidence_breakdown": {
+              "ocr": 0.876,
+              "boundary": 1.0,
+              "classification": 0.951,
+              "overall": 0.952
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Write notes on the followings:\na. Hermaphrodite\nb. Medico-legal importance of 12 years of age\nc. Dying declaration. (Marks: 2 each)",
+            "type": "Essay",
+            "part": "PART-A",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.952,
+            "confidence_breakdown": {
+              "ocr": 0.876,
+              "boundary": 1.0,
+              "classification": 0.951,
+              "overall": 0.952
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "A 25 years old female's charred dead body with pugilistic attitude was recovered\nby police from a house. How will you arrive to a conclusion that the cause of\ndeath was asphyxia as a resultof antemortemburn?\n(Marks-8)",
+            "type": "Essay",
+            "part": "PART-B",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.952,
+            "confidence_breakdown": {
+              "ocr": 0.876,
+              "boundary": 1.0,
+              "classification": 0.951,
+              "overall": 0.952
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "a. Vicarious responsibility.\nb. Functionsof IndianMedical Council (Marks: 3 each)",
+            "type": "Short Notes",
+            "part": "PART-B",
+            "heading": "Write short notes on the following",
+            "options": null,
+            "marks": null,
+            "confidence": 0.952,
+            "confidence_breakdown": {
+              "ocr": 0.876,
+              "boundary": 1.0,
+              "classification": 0.951,
+              "overall": 0.952
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Write in brief on the following:\na Delusion\nb. Feigned inisanity\nc. Testamentary capacity (Marks:2each)",
+            "type": "Short Notes",
+            "part": "PART-B",
+            "heading": "Write short notes on the following",
+            "options": null,
+            "marks": null,
+            "confidence": 0.952,
+            "confidence_breakdown": {
+              "ocr": 0.876,
+              "boundary": 1.0,
+              "classification": 0.951,
+              "overall": 0.952
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Attempt all questions."
+        ],
+        "parts": [
+          "PART-A",
+          "PART-B"
+        ],
+        "raw_text": "Fmi[200|S]\n0410312011\nROHILKHANDMEDICALCOLLEGE,BAREILLY\nFirst Terminal Examination\nM.B.B.S.(2009Batch)\nFORENSIC MEDICINE ANDTOXICOLOGY\nTime: Three Hours] [MaximumMarks:40\nNote: Attempt all questions.\n(PART-A)\nMaximum Marks-20\nfired from different distances. (8 marks)\n2. Write notes on the following:\na. Superimposition technique.\nb. Police inquest. (Marks: 3 each)\n3. Write notes on the followings:\na. Hermaphrodite\nb.Medico-legal importance of 12 years of age\nc. Dying declaration. (Marks: 2 each)\n(PART-B)\nMaximumMarks-20\n1. A 25 years old female's charred dead body with pugilistic attitude was recovered\nby police from a house. How will you arrive to a conclusion that the cause of\ndeath was asphyxia as a resultof antemortemburn?\n(Marks-8)\n2.Write short notes on the following:\na. Vicarious responsibility.\nb.Functionsof IndianMedical Council (Marks: 3 each)\n3. Write in brief on the following:\na Delusion\nb.Feigned inisanity\nc. Testamentary capacity (Marks:2each)",
+        "confidence": {
+          "ocr_confidence": 0.876,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.951,
+          "consistency_confidence": 0.65,
+          "overall_confidence": 0.58
+        },
+        "confidence_level": "LOW",
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_numbering_gap"
+        ],
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "First extracted question is Q2; expected Q1. Initial questions appear lost or unsegmented."
+          }
+        ],
+        "vision_verified": true,
+        "vision_confidence": 0.94,
+        "vision_status": "CORRECTED",
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 1,
+        "page_range": [
+          2,
+          2
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": null,
+          "exam_year": null,
+          "session_code": null,
+          "subject": null,
+          "paper_code": null,
+          "max_marks": null,
+          "duration": "Three Hours",
+          "confidence": 0.4,
+          "status": "needs_review",
+          "missing_fields": [
+            "subject",
+            "exam_date",
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Classify Mechanical injuries. Describe the various types of Abrasions and its Medico-legal importance.",
+            "type": "Essay",
+            "part": "SECTION-B",
+            "heading": "Write short notes on the following",
+            "options": null,
+            "marks": "20",
+            "confidence": 0.95,
+            "confidence_breakdown": {
+              "ocr": 0.871,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.95
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Outline the Differences between:\n(i). Dying Declaration and Dying Deposition\n(ii). Hanging and Ligature Strangulation",
+            "type": "Essay",
+            "part": "SECTION-A",
+            "heading": null,
+            "options": null,
+            "marks": "8",
+            "confidence": 0.95,
+            "confidence_breakdown": {
+              "ocr": 0.871,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.95
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Write short answers on the following:\n(i). Criminal Negligence\n(ii).Brain Death and its Medico-legal importance",
+            "type": "Essay",
+            "part": "SECTION-B",
+            "heading": "Write short notes on the following",
+            "options": null,
+            "marks": "6",
+            "confidence": 0.95,
+            "confidence_breakdown": {
+              "ocr": 0.871,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.95
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "(i).Fingerprints and its Medico-legal importance\n(iy.Cafe Coronary)\n(iii). Magistrate's Inquest.",
+            "type": "Short Notes",
+            "part": "SECTION-A",
+            "heading": "Write short notes on the following",
+            "options": null,
+            "marks": "6",
+            "confidence": 0.95,
+            "confidence_breakdown": {
+              "ocr": 0.871,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.95
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "(i). Functions of Medical Council of India\n(ii).Informed Consent\n(iii).Vicarious liability.",
+            "type": "Short Notes",
+            "part": "SECTION-B",
+            "heading": "Write short notes on the following: (3X",
+            "options": null,
+            "marks": "6",
+            "confidence": 0.95,
+            "confidence_breakdown": {
+              "ocr": 0.871,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.95
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Attemptallquestions [Max.Marks:40"
+        ],
+        "parts": [
+          "SECTION-B",
+          "SECTION-A"
+        ],
+        "raw_text": "ROHILKHAND MEDICAL COLLEGE,BAREILLY\nTime: Three Hours]\nNote:Attemptallquestions [Max.Marks:40\nSECTION-A\n(Marks: 20)\nmortem findings in a case of wet drowning? (1+2+5=8)\n2. Outline the Differences between:\n(i). Dying Declaration and Dying Deposition (2 X3= 6)\n(ii). Hanging and Ligature Strangulation\n3. Write short notes on the following:\n(i).Fingerprints and its Medico-legal importance (3 X2=6)\n(iy.Cafe Coronary\n(iii). Magistrate's Inquest.\nSECTION-B\n(Marks: 20)\n1. Classify Mechanical injuries. Describe the various types of Abrasions and its Medico-legal importance.\n.(3+3+2=8)\n2.Write short answers on the following: (2 X 3=6)\n(i). Criminal Negligence\n(ii).Brain Death and its Medico-legal importance\n3. Write short notes on the following: (3X2=6)\n(i). Functions of Medical Council of India\n(ii).Informed Consent\n(iii).Vicarious liability.",
+        "confidence": {
+          "ocr_confidence": 0.871,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.4,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.65,
+          "overall_confidence": 0.58
+        },
+        "confidence_level": "LOW",
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_numbering_gap"
+        ],
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "First extracted question is Q2; expected Q1. Initial questions appear lost or unsegmented."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "vision_verified": true,
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 2,
+        "page_range": [
+          3,
+          3
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": "Sep",
+          "exam_year": null,
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "40",
+          "duration": "Three Hours",
+          "confidence": 0.9,
+          "status": "needs_review",
+          "missing_fields": [
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "2",
+            "text": "(Marks:3+5)\nWrite differences between:\na. Hanging & Strangulation\nb. Burns &Scalds.\n(Marks:3each)",
+            "type": "Essay",
+            "part": "PART-A",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.953,
+            "confidence_breakdown": {
+              "ocr": 0.879,
+              "boundary": 1.0,
+              "classification": 0.952,
+              "overall": 0.953
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Write notes on the following:\na. Cafe Coronary\nb. Masochism\nc. Joule Burn.\n(Marks:2each)",
+            "type": "Essay",
+            "part": "PART-A",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.953,
+            "confidence_breakdown": {
+              "ocr": 0.879,
+              "boundary": 1.0,
+              "classification": 0.952,
+              "overall": 0.953
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Wrlte difference between:\na. Wounds of Entry & Exit caused by a Bullet\nb. Virginity &Defloration. (Marks: 3 each)",
+            "type": "Essay",
+            "part": "PART-B",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.953,
+            "confidence_breakdown": {
+              "ocr": 0.879,
+              "boundary": 1.0,
+              "classification": 0.952,
+              "overall": 0.953
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Write notes on the following:\na. IndecentAssault\nb. The MTPAct, 1971\nc. SuddenInfantDeathSyndrome (Marks: 2 each)",
+            "type": "Essay",
+            "part": "PART-B",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.953,
+            "confidence_breakdown": {
+              "ocr": 0.879,
+              "boundary": 1.0,
+              "classification": 0.952,
+              "overall": 0.953
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4",
+            "text": "I.Classify Mechanical Injuries.Write 8 clauses of Grievous Injuries.\n(Marks: 3+5)",
+            "type": "Essay",
+            "part": "PART-B",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.953,
+            "confidence_breakdown": {
+              "ocr": 0.879,
+              "boundary": 1.0,
+              "classification": 0.952,
+              "overall": 0.953
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": null,
+        "parts": [
+          "PART-A",
+          "PART-B"
+        ],
+        "raw_text": "ROHILKHANDMEDICALCOLLEGE,BAREILLY\nFORENSICMEDICINE&TOXICOLOGY\nTime: Three Hours]\nNate:Attemptall questions. [MaximumMarks:40\n(PART-A)\nMaximum Marks-20\nL.Define Rape.Write procedure of examination ofa victim of Rape.\n(Marks:3+5)\n2.Write differences between:\na.Hanging & Strangulation\nb.Burns &Scalds.\n(Marks:3each)\n3.Write notes on the following:\na.Cafe Coronary\nb.Masochism\nc.Joule Burn.\n(Marks:2each)\n(PART-B)\nMaximum Marks-20\nI.Classify Mechanical Injuries.Write 8 clauses of Grievous Injuries.\n(Marks: 3+5)\n2. Wrlte difference between:\na.Wounds of Entry & Exit caused by a Bullet\nb.Virginity &Defloration. (Marks: 3 each)\n3. Write notes on the following:\na.IndecentAssault\nb.The MTPAct, 1971\nc.SuddenInfantDeathSyndrome (Marks: 2 each)",
+        "confidence": {
+          "ocr_confidence": 0.879,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.952,
+          "consistency_confidence": 0.65,
+          "overall_confidence": 0.58
+        },
+        "confidence_level": "LOW",
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_numbering_gap"
+        ],
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "First extracted question is Q2; expected Q1. Initial questions appear lost or unsegmented."
+          }
+        ],
+        "vision_verified": true,
+        "vision_confidence": 0.94,
+        "vision_status": "CORRECTED",
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 3,
+        "page_range": [
+          4,
+          4
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": null,
+          "exam_year": "2012",
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": null,
+          "duration": null,
+          "confidence": 0.8,
+          "status": "ok",
+          "missing_fields": [
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "ROHILKHANDMEDICALCOLLEGE,BAREILLY\nMBBS4rdsemester (2010Batch)\nInternal AssessmentTest-l,May10th,2012\nle:100Min] Forensic Medicineand Toxicology\nNote: 1)Attemptallquestions. [TotalMarks:50",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.82,
+            "confidence_breakdown": {
+              "ocr": 0.83,
+              "boundary": 0.7,
+              "classification": 0.95,
+              "overall": 0.82
+            },
+            "status": "ok",
+            "confidence_level": "MEDIUM",
+            "anomalies": [
+              {
+                "type": "header_leakage_in_question",
+                "severity": "medium",
+                "text_preview": "ROHILKHANDMEDICALCOLLEGE,BAREILLY\nMBBS4rdsemester (2010Batch)\nInternal AssessmentTest-l,May10th,2012",
+                "reason": "Question body contains examination header or instruction phrases."
+              }
+            ]
+          },
+          {
+            "number": "2",
+            "text": "Allotted marks are displayed in front of the questions.\nwater? Discuss estimation of time since death in submerged bodies. (4+8+4)\nWritethedifferencesbetween:\na. Hangingand strangulation by ligature\nb. True and false virginity.\nWriteshortnoteson:\na. Indecentassault\nb. Sexualasphyxia\nc. Throttling\nd. Section375IPC\ne. Tardieu'sspot.\nEnumerate:\na. Types of hanging\nb. Sexual perversions.",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.94,
+            "confidence_breakdown": {
+              "ocr": 0.83,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.94
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "1)Attemptallquestions. [TotalMarks:50",
+          "2) Allotted marks are displayed in front of the questions. water? Discuss estimation of time since death in submerged bodies. (4+8+4) Writethedifferencesbetween: a.Hangingand strangulation by ligature (2x5=10) b.True and false virginity. Writeshortnoteson: a. Indecentassault (4x5=20) b. Sexualasphyxia c. Throttling d. Section375IPC e. Tardieu'sspot. Enumerate: a.Types of hanging (2x2=4) b.Sexual perversions."
+        ],
+        "parts": null,
+        "raw_text": "ROHILKHANDMEDICALCOLLEGE,BAREILLY\nMBBS4rdsemester (2010Batch)\nInternal AssessmentTest-l,May10th,2012\nle:100Min] Forensic Medicineand Toxicology\nNote: 1)Attemptallquestions. [TotalMarks:50\n2) Allotted marks are displayed in front of the questions.\nwater? Discuss estimation of time since death in submerged bodies. (4+8+4)\nWritethedifferencesbetween:\na.Hangingand strangulation by ligature (2x5=10)\nb.True and false virginity.\nWriteshortnoteson:\na. Indecentassault (4x5=20)\nb. Sexualasphyxia\nc. Throttling\nd. Section375IPC\ne. Tardieu'sspot.\nEnumerate:\na.Types of hanging (2x2=4)\nb.Sexual perversions.",
+        "confidence": {
+          "ocr_confidence": 0.83,
+          "ocr_confidence_available": true,
+          "structure_confidence": 0.75,
+          "segmentation_confidence": 0.85,
+          "metadata_confidence": 0.8,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.58
+        },
+        "confidence_level": "LOW",
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_like_text_in_instructions"
+        ],
+        "anomalies": [
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "high",
+            "text_preview": "2) Allotted marks are displayed in front of the questions. water? Discuss estimation of time since death in submerged bo",
+            "reason": "Instruction item 2 contains question action verbs and structured question numbering/subparts."
+          },
+          {
+            "type": "header_leakage_in_question",
+            "severity": "medium",
+            "text_preview": "ROHILKHANDMEDICALCOLLEGE,BAREILLY\nMBBS4rdsemester (2010Batch)\nInternal AssessmentTest-l,May10th,2012",
+            "reason": "Question body contains examination header or instruction phrases."
+          }
+        ],
+        "vision_verified": true,
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 4,
+        "page_range": [
+          5,
+          5
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": null,
+          "exam_year": null,
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "50",
+          "duration": null,
+          "confidence": 0.65,
+          "status": "needs_review",
+          "missing_fields": [
+            "exam_date",
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "a. Defences against the charge of negligence\nb. Advertising\nc. Privileged communication\nd. Informed consent.",
+            "type": "Short Notes",
+            "part": null,
+            "heading": "1:Write Short Notes on",
+            "options": null,
+            "marks": "20",
+            "confidence": 0.949,
+            "confidence_breakdown": {
+              "ocr": 0.865,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.949
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Write in Brief about:\na. Lucid interval\nb. Civil responsibility of insane\nc. Feigned insanity\nd. Melancholia",
+            "type": "Short Notes",
+            "part": null,
+            "heading": "1:Write Short Notes on",
+            "options": null,
+            "marks": "20",
+            "confidence": 0.949,
+            "confidence_breakdown": {
+              "ocr": 0.865,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.949
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Enumerate:\na. Impulsive disorders (4X2%=10)\nb. Indications of Magistrate inquest\nc. Sentences authorised by Law\nd. Types of Hallucination.",
+            "type": "Short Notes",
+            "part": null,
+            "heading": "1:Write Short Notes on",
+            "options": null,
+            "marks": null,
+            "confidence": 0.949,
+            "confidence_breakdown": {
+              "ocr": 0.865,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.949
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Attempt all questions."
+        ],
+        "parts": null,
+        "raw_text": "ROHILKHAND MEDICAL COLLEGE, BAREILLY\nFORENSICMEDICINE&TOXICOLOGY\nTime: One Hour]\n[MaximumMarks:50\nNote:Attempt all questions.\n1:Write Short Notes on:\n(4X5=20)\na. Defences against the charge of negligence\nb. Advertising\nc.Privileged communication\nd.Informed consent.\n2. Write in Brief about:\na.Lucid interval (4X5=20)\nb.Civil responsibility of insane\nc. Feigned insanity\nd. Melancholia\n3.Enumerate:\na.Impulsive disorders (4X2%=10)\nb.Indications of Magistrate inquest\nc.Sentences authorised by Law\nd. Types of Hallucination.",
+        "confidence": {
+          "ocr_confidence": 0.865,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.65,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.933
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 5,
+        "page_range": [
+          6,
+          6
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": "July",
+          "exam_year": "2012",
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "50",
+          "duration": null,
+          "confidence": 0.85,
+          "status": "ok",
+          "missing_fields": [
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "a. Ageof contusions\nb. Grievous hurt\nc. Mechanism of Contrecoup injuries\nd. Whinlash injury\nContact shot.",
+            "type": "Short Notes",
+            "part": null,
+            "heading": "l.Write Short Notes on: (5X",
+            "options": null,
+            "marks": "20",
+            "confidence": 0.942,
+            "confidence_breakdown": {
+              "ocr": 0.84,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.942
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Write differences between\na. Antemortem and postmortem wounds\nb. Incised wound and lacerated wound\nc. True bruise and artificial bruise\nd. Entry wound and exit wound of a gunshot\ne. Drunkand'concussed.",
+            "type": "Short Notes",
+            "part": null,
+            "heading": "l.Write Short Notes on: (5X",
+            "options": null,
+            "marks": "20",
+            "confidence": 0.942,
+            "confidence_breakdown": {
+              "ocr": 0.84,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.942
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Enumerate: %=10)\na. Types of skull fracture\nb. Types of laceration\nC. Types of intracranial hemorrhazes\nd. IPCsassociatedwithinjuries",
+            "type": "Short Notes",
+            "part": null,
+            "heading": "l.Write Short Notes on: (5X",
+            "options": null,
+            "marks": "20",
+            "confidence": 0.942,
+            "confidence_breakdown": {
+              "ocr": 0.84,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.942
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": null,
+        "parts": null,
+        "raw_text": "ROHILKHANDMEDICALCOLLEGE,BAREILLY\nInternal Assessment Test-111,14th July,2012,\nM.B.B.S.4th Semester (2010 batch)\nFORENSICMEDICINE&TOXICOLOGY\nne:One Hourl [MaximumMarks:50\nte:Attemptall questions.\nl.Write Short Notes on: (5X4=20)\na.Ageof contusions\nb.Grievous hurt\nc.Mechanism of Contrecoup injuries\nd.Whinlash injury\nContact shot.\n2.Write differences between (5X4 =20)\na. Antemortem and postmortem wounds\nb.Incised wound and lacerated wound\nc.True bruise and artificial bruise\nd.Entry wound and exit wound of a gunshot\ne.Drunkand'concussed.\n3.Enumerate: (4X2%=10)\na. Types of skull fracture\nb.Types of laceration\nC. Types of intracranial hemorrhazes\nd.IPCsassociatedwithinjuries",
+        "confidence": {
+          "ocr_confidence": 0.84,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.85,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.948
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 6,
+        "page_range": [
+          7,
+          7
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": null,
+          "exam_year": "2012",
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "50",
+          "duration": null,
+          "confidence": 0.85,
+          "status": "ok",
+          "missing_fields": [
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Tardieu's spot\nb. Garroting\nC. Lust murder\nd. Emphysemaaquosum\ne. Overlaying\nEnumerate:",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "20",
+            "confidence": 0.939,
+            "confidence_breakdown": {
+              "ocr": 0.827,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.939
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "a. Typesof drowning\nb. Causes of death in cases of hanging",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "4",
+            "confidence": 0.939,
+            "confidence_breakdown": {
+              "ocr": 0.827,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.939
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "1)Attemptallquestions.",
+          "2) Allotted marks are displayed in front of the questions. important negative findings suggesting a non-consented act. (4+8+4)",
+          "2.Write the differences between: (2x5=10) a.Antemortemand Postmortemhanging b.Fresh water and salt water drowning.",
+          "3.1 Writeshort noteson:"
+        ],
+        "parts": null,
+        "raw_text": "ROHILKHANDMEDICALCOLLEGE,BAREILLY\nMBBS4rdsemester (2010Batch)\nInternal Assessment Test-1, May9th,2012\nne:100 Min] ForensicMedicineand Toxicology\n[Total Marks:50\nNote: 1)Attemptallquestions.\n2) Allotted marks are displayed in front of the questions.\nimportant negative findings suggesting a non-consented act. (4+8+4)\n2.Write the differences between: (2x5=10)\na.Antemortemand Postmortemhanging\nb.Fresh water and salt water drowning.\n3.1 Writeshort noteson:\n(4x5=20)\nTardieu's spot\nb. Garroting\nC. Lust murder\nd. Emphysemaaquosum\ne. Overlaying\nEnumerate:\n(2x2=4)\na.Typesof drowning\nb. Causes of death in cases of hanging",
+        "confidence": {
+          "ocr_confidence": 0.827,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.85,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.945
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 7,
+        "page_range": [
+          8,
+          8
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": null,
+          "exam_year": null,
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "40",
+          "duration": "Two Hours",
+          "confidence": 0.35,
+          "status": "needs_review",
+          "missing_fields": [
+            "university",
+            "exam_date",
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "2",
+            "text": "Write differences between:\na. Postmortem staining&Bruise\nb,Burns dueto Dryheat &Moist heat.",
+            "type": "Essay",
+            "part": "PART-A",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "confidence_breakdown": {
+              "ocr": 0.871,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.95
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Write notes on the following:\na. Exhumation\na. Medico-legal importanceofage\nb. The ConsumerProtectionAct.\npoisoning",
+            "type": "Essay",
+            "part": "PART-A",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "confidence_breakdown": {
+              "ocr": 0.871,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.95
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "What are the duties of a Casualty Medical Officer in a case of suspected\npoisoning? Discuss clinical features and management of a case of Methyl alcohol",
+            "type": "Essay",
+            "part": "PART-B",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "confidence_breakdown": {
+              "ocr": 0.871,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.95
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Attempt all questions"
+        ],
+        "parts": [
+          "PART-A",
+          "PART-B"
+        ],
+        "raw_text": "Time:Two Hours]\nNote:Attempt all questions\n(PART-A)\n2. Write differences between:\na.Postmortem staining&Bruise\nb,Burns dueto Dryheat &Moist heat.\n3. Write notes on the following:\na. Exhumation\na.Medico-legal importanceofage\nb.The ConsumerProtectionAct.\npoisoning\n2.Writeinbrief onthefollowing:\na.Snake Venom\nb. Warning notice.\n3. Write notes on thefollowing\na. Res ipsa loquitur\nb.ArtificialInsemination\nc.Delusions.\n[MaximumMarks:40\n(Marks: 2+6)\n(Marks:3each)\n(Marks: 2 each)\n(Marks: 3+5)\n(Marks:3 each)\n(Marks: 2 each)\nFORENSICMEDICINE\nMaximum Marks:20\n(PART-B)\nMaximum Marks:20\n1. What are the duties of a Casualty Medical Officer in a case of suspected\npoisoning? Discuss clinical features and management of a case of Methyl alcohol",
+        "confidence": {
+          "ocr_confidence": 0.871,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.35,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.65,
+          "overall_confidence": 0.58
+        },
+        "confidence_level": "LOW",
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_numbering_gap"
+        ],
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "First extracted question is Q2; expected Q1. Initial questions appear lost or unsegmented."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          }
+        ],
+        "vision_verified": true,
+        "vision_confidence": 0.94,
+        "vision_status": "CORRECTED",
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 8,
+        "page_range": [
+          9,
+          9
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": null,
+          "exam_year": null,
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "40",
+          "duration": "Two Hours",
+          "confidence": 0.35,
+          "status": "needs_review",
+          "missing_fields": [
+            "university",
+            "exam_date",
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "(Marks:3+5)\n(Marks:3 each)\n(Marks: 2 each)\nROHILKHANDMEDICAL COLLEGE,BAREILLY\nFORENSICMEDICINE\nb. Antemortem,& Postmortem Drowning.\nMaximumMarks:20",
+            "type": "Essay",
+            "part": "PART-B",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.795,
+            "confidence_breakdown": {
+              "ocr": 0.891,
+              "boundary": 0.7,
+              "classification": 0.835,
+              "overall": 0.795
+            },
+            "status": "ok",
+            "confidence_level": "MEDIUM",
+            "anomalies": [
+              {
+                "type": "header_leakage_in_question",
+                "severity": "medium",
+                "text_preview": "(Marks:3+5)\n(Marks:3 each)\n(Marks: 2 each)\nROHILKHANDMEDICAL COLLEGE,BAREILLY\nFORENSICMEDICINE\nb. An",
+                "reason": "Question body contains examination header or instruction phrases."
+              }
+            ]
+          }
+        ],
+        "instructions": [
+          "Attempt all questions. mortem burns?",
+          "2. Write differences between: a. Rigor Mortis & Cadaveric Spasm",
+          "3. Write notes on the following: a. Police Inquest a. Battered baby syndrome b. The Workmen's Compensation Act. Organophosphate poisoning",
+          "2. Write in brief on the following: a.Cobra Envenomation b.Functions of StateMedical Council.",
+          "3. Write notes on the following: a.Novus Actus Interveniens b.Sodomy c.Mc Naughten's Rule [MaximumMarks:40"
+        ],
+        "parts": [
+          "PART-B"
+        ],
+        "raw_text": "Time: Two Hours]\nNote: Attempt all questions.\nmortem burns?\n2. Write differences between:\na. Rigor Mortis & Cadaveric Spasm\n3. Write notes on the following:\na. Police Inquest\na. Battered baby syndrome\nb. The Workmen's Compensation Act.\nOrganophosphate poisoning\n2. Write in brief on the following:\na.Cobra Envenomation\nb.Functions of StateMedical Council.\n3. Write notes on the following:\na.Novus Actus Interveniens\nb.Sodomy\nc.Mc Naughten's Rule\n[MaximumMarks:40\n(PART-A)\n(Marks:2+3+3)\n(Marks: 3 each)\n(Marks: 2 each)\n(PART-B)\n(Marks:3+5)\n(Marks:3 each)\n(Marks: 2 each)\nROHILKHANDMEDICAL COLLEGE,BAREILLY\nFORENSICMEDICINE\nMaximum Marks:20\nb. Antemortem,& Postmortem Drowning.\nMaximumMarks:20\n1. Classify poisons. Discuss clinical features and management of a case of",
+        "confidence": {
+          "ocr_confidence": 0.891,
+          "ocr_confidence_available": true,
+          "structure_confidence": 0.25,
+          "segmentation_confidence": 0.7,
+          "metadata_confidence": 0.35,
+          "classification_confidence": 0.835,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.4
+        },
+        "confidence_level": "REVIEW_REQUIRED",
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_like_text_in_instructions",
+          "excessive_instruction_text_ratio",
+          "low_structure_confidence"
+        ],
+        "anomalies": [
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "high",
+            "text_preview": "3. Write notes on the following: a. Police Inquest a. Battered baby syndrome b. The Workmen's Compensation Act. Organoph",
+            "reason": "Instruction item 3 contains question action verbs and structured question numbering/subparts."
+          },
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "high",
+            "text_preview": "3. Write notes on the following: a.Novus Actus Interveniens b.Sodomy c.Mc Naughten's Rule [MaximumMarks:40",
+            "reason": "Instruction item 5 contains question action verbs and structured question numbering/subparts."
+          },
+          {
+            "type": "excessive_instruction_text_ratio",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "Instructions contain 435 characters while extracted questions contain only 147 characters. Content is trapped in header/instructions."
+          },
+          {
+            "type": "header_leakage_in_question",
+            "severity": "medium",
+            "text_preview": "(Marks:3+5)\n(Marks:3 each)\n(Marks: 2 each)\nROHILKHANDMEDICAL COLLEGE,BAREILLY\nFORENSICMEDICINE\nb. An",
+            "reason": "Question body contains examination header or instruction phrases."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          }
+        ],
+        "vision_verified": true,
+        "vision_confidence": 0.94,
+        "vision_status": "CORRECTED",
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 9,
+        "page_range": [
+          10,
+          10
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": "May",
+          "exam_year": "2013",
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "50",
+          "duration": "Two Hours",
+          "confidence": 0.9,
+          "status": "ok",
+          "missing_fields": [
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "ROHILKHAND MEDICAL COLLEGE, BAREILLY\nM.B.B.S. 4th Semester Internal assessment Test-2, 8th May 2013\nFORENSICMEDICINE",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.948,
+            "confidence_breakdown": {
+              "ocr": 0.863,
+              "boundary": 1.0,
+              "classification": 0.948,
+              "overall": 0.948
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Write differences between: (Marks:\na. Rigor mortis & Cadaveric spasm\nb. Antemortembruise&Postmortemhyposatasis",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.948,
+            "confidence_breakdown": {
+              "ocr": 0.863,
+              "boundary": 1.0,
+              "classification": 0.948,
+              "overall": 0.948
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Write notes on the following: (Marks:\na. Adipocere\nb. Exhumation\nc. Diagnosis of Brain Death\nd. Universal work precautions\ne. Aims and Objectives of autopsy\nf. Preservation of viscera in a case of death due to suspected poisoning",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "30",
+            "confidence": 0.948,
+            "confidence_breakdown": {
+              "ocr": 0.863,
+              "boundary": 1.0,
+              "classification": 0.948,
+              "overall": 0.948
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": null,
+        "parts": null,
+        "raw_text": "ROHILKHAND MEDICAL COLLEGE, BAREILLY\nM.B.B.S. 4th Semester Internal assessment Test-2, 8th May 2013\nFORENSICMEDICINE\nTime:Two Hours] [MaximumMarks:50\nNote: Attempt all questions.\nbody of a person died during this season? (Marks: 10)\n2. Write differences between: (Marks:2x5=10)\na. Rigor mortis & Cadaveric spasm\nb.Antemortembruise&Postmortemhyposatasis\n3. Write notes on the following: (Marks:6x5=30)\na. Adipocere\nb. Exhumation\nc. Diagnosis of Brain Death\nd. Universal work precautions\ne. Aims and Objectives of autopsy\nf.Preservation of viscera in a case of death due to suspected poisoning",
+        "confidence": {
+          "ocr_confidence": 0.863,
+          "ocr_confidence_available": true,
+          "structure_confidence": 0.05,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.948,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.2
+        },
+        "confidence_level": "REVIEW_REQUIRED",
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_like_text_in_instructions",
+          "low_structure_confidence"
+        ],
+        "anomalies": [
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "critical",
+            "text_preview": "Attempt all questions. body of a person died during this season? (Marks: 10)",
+            "reason": "Instruction item 1 contains per-question marks allocation '(Marks: 10', proving real questions were trapped inside instructions."
+          },
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "critical",
+            "text_preview": "2. Write differences between: (Marks:2x5=10) a. Rigor mortis & Cadaveric spasm b.Antemortembruise&Postmortemhyposatasis",
+            "reason": "Instruction item 2 contains per-question marks allocation '(Marks:2', proving real questions were trapped inside instructions."
+          },
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "critical",
+            "text_preview": "3. Write notes on the following: (Marks:6x5=30) a. Adipocere b. Exhumation c. Diagnosis of Brain Death d. Universal work",
+            "reason": "Instruction item 3 contains per-question marks allocation '(Marks:6', proving real questions were trapped inside instructions."
+          }
+        ],
+        "vision_verified": true,
+        "vision_confidence": 0.94,
+        "vision_status": "CORRECTED",
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 10,
+        "page_range": [
+          11,
+          11
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": null,
+          "exam_year": null,
+          "session_code": null,
+          "subject": null,
+          "paper_code": null,
+          "max_marks": "40",
+          "duration": null,
+          "confidence": 0.4,
+          "status": "needs_review",
+          "missing_fields": [
+            "subject",
+            "exam_date",
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "3",
+            "text": "Write Notes On b.Professional negligence&misconduct bya doctor\nb. BrainDeath Rigor Mortis as an indicator of PM Interval\nC. Delusion",
+            "type": "Essay",
+            "part": "PART-A",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.935,
+            "confidence_breakdown": {
+              "ocr": 0.811,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.935
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4",
+            "text": "Discussthemedico-legal importanceofAge Discussdifferencesbetween",
+            "type": "Essay",
+            "part": "PART-A",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.935,
+            "confidence_breakdown": {
+              "ocr": 0.811,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.935
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "5",
+            "text": "a. Hangingandstrangulationbyligature",
+            "type": "Essay",
+            "part": "PART-A",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.935,
+            "confidence_breakdown": {
+              "ocr": 0.811,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.935
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4",
+            "text": "MaximamMarks-20\nWrite name of courts starting from the highest to lowest in that order and discuss their powers\nDiscussdifferencesbetween\nTemporaryteeth and permanentteeth\nb. Bruise and PM Lividity\nB. Writenotes on",
+            "type": "Essay",
+            "part": "PART-B",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.935,
+            "confidence_breakdown": {
+              "ocr": 0.811,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.935
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "5",
+            "text": "a... Dactylography\nb. Preservationofsample'forDNAfingerprinting\nDoctrineof Res lpsa Loquitur",
+            "type": "Essay",
+            "part": "PART-B",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.935,
+            "confidence_breakdown": {
+              "ocr": 0.811,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.935
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": null,
+        "parts": [
+          "PART-A",
+          "PART-B"
+        ],
+        "raw_text": "ROHILKHANDMEDICALCOLLEGE,BAREILLY\nTIME-THREEHOURS ENSICMEDICINE&TOXICOLOGY\nMAXIMUMMARKS-40\n(PART-A)\nMaximummarks-20\n4.Discussthemedico-legal importanceofAge Discussdifferencesbetween\n3x2\na.Hangingandstrangulationbyligature\n3. Write Notes On b.Professional negligence&misconduct bya doctor\na. 2x3\nb. BrainDeath Rigor Mortis as an indicator of PM Interval\nC. Delusion\n(PART-B)\nMaximamMarks-20\nWrite name of courts starting from the highest to lowest in that order and discuss their powers\nDiscussdifferencesbetween\n3x2\nTemporaryteeth and permanentteeth\nb. Bruise and PM Lividity\nB.Writenotes on\n2x3\na... Dactylography\nb. Preservationofsample'forDNAfingerprinting\nDoctrineof Res lpsa Loquitur",
+        "confidence": {
+          "ocr_confidence": 0.811,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.4,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.65,
+          "overall_confidence": 0.58
+        },
+        "confidence_level": "LOW",
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_numbering_gap"
+        ],
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "First extracted question is Q4; expected Q1. Initial questions appear lost or unsegmented."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "vision_verified": true,
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 11,
+        "page_range": [
+          12,
+          12
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": null,
+          "exam_year": null,
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "40",
+          "duration": null,
+          "confidence": 0.65,
+          "status": "needs_review",
+          "missing_fields": [
+            "exam_date",
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "4",
+            "text": "Discussthemedico-legalimportanceof Age\nDiscuss differences between Notes on 3x2\na. Hanging and strangulation by ligature\nb,Professional negligence & misconduct by a doctor\nWriteNotesOn 2x3\na. Rigor Mortis as an indicator of PM Interval\nb. Brain Death\nc. Delusion",
+            "type": "Essay",
+            "part": "PART-A",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.941,
+            "confidence_breakdown": {
+              "ocr": 0.834,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.941
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Write notes on 2x3\na. Fingerprint\nb. PreservationofsampleforDNAfingerprinting\nc. Doctrine of Res Ipsa Loquitur",
+            "type": "Essay",
+            "part": "PART- B",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.941,
+            "confidence_breakdown": {
+              "ocr": 0.834,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.941
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4",
+            "text": "Write name of courts starting from the highest to lowest in that order and discuss their\npowers\nDiscussdifferences between 3x2\na. Temporary teeth and permanent teeth\nb. Bruise and PM Lividity",
+            "type": "Essay",
+            "part": "PART- B",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.941,
+            "confidence_breakdown": {
+              "ocr": 0.834,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.941
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": null,
+        "parts": [
+          "PART-A",
+          "PART- B"
+        ],
+        "raw_text": "ROHILKHANDMEDICALCOLLEGE,BAREILLY\nFORENSICMEDICINE&TOXICOLOGY\nTIME-THREEHOURS\nMAXIMUMMARKS-40\n(PART-A)\nMaximummarks-20\n4.Discussthemedico-legalimportanceof Age\nDiscuss differences between Notes on 3x2\na. Hanging and strangulation by ligature\nb,Professional negligence & misconduct by a doctor\nWriteNotesOn 2x3\na. Rigor Mortis as an indicator of PM Interval\nb. Brain Death\nc.Delusion\n(PART- B)\nMaximumMarks-_20\n4.Write name of courts starting from the highest to lowest in that order and discuss their\npowers\nDiscussdifferences between 3x2\na.Temporary teeth and permanent teeth\nb.Bruise and PM Lividity\n3.Write notes on 2x3\na. Fingerprint\nb.PreservationofsampleforDNAfingerprinting\nc.Doctrine of Res Ipsa Loquitur",
+        "confidence": {
+          "ocr_confidence": 0.834,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.65,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.65,
+          "overall_confidence": 0.58
+        },
+        "confidence_level": "LOW",
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_numbering_gap"
+        ],
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "First extracted question is Q4; expected Q1. Initial questions appear lost or unsegmented."
+          }
+        ],
+        "vision_verified": true,
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 12,
+        "page_range": [
+          13,
+          13
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": "Jan",
+          "exam_year": null,
+          "session_code": null,
+          "subject": null,
+          "paper_code": null,
+          "max_marks": "40",
+          "duration": "Three Hours",
+          "confidence": 0.3,
+          "status": "needs_review",
+          "missing_fields": [
+            "university",
+            "subject",
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "2",
+            "text": "Write differences between: (Marks:\na. Dying declaration & Dying deposition\nb. Incised wound & Incised looking wound.",
+            "type": "Essay",
+            "part": "PART-A",
+            "heading": null,
+            "options": null,
+            "marks": "6",
+            "confidence": 0.951,
+            "confidence_breakdown": {
+              "ocr": 0.873,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.951
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Write note on the following: (Marks:\na. Male and female pseudohermaphroditism\nb. Dactylography\nc. Grievous Injury.",
+            "type": "Essay",
+            "part": "PART-A",
+            "heading": null,
+            "options": null,
+            "marks": "6",
+            "confidence": 0.951,
+            "confidence_breakdown": {
+              "ocr": 0.873,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.951
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "1 Enumerate functions of State Medical Council.Discuss salient features of Indian\nMedical Council (Professional conduct, Etiquette and Ethics)Regulation,2002 as\nit applies to doctors.",
+            "type": "Essay",
+            "part": "PART-B",
+            "heading": null,
+            "options": null,
+            "marks": "8",
+            "confidence": 0.951,
+            "confidence_breakdown": {
+              "ocr": 0.873,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.951
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Write differences between: (Marks:3X2=-6)\na. Professionalmisconduct&Medical negligence\nb. True&Feigned insanity",
+            "type": "Essay",
+            "part": "PART-B",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.951,
+            "confidence_breakdown": {
+              "ocr": 0.873,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.951
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Write note on the following: (Marks:\na. Delusion\nb. Hallucination\nc. Gun powder.",
+            "type": "Essay",
+            "part": "PART-B",
+            "heading": null,
+            "options": null,
+            "marks": "6",
+            "confidence": 0.951,
+            "confidence_breakdown": {
+              "ocr": 0.873,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.951
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "1. Attempt all questions.",
+          "2. Use separate answer booklet for Part A and B."
+        ],
+        "parts": [
+          "PART-A",
+          "PART-B"
+        ],
+        "raw_text": "M.B.B.S. Second Professional (2012 Batch)\nFirst Terminal Examination, 30th Jan.2014\nTime:Three Hoursl\n[MaximumMarks:40\nNote: 1. Attempt all questions.\n2. Use separate answer booklet for Part A and B.\n(PART-A)\nMaximum Marks: 20\n(Marks:2+6-8)\n2. Write differences between: (Marks: 2X3=6)\na. Dying declaration & Dying deposition\nb. Incised wound & Incised looking wound.\n3. Write note on the following: (Marks:3X2=6)\na.Male and female pseudohermaphroditism\nb. Dactylography\nc. Grievous Injury.\n(PART-B)\nMaximumMarks:20\n1. 1 Enumerate functions of State Medical Council.Discuss salient features of Indian\nMedical Council (Professional conduct, Etiquette and Ethics)Regulation,2002 as\nit applies to doctors. (Marks:2+6=8)\n2.Write differences between: (Marks:3X2=-6)\na.Professionalmisconduct&Medical negligence\nb.True&Feigned insanity\n3.Write note on the following: (Marks:3X2=6)\na.Delusion\nb.Hallucination\nc.Gun powder.",
+        "confidence": {
+          "ocr_confidence": 0.873,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.3,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.65,
+          "overall_confidence": 0.58
+        },
+        "confidence_level": "LOW",
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_numbering_gap"
+        ],
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "First extracted question is Q2; expected Q1. Initial questions appear lost or unsegmented."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "vision_verified": true,
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 13,
+        "page_range": [
+          14,
+          14
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": null,
+          "exam_year": null,
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "80",
+          "duration": "45Minutes",
+          "confidence": 0.35,
+          "status": "needs_review",
+          "missing_fields": [
+            "university",
+            "exam_date",
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "ROHILKHANDMEDICALCOLLEGE&HOSPITAL\nMBBSPhase3Part1,2nd InteinalAssessment,23rdApril2022\nFORENSICMEDICINE&TOXICOLOGY\nNote: Aitempt all questions.Marks are given in square brackets.",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": "80",
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.849,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Enunerate positive signs of pregnancy. [5]",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.849,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Enlist professional misconduct as per the Indian Medical Council (Professional)\nConduct,Etiquette& Ethics)Regulatio12002. [8]",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.849,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4",
+            "text": "Define injury and hurt. Mention any TWO examples of grievous hurt caused in the\neyes. [3+3+3]",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.849,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "5",
+            "text": "Define impotence and sterility.How is it possible for an impotent person to commit\nrape? [3+3+4]\nintabulatedform. [6+6]\nHow will you help to establish the paternity of the child in question? [5]",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.849,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "8",
+            "text": "How will you differentiate between the incised wound and the lacerated wound? [8]",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.849,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "9",
+            "text": "Tabulate chronology of appearance of permanent teeth. How will you differentiate\ntemporary teeth from permanent teeth cluring the period of mixed dentition with the\nhelpof a Dental Panoramic Tomograph? [4+4]",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.849,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "10",
+            "text": "What are the indications of medical termination of pregnancy beyond 20 weeks?[5]",
+            "type": "Essay",
+            "part": null,
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.945,
+            "confidence_breakdown": {
+              "ocr": 0.849,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.945
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Aitempt all questions.Marks are given in square brackets.",
+          "1.Enumerate and discuss the principles of Bioethics. [4+6]",
+          "2.Enunerate positive signs of pregnancy. [5]",
+          "3. Enlist professional misconduct as per the Indian Medical Council (Professional Conduct,Etiquette& Ethics)Regulatio12002. [8]",
+          "4. Define injury and hurt. Mention any TWO examples of grievous hurt caused in the eyes. [3+3+3]",
+          "5.Define impotence and sterility.How is it possible for an impotent person to commit rape? [3+3+4] intabulatedform. [6+6] How will you help to establish the paternity of the child in question? [5]",
+          "8. How will you differentiate between the incised wound and the lacerated wound? [8]",
+          "9. Tabulate chronology of appearance of permanent teeth. How will you differentiate temporary teeth from permanent teeth cluring the period of mixed dentition with the helpof a Dental Panoramic Tomograph? [4+4]",
+          "10.What are the indications of medical termination of pregnancy beyond 20 weeks?[5]"
+        ],
+        "parts": null,
+        "raw_text": "ROHILKHANDMEDICALCOLLEGE&HOSPITAL\nMBBSPhase3Part1,2nd InteinalAssessment,23rdApril2022\nFORENSICMEDICINE&TOXICOLOGY\n[TIME:45Minutes] [Marks:80]\nNote: Aitempt all questions.Marks are given in square brackets.\n1.Enumerate and discuss the principles of Bioethics. [4+6]\n2.Enunerate positive signs of pregnancy. [5]\n3. Enlist professional misconduct as per the Indian Medical Council (Professional\nConduct,Etiquette& Ethics)Regulatio12002. [8]\n4. Define injury and hurt. Mention any TWO examples of grievous hurt caused in the\neyes. [3+3+3]\n5.Define impotence and sterility.How is it possible for an impotent person to commit\nrape? [3+3+4]\nintabulatedform. [6+6]\nHow will you help to establish the paternity of the child in question? [5]\n8. How will you differentiate between the incised wound and the lacerated wound? [8]\n9. Tabulate chronology of appearance of permanent teeth. How will you differentiate\ntemporary teeth from permanent teeth cluring the period of mixed dentition with the\nhelpof a Dental Panoramic Tomograph? [4+4]\n10.What are the indications of medical termination of pregnancy beyond 20 weeks?[5]",
+        "confidence": {
+          "ocr_confidence": 0.849,
+          "ocr_confidence_available": true,
+          "structure_confidence": 0.25,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.35,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.6,
+          "overall_confidence": 0.4
+        },
+        "confidence_level": "REVIEW_REQUIRED",
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_like_text_in_instructions",
+          "low_structure_confidence"
+        ],
+        "anomalies": [
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "high",
+            "text_preview": "4. Define injury and hurt. Mention any TWO examples of grievous hurt caused in the eyes. [3+3+3]",
+            "reason": "Instruction item 5 contains question action verbs and structured question numbering/subparts."
+          },
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "high",
+            "text_preview": "8. How will you differentiate between the incised wound and the lacerated wound? [8]",
+            "reason": "Instruction item 7 contains question action verbs and structured question numbering/subparts."
+          },
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "high",
+            "text_preview": "9. Tabulate chronology of appearance of permanent teeth. How will you differentiate temporary teeth from permanent teeth",
+            "reason": "Instruction item 8 contains question action verbs and structured question numbering/subparts."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Main'."
+          },
+          {
+            "type": "question_numbering_gap",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Numbering gap detected in section 'Main': Q5 is followed by Q8 (missing 2 question(s))."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          }
+        ],
+        "vision_verified": true,
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 14,
+        "page_range": [
+          15,
+          15
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": "May",
+          "exam_year": "2023",
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "80",
+          "duration": "3Hours",
+          "confidence": 0.55,
+          "status": "needs_review",
+          "missing_fields": [
+            "university",
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "I.Define injury and classify mechanical injuries.Discuss the pathophysiology of\ngrievous hurt.",
+            "type": "Essay",
+            "part": "SECTION-A",
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.95,
+            "confidence_breakdown": {
+              "ocr": 0.872,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.95
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Differentiate between:\nA. Entry and Exitwound of firearm\nB. Temporaryteeth and Secondary teeth\nC. Caput Succedaneum and Cephalohematoma\nD. Civil and Criminal negligence [5]",
+            "type": "Essay",
+            "part": "SECTION-A",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "confidence_breakdown": {
+              "ocr": 0.872,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.95
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "A juvenile offender was brought by the police for age estimation.His X-ray elbow joint\nrevealed the appearance of the head of radius,proximal part of ulna, medial epicondyle,\nand conjoint epiphysis which were yet not fused with the shaft of their respective long\nbones.\nWhat could be the probable age of the individual? Discuss about the age of appearance []\nand fuision of the secondary centres around the elbow joint",
+            "type": "Short Notes",
+            "part": "SECTION-A",
+            "heading": "Write a short note on recent advancements in Virtual autopsy",
+            "options": null,
+            "marks": "5",
+            "confidence": 0.95,
+            "confidence_breakdown": {
+              "ocr": 0.872,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.95
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4",
+            "text": "I.Describe Locard's principle of exchange with examples of various crimes.Discuss the\nprocedure to be followed for the collection, preservation and transport of samples for\nchemical analysis to the forensic science laboratory in case of death due to suspected\npoisoning,",
+            "type": "Essay",
+            "part": "Section-B",
+            "heading": "Write a short note on recent advancements in Virtual autopsy",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.95,
+            "confidence_breakdown": {
+              "ocr": 0.872,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.95
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "the following: [-20]\nA. Euthanasia:Recent guidelines in India.\nB. Criminal responsibility of a mentallyill person\nC. Principles of Bioethics\nD. Disclosure of medical error\nclinical scenario.What are tlie consequences of not documenting an informed refusal?",
+            "type": "Short Notes",
+            "part": "Section-B",
+            "heading": "Write a short note on the following: [5X4-20]",
+            "options": null,
+            "marks": "5",
+            "confidence": 0.95,
+            "confidence_breakdown": {
+              "ocr": 0.872,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.95
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4",
+            "text": "A dead fetus was brought to District Mortuary whichhad a 50 cm Crown-Rump length.z\nWhat maximum information from posi-mortem examination,you could provide to the\npolice officer,that can help in the investigation? Discuss in brief. [5]",
+            "type": "Short Notes",
+            "part": "Section-B",
+            "heading": "Write a short note on the following: [5X4-20]",
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "confidence_breakdown": {
+              "ocr": 0.872,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.95
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "I.Attemptall questions",
+          "2.Use separate answer sheets for Sections A & B"
+        ],
+        "parts": [
+          "SECTION-A",
+          "Section-B"
+        ],
+        "raw_text": "ROHILKHANDMEDICALCOLLEGE&HOSPITAL\nFORENSICMEDICINE&TOXICOLOGY\nMBBS 3rd Prof (Part 1) Internal Assessment Examination May 2023\nTime:3Hours includingMCQs [Maximummarks:80+20-100]\nNote:I.Attemptall questions\n2.Use separate answer sheets for Sections A & B\nSECTION-A\nI.Define injury and classify mechanical injuries.Discuss the pathophysiology of\n[3+4+3-10]\ngrievous hurt.\n[5x4-20]\n2.Differentiate between:\nA.Entry and Exitwound of firearm\nB.Temporaryteeth and Secondary teeth\nC.Caput Succedaneum and Cephalohematoma\nD.Civil and Criminal negligence [5]\nWrite a short note on recent advancements in Virtual autopsy\nA juvenile offender was brought by the police for age estimation.His X-ray elbow joint\nrevealed the appearance of the head of radius,proximal part of ulna, medial epicondyle,\nand conjoint epiphysis which were yet not fused with the shaft of their respective long\nbones.\nWhat could be the probable age of the individual? Discuss about the age of appearance [2+3=5]\nand fuision of the secondary centres around the elbow joint\nSection-B\nI.Describe Locard's principle of exchange with examples of various crimes.Discuss the\nprocedure to be followed for the collection, preservation and transport of samples for\nchemical analysis to the forensic science laboratory in case of death due to suspected\n[3+7-10]\npoisoning,\n2.Write a short note on the following: [5X4-20]\nA.Euthanasia:Recent guidelines in India.\nB.Criminal responsibility of a mentallyill person\nC.Principles of Bioethics\nD.Disclosure of medical error\nclinical scenario.What are tlie consequences of not documenting an informed refusal?\n[3+2-5]\n4.A dead fetus was brought to District Mortuary whichhad a 50 cm Crown-Rump length.z\nWhat maximum information from posi-mortem examination,you could provide to the\npolice officer,that can help in the investigation? Discuss in brief. [5]",
+        "confidence": {
+          "ocr_confidence": 0.872,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.55,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.7,
+          "overall_confidence": 0.894
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q4 detected in section 'Section-B'."
+          },
+          {
+            "type": "question_numbering_gap",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Numbering gap detected in section 'Section-B': Q2 is followed by Q4 (missing 1 question(s))."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          }
+        ],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 15,
+        "page_range": [
+          16,
+          16
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": null,
+          "exam_year": "2023",
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "80",
+          "duration": "2Hours40Minutes",
+          "confidence": 0.55,
+          "status": "needs_review",
+          "missing_fields": [
+            "university",
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Enumerate the changes after death.Describe pathophysiology of development of rigor mortis and factors",
+            "type": "Essay",
+            "part": "SECTION-A",
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.953,
+            "confidence_breakdown": {
+              "ocr": 0.881,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.953
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "the following: []\nA. Documentation of Dying declaration and role of a doctor.\nB. Medicolegal importanceofage in relationto informed consent in medical examinations and interventions.Ci)",
+            "type": "Short Notes",
+            "part": "SECTION-A",
+            "heading": "Write a short note on the following: []",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.953,
+            "confidence_breakdown": {
+              "ocr": 0.881,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.953
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Differentiate between:\nA. Lungs of a live born and still born foetus.3\nB. AntemortemandPost-mortemdrowning.3\n4A25 year-male patient presented in casualty with alleged history of assault 1 hour before and multiple injuries\nover his body in theform of abrasions and a linear bruise on his back.On examination,the colour of the bruise\nwas greenish and the abrasions weredark brown and dried shrinking from periphery.\nWhat could be the age of the injuries in this case? Discuss how abrasion and bruise are helpful in estimating\ntime sinceinfliction",
+            "type": "Short Notes",
+            "part": "SECTION-A",
+            "heading": "Write a short note on the following: []",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.953,
+            "confidence_breakdown": {
+              "ocr": 0.881,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.953
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4",
+            "text": "A 40-year-old male labourer was brought to the emergency with a history of snake bite 15minutes before.The",
+            "type": "Essay",
+            "part": "SECTION-B",
+            "heading": "Write a short note on the following: []",
+            "options": null,
+            "marks": null,
+            "confidence": 0.953,
+            "confidence_breakdown": {
+              "ocr": 0.881,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.953
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "5",
+            "text": "patient was anxious and apprehensive and couldn't identify the snake.\nAHow will you assure the patient in such case?\nB:Describe constituents of snake venom and their effects on the human body after envenomation.\ne. Discuss signs &symptomsofcommon poisonous snakes'bite.\nD. Outline management of snake bite with the help of a flow chart.2",
+            "type": "Essay",
+            "part": "SECTION-B",
+            "heading": "Write a short note on the following: []",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.953,
+            "confidence_breakdown": {
+              "ocr": 0.881,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.953
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "the following:\nA. Drunkenness and opinion framing in an examination report ofa drunken person.2\nB. Certification of brain stem death and its medicolegal importance.\nC. Skin incisions and organ dissection techniques during autopsy",
+            "type": "Short Notes",
+            "part": "SECTION-B",
+            "heading": "Write a short note on the following",
+            "options": null,
+            "marks": null,
+            "confidence": 0.953,
+            "confidence_breakdown": {
+              "ocr": 0.881,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.953
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Differentiatebetween:\nA. Civil and Criminal negligence3\nB. True and Feigned insanity 3",
+            "type": "Short Notes",
+            "part": "SECTION-B",
+            "heading": "Write a short note on the following",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.953,
+            "confidence_breakdown": {
+              "ocr": 0.881,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.953
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4",
+            "text": "Whatdo you mean bymedical errors in clinical care? Explain with an example.Discuss the ethical standards in\ndealing with medical errors. []",
+            "type": "Short Notes",
+            "part": "SECTION-B",
+            "heading": "Write a short note on the following",
+            "options": null,
+            "marks": "5",
+            "confidence": 0.953,
+            "confidence_breakdown": {
+              "ocr": 0.881,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.953
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "1.Attemptallquestions",
+          "2.Useseparateanswersheetsfor Sections A&B",
+          "3.Answerthe questions in serial manner in the answer booklet"
+        ],
+        "parts": [
+          "SECTION-A",
+          "SECTION-B"
+        ],
+        "raw_text": "ROHILKHANDMEDICALCOLLEGE&HOSPITAL\nFORENSICMEDICINE&TOXICOLOGY\nSentupExamination,MBBS2020Batch,Nov04,2023\nTime:2Hours40Minutes] [Maximum marks:80]\nNote:1.Attemptallquestions\n2.Useseparateanswersheetsfor Sections A&B\n3.Answerthe questions in serial manner in the answer booklet\nSECTION-A\nEnumerate the changes after death.Describe pathophysiology of development of rigor mortis and factors\naffecting it.Discuss indetail aboutmedicolegal significanceofrigormortis [2+3+5-10]\n2.Write a short note on the following: [5x3=15]\nA.Documentation of Dying declaration and role of a doctor.\nB.Medicolegal importanceofage in relationto informed consent in medical examinations and interventions.Ci)\n[5x2=10]\n3.Differentiate between:\nA.Lungs of a live born and still born foetus.3\nB-AntemortemandPost-mortemdrowning.3\n4A25 year-male patient presented in casualty with alleged history of assault 1 hour before and multiple injuries\nover his body in theform of abrasions and a linear bruise on his back.On examination,the colour of the bruise\n1-9\nwas greenish and the abrasions weredark brown and dried shrinking from periphery.\nWhat could be the age of the injuries in this case? Discuss how abrasion and bruise are helpful in estimating\n[1+2+25]\ntime sinceinfliction\nSECTION-B\nA 40-year-old male labourer was brought to the emergency with a history of snake bite 15minutes before.The\n[2+2+3+3=10]\npatient was anxious and apprehensive and couldn't identify the snake.\nAHow will you assure the patient in such case?\nB:Describe constituents of snake venom and their effects on the human body after envenomation.\ne.Discuss signs &symptomsofcommon poisonous snakes'bite.\nD.Outline management of snake bite with the help of a flow chart.2\n[5X3-15]\n2.Write a short note on the following:\nA.Drunkenness and opinion framing in an examination report ofa drunken person.2\nB.Certification of brain stem death and its medicolegal importance.\nC.Skin incisions and organ dissection techniques during autopsy\n[5X2=10]\n3.Differentiatebetween:\nA.Civil and Criminal negligence3\nB.True and Feigned insanity 3\n4.Whatdo you mean bymedical errors in clinical care? Explain with an example.Discuss the ethical standards in\ndealing with medical errors. [2+3=5]",
+        "confidence": {
+          "ocr_confidence": 0.881,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.55,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.8,
+          "overall_confidence": 0.906
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q4 detected in section 'SECTION-B'."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          }
+        ],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 16,
+        "page_range": [
+          17,
+          17
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": null,
+          "exam_year": null,
+          "session_code": null,
+          "subject": null,
+          "paper_code": null,
+          "max_marks": "20",
+          "duration": "20 Min",
+          "confidence": 0.1,
+          "status": "needs_review",
+          "missing_fields": [
+            "university",
+            "subject",
+            "exam_date",
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "the OMR sheet appropriately,",
+            "type": "MCQ",
+            "part": null,
+            "heading": "AAttemptall MCQs as there will be no negative marking.",
+            "options": [
+              {
+                "label": "b",
+                "text": "Choose the correctmost appropriate response and fill in"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.826,
+            "confidence_breakdown": {
+              "ocr": 0.855,
+              "boundary": 0.7,
+              "classification": 0.95,
+              "overall": 0.826
+            },
+            "status": "ok",
+            "confidence_level": "MEDIUM",
+            "anomalies": [
+              {
+                "type": "mcq_missing_options",
+                "severity": "medium",
+                "text_preview": null,
+                "reason": "Question classified as MCQ but fewer than 2 option choices were extracted."
+              }
+            ]
+          },
+          {
+            "number": "1",
+            "text": "Which of the following is the most reliable method of\nidentification for a human being?",
+            "type": "MCQ",
+            "part": null,
+            "heading": "AAttemptall MCQs as there will be no negative marking.",
+            "options": [
+              {
+                "label": "a",
+                "text": "Gustafsonmethod b)DNAprofiling"
+              },
+              {
+                "label": "c",
+                "text": "ABO-Rhbloodgroup d)Fingerprinting"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.855,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Ossification of which of the followingbones can be\ncorrelated with the age of viability of a foetus?\n3,Which of the following is the characteristic post-mortem findings\nin deaths due to starvation?",
+            "type": "MCQ",
+            "part": null,
+            "heading": "AAttemptall MCQs as there will be no negative marking.",
+            "options": [
+              {
+                "label": "a",
+                "text": "Cuboid b)Talus"
+              },
+              {
+                "label": "c",
+                "text": "Calcaneum d)Upper end oftibia"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.855,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "Absence of fat from around internal organs and\nsplenomegaly\nIntestinal walls appear like tissue paper and distended\ngall bladder\non section\nBurking is a type of asphyxial death comprising of:\nSmothering &Gagging",
+            "type": "MCQ",
+            "part": null,
+            "heading": "AAttemptall MCQs as there will be no negative marking.",
+            "options": [
+              {
+                "label": "a",
+                "text": "s Scaphoid abdomen and hepatomegaly"
+              },
+              {
+                "label": "d",
+                "text": "Collapsed lungs and exudes a good amount of blood"
+              },
+              {
+                "label": "b",
+                "text": "3 Smothering&Manual strangulation"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.855,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Smothering& Traumatic asphyxia\nd)s Smothering & Ligature strangulation",
+            "type": "MCQ",
+            "part": null,
+            "heading": "AAttemptall MCQs as there will be no negative marking.",
+            "options": null,
+            "marks": null,
+            "confidence": 0.826,
+            "confidence_breakdown": {
+              "ocr": 0.855,
+              "boundary": 0.7,
+              "classification": 0.95,
+              "overall": 0.826
+            },
+            "status": "ok",
+            "confidence_level": "MEDIUM",
+            "anomalies": [
+              {
+                "type": "mcq_missing_options",
+                "severity": "medium",
+                "text_preview": null,
+                "reason": "Question classified as MCQ but fewer than 2 option choices were extracted."
+              }
+            ]
+          },
+          {
+            "number": "5",
+            "text": "A cut hair without root was recovered from a scene of the crime\nand sent to FSL.Which of the following component in the hair\nwill be helpful in establishing identity?",
+            "type": "MCQ",
+            "part": null,
+            "heading": "AAttemptall MCQs as there will be no negative marking.",
+            "options": [
+              {
+                "label": "a",
+                "text": "NuclearDNA"
+              },
+              {
+                "label": "b",
+                "text": "MitochondrialDNA"
+              },
+              {
+                "label": "c",
+                "text": "Nuclear&Mitochondrial DNA"
+              },
+              {
+                "label": "d",
+                "text": "Blood group antigen"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.855,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "6",
+            "text": "In freshwater drowning,thedeath occurs within 4-5minutes of\nsubmersion due to ventricular fibrillation.Which of the\nfollowing pathophysiological reasons is attributed to this?",
+            "type": "MCQ",
+            "part": null,
+            "heading": "AAttemptall MCQs as there will be no negative marking.",
+            "options": [
+              {
+                "label": "a",
+                "text": "Total asphyxia is produced due to fresh water"
+              },
+              {
+                "label": "b",
+                "text": "Laryngospasm causing vagal inhibition"
+              },
+              {
+                "label": "c",
+                "text": "Haemoconcentration of blood causedbythe osmotic"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.855,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "7",
+            "text": "pressure effects\nHaemodilution, overloading of heart and haemolysis\ncausinghyperkalaemia",
+            "type": "MCQ",
+            "part": null,
+            "heading": "AAttemptall MCQs as there will be no negative marking.",
+            "options": null,
+            "marks": null,
+            "confidence": 0.826,
+            "confidence_breakdown": {
+              "ocr": 0.855,
+              "boundary": 0.7,
+              "classification": 0.95,
+              "overall": 0.826
+            },
+            "status": "ok",
+            "confidence_level": "MEDIUM",
+            "anomalies": [
+              {
+                "type": "mcq_missing_options",
+                "severity": "medium",
+                "text_preview": null,
+                "reason": "Question classified as MCQ but fewer than 2 option choices were extracted."
+              }
+            ]
+          },
+          {
+            "number": "7",
+            "text": "What would havebeen the race of an individual if skull bone has\nrounded nasal opening and horse shoe shaped palette, round\norbit, and cephalic index above 80?",
+            "type": "MCQ",
+            "part": null,
+            "heading": "AAttemptall MCQs as there will be no negative marking.",
+            "options": [
+              {
+                "label": "a",
+                "text": "Negro"
+              },
+              {
+                "label": "b",
+                "text": "Mongol"
+              },
+              {
+                "label": "c",
+                "text": "Europeans"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.855,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "8",
+            "text": "Aryans\nPerjury is an offence defined under Section and\npunishment is given as per the Section..",
+            "type": "MCQ",
+            "part": null,
+            "heading": "AAttemptall MCQs as there will be no negative marking.",
+            "options": [
+              {
+                "label": "a",
+                "text": "S.174IPC&S.176IPC"
+              },
+              {
+                "label": "b",
+                "text": "s S.174CrPC&S.176CrPC"
+              },
+              {
+                "label": "c",
+                "text": "S. 191 IPC &S. 193 IPC"
+              },
+              {
+                "label": "d",
+                "text": "S.197 IPC&S.198IPC"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.855,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "9",
+            "text": "What could be the cause of death if post-mortem staining is of\nbluish green colour?\nHydrogen sulphide poisoning",
+            "type": "MCQ",
+            "part": null,
+            "heading": "AAttemptall MCQs as there will be no negative marking.",
+            "options": [
+              {
+                "label": "a",
+                "text": "Carbon monoxidepoisoning"
+              },
+              {
+                "label": "b",
+                "text": "( Cyanide poisoning"
+              },
+              {
+                "label": "d",
+                "text": "Phosphorus poisoning."
+              }
+            ],
+            "marks": null,
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.855,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "10",
+            "text": "stool syndrome\"?\na) lodine c)Barium\nIt.WhichofthefollowingDOESNOIcompriseapant ofthe boa\nof medical experts cerifying brain-siem death as per the\nTransplantation of Human OrgansandTissues Rales,2014?\nR.M.P.In-charge ofthehospital in which brain-stem\ndeath has occurred\nR.M.P.nominatedfromthepanelofnames sent bythe\nhospitals and approvedby the AppropriateAuthority\nR.M.P.being family physician of the recipient",
+            "type": "MCQ",
+            "part": null,
+            "heading": "AAttemptall MCQs as there will be no negative marking.",
+            "options": [
+              {
+                "label": "b",
+                "text": "Phosphorus dy Cus04"
+              },
+              {
+                "label": "d",
+                "text": "R.M.P.treating theaforesaiddeceasedpason"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.855,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "12",
+            "text": "Which of the following solution is used to preserve viscara fos\nhistopathological examination during autopsy?\nNormal saline\nSuper saturated saline solution",
+            "type": "MCQ",
+            "part": null,
+            "heading": "AAttemptall MCQs as there will be no negative marking.",
+            "options": [
+              {
+                "label": "b",
+                "text": "Saturated saline solution"
+              },
+              {
+                "label": "d",
+                "text": "10/Formaldehydesolution"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.855,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "13",
+            "text": "Aperson saw a snake hanging from thetree,whereonly the rope\nwas hanging,Which ofthefollowingpsychiatric disorderhe was\nsuffering from?\nayDelusion",
+            "type": "MCQ",
+            "part": null,
+            "heading": "AAttemptall MCQs as there will be no negative marking.",
+            "options": [
+              {
+                "label": "b",
+                "text": "usion"
+              },
+              {
+                "label": "c",
+                "text": "Impulse"
+              },
+              {
+                "label": "d",
+                "text": "Hallucination"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.855,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "14",
+            "text": "A man aged 70 years with chronic duodenal ulceration died of\nperitonitis 2 days after an operation for duodenal perforation.\nHewas also suffering fromCarcinoma ofbronchus forthepastI\nyear.What will be mentioned in the antecedent cause of death\n(ColumnIb ofFORMNo.4)whilepreparing hisMedical\nCertification of Cause of Death?",
+            "type": "MCQ",
+            "part": null,
+            "heading": "AAttemptall MCQs as there will be no negative marking.",
+            "options": [
+              {
+                "label": "a",
+                "text": "Peritonitis"
+              },
+              {
+                "label": "b",
+                "text": "Duodenalperforation"
+              },
+              {
+                "label": "c",
+                "text": "Carcinoma ofbronchus"
+              },
+              {
+                "label": "d",
+                "text": "None of theabove"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.855,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "15",
+            "text": "Under the MTPAmendment Act 2021,at what gestational age the\nopinion of two registeredmedical practitioners is reqpired for\ntermination of pregnancy?\nI6.What should be the minimum age of the survivor of a sexual\noffencefor giving valid consent to undergo a medicolegal\nexamination?",
+            "type": "MCQ",
+            "part": null,
+            "heading": "AAttemptall MCQs as there will be no negative marking.",
+            "options": [
+              {
+                "label": "a",
+                "text": "Upto12Weeks b)12-20Weeks"
+              },
+              {
+                "label": "c",
+                "text": "20-24weeksd)12-24Weeks"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.855,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "dy She must have attained the age of 18years",
+            "type": "MCQ",
+            "part": null,
+            "heading": "AAttemptall MCQs as there will be no negative marking.",
+            "options": null,
+            "marks": null,
+            "confidence": 0.826,
+            "confidence_breakdown": {
+              "ocr": 0.855,
+              "boundary": 0.7,
+              "classification": 0.95,
+              "overall": 0.826
+            },
+            "status": "ok",
+            "confidence_level": "MEDIUM",
+            "anomalies": [
+              {
+                "type": "mcq_missing_options",
+                "severity": "medium",
+                "text_preview": null,
+                "reason": "Question classified as MCQ but fewer than 2 option choices were extracted."
+              }
+            ]
+          },
+          {
+            "number": "17",
+            "text": "Ms.Shilpa chopped the right ear pinna of Kashi. Which of the\nfollowing Sections will be applicableforthe Offence&\nPunishment in this case?\neS.320&325IPC",
+            "type": "MCQ",
+            "part": null,
+            "heading": "AAttemptall MCQs as there will be no negative marking.",
+            "options": [
+              {
+                "label": "a",
+                "text": "S.319&S.325IPC"
+              },
+              {
+                "label": "b",
+                "text": "S.320&S324IPC"
+              },
+              {
+                "label": "d",
+                "text": "S.320&326IPC"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.855,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "18",
+            "text": "I8.Which of the following test is done for detecting vaginal\nepithelial cells from the accused in a case of sexual assault?\nay Lugol's iodine\nb)Phenolphthalein\nI9.Which of thefollowing autonomous boardunderNational\nMedical Commission has appellatepowers withrespecttothe\nactions taken by the State Medical Council?",
+            "type": "MCQ",
+            "part": null,
+            "heading": "AAttemptall MCQs as there will be no negative marking.",
+            "options": [
+              {
+                "label": "c",
+                "text": "Toluidine blue"
+              },
+              {
+                "label": "d",
+                "text": "Methyleneblue"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.855,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "dyEthics andMedical Registration Board",
+            "type": "MCQ",
+            "part": null,
+            "heading": "AAttemptall MCQs as there will be no negative marking.",
+            "options": null,
+            "marks": null,
+            "confidence": 0.826,
+            "confidence_breakdown": {
+              "ocr": 0.855,
+              "boundary": 0.7,
+              "classification": 0.95,
+              "overall": 0.826
+            },
+            "status": "ok",
+            "confidence_level": "MEDIUM",
+            "anomalies": [
+              {
+                "type": "mcq_missing_options",
+                "severity": "medium",
+                "text_preview": null,
+                "reason": "Question classified as MCQ but fewer than 2 option choices were extracted."
+              }
+            ]
+          },
+          {
+            "number": "20",
+            "text": "In which of thefollowing poisoning Silver Nitrate Paper Test\nis done as bed side test?\nOrganophosphate\nHydrogen cyanide\nROHILKHANDMEDICALCOLLEGE&HOSPITAL\nFORENSICMEDICINE&TOXICOLOCY\nSendUpExamination,MBBSPhase3 (Part 1),Dee,2022",
+            "type": "MCQ",
+            "part": null,
+            "heading": "AAttemptall MCQs as there will be no negative marking.",
+            "options": [
+              {
+                "label": "a",
+                "text": "Methyl alcohol"
+              },
+              {
+                "label": "d",
+                "text": "Aluminiumphosphide"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.946,
+            "confidence_breakdown": {
+              "ocr": 0.855,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.946
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": null,
+        "parts": null,
+        "raw_text": "MULTIPLECHOICEOUESTIONS\n[Time:20 Min.] [MaxMarks-20]\nINSTRUCTIONS:\nAAttemptall MCQs as there will be no negative marking.\nB.Choose the correctmost appropriate response and fill in\nthe OMR sheet appropriately,\n1.Which of the following is the most reliable method of\nidentification for a human being?\na)Gustafsonmethod b)DNAprofiling\nc)ABO-Rhbloodgroup d)Fingerprinting\n2.Ossification of which of the followingbones can be\ncorrelated with the age of viability of a foetus?\na)Cuboid b)Talus\nc)Calcaneum d)Upper end oftibia\n3,Which of the following is the characteristic post-mortem findings\nin deaths due to starvation?\na) s Scaphoid abdomen and hepatomegaly\nAbsence of fat from around internal organs and\nsplenomegaly\nIntestinal walls appear like tissue paper and distended\ngall bladder\nd) Collapsed lungs and exudes a good amount of blood\non section\nBurking is a type of asphyxial death comprising of:\nSmothering &Gagging\nb)3 Smothering&Manual strangulation\nSmothering& Traumatic asphyxia\nd)s Smothering & Ligature strangulation\n5.A cut hair without root was recovered from a scene of the crime\nand sent to FSL.Which of the following component in the hair\nwill be helpful in establishing identity?\na)NuclearDNA\nb)MitochondrialDNA\nc)Nuclear&Mitochondrial DNA\nd)Blood group antigen\n6.In freshwater drowning,thedeath occurs within 4-5minutes of\nsubmersion due to ventricular fibrillation.Which of the\nfollowing pathophysiological reasons is attributed to this?\na) Total asphyxia is produced due to fresh water\nb) Laryngospasm causing vagal inhibition\nc) Haemoconcentration of blood causedbythe osmotic\npressure effects\nHaemodilution, overloading of heart and haemolysis\ncausinghyperkalaemia\n7.What would havebeen the race of an individual if skull bone has\nrounded nasal opening and horse shoe shaped palette, round\norbit, and cephalic index above 80?\na) Negro\nb)Mongol\nc)Europeans\nAryans\n8.Perjury is an offence defined under Section and\npunishment is given as per the Section ..\na) S.174IPC&S.176IPC\nb)s S.174CrPC&S.176CrPC\nC)S. 191 IPC &S. 193 IPC\nd)S.197 IPC&S.198IPC\n9.What could be the cause of death if post-mortem staining is of\nbluish green colour?\na) Carbon monoxidepoisoning\nb)( Cyanide poisoning\nHydrogen sulphide poisoning\nd) Phosphorus poisoning.\nstool syndrome\"?\na) lodine c)Barium\nb)Phosphorus dy Cus04\nIt.WhichofthefollowingDOESNOIcompriseapant ofthe boa\nof medical experts cerifying brain-siem death as per the\nTransplantation of Human OrgansandTissues Rales,2014?\nR.M.P.In-charge ofthehospital in which brain-stem\ndeath has occurred\nR.M.P.nominatedfromthepanelofnames sent bythe\nhospitals and approvedby the AppropriateAuthority\nR.M.P.being family physician of the recipient\nd)R.M.P.treating theaforesaiddeceasedpason\n12.Which of the following solution is used to preserve viscara fos\nhistopathological examination during autopsy?\nNormal saline\nb) Saturated saline solution\nSuper saturated saline solution\nd)10/Formaldehydesolution\n13.Aperson saw a snake hanging from thetree,whereonly the rope\nwas hanging,Which ofthefollowingpsychiatric disorderhe was\nsuffering from?\nayDelusion\nb)usion\nc) Impulse\nd)Hallucination\n14.A man aged 70 years with chronic duodenal ulceration died of\nperitonitis 2 days after an operation for duodenal perforation.\nHewas also suffering fromCarcinoma ofbronchus forthepastI\nyear.What will be mentioned in the antecedent cause of death\n(ColumnIb ofFORMNo.4)whilepreparing hisMedical\nCertification of Cause of Death?\na)Peritonitis\nb)Duodenalperforation\nc)Carcinoma ofbronchus\nd)None of theabove\n15.Under the MTPAmendment Act 2021,at what gestational age the\nopinion of two registeredmedical practitioners is reqpired for\ntermination of pregnancy?\na)Upto12Weeks b)12-20Weeks\nc)20-24weeksd)12-24Weeks\nI6.What should be the minimum age of the survivor of a sexual\noffencefor giving valid consent to undergo a medicolegal\nexamination?\na) She must have attained the age of 7 years\nb)Shemust have attained the age of 12years.\nc) She must have attained the age of 16 years\ndy She must have attained the age of 18years\n17.Ms.Shilpa chopped the right ear pinna of Kashi. Which of the\nfollowing Sections will be applicableforthe Offence&\nPunishment in this case?\na)S.319&S.325IPC\nb)S.320&S324IPC\neS.320&325IPC\nd)S.320&326IPC\nI8.Which of the following test is done for detecting vaginal\nepithelial cells from the accused in a case of sexual assault?\nay Lugol's iodine\nb)Phenolphthalein\nc)Toluidine blue\nd)Methyleneblue\nI9.Which of thefollowing autonomous boardunderNational\nMedical Commission has appellatepowers withrespecttothe\nactions taken by the State Medical Council?\na)UndergraduateMedical Education Board\nb)PostgraduateMedical EducationBoard\nc)Medical AssessmentandRatingBoard\ndyEthics andMedical Registration Board\n20.In which of thefollowing poisoning Silver Nitrate Paper Test\nis done as bed side test?\na)Methyl alcohol\nOrganophosphate\nHydrogen cyanide\nd) Aluminiumphosphide\nROHILKHANDMEDICALCOLLEGE&HOSPITAL\nFORENSICMEDICINE&TOXICOLOCY\nSendUpExamination,MBBS",
+        "confidence": {
+          "ocr_confidence": 0.855,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.904,
+          "metadata_confidence": 0.1,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.1,
+          "overall_confidence": 0.767
+        },
+        "confidence_level": "MEDIUM",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Main'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Main'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q2 detected in section 'Main'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q7 detected in section 'Main'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Main'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q2 detected in section 'Main'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Main'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q2 detected in section 'Main'."
+          },
+          {
+            "type": "question_numbering_gap",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Numbering gap detected in section 'Main': Q2 is followed by Q5 (missing 2 question(s))."
+          },
+          {
+            "type": "question_numbering_gap",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Numbering gap detected in section 'Main': Q10 is followed by Q12 (missing 1 question(s))."
+          },
+          {
+            "type": "question_numbering_gap",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Numbering gap detected in section 'Main': Q2 is followed by Q17 (missing 14 question(s))."
+          },
+          {
+            "type": "question_numbering_gap",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Numbering gap detected in section 'Main': Q2 is followed by Q20 (missing 17 question(s))."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "vision_verified": false,
+        "vision_confidence": null,
+        "vision_status": null,
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 17,
+        "page_range": [
+          18,
+          18
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": null,
+          "exam_year": null,
+          "session_code": null,
+          "subject": null,
+          "paper_code": null,
+          "max_marks": "80",
+          "duration": "2Hours40Minutes",
+          "confidence": 0.1,
+          "status": "needs_review",
+          "missing_fields": [
+            "university",
+            "subject",
+            "exam_date",
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Describe in brief about components and their toxic effects of snake venom. Discuss signs &\nsymptoms,and management ofa caseofcobra envenomation. []",
+            "type": "Essay",
+            "part": "SECTION-B",
+            "heading": null,
+            "options": null,
+            "marks": "12",
+            "confidence": 0.957,
+            "confidence_breakdown": {
+              "ocr": 0.889,
+              "boundary": 1.0,
+              "classification": 0.955,
+              "overall": 0.957
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Discuss in brief about the following: []\nB. Brain stemdeath:Declaration and its medicolegal importance\nC. Patient's autonomy and paternalism in medical practice.",
+            "type": "Essay",
+            "part": "SECTION-A",
+            "heading": null,
+            "options": null,
+            "marks": "12",
+            "confidence": 0.957,
+            "confidence_breakdown": {
+              "ocr": 0.889,
+              "boundary": 1.0,
+              "classification": 0.955,
+              "overall": 0.957
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Discuss in brief about the following: []\nA. 3,4 Methylene Dioxy Meth Amphetamine (Ecstasy):Mode of action, signs & symptoms,\nmanagement,andmedicolegal importance\nB. Methyl alcohol:Mode of action, signs & symptoms, and management\nC. Precipitate labor and its medicolegal importance",
+            "type": "Essay",
+            "part": "SECTION-B",
+            "heading": null,
+            "options": null,
+            "marks": "15",
+            "confidence": 0.957,
+            "confidence_breakdown": {
+              "ocr": 0.889,
+              "boundary": 1.0,
+              "classification": 0.955,
+              "overall": 0.957
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Howwill you differentiate between: [4X2-8]\nA. Bruise &Postmortem staining during autopsy?\nB. Incised wound and Lacerated wound during clinical examination?\nadmission under observation with strict bed rest and conservative treatment. After 1 hour patient felt\nbetter and her husband insisted for discharge but Obstetrician insisted to stay admitted explaining risk\nof impending uterine rupture and absolute need for continuous monitoring and necessity of early\nsurgical intervention if indicated. In spite of explaining the risks, the attendant took the patient home\nagainst medical advice. After 2 hours, the patient's attendant brought the patient to the hospital with\nh/o sudden severe pain in the lower abdomen and bleeding per vaginum half an hour before. On\nexamination the patient was brought dead and there were no signs of fetus being alive.\nWhat precaution could have been taken by the Obstetrician in such case to avoid charges of\nnegligence. What formalities are desired to be done by a doctor in casualty in a brought dead case?",
+            "type": "Essay",
+            "part": "SECTION-A",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.957,
+            "confidence_breakdown": {
+              "ocr": 0.889,
+              "boundary": 1.0,
+              "classification": 0.955,
+              "overall": 0.957
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Comment with appropriate explanation on thefollowing questions: [4X2-8]\nA. How a slurry of activated charcoal with sorbitol will be helpful in an acute aluminium\nphosphide poisoning case?\nB. If a person of unsound mind murders his colleague, what would be the status of his criminal\nresponsibility in the courts of law?",
+            "type": "Essay",
+            "part": "SECTION-B",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.957,
+            "confidence_breakdown": {
+              "ocr": 0.889,
+              "boundary": 1.0,
+              "classification": 0.955,
+              "overall": 0.957
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4",
+            "text": "A boy after allegedly committing a crime,was brought by the police to the casualty department for\nmedicolegal examination and determination of his age.His dental panoramic tomograph showed\nthe boy have been in the age of mixed dentition and only permanent first molar, central and lateral\nincisors have been appeared.\nWhat could be the age of the boy? What are the provisions on offences committed by a boy of this\nage? Discuss in brief.",
+            "type": "Essay",
+            "part": "SECTION-B",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.957,
+            "confidence_breakdown": {
+              "ocr": 0.889,
+              "boundary": 1.0,
+              "classification": 0.955,
+              "overall": 0.957
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "1.Attemptall questions. [Maximum marks:80]",
+          "2. Use separate answer booklet for Sections A&B."
+        ],
+        "parts": [
+          "SECTION-B",
+          "SECTION-A"
+        ],
+        "raw_text": "Time:2Hours40Minutes]\nNote: 1.Attemptall questions. [Maximum marks:80]\n2. Use separate answer booklet for Sections A&B.\nSECTION-A\n2.Discuss in brief about the following: [3+5+4-12]\n[5X3-15]\nB.Brain stemdeath:Declaration and its medicolegal importance\nC.Patient's autonomy and paternalism in medical practice.\n3.Howwill you differentiate between: [4X2-8]\nA.Bruise &Postmortem staining during autopsy?\nB. Incised wound and Lacerated wound during clinical examination?\nadmission under observation with strict bed rest and conservative treatment. After 1 hour patient felt\nbetter and her husband insisted for discharge but Obstetrician insisted to stay admitted explaining risk\nof impending uterine rupture and absolute need for continuous monitoring and necessity of early\nsurgical intervention if indicated. In spite of explaining the risks, the attendant took the patient home\nagainst medical advice. After 2 hours, the patient's attendant brought the patient to the hospital with\nh/o sudden severe pain in the lower abdomen and bleeding per vaginum half an hour before. On\nexamination the patient was brought dead and there were no signs of fetus being alive.\nWhat precaution could have been taken by the Obstetrician in such case to avoid charges of\nnegligence. What formalities are desired to be done by a doctor in casualty in a brought dead case?\n[2+3=5]\nSECTION-B\n1.Describe in brief about components and their toxic effects of snake venom. Discuss signs &\nsymptoms,and management ofa caseofcobra envenomation. [3+5+4-12]\n2. Discuss in brief about the following: [5X3=15]\nA. 3,4 Methylene Dioxy Meth Amphetamine (Ecstasy):Mode of action, signs & symptoms,\nmanagement,andmedicolegal importance\nB. Methyl alcohol:Mode of action, signs & symptoms, and management\nC.Precipitate labor and its medicolegal importance\n3.Comment with appropriate explanation on thefollowing questions: [4X2-8]\nA. How a slurry of activated charcoal with sorbitol will be helpful in an acute aluminium\nphosphide poisoning case?\nB. If a person of unsound mind murders his colleague, what would be the status of his criminal\nresponsibility in the courts of law?\n4.A boy after allegedly committing a crime,was brought by the police to the casualty department for\nmedicolegal examination and determination of his age.His dental panoramic tomograph showed\nthe boy have been in the age of mixed dentition and only permanent first molar, central and lateral\nincisors have been appeared.\nWhat could be the age of the boy? What are the provisions on offences committed by a boy of this\nage? Discuss in brief.\n[2+3=5]",
+        "confidence": {
+          "ocr_confidence": 0.889,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.1,
+          "classification_confidence": 0.955,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.883
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "vision_verified": true,
+        "vision_confidence": 0.94,
+        "vision_status": "CORRECTED",
+        "needs_manual_review": false
+      }
+    ],
+    "page_audits": [
+      {
+        "page": 1,
+        "confidence": {
+          "ocr_confidence": 0.876,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.951,
+          "consistency_confidence": 0.65,
+          "overall_confidence": 0.58
+        },
+        "status": "LOW",
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "First extracted question is Q2; expected Q1. Initial questions appear lost or unsegmented."
+          }
+        ],
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_numbering_gap"
+        ],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 2,
+        "confidence": {
+          "ocr_confidence": 0.871,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.4,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.65,
+          "overall_confidence": 0.58
+        },
+        "status": "LOW",
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "First extracted question is Q2; expected Q1. Initial questions appear lost or unsegmented."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_numbering_gap"
+        ],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 3,
+        "confidence": {
+          "ocr_confidence": 0.879,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.952,
+          "consistency_confidence": 0.65,
+          "overall_confidence": 0.58
+        },
+        "status": "LOW",
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "First extracted question is Q2; expected Q1. Initial questions appear lost or unsegmented."
+          }
+        ],
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_numbering_gap"
+        ],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 4,
+        "confidence": {
+          "ocr_confidence": 0.83,
+          "ocr_confidence_available": true,
+          "structure_confidence": 0.75,
+          "segmentation_confidence": 0.85,
+          "metadata_confidence": 0.8,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.58
+        },
+        "status": "LOW",
+        "anomalies": [
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "high",
+            "text_preview": "2) Allotted marks are displayed in front of the questions. water? Discuss estimation of time since death in submerged bo",
+            "reason": "Instruction item 2 contains question action verbs and structured question numbering/subparts."
+          },
+          {
+            "type": "header_leakage_in_question",
+            "severity": "medium",
+            "text_preview": "ROHILKHANDMEDICALCOLLEGE,BAREILLY\nMBBS4rdsemester (2010Batch)\nInternal AssessmentTest-l,May10th,2012",
+            "reason": "Question body contains examination header or instruction phrases."
+          }
+        ],
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_like_text_in_instructions"
+        ],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 5,
+        "confidence": {
+          "ocr_confidence": 0.865,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.65,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.933
+        },
+        "status": "HIGH",
+        "anomalies": [],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 6,
+        "confidence": {
+          "ocr_confidence": 0.84,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.85,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.948
+        },
+        "status": "HIGH",
+        "anomalies": [],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 7,
+        "confidence": {
+          "ocr_confidence": 0.827,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.85,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.945
+        },
+        "status": "HIGH",
+        "anomalies": [],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 8,
+        "confidence": {
+          "ocr_confidence": 0.871,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.35,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.65,
+          "overall_confidence": 0.58
+        },
+        "status": "LOW",
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "First extracted question is Q2; expected Q1. Initial questions appear lost or unsegmented."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          }
+        ],
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_numbering_gap"
+        ],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 9,
+        "confidence": {
+          "ocr_confidence": 0.891,
+          "ocr_confidence_available": true,
+          "structure_confidence": 0.25,
+          "segmentation_confidence": 0.7,
+          "metadata_confidence": 0.35,
+          "classification_confidence": 0.835,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.4
+        },
+        "status": "REVIEW_REQUIRED",
+        "anomalies": [
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "high",
+            "text_preview": "3. Write notes on the following: a. Police Inquest a. Battered baby syndrome b. The Workmen's Compensation Act. Organoph",
+            "reason": "Instruction item 3 contains question action verbs and structured question numbering/subparts."
+          },
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "high",
+            "text_preview": "3. Write notes on the following: a.Novus Actus Interveniens b.Sodomy c.Mc Naughten's Rule [MaximumMarks:40",
+            "reason": "Instruction item 5 contains question action verbs and structured question numbering/subparts."
+          },
+          {
+            "type": "excessive_instruction_text_ratio",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "Instructions contain 435 characters while extracted questions contain only 147 characters. Content is trapped in header/instructions."
+          },
+          {
+            "type": "header_leakage_in_question",
+            "severity": "medium",
+            "text_preview": "(Marks:3+5)\n(Marks:3 each)\n(Marks: 2 each)\nROHILKHANDMEDICAL COLLEGE,BAREILLY\nFORENSICMEDICINE\nb. An",
+            "reason": "Question body contains examination header or instruction phrases."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          }
+        ],
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_like_text_in_instructions",
+          "excessive_instruction_text_ratio",
+          "low_structure_confidence"
+        ],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 10,
+        "confidence": {
+          "ocr_confidence": 0.863,
+          "ocr_confidence_available": true,
+          "structure_confidence": 0.05,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.948,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.2
+        },
+        "status": "REVIEW_REQUIRED",
+        "anomalies": [
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "critical",
+            "text_preview": "Attempt all questions. body of a person died during this season? (Marks: 10)",
+            "reason": "Instruction item 1 contains per-question marks allocation '(Marks: 10', proving real questions were trapped inside instructions."
+          },
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "critical",
+            "text_preview": "2. Write differences between: (Marks:2x5=10) a. Rigor mortis & Cadaveric spasm b.Antemortembruise&Postmortemhyposatasis",
+            "reason": "Instruction item 2 contains per-question marks allocation '(Marks:2', proving real questions were trapped inside instructions."
+          },
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "critical",
+            "text_preview": "3. Write notes on the following: (Marks:6x5=30) a. Adipocere b. Exhumation c. Diagnosis of Brain Death d. Universal work",
+            "reason": "Instruction item 3 contains per-question marks allocation '(Marks:6', proving real questions were trapped inside instructions."
+          }
+        ],
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_like_text_in_instructions",
+          "low_structure_confidence"
+        ],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 11,
+        "confidence": {
+          "ocr_confidence": 0.811,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.4,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.65,
+          "overall_confidence": 0.58
+        },
+        "status": "LOW",
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "First extracted question is Q4; expected Q1. Initial questions appear lost or unsegmented."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_numbering_gap"
+        ],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 12,
+        "confidence": {
+          "ocr_confidence": 0.834,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.65,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.65,
+          "overall_confidence": 0.58
+        },
+        "status": "LOW",
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "First extracted question is Q4; expected Q1. Initial questions appear lost or unsegmented."
+          }
+        ],
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_numbering_gap"
+        ],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 13,
+        "confidence": {
+          "ocr_confidence": 0.873,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.3,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.65,
+          "overall_confidence": 0.58
+        },
+        "status": "LOW",
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "First extracted question is Q2; expected Q1. Initial questions appear lost or unsegmented."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_numbering_gap"
+        ],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 14,
+        "confidence": {
+          "ocr_confidence": 0.849,
+          "ocr_confidence_available": true,
+          "structure_confidence": 0.25,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.35,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.6,
+          "overall_confidence": 0.4
+        },
+        "status": "REVIEW_REQUIRED",
+        "anomalies": [
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "high",
+            "text_preview": "4. Define injury and hurt. Mention any TWO examples of grievous hurt caused in the eyes. [3+3+3]",
+            "reason": "Instruction item 5 contains question action verbs and structured question numbering/subparts."
+          },
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "high",
+            "text_preview": "8. How will you differentiate between the incised wound and the lacerated wound? [8]",
+            "reason": "Instruction item 7 contains question action verbs and structured question numbering/subparts."
+          },
+          {
+            "type": "question_like_text_in_instructions",
+            "severity": "high",
+            "text_preview": "9. Tabulate chronology of appearance of permanent teeth. How will you differentiate temporary teeth from permanent teeth",
+            "reason": "Instruction item 8 contains question action verbs and structured question numbering/subparts."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Main'."
+          },
+          {
+            "type": "question_numbering_gap",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Numbering gap detected in section 'Main': Q5 is followed by Q8 (missing 2 question(s))."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          }
+        ],
+        "needs_visual_verification": true,
+        "visual_verification_reasons": [
+          "question_like_text_in_instructions",
+          "low_structure_confidence"
+        ],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 15,
+        "confidence": {
+          "ocr_confidence": 0.872,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.55,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.7,
+          "overall_confidence": 0.894
+        },
+        "status": "HIGH",
+        "anomalies": [
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q4 detected in section 'Section-B'."
+          },
+          {
+            "type": "question_numbering_gap",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Numbering gap detected in section 'Section-B': Q2 is followed by Q4 (missing 1 question(s))."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 16,
+        "confidence": {
+          "ocr_confidence": 0.881,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.55,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.8,
+          "overall_confidence": 0.906
+        },
+        "status": "HIGH",
+        "anomalies": [
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q4 detected in section 'SECTION-B'."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 17,
+        "confidence": {
+          "ocr_confidence": 0.855,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.904,
+          "metadata_confidence": 0.1,
+          "classification_confidence": 0.95,
+          "consistency_confidence": 0.1,
+          "overall_confidence": 0.767
+        },
+        "status": "MEDIUM",
+        "anomalies": [
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Main'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Main'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q2 detected in section 'Main'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q7 detected in section 'Main'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Main'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q2 detected in section 'Main'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q1 detected in section 'Main'."
+          },
+          {
+            "type": "duplicate_question_number",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Duplicate question number Q2 detected in section 'Main'."
+          },
+          {
+            "type": "question_numbering_gap",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Numbering gap detected in section 'Main': Q2 is followed by Q5 (missing 2 question(s))."
+          },
+          {
+            "type": "question_numbering_gap",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Numbering gap detected in section 'Main': Q10 is followed by Q12 (missing 1 question(s))."
+          },
+          {
+            "type": "question_numbering_gap",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Numbering gap detected in section 'Main': Q2 is followed by Q17 (missing 14 question(s))."
+          },
+          {
+            "type": "question_numbering_gap",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Numbering gap detected in section 'Main': Q2 is followed by Q20 (missing 17 question(s))."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": null,
+        "vision_status": null,
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      },
+      {
+        "page": 18,
+        "confidence": {
+          "ocr_confidence": 0.889,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.1,
+          "classification_confidence": 0.955,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.883
+        },
+        "status": "HIGH",
+        "anomalies": [
+          {
+            "type": "missing_required_metadata",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "University name could not be extracted from header."
+          },
+          {
+            "type": "missing_required_metadata",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination subject could not be extracted."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      }
+    ],
+    "processing_notes": [
+      "Paper 1: [HIGH] First extracted question is Q2; expected Q1. Initial questions appear lost or unsegmented.",
+      "Paper 1: Overall confidence 58.0% (LOW) \u2014 visual review recommended.",
+      "Paper 2: [HIGH] First extracted question is Q2; expected Q1. Initial questions appear lost or unsegmented.",
+      "Paper 2: Overall confidence 58.0% (LOW) \u2014 visual review recommended.",
+      "Paper 3: [HIGH] First extracted question is Q2; expected Q1. Initial questions appear lost or unsegmented.",
+      "Paper 3: Overall confidence 58.0% (LOW) \u2014 visual review recommended.",
+      "Paper 4: [HIGH] Instruction item 2 contains question action verbs and structured question numbering/subparts.",
+      "Paper 4: Overall confidence 58.0% (LOW) \u2014 visual review recommended.",
+      "Paper 8: [HIGH] First extracted question is Q2; expected Q1. Initial questions appear lost or unsegmented.",
+      "Paper 8: Overall confidence 58.0% (LOW) \u2014 visual review recommended.",
+      "Paper 9: [HIGH] Instruction item 3 contains question action verbs and structured question numbering/subparts.",
+      "Paper 9: [HIGH] Instruction item 5 contains question action verbs and structured question numbering/subparts.",
+      "Paper 9: [HIGH] Instructions contain 435 characters while extracted questions contain only 147 characters. Content is trapped in header/instructions.",
+      "Paper 9: Overall confidence 40.0% (REVIEW_REQUIRED) \u2014 visual review recommended.",
+      "Paper 10: [CRITICAL] Instruction item 1 contains per-question marks allocation '(Marks: 10', proving real questions were trapped inside instructions.",
+      "Paper 10: [CRITICAL] Instruction item 2 contains per-question marks allocation '(Marks:2', proving real questions were trapped inside instructions.",
+      "Paper 10: [CRITICAL] Instruction item 3 contains per-question marks allocation '(Marks:6', proving real questions were trapped inside instructions.",
+      "Paper 10: Overall confidence 20.0% (REVIEW_REQUIRED) \u2014 visual review recommended.",
+      "Paper 11: [HIGH] First extracted question is Q4; expected Q1. Initial questions appear lost or unsegmented.",
+      "Paper 11: Overall confidence 58.0% (LOW) \u2014 visual review recommended.",
+      "Paper 12: [HIGH] First extracted question is Q4; expected Q1. Initial questions appear lost or unsegmented.",
+      "Paper 12: Overall confidence 58.0% (LOW) \u2014 visual review recommended.",
+      "Paper 13: [HIGH] First extracted question is Q2; expected Q1. Initial questions appear lost or unsegmented.",
+      "Paper 13: Overall confidence 58.0% (LOW) \u2014 visual review recommended.",
+      "Paper 14: [HIGH] Instruction item 5 contains question action verbs and structured question numbering/subparts.",
+      "Paper 14: [HIGH] Instruction item 7 contains question action verbs and structured question numbering/subparts.",
+      "Paper 14: [HIGH] Instruction item 8 contains question action verbs and structured question numbering/subparts.",
+      "Paper 14: Overall confidence 40.0% (REVIEW_REQUIRED) \u2014 visual review recommended."
+    ],
+    "needs_visual_verification": true,
+    "visual_verification_reasons": [
+      "question_numbering_gap",
+      "question_like_text_in_instructions",
+      "excessive_instruction_text_ratio",
+      "low_structure_confidence"
+    ],
+    "vision_verified_pages": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      18
+    ],
+    "needs_manual_review": false
+  },
+  "created_at": "2026-10-03T11:32:39.286781"
+}

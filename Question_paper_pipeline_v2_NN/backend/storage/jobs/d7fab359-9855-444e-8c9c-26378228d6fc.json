@@ -1,0 +1,235 @@
+{
+  "job_id": "d7fab359-9855-444e-8c9c-26378228d6fc",
+  "status": "completed",
+  "filename": "WhatsApp Image 2026-09-26 at 06.32.04.jpeg",
+  "progress": 100,
+  "current_step": "Completed",
+  "error": null,
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 1983
+    }
+  ],
+  "result": {
+    "document": "8de8da74-c196-4601-bf6b-62a1058af96f.jpeg",
+    "total_pages": 1,
+    "question_papers": [
+      {
+        "paper_index": 0,
+        "page_range": [
+          1,
+          1
+        ],
+        "metadata": {
+          "university": "UHSR EXAMINATIONS",
+          "exam_month": null,
+          "exam_year": null,
+          "session_code": null,
+          "subject": null,
+          "paper_code": null,
+          "max_marks": null,
+          "duration": null,
+          "confidence": 0.25,
+          "status": "needs_review"
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "UHSR EXAMINATIONS",
+            "type": "Essay",
+            "part": "PART-B",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "5",
+            "text": "A 60-year-old man with osteoarthritis has a history of NSAID induced peptic ulcer. He\nrequires an analgesic with relatively lower gastrointestinal toxicity. Which of the following\ndrugs would be preferable?\n(a) Indomethacin\n(b) Ketorolac\n(c) Aspirin\n(d) Celecoxib",
+            "type": "Essay",
+            "part": "PART-B",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "5",
+            "text": "Enumerate hypolipidemic drugs. Write down the mechanism of action, clinical uses & adverse effects\nof statins.",
+            "type": "Essay",
+            "part": "PART-B",
+            "heading": null,
+            "options": null,
+            "marks": "10",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "6",
+            "text": "(a) Role of Corticosteroids in bronchial asthma\n(b) Phase IV clinical trial\n(c) Drug therapy of megaloblastic anaemia\n(d) Management of atropine poisoning\n(e) Pharmacovigilance program of India\n(f) Drug treatment of hypertension in pregnant ladies\n(g) Clinical uses & adverse effects of Mannitol",
+            "type": "Short Notes",
+            "part": "PART-B",
+            "heading": null,
+            "options": null,
+            "marks": "35",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "7.1",
+            "text": "Which of the following drugs would be best for treatment of an acute attack of asthma?",
+            "type": "MCQ",
+            "part": "PART-B",
+            "heading": null,
+            "options": [
+              {
+                "label": "a",
+                "text": "Inhaled albuterol"
+              },
+              {
+                "label": "b",
+                "text": "Oral albuterol"
+              },
+              {
+                "label": "c",
+                "text": "Oral dexamethasone"
+              },
+              {
+                "label": "d",
+                "text": "Oral salmeterol"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "7.2",
+            "text": "A 24-year-old man is taking two medications to help with the symptoms of allergic rhinitis.\nHe is noted to have a blood pressure of 150/70 mm Hg. The clinician notes that one of the\nmedications may be responsible for the new-onset hypertension. The most likely aetiology\nis which of the following?",
+            "type": "MCQ",
+            "part": "PART-B",
+            "heading": null,
+            "options": [
+              {
+                "label": "a",
+                "text": "Inhaled sodium cromoglycate"
+              },
+              {
+                "label": "b",
+                "text": "Inhaled glucocorticoids"
+              },
+              {
+                "label": "c",
+                "text": "Oral diphenhydramine"
+              },
+              {
+                "label": "d",
+                "text": "Oral pseudoephedrine"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "7.3",
+            "text": "A 60-year-old patient develops persistent muscle spasticity following a stroke. Which of\nthe following drugs acts centrally by stimulating GABA- B receptors and can be used to\nreduce spasticity?",
+            "type": "MCQ",
+            "part": "PART-B",
+            "heading": null,
+            "options": [
+              {
+                "label": "a",
+                "text": "Baclofen"
+              },
+              {
+                "label": "b",
+                "text": "Dantrolene sodium"
+              },
+              {
+                "label": "c",
+                "text": "Tizanidine"
+              },
+              {
+                "label": "d",
+                "text": "Succinylcholine"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "7.4",
+            "text": "Essential drug list is a:",
+            "type": "MCQ",
+            "part": "PART-B",
+            "heading": null,
+            "options": [
+              {
+                "label": "a",
+                "text": "List of life saving drug"
+              },
+              {
+                "label": "b",
+                "text": "List of drugs required for priority needs of population"
+              },
+              {
+                "label": "c",
+                "text": "List of drugs by generic names"
+              },
+              {
+                "label": "d",
+                "text": "List of drugs for common ailments"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "7.5",
+            "text": "Which of following is contraindicated in patient with hyperkalaemia?",
+            "type": "MCQ",
+            "part": "PART-B",
+            "heading": null,
+            "options": [
+              {
+                "label": "a",
+                "text": "Acetazolamide"
+              },
+              {
+                "label": "b",
+                "text": "Chlorthalidone"
+              },
+              {
+                "label": "c",
+                "text": "Ethacrynic acid"
+              },
+              {
+                "label": "d",
+                "text": "Eplerenone"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "parts": [
+          "PART-B"
+        ],
+        "raw_text": "UHSR EXAMINATIONS\n5. A 60-year-old man with osteoarthritis has a history of NSAID induced peptic ulcer. He\nrequires an analgesic with relatively lower gastrointestinal toxicity. Which of the following\ndrugs would be preferable?\n(a) Indomethacin\n(b) Ketorolac\n(c) Aspirin\n(d) Celecoxib\nPART-B\nQ.5 Enumerate hypolipidemic drugs. Write down the mechanism of action, clinical uses & adverse effects 3+2+3+2=10\nof statins.\nQ.6 Write short notes on the following: 7x5=35\n(a) Role of Corticosteroids in bronchial asthma\n(b) Phase IV clinical trial\n(c) Drug therapy of megaloblastic anaemia\n(d) Management of atropine poisoning\n(e) Pharmacovigilance program of India\n(f) Drug treatment of hypertension in pregnant ladies\n(g) Clinical uses & adverse effects of Mannitol\nQ.7 Multiple choice questions. 1x5=5\n1. Which of the following drugs would be best for treatment of an acute attack of asthma?\n(a)Inhaled albuterol\n(b) Oral albuterol\n(c) Oral dexamethasone\nd) Oral salmeterol\n2. A 24-year-old man is taking two medications to help with the symptoms of allergic rhinitis.\nHe is noted to have a blood pressure of 150/70 mm Hg. The clinician notes that one of the\nmedications may be responsible for the new-onset hypertension. The most likely aetiology\nis which of the following?\n(a) Inhaled sodium cromoglycate\n(b) Inhaled glucocorticoids\n(c) Oral diphenhydramine\n(d) Oral pseudoephedrine\n3. A 60-year-old patient develops persistent muscle spasticity following a stroke. Which of\nthe following drugs acts centrally by stimulating GABA- B receptors and can be used to\nreduce spasticity?\n(a) Baclofen\n(b) Dantrolene sodium\n(c) Tizanidine\n(d) Succinylcholine\n4. Essential drug list is a:\n(a) List of life saving drug\n(b) List of drugs required for priority needs of population\n(c) List of drugs by generic names\n(d) List of drugs for common ailments\n5. Which of following is contraindicated in patient with hyperkalaemia?\n(a) Acetazolamide\n(b) Chlorthalidone\n(c) Ethacrynic acid\n(d) Eplerenone"
+      }
+    ],
+    "processing_notes": [
+      "Paper 0: low metadata confidence (0.25) \u2014 manual review needed."
+    ]
+  },
+  "created_at": "2026-10-02T06:45:58.578687"
+}

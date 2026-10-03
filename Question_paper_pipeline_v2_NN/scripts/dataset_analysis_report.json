@@ -1,0 +1,2139 @@
+{
+  "base_dir": "C:\\Users\\BALAHARISH NATARAJAN\\Desktop\\Gecko Med assignment\\Question_paper_pipeline\\raw_datasets",
+  "pdf_analyses": [
+    {
+      "file": "CM (internal & send up)_250323_115238.pdf",
+      "size_mb": 12.84,
+      "total_pages": 20,
+      "digital_pages": 0,
+      "scanned_pages": 20,
+      "mixed_pages": 0,
+      "avg_chars_per_page": 0,
+      "sample_texts": [],
+      "years_found": [],
+      "months_found": [],
+      "section_patterns": [],
+      "question_numbering_styles": [],
+      "has_mcq": false,
+      "has_session_code": false,
+      "has_university_mention": false,
+      "has_header_keywords": false,
+      "potential_paper_boundaries": [],
+      "per_page_summary": [
+        {
+          "page": 1,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 2,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 3,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 4,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 5,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 6,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 7,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 8,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 9,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 10,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 11,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 12,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 13,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 14,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 15,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 16,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 17,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 18,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 19,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 20,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        }
+      ],
+      "full_path": "C:\\Users\\BALAHARISH NATARAJAN\\Desktop\\Gecko Med assignment\\Question_paper_pipeline\\raw_datasets\\BIU (Bareilly International University)\\BIU (Bareilly International University)\\CM (internal & send up)_250323_115238.pdf",
+      "university_group": "BIU (Bareilly International University)"
+    },
+    {
+      "file": "Community Medicine Ka Jugaad_251103_082132.pdf",
+      "size_mb": 8.57,
+      "total_pages": 22,
+      "digital_pages": 0,
+      "scanned_pages": 22,
+      "mixed_pages": 0,
+      "avg_chars_per_page": 0,
+      "sample_texts": [],
+      "years_found": [],
+      "months_found": [],
+      "section_patterns": [],
+      "question_numbering_styles": [],
+      "has_mcq": false,
+      "has_session_code": false,
+      "has_university_mention": false,
+      "has_header_keywords": false,
+      "potential_paper_boundaries": [],
+      "per_page_summary": [
+        {
+          "page": 1,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 2,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 3,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 4,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 5,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 6,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 7,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 8,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 9,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 10,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 11,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 12,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 13,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 14,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 15,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 16,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 17,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 18,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 19,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 20,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 21,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 22,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        }
+      ],
+      "full_path": "C:\\Users\\BALAHARISH NATARAJAN\\Desktop\\Gecko Med assignment\\Question_paper_pipeline\\raw_datasets\\BIU (Bareilly International University)\\BIU (Bareilly International University)\\Community Medicine Ka Jugaad_251103_082132.pdf",
+      "university_group": "BIU (Bareilly International University)"
+    },
+    {
+      "file": "FMT (Internal Assessment  & Send Up).pdf",
+      "size_mb": 23.3,
+      "total_pages": 18,
+      "digital_pages": 0,
+      "scanned_pages": 18,
+      "mixed_pages": 0,
+      "avg_chars_per_page": 0,
+      "sample_texts": [],
+      "years_found": [],
+      "months_found": [],
+      "section_patterns": [],
+      "question_numbering_styles": [],
+      "has_mcq": false,
+      "has_session_code": false,
+      "has_university_mention": false,
+      "has_header_keywords": false,
+      "potential_paper_boundaries": [],
+      "per_page_summary": [
+        {
+          "page": 1,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 2,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 3,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 4,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 5,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 6,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 7,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 8,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 9,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 10,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 11,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 12,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 13,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 14,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 15,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 16,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 17,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 18,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        }
+      ],
+      "full_path": "C:\\Users\\BALAHARISH NATARAJAN\\Desktop\\Gecko Med assignment\\Question_paper_pipeline\\raw_datasets\\BIU (Bareilly International University)\\BIU (Bareilly International University)\\FMT (Internal Assessment  & Send Up).pdf",
+      "university_group": "BIU (Bareilly International University)"
+    },
+    {
+      "file": "FMT (Mains & Supp).pdf",
+      "size_mb": 34.03,
+      "total_pages": 34,
+      "digital_pages": 0,
+      "scanned_pages": 34,
+      "mixed_pages": 0,
+      "avg_chars_per_page": 0,
+      "sample_texts": [],
+      "years_found": [],
+      "months_found": [],
+      "section_patterns": [],
+      "question_numbering_styles": [],
+      "has_mcq": false,
+      "has_session_code": false,
+      "has_university_mention": false,
+      "has_header_keywords": false,
+      "potential_paper_boundaries": [],
+      "per_page_summary": [
+        {
+          "page": 1,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 2,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 3,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 4,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 5,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 6,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 7,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 8,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 9,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 10,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 11,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 12,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 13,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 14,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 15,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 16,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 17,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 18,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 19,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 20,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 21,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 22,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 23,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 24,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 25,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 26,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 27,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 28,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 29,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 30,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 31,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 32,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 33,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 34,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        }
+      ],
+      "full_path": "C:\\Users\\BALAHARISH NATARAJAN\\Desktop\\Gecko Med assignment\\Question_paper_pipeline\\raw_datasets\\BIU (Bareilly International University)\\BIU (Bareilly International University)\\FMT (Mains & Supp).pdf",
+      "university_group": "BIU (Bareilly International University)"
+    },
+    {
+      "file": "PSM PYQ_240822_220018.pdf",
+      "size_mb": 15.85,
+      "total_pages": 48,
+      "digital_pages": 0,
+      "scanned_pages": 48,
+      "mixed_pages": 0,
+      "avg_chars_per_page": 0,
+      "sample_texts": [],
+      "years_found": [],
+      "months_found": [],
+      "section_patterns": [],
+      "question_numbering_styles": [],
+      "has_mcq": false,
+      "has_session_code": false,
+      "has_university_mention": false,
+      "has_header_keywords": false,
+      "potential_paper_boundaries": [],
+      "per_page_summary": [
+        {
+          "page": 1,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 2,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 3,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 4,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 5,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 6,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 7,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 8,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 9,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 10,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 11,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 12,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 13,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 14,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 15,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 16,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 17,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 18,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 19,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 20,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 21,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 22,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 23,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 24,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 25,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 26,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 27,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 28,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 29,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 30,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 31,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 32,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 33,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 34,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 35,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 36,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 37,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 38,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 39,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 40,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 41,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 42,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 43,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 44,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 45,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 46,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 47,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 48,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        }
+      ],
+      "full_path": "C:\\Users\\BALAHARISH NATARAJAN\\Desktop\\Gecko Med assignment\\Question_paper_pipeline\\raw_datasets\\BIU (Bareilly International University)\\BIU (Bareilly International University)\\PSM PYQ_240822_220018.pdf",
+      "university_group": "BIU (Bareilly International University)"
+    },
+    {
+      "file": "PSM University Exam Papers (1)_250322_110625.pdf",
+      "size_mb": 20.82,
+      "total_pages": 57,
+      "digital_pages": 0,
+      "scanned_pages": 57,
+      "mixed_pages": 0,
+      "avg_chars_per_page": 0,
+      "sample_texts": [],
+      "years_found": [],
+      "months_found": [],
+      "section_patterns": [],
+      "question_numbering_styles": [],
+      "has_mcq": false,
+      "has_session_code": false,
+      "has_university_mention": false,
+      "has_header_keywords": false,
+      "potential_paper_boundaries": [],
+      "per_page_summary": [
+        {
+          "page": 1,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 2,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 3,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 4,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 5,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 6,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 7,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 8,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 9,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 10,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 11,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 12,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 13,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 14,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 15,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 16,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 17,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 18,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 19,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 20,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 21,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 22,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 23,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 24,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 25,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 26,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 27,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 28,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 29,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 30,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 31,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 32,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 33,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 34,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 35,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 36,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 37,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 38,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 39,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 40,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 41,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 42,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 43,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 44,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 45,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 46,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 47,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 48,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 49,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 50,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 51,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 52,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 53,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 54,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 55,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 56,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 57,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        }
+      ],
+      "full_path": "C:\\Users\\BALAHARISH NATARAJAN\\Desktop\\Gecko Med assignment\\Question_paper_pipeline\\raw_datasets\\BIU (Bareilly International University)\\BIU (Bareilly International University)\\PSM University Exam Papers (1)_250322_110625.pdf",
+      "university_group": "BIU (Bareilly International University)"
+    },
+    {
+      "file": "._CM (internal & send up)_250323_115238.pdf",
+      "size_mb": 0.0,
+      "total_pages": 0,
+      "digital_pages": 0,
+      "scanned_pages": 0,
+      "mixed_pages": 0,
+      "avg_chars_per_page": 0,
+      "sample_texts": [],
+      "years_found": [],
+      "months_found": [],
+      "section_patterns": [],
+      "question_numbering_styles": [],
+      "has_mcq": false,
+      "has_session_code": false,
+      "has_university_mention": false,
+      "has_header_keywords": false,
+      "potential_paper_boundaries": [],
+      "per_page_summary": [],
+      "error": "Failed to open file 'C:\\\\Users\\\\BALAHARISH NATARAJAN\\\\Desktop\\\\Gecko Med assignment\\\\Question_paper_pipeline\\\\raw_datasets\\\\BIU (Bareilly International University)\\\\__MACOSX\\\\BIU (Bareilly International University)\\\\._CM (internal & send up)_250323_115238.pdf'.",
+      "full_path": "C:\\Users\\BALAHARISH NATARAJAN\\Desktop\\Gecko Med assignment\\Question_paper_pipeline\\raw_datasets\\BIU (Bareilly International University)\\__MACOSX\\BIU (Bareilly International University)\\._CM (internal & send up)_250323_115238.pdf",
+      "university_group": "__MACOSX"
+    },
+    {
+      "file": "._Community Medicine Ka Jugaad_251103_082132.pdf",
+      "size_mb": 0.0,
+      "total_pages": 0,
+      "digital_pages": 0,
+      "scanned_pages": 0,
+      "mixed_pages": 0,
+      "avg_chars_per_page": 0,
+      "sample_texts": [],
+      "years_found": [],
+      "months_found": [],
+      "section_patterns": [],
+      "question_numbering_styles": [],
+      "has_mcq": false,
+      "has_session_code": false,
+      "has_university_mention": false,
+      "has_header_keywords": false,
+      "potential_paper_boundaries": [],
+      "per_page_summary": [],
+      "error": "Failed to open file 'C:\\\\Users\\\\BALAHARISH NATARAJAN\\\\Desktop\\\\Gecko Med assignment\\\\Question_paper_pipeline\\\\raw_datasets\\\\BIU (Bareilly International University)\\\\__MACOSX\\\\BIU (Bareilly International University)\\\\._Community Medicine Ka Jugaad_251103_082132.pdf'.",
+      "full_path": "C:\\Users\\BALAHARISH NATARAJAN\\Desktop\\Gecko Med assignment\\Question_paper_pipeline\\raw_datasets\\BIU (Bareilly International University)\\__MACOSX\\BIU (Bareilly International University)\\._Community Medicine Ka Jugaad_251103_082132.pdf",
+      "university_group": "__MACOSX"
+    },
+    {
+      "file": "._FMT (Internal Assessment  & Send Up).pdf",
+      "size_mb": 0.0,
+      "total_pages": 0,
+      "digital_pages": 0,
+      "scanned_pages": 0,
+      "mixed_pages": 0,
+      "avg_chars_per_page": 0,
+      "sample_texts": [],
+      "years_found": [],
+      "months_found": [],
+      "section_patterns": [],
+      "question_numbering_styles": [],
+      "has_mcq": false,
+      "has_session_code": false,
+      "has_university_mention": false,
+      "has_header_keywords": false,
+      "potential_paper_boundaries": [],
+      "per_page_summary": [],
+      "error": "Failed to open file 'C:\\\\Users\\\\BALAHARISH NATARAJAN\\\\Desktop\\\\Gecko Med assignment\\\\Question_paper_pipeline\\\\raw_datasets\\\\BIU (Bareilly International University)\\\\__MACOSX\\\\BIU (Bareilly International University)\\\\._FMT (Internal Assessment  & Send Up).pdf'.",
+      "full_path": "C:\\Users\\BALAHARISH NATARAJAN\\Desktop\\Gecko Med assignment\\Question_paper_pipeline\\raw_datasets\\BIU (Bareilly International University)\\__MACOSX\\BIU (Bareilly International University)\\._FMT (Internal Assessment  & Send Up).pdf",
+      "university_group": "__MACOSX"
+    },
+    {
+      "file": "._FMT (Mains & Supp).pdf",
+      "size_mb": 0.0,
+      "total_pages": 0,
+      "digital_pages": 0,
+      "scanned_pages": 0,
+      "mixed_pages": 0,
+      "avg_chars_per_page": 0,
+      "sample_texts": [],
+      "years_found": [],
+      "months_found": [],
+      "section_patterns": [],
+      "question_numbering_styles": [],
+      "has_mcq": false,
+      "has_session_code": false,
+      "has_university_mention": false,
+      "has_header_keywords": false,
+      "potential_paper_boundaries": [],
+      "per_page_summary": [],
+      "error": "Failed to open file 'C:\\\\Users\\\\BALAHARISH NATARAJAN\\\\Desktop\\\\Gecko Med assignment\\\\Question_paper_pipeline\\\\raw_datasets\\\\BIU (Bareilly International University)\\\\__MACOSX\\\\BIU (Bareilly International University)\\\\._FMT (Mains & Supp).pdf'.",
+      "full_path": "C:\\Users\\BALAHARISH NATARAJAN\\Desktop\\Gecko Med assignment\\Question_paper_pipeline\\raw_datasets\\BIU (Bareilly International University)\\__MACOSX\\BIU (Bareilly International University)\\._FMT (Mains & Supp).pdf",
+      "university_group": "__MACOSX"
+    },
+    {
+      "file": "._PSM PYQ_240822_220018.pdf",
+      "size_mb": 0.0,
+      "total_pages": 0,
+      "digital_pages": 0,
+      "scanned_pages": 0,
+      "mixed_pages": 0,
+      "avg_chars_per_page": 0,
+      "sample_texts": [],
+      "years_found": [],
+      "months_found": [],
+      "section_patterns": [],
+      "question_numbering_styles": [],
+      "has_mcq": false,
+      "has_session_code": false,
+      "has_university_mention": false,
+      "has_header_keywords": false,
+      "potential_paper_boundaries": [],
+      "per_page_summary": [],
+      "error": "Failed to open file 'C:\\\\Users\\\\BALAHARISH NATARAJAN\\\\Desktop\\\\Gecko Med assignment\\\\Question_paper_pipeline\\\\raw_datasets\\\\BIU (Bareilly International University)\\\\__MACOSX\\\\BIU (Bareilly International University)\\\\._PSM PYQ_240822_220018.pdf'.",
+      "full_path": "C:\\Users\\BALAHARISH NATARAJAN\\Desktop\\Gecko Med assignment\\Question_paper_pipeline\\raw_datasets\\BIU (Bareilly International University)\\__MACOSX\\BIU (Bareilly International University)\\._PSM PYQ_240822_220018.pdf",
+      "university_group": "__MACOSX"
+    },
+    {
+      "file": "._PSM University Exam Papers (1)_250322_110625.pdf",
+      "size_mb": 0.0,
+      "total_pages": 0,
+      "digital_pages": 0,
+      "scanned_pages": 0,
+      "mixed_pages": 0,
+      "avg_chars_per_page": 0,
+      "sample_texts": [],
+      "years_found": [],
+      "months_found": [],
+      "section_patterns": [],
+      "question_numbering_styles": [],
+      "has_mcq": false,
+      "has_session_code": false,
+      "has_university_mention": false,
+      "has_header_keywords": false,
+      "potential_paper_boundaries": [],
+      "per_page_summary": [],
+      "error": "Failed to open file 'C:\\\\Users\\\\BALAHARISH NATARAJAN\\\\Desktop\\\\Gecko Med assignment\\\\Question_paper_pipeline\\\\raw_datasets\\\\BIU (Bareilly International University)\\\\__MACOSX\\\\BIU (Bareilly International University)\\\\._PSM University Exam Papers (1)_250322_110625.pdf'.",
+      "full_path": "C:\\Users\\BALAHARISH NATARAJAN\\Desktop\\Gecko Med assignment\\Question_paper_pipeline\\raw_datasets\\BIU (Bareilly International University)\\__MACOSX\\BIU (Bareilly International University)\\._PSM University Exam Papers (1)_250322_110625.pdf",
+      "university_group": "__MACOSX"
+    },
+    {
+      "file": "biochemistry pyqs.pdf",
+      "size_mb": 10.76,
+      "total_pages": 47,
+      "digital_pages": 5,
+      "scanned_pages": 42,
+      "mixed_pages": 0,
+      "avg_chars_per_page": 158,
+      "sample_texts": [
+        "For more useFul content \n  \n \nJoin us \ntelegram  \nhttps://t.me/+zibs5a00JDgzmJc1 \ninstagram: meDi circle \nhttps://www.instagram.com/medi_circl\ne?igsh=MTcyc3kwZGp3YzlldQ== \n \nFIRST YEAR SIA Q BANKS, EXAM ORIENTED PDFS, \nTEXT BOOKS \nhttps://t.me/medicirclebooks1",
+        "PAPER CODE: MB2019101\nKAI-OJI NARAHNA RAO UNIVERSITY OF \nSCIENCES\nARANGAI. TELANGANA STATE - 506 002\nMBBS FIRST WAR EXAMINATIONS: NOVEMBER. 2023\nBIOCHEMISTRY (New Regulation)\nPAPER \n— 1\nTime: Ilours\nMax Marks: 100\nNote: Answer alt gucsuons\nKNRUHS \n-2022\ndart\ndiagrams whenever\nI pencil lany \nColour p",
+        "fluid mosau-• model or membrane Includes\na) Cholesterol molecules in the b) \nmembrane Increase stability of\nmembrane\nc) Membrane contatns bimolecular d) \nleaflet of l'Ptds\nMembrane proteins are fixed\nand cannot move\nPermeability of drugs across\ncell membrane ts dependent on\ntheir \n9.\nMobility of par"
+      ],
+      "years_found": [
+        "2023",
+        "2022"
+      ],
+      "months_found": [
+        "NOVEMBER"
+      ],
+      "section_patterns": [],
+      "question_numbering_styles": [
+        "^\\s*\\d+\\s*[\\.\\)]\\s"
+      ],
+      "has_mcq": false,
+      "has_session_code": true,
+      "has_university_mention": true,
+      "has_header_keywords": false,
+      "potential_paper_boundaries": [
+        1,
+        3
+      ],
+      "per_page_summary": [
+        {
+          "page": 1,
+          "type": "digital",
+          "chars": 260,
+          "boundary_signals": []
+        },
+        {
+          "page": 2,
+          "type": "digital",
+          "chars": 1402,
+          "boundary_signals": [
+            "year:2023",
+            "month:NOVEMBER",
+            "session_code",
+            "university_name"
+          ]
+        },
+        {
+          "page": 3,
+          "type": "digital",
+          "chars": 1918,
+          "boundary_signals": []
+        },
+        {
+          "page": 4,
+          "type": "digital",
+          "chars": 1741,
+          "boundary_signals": [
+            "year:2023",
+            "month:NOVEMBER",
+            "session_code",
+            "university_name"
+          ]
+        },
+        {
+          "page": 5,
+          "type": "digital",
+          "chars": 2114,
+          "boundary_signals": []
+        },
+        {
+          "page": 6,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 7,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 8,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 9,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 10,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 11,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 12,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 13,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 14,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 15,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 16,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 17,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 18,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 19,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 20,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 21,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 22,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 23,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 24,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 25,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 26,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 27,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 28,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 29,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 30,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 31,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 32,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 33,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 34,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 35,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 36,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 37,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 38,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 39,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 40,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 41,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 42,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 43,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 44,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 45,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 46,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 47,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        }
+      ],
+      "full_path": "C:\\Users\\BALAHARISH NATARAJAN\\Desktop\\Gecko Med assignment\\Question_paper_pipeline\\raw_datasets\\KNRUHS\\KNRUHS\\biochemistry pyqs.pdf",
+      "university_group": "KNRUHS"
+    },
+    {
+      "file": "Physiology PYQ 2019 to 2025.pdf",
+      "size_mb": 20.56,
+      "total_pages": 40,
+      "digital_pages": 0,
+      "scanned_pages": 40,
+      "mixed_pages": 0,
+      "avg_chars_per_page": 0,
+      "sample_texts": [],
+      "years_found": [],
+      "months_found": [],
+      "section_patterns": [],
+      "question_numbering_styles": [],
+      "has_mcq": false,
+      "has_session_code": false,
+      "has_university_mention": false,
+      "has_header_keywords": false,
+      "potential_paper_boundaries": [],
+      "per_page_summary": [
+        {
+          "page": 1,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 2,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 3,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 4,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 5,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 6,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 7,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 8,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 9,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 10,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 11,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 12,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 13,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 14,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 15,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 16,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 17,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 18,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 19,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 20,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 21,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 22,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 23,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 24,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 25,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 26,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 27,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 28,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 29,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 30,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 31,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 32,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 33,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 34,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 35,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 36,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 37,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 38,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 39,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        },
+        {
+          "page": 40,
+          "type": "scanned",
+          "chars": 0,
+          "boundary_signals": []
+        }
+      ],
+      "full_path": "C:\\Users\\BALAHARISH NATARAJAN\\Desktop\\Gecko Med assignment\\Question_paper_pipeline\\raw_datasets\\KNRUHS\\KNRUHS\\Physiology PYQ 2019 to 2025.pdf",
+      "university_group": "KNRUHS"
+    },
+    {
+      "file": "._biochemistry pyqs.pdf",
+      "size_mb": 0.0,
+      "total_pages": 0,
+      "digital_pages": 0,
+      "scanned_pages": 0,
+      "mixed_pages": 0,
+      "avg_chars_per_page": 0,
+      "sample_texts": [],
+      "years_found": [],
+      "months_found": [],
+      "section_patterns": [],
+      "question_numbering_styles": [],
+      "has_mcq": false,
+      "has_session_code": false,
+      "has_university_mention": false,
+      "has_header_keywords": false,
+      "potential_paper_boundaries": [],
+      "per_page_summary": [],
+      "error": "Failed to open file 'C:\\\\Users\\\\BALAHARISH NATARAJAN\\\\Desktop\\\\Gecko Med assignment\\\\Question_paper_pipeline\\\\raw_datasets\\\\KNRUHS\\\\__MACOSX\\\\KNRUHS\\\\._biochemistry pyqs.pdf'.",
+      "full_path": "C:\\Users\\BALAHARISH NATARAJAN\\Desktop\\Gecko Med assignment\\Question_paper_pipeline\\raw_datasets\\KNRUHS\\__MACOSX\\KNRUHS\\._biochemistry pyqs.pdf",
+      "university_group": "__MACOSX"
+    },
+    {
+      "file": "._Physiology PYQ 2019 to 2025.pdf",
+      "size_mb": 0.0,
+      "total_pages": 0,
+      "digital_pages": 0,
+      "scanned_pages": 0,
+      "mixed_pages": 0,
+      "avg_chars_per_page": 0,
+      "sample_texts": [],
+      "years_found": [],
+      "months_found": [],
+      "section_patterns": [],
+      "question_numbering_styles": [],
+      "has_mcq": false,
+      "has_session_code": false,
+      "has_university_mention": false,
+      "has_header_keywords": false,
+      "potential_paper_boundaries": [],
+      "per_page_summary": [],
+      "error": "Failed to open file 'C:\\\\Users\\\\BALAHARISH NATARAJAN\\\\Desktop\\\\Gecko Med assignment\\\\Question_paper_pipeline\\\\raw_datasets\\\\KNRUHS\\\\__MACOSX\\\\KNRUHS\\\\._Physiology PYQ 2019 to 2025.pdf'.",
+      "full_path": "C:\\Users\\BALAHARISH NATARAJAN\\Desktop\\Gecko Med assignment\\Question_paper_pipeline\\raw_datasets\\KNRUHS\\__MACOSX\\KNRUHS\\._Physiology PYQ 2019 to 2025.pdf",
+      "university_group": "__MACOSX"
+    }
+  ],
+  "image_dir_analyses": [
+    {
+      "image_directory": "C:\\Users\\BALAHARISH NATARAJAN\\Desktop\\Gecko Med assignment\\Question_paper_pipeline\\raw_datasets\\UHSR\\UHSR",
+      "total_images": 30,
+      "total_size_mb": 5.7,
+      "file_names": [
+        "WhatsApp Image 2026-09-26 at 06.32.03.jpeg",
+        "WhatsApp Image 2026-09-26 at 06.32.04 (1).jpeg",
+        "WhatsApp Image 2026-09-26 at 06.32.04.jpeg",
+        "WhatsApp Image 2026-09-26 at 06.32.05 (1).jpeg",
+        "WhatsApp Image 2026-09-26 at 06.32.05.jpeg",
+        "..."
+      ],
+      "note": "Images need OCR processing. No native text."
+    }
+  ],
+  "summary": {
+    "total_pdfs": 16,
+    "total_image_dirs": 1,
+    "total_pages": 286,
+    "digital_pages": 5,
+    "scanned_pages": 281,
+    "mixed_pages": 0,
+    "pct_scanned": 98.3,
+    "pct_digital": 1.7
+  }
+}

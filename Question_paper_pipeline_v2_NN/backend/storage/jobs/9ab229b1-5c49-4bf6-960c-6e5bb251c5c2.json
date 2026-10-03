@@ -1,0 +1,220 @@
+{
+  "job_id": "9ab229b1-5c49-4bf6-960c-6e5bb251c5c2",
+  "status": "completed",
+  "filename": "forensic_medicine_test.pdf",
+  "progress": 100,
+  "current_step": "Completed",
+  "error": null,
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "digital",
+      "ocr_used": false,
+      "char_count": 1089,
+      "processing_state": "FINALIZED"
+    }
+  ],
+  "result": {
+    "document": "forensic_medicine_test.pdf",
+    "total_pages": 1,
+    "question_papers": [
+      {
+        "paper_index": 0,
+        "page_range": [
+          1,
+          1
+        ],
+        "metadata": {
+          "university": "BAREILLY",
+          "exam_month": null,
+          "exam_year": "2011",
+          "session_code": null,
+          "subject": "Forensic",
+          "paper_code": null,
+          "max_marks": "40",
+          "duration": "Three Hours",
+          "confidence": 0.9,
+          "status": "ok",
+          "missing_fields": [
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Classify mechanical injuries. Describe the pattern of entry wound of a firearm fired from different distances.",
+            "type": "Short Notes",
+            "part": "PART-A",
+            "heading": null,
+            "options": null,
+            "marks": "8",
+            "confidence": 0.807,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.45,
+              "overall": 0.807
+            },
+            "status": "ok",
+            "confidence_level": "MEDIUM",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Write notes on the following:\na. Superimposition technique.\nb. Police inquest.",
+            "type": "Short Notes",
+            "part": "PART-A",
+            "heading": null,
+            "options": null,
+            "marks": "6",
+            "confidence": 0.982,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.982
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Write notes on the followings:\na. Hermaphrodite\nb. Medico-legal importance of 12 years of age\nc. Dying declaration.",
+            "type": "Short Notes",
+            "part": "PART-A",
+            "heading": null,
+            "options": null,
+            "marks": "6",
+            "confidence": 0.982,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.982
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "A 25 years old female's charred dead body with pugilistic attitude was recovered by police from a house. How will you arrive to a conclusion that the cause of death was asphyxia as a result of ante mortem burn?",
+            "type": "Essay",
+            "part": "PART-B",
+            "heading": null,
+            "options": null,
+            "marks": "8",
+            "confidence": 0.807,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.45,
+              "overall": 0.807
+            },
+            "status": "ok",
+            "confidence_level": "MEDIUM",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "a. Vicarious responsibility.\nb. Functions of Indian Medical Council (Marks: 3 each)",
+            "type": "Short Notes",
+            "part": "PART-B",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.994,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.982,
+              "overall": 0.994
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "Write in brief on the following:\na. Delusion\nb. Feigned insanity\nc. Testamentary capacity. (Marks: 2 each)",
+            "type": "Short Notes",
+            "part": "PART-B",
+            "heading": null,
+            "options": null,
+            "marks": null,
+            "confidence": 0.994,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.982,
+              "overall": 0.994
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Attempt all questions."
+        ],
+        "parts": [
+          "PART-A",
+          "PART-B"
+        ],
+        "raw_text": "f1/2011/51 04103/2011 Cl2 04/03/11\n10\nROHILKHAND MEDICAL COLLEGE, BAREILLY\nFirst Terminal Examination D\nM.B.B.S. (2009 Batch)\nFORENSIC MEDICINE AND TOXICOLOGY\nTime: Three Hours] [Maximum Marks: 40\nNote: Attempt all questions.\n(PART-A)\nMaximum Marks -20\nClassify mechanical injuries. Describe the pattern of entry wound of a firearm\nfired from different distances. (8 marks)\n2. Write notes on the following:\na. Superimposition technique.\nb. Police inquest. (Marks: 3 each)\n3. Write notes on the followings:\na. Hermaphrodite\nb. Medico-legal importance of 12 years of age\nc. Dying declaration. (Marks: 2 each)\n(PART-B)\nMaximum Marks-20\n1. A 25 years old female's charred dead body with pugilistic attitude was recovered\nby police from a house. How will you arrive to a conclusion that the cause of\ndeath was asphyxia as a result of ante mortem burn?\n(Marks-8)\n2. Write short notes on the following:\na. Vicarious responsibility.\nb. Functions of Indian Medical Council (Marks: 3 each)\n3. Write in brief on the following:\na. Delusion\nb. Feigned insanity\nc. Testamentary capacity. (Marks: 2 each)",
+        "confidence": {
+          "ocr_confidence": 1.0,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.794,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.969
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [],
+        "vision_verified": true,
+        "vision_confidence": 0.96,
+        "vision_status": "CORRECTED",
+        "needs_manual_review": false
+      }
+    ],
+    "page_audits": [
+      {
+        "page": 1,
+        "confidence": {
+          "ocr_confidence": 1.0,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.794,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.969
+        },
+        "status": "HIGH",
+        "anomalies": [],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.96,
+        "vision_status": "CORRECTED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 5
+      }
+    ],
+    "processing_notes": [],
+    "needs_visual_verification": false,
+    "visual_verification_reasons": [],
+    "vision_verified_pages": [
+      1
+    ],
+    "needs_manual_review": false
+  },
+  "created_at": "2026-10-02T12:50:09.029791"
+}

@@ -1,0 +1,11 @@
+{
+  "job_id": "f52016f6-f349-43f5-a70c-d15eca04a7f2",
+  "status": "failed",
+  "filename": "WhatsApp Image 2026-09-26 at 06.32.03.jpeg",
+  "progress": 5,
+  "current_step": "Failed",
+  "error": "name 'time' is not defined",
+  "pages_info": [],
+  "result": null,
+  "created_at": "2026-10-03T11:06:39.795140"
+}

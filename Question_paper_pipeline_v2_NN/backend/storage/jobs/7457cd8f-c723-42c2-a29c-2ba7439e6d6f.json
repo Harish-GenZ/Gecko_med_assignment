@@ -1,0 +1,199 @@
+{
+  "job_id": "7457cd8f-c723-42c2-a29c-2ba7439e6d6f",
+  "status": "completed",
+  "filename": "WhatsApp Image 2026-09-26 at 06.32.05 (1).jpeg",
+  "progress": 100,
+  "current_step": "Completed",
+  "error": null,
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 2669
+    }
+  ],
+  "result": {
+    "document": "0b6b3e4d-e6ee-4dc6-8a35-622168de7497.jpeg",
+    "total_pages": 1,
+    "question_papers": [
+      {
+        "paper_index": 0,
+        "page_range": [
+          1,
+          1
+        ],
+        "metadata": {
+          "university": "UHSREXAMINATIONS",
+          "exam_month": "September",
+          "exam_year": "2026",
+          "session_code": "MBY2P3",
+          "subject": "Microbiology",
+          "paper_code": null,
+          "max_marks": "100",
+          "duration": "3 hours",
+          "confidence": 1.0,
+          "status": "ok"
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "A 32-year-old woman presents with recurrent herpes zoster, chronic diarrhea, persistent fever and\nmarked weight loss for 4 months. She has generalized lymphadenopathy and a history of multiple blood\ntransfusions 8 years ago.\n(a) What is the most probable diagnosis?\n(b) Describe the laboratory diagnosis of the infection.\n(e) Write about the major opportunistic infections and complications associated.",
+            "type": "Essay",
+            "part": "PART-A",
+            "heading": null,
+            "options": null,
+            "marks": "11",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "2",
+            "text": "(a) A patient misunderstands medical advice. How should the doctor clarify information while\nmaintaining trust?\n(b) Clinical applications and advantages of molecular diagnostic methods\n(c) Types, uses and applications of cell lines in microbiology\n(d) Mechanisms and examples of autoimmune diseases\n(e) Clinical features, complications and lab diagnosis of Dengue",
+            "type": "Short Notes",
+            "part": "PART-A",
+            "heading": null,
+            "options": null,
+            "marks": "25",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "3",
+            "text": "Explain:\n(a) Why HIV show a progressive decline in CD4* T lymphocytes?\n(b) Why FUO evaluated using a systematic approach rather than empirical treatment alone?\n(c) Why chikungunya cause prolonged joint pain after fever subsides?",
+            "type": "Short Notes",
+            "part": "PART-A",
+            "heading": null,
+            "options": null,
+            "marks": "9",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "4.1",
+            "text": "A 24-year-old woman has fatigue, malar rash and photosensitivity. ANA is positive. Which\nantibody is most specific?",
+            "type": "MCQ",
+            "part": "PART-A",
+            "heading": null,
+            "options": [
+              {
+                "label": "a",
+                "text": "Anti-Ro"
+              },
+              {
+                "label": "b",
+                "text": "Anti-dsDNA"
+              },
+              {
+                "label": "c",
+                "text": "Anti-centromere"
+              },
+              {
+                "label": "d",
+                "text": "Anti-Jo-1"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "4.2",
+            "text": "A 2-month-old infant receives a vaccine containing diphtheria, pertussis and tetanus\ncomponents. Which type of immunity does it induce?",
+            "type": "MCQ",
+            "part": "PART-A",
+            "heading": null,
+            "options": [
+              {
+                "label": "a",
+                "text": "Passive natural"
+              },
+              {
+                "label": "b",
+                "text": "Passive artificial"
+              },
+              {
+                "label": "c",
+                "text": "Active artificial"
+              },
+              {
+                "label": "d",
+                "text": "Active natural"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "4.3",
+            "text": "A veterinarian has intermittent fever, sweating and arthralgia after handling infected cattle.\nWhich organism is most likely?",
+            "type": "MCQ",
+            "part": "PART-A",
+            "heading": null,
+            "options": [
+              {
+                "label": "a",
+                "text": "Brucella melitensis"
+              },
+              {
+                "label": "b",
+                "text": "Francisella tularensis"
+              },
+              {
+                "label": "c",
+                "text": "Yersinia pestis"
+              },
+              {
+                "label": "d",
+                "text": "Coxiella burnetiid"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.95,
+            "status": "ok"
+          },
+          {
+            "number": "4.4",
+            "text": "infected person in an outbreak area. Which infection is most likely?",
+            "type": "MCQ",
+            "part": "PART-A",
+            "heading": null,
+            "options": [
+              {
+                "label": "a",
+                "text": "Mumps"
+              },
+              {
+                "label": "b",
+                "text": "Influenza"
+              },
+              {
+                "label": "c",
+                "text": "Measles"
+              },
+              {
+                "label": "d",
+                "text": "Ebola virus disease"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.95,
+            "status": "ok"
+          }
+        ],
+        "instructions": [
+          "1. Attempt all of the following questions. Preferably attempt all the questions serially. 2Part-A and Part-B are to be attempted in separate answer booklets.(Two answer booklets to be used) Do not leave blank spaces of more than two lines in the writing area on the answer sheet, cross",
+          "3. any blank spaces of more than two lines before the END stamp after you finish the exam.",
+          "4. Do not use black lead/graphite pencil on the answer booklets for answering the questions. A case of use of Unfairmeans will be made if instructions at 2, 3 & 4 are not complied."
+        ],
+        "parts": [
+          "PART-A"
+        ],
+        "raw_text": "UHSREXAMINATIONS\nANQP Code: MBY2P3 Q.P. Code: 1723N\n3d September, 2026 MBBS 2nd Prof.\nTime: 3 hours M. Marks: 100 Microbiology (Paper-1) 0.207287\nRoll No.\nIMPORTANT NOTE:\n1. Attempt all of the following questions. Preferably attempt all the questions serially.\n2Part-A and Part-B are to be attempted in separate answer booklets.(Two answer booklets to be used)\nDo not leave blank spaces of more than two lines in the writing area on the answer sheet, cross\n3.\nany blank spaces of more than two lines before the END stamp after you finish the exam.\n4. Do not use black lead/graphite pencil on the answer booklets for answering the questions.\nA case of use of Unfairmeans will be made if instructions at 2, 3 & 4 are not complied.\nPART-A\nQ.1 A 32-year-old woman presents with recurrent herpes zoster, chronic diarrhea, persistent fever and 3+5+3=11\nmarked weight loss for 4 months. She has generalized lymphadenopathy and a history of multiple blood\ntransfusions 8 years ago.\n(a) What is the most probable diagnosis?\n(b) Describe the laboratory diagnosis of the infection.\n(e) Write about the major opportunistic infections and complications associated.\nQ.2 Write short notes on: 5x5=25\n(a) A patient misunderstands medical advice. How should the doctor clarify information while\nmaintaining trust?\n(b) Clinical applications and advantages of molecular diagnostic methods\n(c) Types, uses and applications of cell lines in microbiology\n(d) Mechanisms and examples of autoimmune diseases\n(e) Clinical features, complications and lab diagnosis of Dengue\nQ.3 Explain: 3\u00d73=9\n(a) Why HIV show a progressive decline in CD4* T lymphocytes?\n(b) Why FUO evaluated using a systematic approach rather than empirical treatment alone?\n(c) Why chikungunya cause prolonged joint pain after fever subsides?\nQ.4 Multiple choice questions. 1x5=5\n1. A 24-year-old woman has fatigue, malar rash and photosensitivity. ANA is positive. Which\nantibody is most specific?\n(a) Anti-Ro\n(b) Anti-dsDNA\n(c) Anti-centromere\n(d) Anti-Jo-1\n2. A 2-month-old infant receives a vaccine containing diphtheria, pertussis and tetanus\ncomponents. Which type of immunity does it induce?\n(a) Passive natural\n(b) Passive artificial\n(c) Active artificial\n(d) Active natural\n3. A veterinarian has intermittent fever, sweating and arthralgia after handling infected cattle.\nWhich organism is most likely?\n(a) Brucella melitensis\n(b) Francisella tularensis\n(c) Yersinia pestis\n(d) Coxiella burnetiid\nA patient develops high fever, bleeding manifestations and shock after contact with an\n4. infected person in an outbreak area. Which infection is most likely?\n(a) Mumps\n(b) Influenza\n(c) Measles\n(d) Ebola virus disease"
+      }
+    ],
+    "processing_notes": []
+  },
+  "created_at": "2026-10-02T09:56:31.457699"
+}

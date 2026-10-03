@@ -1,0 +1,11 @@
+{
+  "job_id": "2df53ff6-43cb-44fd-9366-808f3708d599",
+  "status": "cancelled",
+  "filename": "test.pdf",
+  "progress": 0,
+  "current_step": "Cancelled by user",
+  "error": "Server reloaded while processing. Please re-upload the document.",
+  "pages_info": [],
+  "result": null,
+  "created_at": "2026-10-02T16:51:26.340568"
+}

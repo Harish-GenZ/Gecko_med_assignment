@@ -1,0 +1,50 @@
+{
+  "job_id": "5b13509d-ac4e-4157-9bd9-fc39558f8047",
+  "status": "completed",
+  "filename": "WhatsApp Image 2026-09-26 at 06.32.04.jpeg",
+  "progress": 100,
+  "current_step": "Completed",
+  "error": null,
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0
+    }
+  ],
+  "result": {
+    "document": "40b5d817-01a5-4422-8965-849270098f60.jpeg",
+    "total_pages": 1,
+    "question_papers": [
+      {
+        "paper_index": 0,
+        "page_range": [
+          1,
+          1
+        ],
+        "metadata": {
+          "university": null,
+          "exam_month": null,
+          "exam_year": null,
+          "session_code": null,
+          "subject": null,
+          "paper_code": null,
+          "max_marks": null,
+          "duration": null,
+          "confidence": 0.0,
+          "status": "needs_review"
+        },
+        "questions": [],
+        "instructions": null,
+        "parts": null,
+        "raw_text": ""
+      }
+    ],
+    "processing_notes": [
+      "Paper 0: low metadata confidence (0.00) \u2014 manual review needed.",
+      "Paper 0: no questions extracted."
+    ]
+  },
+  "created_at": "2026-10-02T08:14:54.994978"
+}
