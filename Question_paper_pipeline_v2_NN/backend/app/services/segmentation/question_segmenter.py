@@ -163,7 +163,7 @@ SUBPART_START_RE = re.compile(
 
 # Instruction header pattern
 INSTRUCTIONS_HEADER_RE = re.compile(
-    r'^[\s*\-•·~_]*(?:[A-Za-z0-9*]{1,6}\s+)?(?:important\s+note|instructions?|notes?|general\s+instructions?)[\s:]*$',
+    r'^[\s*\-•·~_]*(?:[A-Za-z0-9*]{1,6}\s+)?(?:important\s*notes?|instructions?|notes?|general\s*instructions?)[\s:]*$',
     re.I
 )
 
@@ -171,10 +171,10 @@ INSTRUCTIONS_HEADER_RE = re.compile(
 _META_INST_FILTER_RE = re.compile(
     r'\b(examinations?|university|anqp\s*code|q\.?p\.?\s*code|paper\s*code|roll\s*no|'
     r'attempt\s+all|attempt\s+any|preferably\s+attempt|answer\s+booklet|separate\s+answer|'
-    r'unfairmeans|unfair\s+means|graphite\s+pencil|black\s+lead|'
+    r'unfairmeans|unfair\s+means|graphite\s*pencil|black\s+lead|'
     r'blank\s+spaces?|writing\s+area|END\s+stamp|not\s+complied|'
-    r'two\s+answer\s+booklets|do\s+not\s+(?:leave|use)\b.*(?:booklet|pencil|blank)|'
-    r'm\.\s*marks|max(?:imum)?\s*marks|time\s*:\s*\d)\b',
+    r'two\s+answer\s+booklets|do\s+not\s+(?:leave|use|write)\b.*(?:booklet|pencil|blank)|'
+    r'm\.\s*marks|max(?:imum)?\s*marks|total\s*marks|time[\.:\s]|important\s*notes?)\b',
     re.I
 )
 
@@ -593,9 +593,12 @@ def segment_questions(paper_text: str) -> List[Dict[str, Any]]:
                 rem_line = line[plain_num_m.end():].strip()
                 is_q_pref = False
             elif not current_q_is_q_prefixed:
+                rem_line = line[plain_num_m.end():].strip()
+                # Skip candidate instruction lines like "1. Attempt all...", "2. Part-A and Part-B..."
+                if _META_INST_FILTER_RE.search(line) or _META_INST_FILTER_RE.search(rem_line):
+                    continue
                 is_new_q = True
                 num = norm_num
-                rem_line = line[plain_num_m.end():].strip()
                 is_q_pref = False
         elif current_q_num is None and not container_is_mcq:
             # Implicit question start: subpart (a), (b), (1), (i) when no question is active

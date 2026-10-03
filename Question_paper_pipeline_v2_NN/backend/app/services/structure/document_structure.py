@@ -33,13 +33,13 @@ SECTION_RE = re.compile(
 
 # Instruction headers (e.g. "*AR IMPORTANT NOTE:", "IMPORTANT NOTE:", "Note:", "Instructions:")
 INSTRUCTION_HEADER_RE = re.compile(
-    r'^[\s*\-•·~_]*(?:[A-Za-z0-9*]{1,6}\s+)?(?:important\s+note|instructions?|notes?|general\s+instructions?)\s*[:\-]*\s*$',
+    r'^[\s*\-•·~_]*(?:[A-Za-z0-9*]{1,6}\s+)?(?:important\s*notes?|instructions?|notes?|general\s*instructions?)\s*[:\-]*\s*$',
     re.I
 )
 
 # Inline instruction prefix (e.g. "Note: Attempt all questions...", "Instructions: 1. ...")
 INLINE_INSTRUCTION_PREFIX_RE = re.compile(
-    r'^[\s*\-•·~_]*(?:[A-Za-z0-9*]{1,6}\s+)?(?:note|instructions?|general\s+instructions?)\s*[:\-]\s*(.+)$',
+    r'^[\s*\-•·~_]*(?:[A-Za-z0-9*]{1,6}\s+)?(?:important\s*notes?|note|instructions?|general\s*instructions?)\s*[:\-]\s*(.+)$',
     re.I
 )
 
@@ -55,7 +55,7 @@ INSTRUCTION_KEYWORDS = [
     r'\banswer\s+sheets?\b',
     r'\bblank\s+spaces?\b',
     r'\bblack\s+lead\b',
-    r'\bgraphite\s+pencil\b',
+    r'\bgraphite\s*pencil\b',
     r'\bunfairmeans\b',
     r'\bunfair\s+means\b',
     r'\binstructions?\s+at\s+\d\b',
@@ -70,7 +70,7 @@ INSTRUCTION_KEYWORDS = [
     r'\belectronic\s+gadgets?\b',
     r'\bmobile\s+phones?\b',
     r'\bdo\s+not\s+write\s+(?:your\s+)?(?:name|roll)\b',
-    r'\bdo\s+not\s+(?:leave|use)\b',
+    r'\bdo\s+not\s+(?:leave|use|write)\b',
     r'\bfigures?\s+to\s+the\s+right\b',
     r'\billustrate\s+your\s+answers?\b',
     r'\ball\s+questions\s+carry\s+equal\s+marks\b',
@@ -82,6 +82,9 @@ INSTRUCTION_KEYWORDS = [
     r'\btwo\s+answer\s+booklets\b',
     r'\bwriting\s+area\b',
     r'\bwriting\s+in\s+pencil\b',
+    r'\bpart\s*-\s*[ab]\s+are\s+to\s+be\s+attempted\b',
+    r'\bto\s+be\s+used\b',
+    r'\bafter\s+you\s*finish\s+the\s+exam\b',
 ]
 INSTRUCTION_KEYWORD_RE = re.compile('|'.join(INSTRUCTION_KEYWORDS), re.I)
 
@@ -196,10 +199,19 @@ def _is_genuine_question_line(line_s: str) -> bool:
     if _is_instruction_keyword_line(line_s):
         return False
 
-    # Lines with exam duration or header total paper marks are header lines, not questions
-    if re.search(r'\b(?:time|duration)\s*[:=]\s*\d+|\b\d+\s*(?:hours?|hrs?|minutes?|mins?)\b', line_s, re.I):
+    # Never treat instruction headers as questions
+    if INSTRUCTION_HEADER_RE.match(line_s):
         return False
-    if re.search(r'^\s*\[?\s*(?:time\s*[:\s].*?)?(?:max(?:imum)?\s*|total\s*)?marks?\s*[:\-]?\s*\d+\s*\]?\s*$', line_s, re.I):
+
+    # Lines with exam duration, roll no, or header total paper marks are header lines, not questions
+    if re.search(
+        r'(?:\b(?:time|duration)\s*[:=\.]\s*(?:\d+|one|two|three|four)\b|'
+        r'\b(?:\d+|one|two|three)\s*(?:hours?|hrs?|minutes?|mins?)|'
+        r'(?:m\s*\.?\s*|max(?:imum)?\s*|total\s*)marks?\s*[:\-=]?\s*\d+|'
+        r'roll\s*no[\.:\s])',
+        line_s,
+        re.I
+    ):
         return False
     if re.search(r'\[\s*(?:time\b|marks?[:\s]*\d+\s*\])', line_s, re.I):
         return False
@@ -291,13 +303,9 @@ def analyze_document_structure(paper_text: str) -> DocumentStructure:
                     detected_sections.append(clean_sec)
                 question_lines.append(line)
 
-            elif is_q_pref or (is_cat and not is_inst_kw) or is_formula or is_q_line:
-                state = "QUESTIONS"
-                question_lines.append(line)
-
             elif is_inst_hdr:
                 state = "INSTRUCTIONS"
-                # Pure header like "*AR IMPORTANT NOTE:", nothing more on this line
+                # Pure header like "*AR IMPORTANT NOTE:", transition to INSTRUCTIONS
 
             elif m_inline_inst:
                 body = m_inline_inst.group(1).strip()
@@ -326,6 +334,10 @@ def analyze_document_structure(paper_text: str) -> DocumentStructure:
                 state = "INSTRUCTIONS"
                 instruction_items.append(_clean_instruction_item(line_s))
 
+            elif is_q_pref or (is_cat and not is_inst_kw) or is_formula or is_q_line:
+                state = "QUESTIONS"
+                question_lines.append(line)
+
             else:
                 # Still in header (University, exam title, roll no, subject, time, marks, etc.)
                 header_lines.append(line)
@@ -348,14 +360,16 @@ def analyze_document_structure(paper_text: str) -> DocumentStructure:
                     detected_sections.append(clean_sec)
                 question_lines.append(line)
 
-            elif is_q_pref or is_formula or is_q_line or (is_cat and not is_inst_kw):
+            elif is_q_pref or is_formula or (is_cat and not is_inst_kw) or (is_q_line and not is_inst_kw):
                 state = "QUESTIONS"
                 question_lines.append(line)
 
             else:
                 # Still genuine instruction content:
                 num_m = NUMBERED_ITEM_RE.match(line_s)
-                if num_m and is_inst_kw:
+                if num_m:
+                    instruction_items.append(_clean_instruction_item(line_s))
+                elif is_inst_kw:
                     instruction_items.append(_clean_instruction_item(line_s))
                 elif instruction_items:
                     instruction_items[-1] += " " + _clean_instruction_item(line_s)
@@ -372,7 +386,11 @@ def analyze_document_structure(paper_text: str) -> DocumentStructure:
                     sec_name = sec_match.group(0).strip()
                     if sec_name not in detected_sections:
                         detected_sections.append(sec_name)
-            question_lines.append(line)
+                question_lines.append(line)
+            elif is_inst_hdr or (is_inst_kw and not is_q_pref and not is_q_line and '?' not in line_s):
+                instruction_items.append(_clean_instruction_item(line_s))
+            else:
+                question_lines.append(line)
 
     # Clean and consolidate instructions
     cleaned_instructions = [
