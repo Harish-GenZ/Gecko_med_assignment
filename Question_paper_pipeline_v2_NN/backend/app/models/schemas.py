@@ -203,7 +203,7 @@ class ExamMetadata(BaseModel):
     max_marks:      Optional[str]  = None
     duration:       Optional[str]  = None
     confidence:     float = Field(default=0.0, ge=0.0, le=1.0)
-    status:         ReviewStatus = ReviewStatus.OK
+    status:         str = "ok"
     missing_fields: List[str] = []
 
 

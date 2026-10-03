@@ -134,10 +134,13 @@ def _evaluate_and_trigger_page_vision(
                 },
                 "verification_reasons": reasons,
             }
+            # Preprocess image for vision if available (done in parent process without IPC serialization)
+            raw_img = page.get("image")
+            vis_img = preprocess(raw_img) if raw_img is not None else None
             # SUBMIT ASYNC VISION TASK IMMEDIATELY (NON-BLOCKING)
             vision_manager.submit_page_verification(
                 page_index=idx,
-                page_image=page.get("image"),
+                page_image=vis_img,
                 page_payload=payload,
                 reasons=reasons,
             )
@@ -199,8 +202,6 @@ def run_pipeline(file_path: Path, job_id: str) -> None:
                 page["text"] = res["text"]
                 page["ocr_conf"] = res["ocr_conf"]
                 page["ocr_used"] = res["ocr_used"]
-                if res.get("image") is not None:
-                    page["image"] = res["image"]
                 vision_manager.set_page_state(idx, PageProcessingState.OCR_COMPLETE)
                 vision_manager.record_timestamp(idx, "ocr_completed")
                 _evaluate_and_trigger_page_vision(page, idx, vision_manager, job_id, total_pages=total_pages)
@@ -265,8 +266,6 @@ def run_pipeline(file_path: Path, job_id: str) -> None:
                         page["text"] = res["text"]
                         page["ocr_conf"] = res["ocr_conf"]
                         page["ocr_used"] = res["ocr_used"]
-                        if res.get("image") is not None:
-                            page["image"] = res["image"]
                         vision_manager.set_page_state(idx, PageProcessingState.OCR_COMPLETE)
                         vision_manager.record_timestamp(idx, "ocr_completed")
 
@@ -325,8 +324,6 @@ def run_pipeline(file_path: Path, job_id: str) -> None:
                         page["text"] = res["text"]
                         page["ocr_conf"] = res["ocr_conf"]
                         page["ocr_used"] = res["ocr_used"]
-                        if res.get("image") is not None:
-                            page["image"] = res["image"]
                         vision_manager.set_page_state(idx, PageProcessingState.OCR_COMPLETE)
                         vision_manager.record_timestamp(idx, "ocr_completed")
                         _evaluate_and_trigger_page_vision(page, idx, vision_manager, job_id, total_pages=total_pages)
@@ -468,9 +465,11 @@ def run_pipeline(file_path: Path, job_id: str) -> None:
                             },
                             "verification_reasons": qp.visual_verification_reasons or ["paper_level_verification"],
                         }
+                        raw_p_img = p.get("image")
+                        vis_p_img = preprocess(raw_p_img) if raw_p_img is not None else None
                         vision_manager.submit_page_verification(
                             page_index=p_idx,
-                            page_image=p.get("image"),
+                            page_image=vis_p_img,
                             page_payload=payload,
                             reasons=qp.visual_verification_reasons or ["paper_level_verification"],
                         )
