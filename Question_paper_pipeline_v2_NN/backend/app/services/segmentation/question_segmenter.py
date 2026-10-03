@@ -31,7 +31,7 @@ CATEGORY_RULES = [
     (
         "MCQ",
         re.compile(
-            r'\b(?:multiple\s+choice\s+questions?|mcqs?|objective(?:\s+type)?\s+questions?)',
+            r'\b(?:multiple\s+choice(?:\s+[a-z]+)?|mcqs?|objective(?:\s+type)?(?:\s+[a-z]+)?)',
             re.I
         )
     ),
@@ -881,7 +881,7 @@ def _is_heading_line(line: str) -> bool:
         r'^(?:enumerate|outline\s+the\s+differences?\s*between)\s*[:\-]',
         r'^(?:explain\s+why[\?:]?|explain\s+the\s+following[\?:]?|give\s+reasons?\s+(?:for|why)[\?:]?)',
         r'^(?:structured\s+long\s+essay|long\s+essay|short\s+notes?|brief\s+notes?)\b.*[:\-]?$',
-        r'^(?:multiple\s+choice\s+questions?\.?|objective\s+questions?\.?)'
+        r'^(?:multiple\s+choice(?:\s+[a-z]+)?\.?|objective\s+[a-z]+\.?)'
     ]
     for pat in heading_pats:
         if re.search(pat, line_s, re.I):

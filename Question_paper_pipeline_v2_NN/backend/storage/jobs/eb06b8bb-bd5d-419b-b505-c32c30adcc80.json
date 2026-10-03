@@ -1,0 +1,308 @@
+{
+  "job_id": "eb06b8bb-bd5d-419b-b505-c32c30adcc80",
+  "status": "completed",
+  "filename": "WhatsApp Image 2026-09-26 at 06.32.03.jpeg",
+  "progress": 100,
+  "current_step": "Completed",
+  "error": null,
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 3006,
+      "processing_state": "FINALIZED"
+    }
+  ],
+  "result": {
+    "document": "59c5f181-ff76-4128-b56b-4e43d80eb78d.jpeg",
+    "total_pages": 1,
+    "question_papers": [
+      {
+        "paper_index": 0,
+        "page_range": [
+          1,
+          1
+        ],
+        "metadata": {
+          "university": "UHSR EXAMINATIONS",
+          "exam_month": "September",
+          "exam_year": "2026",
+          "session_code": "MBY2P5",
+          "subject": "Pharmacology",
+          "paper_code": null,
+          "max_marks": "100",
+          "duration": "3 hours",
+          "confidence": 1.0,
+          "status": "ok",
+          "missing_fields": []
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "A 40-year-old farmer presented to the emergency with complaints of abdominal cramps, vomiting.\ndiarrhoea and breathlessness. On examination there was drooling of saliva, constricted pupils, moist\nskin and rapid pulse with slow volume. It was diagnosed as a.case of organophosphate poisoning.\n(a) Writedown the pharmacotherapyforthispatient.\n(b) Write down the pharmacological basis of prescribed drugs.\n(C) Why Oximes are not effective for carbamate poisoning?\n(d) Enumerate other uses of antimuscarinic drugs.",
+            "type": "Essay",
+            "part": "PART-A",
+            "heading": null,
+            "options": null,
+            "marks": "11",
+            "confidence": 0.941,
+            "confidence_breakdown": {
+              "ocr": 0.874,
+              "boundary": 1.0,
+              "classification": 0.92,
+              "overall": 0.941
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "(a)Pharmacotherapyof Status asthmatics\n(b) Adverse effect and contraindications of beta blockers\n)Kinetics ofelimination\n(d) Role of low dose aspirin for coronary artery disease\n(e) Principles of bioethics",
+            "type": "Short Notes",
+            "part": "PART-A",
+            "heading": "Write short notes on",
+            "options": null,
+            "marks": "25",
+            "confidence": 0.941,
+            "confidence_breakdown": {
+              "ocr": 0.874,
+              "boundary": 1.0,
+              "classification": 0.92,
+              "overall": 0.941
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "3",
+            "text": "(a) Dopamine is preferred over Adrenaline for the treatment of cardiogenic shock.\n(b) Volume of distribution of certain drugs exceeds total blood volume.\n(c) Thrombolysis should be done as early as possible, within first few hours after myocardial infarction",
+            "type": "Short Notes",
+            "part": "PART-A",
+            "heading": "Explain why?",
+            "options": null,
+            "marks": "9",
+            "confidence": 0.941,
+            "confidence_breakdown": {
+              "ocr": 0.874,
+              "boundary": 1.0,
+              "classification": 0.92,
+              "overall": 0.941
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4.1",
+            "text": "A 58-year-old woman with hypertension and paroxysmal supraventricular tachycardia\nconduction slowing. Which benzothiazepine derivative is most appropriate?",
+            "type": "MCQ",
+            "part": "PART-A",
+            "heading": "Multiple choice questions.-5",
+            "options": [
+              {
+                "label": "a",
+                "text": "Nifedipine"
+              },
+              {
+                "label": "b",
+                "text": "Verapamil"
+              },
+              {
+                "label": "c",
+                "text": "Diltiazem"
+              },
+              {
+                "label": "d",
+                "text": "Nicardipine"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.951,
+            "confidence_breakdown": {
+              "ocr": 0.874,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.951
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4.2",
+            "text": "A 32-year-old Caucasian woman experiences chest pain with exertion. She reports having\nsimilar episodes in the past It is determined that she is experiencing stable angina. She is\ngiven nitro-glycerine to relax her vascular smooth musculature. Which best describes a\nstep on nitro-glycerine's mechanism of action?",
+            "type": "MCQ",
+            "part": "PART-A",
+            "heading": "Multiple choice questions.-5",
+            "options": [
+              {
+                "label": "a",
+                "text": "Activation of adenylate cyclase"
+              },
+              {
+                "label": "b",
+                "text": "Activation of guanylate cyclase"
+              },
+              {
+                "label": "c",
+                "text": "Inhibition of calcium channels"
+              },
+              {
+                "label": "d",
+                "text": "Inhibition of cGMP phosphodiesterase"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.951,
+            "confidence_breakdown": {
+              "ocr": 0.874,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.951
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4.3",
+            "text": "Why is the onset of action of lidocaine delayed in infected tissue?",
+            "type": "MCQ",
+            "part": "PART-A",
+            "heading": "Multiple choice questions.-5",
+            "options": [
+              {
+                "label": "a",
+                "text": "Increasedhepaticclearance"
+              },
+              {
+                "label": "b",
+                "text": "Decreased un-ionized drug available to cross the nerve membrane"
+              },
+              {
+                "label": "c",
+                "text": "Rapid degradation by tissue esterases"
+              },
+              {
+                "label": "d",
+                "text": "Downregulation of voltage-gated sodium channels"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.951,
+            "confidence_breakdown": {
+              "ocr": 0.874,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.951
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "4.4",
+            "text": "diuretic, triamterene, is added to his regimen. Which of the following is the site of action of\nthis agent?",
+            "type": "MCQ",
+            "part": "PART-A",
+            "heading": "Multiple choice questions.-5",
+            "options": [
+              {
+                "label": "a",
+                "text": "Thick ascending limb of loop of Henle"
+              },
+              {
+                "label": "b",
+                "text": "Collecting tubule"
+              },
+              {
+                "label": "c",
+                "text": "Proximal Convoluted Tubule"
+              },
+              {
+                "label": "d",
+                "text": "Cortical diluting segment of loop of Henle"
+              }
+            ],
+            "marks": "1",
+            "confidence": 0.951,
+            "confidence_breakdown": {
+              "ocr": 0.874,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.951
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "1. Attempt all of the following questions. Preferably attempt all the questions serially.",
+          "2.:Part-A and Part-B are to be attempted in separate answer booklets.(Two answer booklets to be used)",
+          "3.Do not leave blank spaces of more than two lines in the writing area on the answer sheet, cross",
+          "any blank spaces of more than two lines before the END stamp after you finish the exam.",
+          "4.Do not use black lead/graphite pencil on the answer booklets for answering the questions. A case ofuse of Unfairmeanswill be made ifinstructions at2. 4are.notcomplied."
+        ],
+        "parts": [
+          "PART-A"
+        ],
+        "raw_text": "UHSR EXAMINATIONS\nANQP Code: MBY2P5 Q.P. Code: 1725N\n10th September, 2026 MBBS 2nd Prof.\nPharmacology (Paper-1)\nTime: 3 hours  M. Marks: 100 Roll No....2..2...\nIMPORTANT NOTE:\n1. Attempt all of the following questions. Preferably attempt all the questions serially.\n2.:Part-A and Part-B are to be attempted in separate answer booklets.(Two answer booklets to be used)\n3.Do not leave blank spaces of more than two lines in the writing area on the answer sheet, cross\nany blank spaces of more than two lines before the END stamp after you finish the exam.\n4.Do not use black lead/graphite pencil on the answer booklets for answering the questions.\nA case ofuse of Unfairmeanswill be made ifinstructions at2. 4are.notcomplied.\nPART-A\nQ1 A 40-year-old farmer presented to the emergency with complaints of abdominal cramps, vomiting. 3+3+3+2=11\ndiarrhoea and breathlessness. On examination there was drooling of saliva, constricted pupils, moist\nskin and rapid pulse with slow volume. It was diagnosed as a.case of organophosphate poisoning.\n(a)Writedown the pharmacotherapyforthispatient.\n(b) Write down the pharmacological basis of prescribed drugs.\n(C) Why Oximes are not effective for carbamate poisoning?\n(d) Enumerate other uses of antimuscarinic drugs.\nQ2 Write short notes on: 5x5=25\n(a)Pharmacotherapyof Status asthmatics\n(b) Adverse effect and contraindications of beta blockers\n)Kinetics ofelimination\n(d) Role of low dose aspirin for coronary artery disease\n(e)Principles of bioethics\nQ.3 Explain why? 3x3=9\n(a) Dopamine is preferred over Adrenaline for the treatment of cardiogenic shock.\n(b) Volume of distribution of certain drugs exceeds total blood volume.\n(c) Thrombolysis should be done as early as possible, within first few hours after myocardial infarction\nQ4 Multiple choice questions. 1x5-5\n1. A 58-year-old woman with hypertension and paroxysmal supraventricular tachycardia\nconduction slowing. Which benzothiazepine derivative is most appropriate?\n(a) Nifedipine\n(b) Verapamil\n-(c) Diltiazem\n(d) Nicardipine\n2. A 32-year-old Caucasian woman experiences chest pain with exertion. She reports having\nsimilar episodes in the past It is determined that she is experiencing stable angina. She is\ngiven nitro-glycerine to relax her vascular smooth musculature. Which best describes a\nstep on nitro-glycerine's mechanism of action?\n(a) Activation of adenylate cyclase\n.(b) Activation of guanylate cyclase\n(c) Inhibition of calcium channels\n(d) Inhibition of cGMP phosphodiesterase\n3. Why is the onset of action of lidocaine delayed in infected tissue?\n(a)Increasedhepaticclearance\n(b) Decreased un-ionized drug available to cross the nerve membrane\n(c) Rapid degradation by tissue esterases\n(d) Downregulation of voltage-gated sodium channels\ndiuretic, triamterene, is added to his regimen. Which of the following is the site of action of\nthis agent?\n(a) Thick ascending limb of loop of Henle\n-(b)Collecting tubule\n(c) Proximal Convoluted Tubule\n(d) Cortical diluting segment of loop of Henle",
+        "confidence": {
+          "ocr_confidence": 0.874,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 1.0,
+          "classification_confidence": 0.937,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.969
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [],
+        "vision_verified": true,
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "needs_manual_review": false
+      }
+    ],
+    "page_audits": [
+      {
+        "page": 1,
+        "confidence": {
+          "ocr_confidence": 0.874,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 1.0,
+          "classification_confidence": 0.937,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.969
+        },
+        "status": "HIGH",
+        "anomalies": [],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.94,
+        "vision_status": "VERIFIED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 0
+      }
+    ],
+    "processing_notes": [],
+    "needs_visual_verification": false,
+    "visual_verification_reasons": [],
+    "vision_verified_pages": [
+      1
+    ],
+    "needs_manual_review": false
+  },
+  "created_at": "2026-10-03T16:41:50.573795"
+}
