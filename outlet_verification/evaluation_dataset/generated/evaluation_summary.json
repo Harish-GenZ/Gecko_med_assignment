@@ -1,0 +1,84 @@
+{
+  "overall_accuracy": 0.5484,
+  "total_submissions": 155,
+  "correct_decisions": 85,
+  "total_errors": 70,
+  "confusion_matrix": {
+    "DUPLICATE": {
+      "DUPLICATE": 42,
+      "GENUINE": 0,
+      "NEEDS_REVIEW": 28
+    },
+    "GENUINE": {
+      "DUPLICATE": 0,
+      "GENUINE": 24,
+      "NEEDS_REVIEW": 34
+    },
+    "NEEDS_REVIEW": {
+      "DUPLICATE": 1,
+      "GENUINE": 7,
+      "NEEDS_REVIEW": 19
+    }
+  },
+  "per_class_metrics": {
+    "DUPLICATE": {
+      "tp": 42,
+      "fp": 1,
+      "fn": 28,
+      "support": 70,
+      "precision": 0.9767,
+      "recall": 0.6,
+      "f1_score": 0.7434
+    },
+    "GENUINE": {
+      "tp": 24,
+      "fp": 7,
+      "fn": 34,
+      "support": 58,
+      "precision": 0.7742,
+      "recall": 0.4138,
+      "f1_score": 0.5393
+    },
+    "NEEDS_REVIEW": {
+      "tp": 19,
+      "fp": 62,
+      "fn": 8,
+      "support": 27,
+      "precision": 0.2346,
+      "recall": 0.7037,
+      "f1_score": 0.3519
+    }
+  },
+  "binary_duplicate_metrics": {
+    "TP": 42,
+    "FP": 1,
+    "TN": 84,
+    "FN": 28,
+    "precision": 0.9767,
+    "recall": 0.6,
+    "f1_score": 0.7434,
+    "specificity": 0.9882,
+    "false_positive_rate": 0.0118,
+    "false_negative_rate": 0.4
+  },
+  "match_identification_metrics": {
+    "expected_duplicate_samples": 70,
+    "decision_accuracy": 0.6,
+    "match_accuracy_among_all_duplicates": 1.0,
+    "match_accuracy_among_detected_duplicates": 1.0
+  },
+  "performance_metrics": {
+    "total_evaluation_time_seconds": 193.23,
+    "submissions_evaluated": 155,
+    "mean_latency_ms": 1120.16,
+    "p50_latency_ms": 1096.19,
+    "p90_latency_ms": 1255.0,
+    "p95_latency_ms": 1299.64,
+    "max_latency_ms": 7025.2,
+    "latency_breakdown_averages_ms": {
+      "embedding_generation": 106.46,
+      "candidate_retrieval_and_db": 1013.47,
+      "evidence_scoring_and_decision": 0.24
+    }
+  }
+}

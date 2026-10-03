@@ -1,0 +1,1552 @@
+[
+  {
+    "submission_id": "SUB_001",
+    "name": "Sunrise Medicals - Indiranagar Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_001",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_001 shifted 22.5m"
+  },
+  {
+    "submission_id": "SUB_002",
+    "name": "GreenCare Pharmacy - Koramangala Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_002",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_002 shifted 11.0m"
+  },
+  {
+    "submission_id": "SUB_003",
+    "name": "Lakshmi Health Point - Jayanagar Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_003",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_003 shifted 20.6m"
+  },
+  {
+    "submission_id": "SUB_004",
+    "name": "CityMed Pharmacy - Whitefield Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_004",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_004 shifted 22.6m"
+  },
+  {
+    "submission_id": "SUB_005",
+    "name": "BlueCross Medicals - AnnaNagar Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_005",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_005 shifted 6.7m"
+  },
+  {
+    "submission_id": "SUB_006",
+    "name": "Sri Krishna Medical Store - TNagar Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_006",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_006 shifted 14.5m"
+  },
+  {
+    "submission_id": "SUB_007",
+    "name": "MedPlus Synthetic Care - Adyar Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_007",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_007 shifted 15.8m"
+  },
+  {
+    "submission_id": "SUB_008",
+    "name": "Apollo QuickMeds Synthetic - KKNagar Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_008",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_008 shifted 13.8m"
+  },
+  {
+    "submission_id": "SUB_009",
+    "name": "Relief Pharmacy - Simmakkal Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_009",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_009 shifted 9.6m"
+  },
+  {
+    "submission_id": "SUB_010",
+    "name": "WellCare Drug Store - RSPuram Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_010",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_010 shifted 22.2m"
+  },
+  {
+    "submission_id": "SUB_011",
+    "name": "Sunrise Medicals - Gandhipuram Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_011",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_011 shifted 23.7m"
+  },
+  {
+    "submission_id": "SUB_012",
+    "name": "GreenCare Pharmacy - ThillaiNagar Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_012",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_012 shifted 6.9m"
+  },
+  {
+    "submission_id": "SUB_013",
+    "name": "Lakshmi Health Point - Market Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_013",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_013 shifted 24.7m"
+  },
+  {
+    "submission_id": "SUB_014",
+    "name": "CityMed Pharmacy - Indiranagar Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_014",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_014 shifted 8.8m"
+  },
+  {
+    "submission_id": "SUB_015",
+    "name": "BlueCross Medicals - Koramangala Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_015",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_015 shifted 13.9m"
+  },
+  {
+    "submission_id": "SUB_016",
+    "name": "Sri Krishna Medical Store - Jayanagar Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_016",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_016 shifted 24.4m"
+  },
+  {
+    "submission_id": "SUB_017",
+    "name": "MedPlus Synthetic Care - Whitefield Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_017",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_017 shifted 13.0m"
+  },
+  {
+    "submission_id": "SUB_018",
+    "name": "Apollo QuickMeds Synthetic - AnnaNagar Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_018",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_018 shifted 14.1m"
+  },
+  {
+    "submission_id": "SUB_019",
+    "name": "Relief Pharmacy - TNagar Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_019",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_019 shifted 8.1m"
+  },
+  {
+    "submission_id": "SUB_020",
+    "name": "WellCare Drug Store - Adyar Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_020",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_020 shifted 6.1m"
+  },
+  {
+    "submission_id": "SUB_021",
+    "name": "Sunrise Medicals - KKNagar Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_021",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_021 shifted 6.6m"
+  },
+  {
+    "submission_id": "SUB_022",
+    "name": "GreenCare Pharmacy - Simmakkal Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_022",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_022 shifted 22.8m"
+  },
+  {
+    "submission_id": "SUB_023",
+    "name": "Lakshmi Health Point - RSPuram Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_023",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_023 shifted 15.5m"
+  },
+  {
+    "submission_id": "SUB_024",
+    "name": "CityMed Pharmacy - Gandhipuram Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_024",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_024 shifted 18.4m"
+  },
+  {
+    "submission_id": "SUB_025",
+    "name": "BlueCross Medicals - ThillaiNagar Branch",
+    "scenario": "STRONG_DUPLICATE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_025",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Strong duplicate of SYNTH_OUTLET_025 shifted 25.0m"
+  },
+  {
+    "submission_id": "SUB_026",
+    "name": "Sri Medical Store",
+    "scenario": "SAME_OUTLET_DIFFERENT_NAME",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_026",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Altered name 'Sri Medical Store' for SYNTH_OUTLET_026"
+  },
+  {
+    "submission_id": "SUB_027",
+    "name": "MedPlus Pharma & Care",
+    "scenario": "SAME_OUTLET_DIFFERENT_NAME",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_027",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Altered name 'MedPlus Pharma & Care' for SYNTH_OUTLET_027"
+  },
+  {
+    "submission_id": "SUB_028",
+    "name": "Apollo Health Pharmacy",
+    "scenario": "SAME_OUTLET_DIFFERENT_NAME",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_028",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Altered name 'Apollo Health Pharmacy' for SYNTH_OUTLET_028"
+  },
+  {
+    "submission_id": "SUB_029",
+    "name": "Relief Druggists",
+    "scenario": "SAME_OUTLET_DIFFERENT_NAME",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_029",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Altered name 'Relief Druggists' for SYNTH_OUTLET_029"
+  },
+  {
+    "submission_id": "SUB_030",
+    "name": "WellCare Medical Center",
+    "scenario": "SAME_OUTLET_DIFFERENT_NAME",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_030",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Altered name 'WellCare Medical Center' for SYNTH_OUTLET_030"
+  },
+  {
+    "submission_id": "SUB_031",
+    "name": "Sunrise Medical Store",
+    "scenario": "SAME_OUTLET_DIFFERENT_NAME",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_031",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Altered name 'Sunrise Medical Store' for SYNTH_OUTLET_031"
+  },
+  {
+    "submission_id": "SUB_032",
+    "name": "GreenCare Pharma & Care",
+    "scenario": "SAME_OUTLET_DIFFERENT_NAME",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_032",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Altered name 'GreenCare Pharma & Care' for SYNTH_OUTLET_032"
+  },
+  {
+    "submission_id": "SUB_033",
+    "name": "Lakshmi Health Pharmacy",
+    "scenario": "SAME_OUTLET_DIFFERENT_NAME",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_033",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Altered name 'Lakshmi Health Pharmacy' for SYNTH_OUTLET_033"
+  },
+  {
+    "submission_id": "SUB_034",
+    "name": "CityMed Druggists",
+    "scenario": "SAME_OUTLET_DIFFERENT_NAME",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_034",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Altered name 'CityMed Druggists' for SYNTH_OUTLET_034"
+  },
+  {
+    "submission_id": "SUB_035",
+    "name": "BlueCross Medical Center",
+    "scenario": "SAME_OUTLET_DIFFERENT_NAME",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_035",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Altered name 'BlueCross Medical Center' for SYNTH_OUTLET_035"
+  },
+  {
+    "submission_id": "SUB_036",
+    "name": "Sri Medical Store",
+    "scenario": "SAME_OUTLET_DIFFERENT_NAME",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_036",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Altered name 'Sri Medical Store' for SYNTH_OUTLET_036"
+  },
+  {
+    "submission_id": "SUB_037",
+    "name": "MedPlus Pharma & Care",
+    "scenario": "SAME_OUTLET_DIFFERENT_NAME",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_037",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Altered name 'MedPlus Pharma & Care' for SYNTH_OUTLET_037"
+  },
+  {
+    "submission_id": "SUB_038",
+    "name": "Apollo Health Pharmacy",
+    "scenario": "SAME_OUTLET_DIFFERENT_NAME",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_038",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Altered name 'Apollo Health Pharmacy' for SYNTH_OUTLET_038"
+  },
+  {
+    "submission_id": "SUB_039",
+    "name": "Relief Druggists",
+    "scenario": "SAME_OUTLET_DIFFERENT_NAME",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_039",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Altered name 'Relief Druggists' for SYNTH_OUTLET_039"
+  },
+  {
+    "submission_id": "SUB_040",
+    "name": "WellCare Medical Center",
+    "scenario": "SAME_OUTLET_DIFFERENT_NAME",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_040",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Altered name 'WellCare Medical Center' for SYNTH_OUTLET_040"
+  },
+  {
+    "submission_id": "SUB_041",
+    "name": "Sunrise Medicals - Remote Extension #1",
+    "scenario": "SAME_BRAND_DIFFERENT_BRANCH",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Different branch of brand SUNRISE located >2.5km away"
+  },
+  {
+    "submission_id": "SUB_042",
+    "name": "GreenCare Pharmacy - Remote Extension #2",
+    "scenario": "SAME_BRAND_DIFFERENT_BRANCH",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Different branch of brand GREENCARE located >2.5km away"
+  },
+  {
+    "submission_id": "SUB_043",
+    "name": "Lakshmi Health Point - Remote Extension #3",
+    "scenario": "SAME_BRAND_DIFFERENT_BRANCH",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Different branch of brand LAKSHMI located >2.5km away"
+  },
+  {
+    "submission_id": "SUB_044",
+    "name": "CityMed Pharmacy - Remote Extension #4",
+    "scenario": "SAME_BRAND_DIFFERENT_BRANCH",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Different branch of brand CITYMED located >2.5km away"
+  },
+  {
+    "submission_id": "SUB_045",
+    "name": "BlueCross Medicals - Remote Extension #5",
+    "scenario": "SAME_BRAND_DIFFERENT_BRANCH",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Different branch of brand BLUECROSS located >2.5km away"
+  },
+  {
+    "submission_id": "SUB_046",
+    "name": "Sri Krishna Medical Store - Remote Extension #6",
+    "scenario": "SAME_BRAND_DIFFERENT_BRANCH",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Different branch of brand SRIKRISHNA located >2.5km away"
+  },
+  {
+    "submission_id": "SUB_047",
+    "name": "MedPlus Synthetic Care - Remote Extension #7",
+    "scenario": "SAME_BRAND_DIFFERENT_BRANCH",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Different branch of brand MEDPLUS_SYNTH located >2.5km away"
+  },
+  {
+    "submission_id": "SUB_048",
+    "name": "Apollo QuickMeds Synthetic - Remote Extension #8",
+    "scenario": "SAME_BRAND_DIFFERENT_BRANCH",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Different branch of brand APOLLO_SYNTH located >2.5km away"
+  },
+  {
+    "submission_id": "SUB_049",
+    "name": "Relief Pharmacy - Remote Extension #9",
+    "scenario": "SAME_BRAND_DIFFERENT_BRANCH",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Different branch of brand RELIEF located >2.5km away"
+  },
+  {
+    "submission_id": "SUB_050",
+    "name": "WellCare Drug Store - Remote Extension #10",
+    "scenario": "SAME_BRAND_DIFFERENT_BRANCH",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Different branch of brand WELLCARE located >2.5km away"
+  },
+  {
+    "submission_id": "SUB_051",
+    "name": "Sunrise Medicals - Remote Extension #11",
+    "scenario": "SAME_BRAND_DIFFERENT_BRANCH",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Different branch of brand SUNRISE located >2.5km away"
+  },
+  {
+    "submission_id": "SUB_052",
+    "name": "GreenCare Pharmacy - Remote Extension #12",
+    "scenario": "SAME_BRAND_DIFFERENT_BRANCH",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Different branch of brand GREENCARE located >2.5km away"
+  },
+  {
+    "submission_id": "SUB_053",
+    "name": "Lakshmi Health Point - Remote Extension #13",
+    "scenario": "SAME_BRAND_DIFFERENT_BRANCH",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Different branch of brand LAKSHMI located >2.5km away"
+  },
+  {
+    "submission_id": "SUB_054",
+    "name": "CityMed Pharmacy - Remote Extension #14",
+    "scenario": "SAME_BRAND_DIFFERENT_BRANCH",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Different branch of brand CITYMED located >2.5km away"
+  },
+  {
+    "submission_id": "SUB_055",
+    "name": "BlueCross Medicals - Remote Extension #15",
+    "scenario": "SAME_BRAND_DIFFERENT_BRANCH",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Different branch of brand BLUECROSS located >2.5km away"
+  },
+  {
+    "submission_id": "SUB_056",
+    "name": "Sri General Provisions & Care #0",
+    "scenario": "SIMILAR_NAME_DIFFERENT_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Unrelated outlet with name prefix sharing with SYNTH_OUTLET_016"
+  },
+  {
+    "submission_id": "SUB_057",
+    "name": "MedPlus General Provisions & Care #1",
+    "scenario": "SIMILAR_NAME_DIFFERENT_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Unrelated outlet with name prefix sharing with SYNTH_OUTLET_017"
+  },
+  {
+    "submission_id": "SUB_058",
+    "name": "Apollo General Provisions & Care #2",
+    "scenario": "SIMILAR_NAME_DIFFERENT_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Unrelated outlet with name prefix sharing with SYNTH_OUTLET_018"
+  },
+  {
+    "submission_id": "SUB_059",
+    "name": "Relief General Provisions & Care #3",
+    "scenario": "SIMILAR_NAME_DIFFERENT_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Unrelated outlet with name prefix sharing with SYNTH_OUTLET_019"
+  },
+  {
+    "submission_id": "SUB_060",
+    "name": "WellCare General Provisions & Care #4",
+    "scenario": "SIMILAR_NAME_DIFFERENT_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Unrelated outlet with name prefix sharing with SYNTH_OUTLET_020"
+  },
+  {
+    "submission_id": "SUB_061",
+    "name": "Sunrise General Provisions & Care #5",
+    "scenario": "SIMILAR_NAME_DIFFERENT_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Unrelated outlet with name prefix sharing with SYNTH_OUTLET_021"
+  },
+  {
+    "submission_id": "SUB_062",
+    "name": "GreenCare General Provisions & Care #6",
+    "scenario": "SIMILAR_NAME_DIFFERENT_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Unrelated outlet with name prefix sharing with SYNTH_OUTLET_022"
+  },
+  {
+    "submission_id": "SUB_063",
+    "name": "Lakshmi General Provisions & Care #7",
+    "scenario": "SIMILAR_NAME_DIFFERENT_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Unrelated outlet with name prefix sharing with SYNTH_OUTLET_023"
+  },
+  {
+    "submission_id": "SUB_064",
+    "name": "CityMed General Provisions & Care #8",
+    "scenario": "SIMILAR_NAME_DIFFERENT_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Unrelated outlet with name prefix sharing with SYNTH_OUTLET_024"
+  },
+  {
+    "submission_id": "SUB_065",
+    "name": "BlueCross General Provisions & Care #9",
+    "scenario": "SIMILAR_NAME_DIFFERENT_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Unrelated outlet with name prefix sharing with SYNTH_OUTLET_025"
+  },
+  {
+    "submission_id": "SUB_066",
+    "name": "Sri General Provisions & Care #10",
+    "scenario": "SIMILAR_NAME_DIFFERENT_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Unrelated outlet with name prefix sharing with SYNTH_OUTLET_026"
+  },
+  {
+    "submission_id": "SUB_067",
+    "name": "MedPlus General Provisions & Care #11",
+    "scenario": "SIMILAR_NAME_DIFFERENT_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Unrelated outlet with name prefix sharing with SYNTH_OUTLET_027"
+  },
+  {
+    "submission_id": "SUB_068",
+    "name": "Apollo General Provisions & Care #12",
+    "scenario": "SIMILAR_NAME_DIFFERENT_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Unrelated outlet with name prefix sharing with SYNTH_OUTLET_028"
+  },
+  {
+    "submission_id": "SUB_069",
+    "name": "Relief General Provisions & Care #13",
+    "scenario": "SIMILAR_NAME_DIFFERENT_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Unrelated outlet with name prefix sharing with SYNTH_OUTLET_029"
+  },
+  {
+    "submission_id": "SUB_070",
+    "name": "WellCare General Provisions & Care #14",
+    "scenario": "SIMILAR_NAME_DIFFERENT_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Unrelated outlet with name prefix sharing with SYNTH_OUTLET_030"
+  },
+  {
+    "submission_id": "SUB_071",
+    "name": "Sunrise Medicals #31",
+    "scenario": "GPS_DRIFT",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_031",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Controlled GPS drift 5.0m from SYNTH_OUTLET_031"
+  },
+  {
+    "submission_id": "SUB_072",
+    "name": "GreenCare Pharmacy #32",
+    "scenario": "GPS_DRIFT",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_032",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Controlled GPS drift 15.0m from SYNTH_OUTLET_032"
+  },
+  {
+    "submission_id": "SUB_073",
+    "name": "Lakshmi Health Point #33",
+    "scenario": "GPS_DRIFT",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_033",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Controlled GPS drift 30.0m from SYNTH_OUTLET_033"
+  },
+  {
+    "submission_id": "SUB_074",
+    "name": "CityMed Pharmacy #34",
+    "scenario": "GPS_DRIFT",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_034",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Controlled GPS drift 50.0m from SYNTH_OUTLET_034"
+  },
+  {
+    "submission_id": "SUB_075",
+    "name": "BlueCross Medicals #35",
+    "scenario": "GPS_DRIFT",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_035",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Controlled GPS drift 75.0m from SYNTH_OUTLET_035"
+  },
+  {
+    "submission_id": "SUB_076",
+    "name": "Sri Krishna Medical Store #36",
+    "scenario": "GPS_DRIFT",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_036",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Controlled GPS drift 100.0m from SYNTH_OUTLET_036"
+  },
+  {
+    "submission_id": "SUB_077",
+    "name": "MedPlus Synthetic Care #37",
+    "scenario": "GPS_DRIFT",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_037",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Controlled GPS drift 150.0m from SYNTH_OUTLET_037"
+  },
+  {
+    "submission_id": "SUB_078",
+    "name": "Apollo QuickMeds Synthetic #38",
+    "scenario": "GPS_DRIFT",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_038",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Controlled GPS drift 5.0m from SYNTH_OUTLET_038"
+  },
+  {
+    "submission_id": "SUB_079",
+    "name": "Relief Pharmacy #39",
+    "scenario": "GPS_DRIFT",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_039",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Controlled GPS drift 15.0m from SYNTH_OUTLET_039"
+  },
+  {
+    "submission_id": "SUB_080",
+    "name": "WellCare Drug Store #40",
+    "scenario": "GPS_DRIFT",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_040",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Controlled GPS drift 30.0m from SYNTH_OUTLET_040"
+  },
+  {
+    "submission_id": "SUB_081",
+    "name": "Sunrise Medicals #41",
+    "scenario": "GPS_DRIFT",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_041",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Controlled GPS drift 50.0m from SYNTH_OUTLET_041"
+  },
+  {
+    "submission_id": "SUB_082",
+    "name": "GreenCare Pharmacy #42",
+    "scenario": "GPS_DRIFT",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_042",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Controlled GPS drift 75.0m from SYNTH_OUTLET_042"
+  },
+  {
+    "submission_id": "SUB_083",
+    "name": "Lakshmi Health Point #43",
+    "scenario": "GPS_DRIFT",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_043",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Controlled GPS drift 100.0m from SYNTH_OUTLET_043"
+  },
+  {
+    "submission_id": "SUB_084",
+    "name": "CityMed Pharmacy #44",
+    "scenario": "GPS_DRIFT",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_044",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Controlled GPS drift 150.0m from SYNTH_OUTLET_044"
+  },
+  {
+    "submission_id": "SUB_085",
+    "name": "BlueCross Medicals #45",
+    "scenario": "GPS_DRIFT",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_045",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Controlled GPS drift 5.0m from SYNTH_OUTLET_045"
+  },
+  {
+    "submission_id": "SUB_086",
+    "name": "Sunrise Medicals - Indiranagar Branch",
+    "scenario": "CONFLICTING_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Conflicting: Identical name & close GPS but completely different storefront photo"
+  },
+  {
+    "submission_id": "SUB_087",
+    "name": "GreenCare Pharmacy - Koramangala Branch",
+    "scenario": "CONFLICTING_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Conflicting: Identical name & close GPS but completely different storefront photo"
+  },
+  {
+    "submission_id": "SUB_088",
+    "name": "Lakshmi Health Point - Jayanagar Branch",
+    "scenario": "CONFLICTING_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Conflicting: Identical name & close GPS but completely different storefront photo"
+  },
+  {
+    "submission_id": "SUB_089",
+    "name": "CityMed Pharmacy - Whitefield Branch",
+    "scenario": "CONFLICTING_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Conflicting: Identical name & close GPS but completely different storefront photo"
+  },
+  {
+    "submission_id": "SUB_090",
+    "name": "BlueCross Medicals - AnnaNagar Branch",
+    "scenario": "CONFLICTING_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Conflicting: Identical name & close GPS but completely different storefront photo"
+  },
+  {
+    "submission_id": "SUB_091",
+    "name": "Sri Krishna Medical Store - TNagar Branch",
+    "scenario": "CONFLICTING_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Conflicting: Identical name & close GPS but completely different storefront photo"
+  },
+  {
+    "submission_id": "SUB_092",
+    "name": "Completely Different Electronics Shop #6",
+    "scenario": "CONFLICTING_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Conflicting: Identical image but completely different name and >3km away"
+  },
+  {
+    "submission_id": "SUB_093",
+    "name": "Completely Different Electronics Shop #7",
+    "scenario": "CONFLICTING_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Conflicting: Identical image but completely different name and >3km away"
+  },
+  {
+    "submission_id": "SUB_094",
+    "name": "Completely Different Electronics Shop #8",
+    "scenario": "CONFLICTING_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Conflicting: Identical image but completely different name and >3km away"
+  },
+  {
+    "submission_id": "SUB_095",
+    "name": "Completely Different Electronics Shop #9",
+    "scenario": "CONFLICTING_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Conflicting: Identical image but completely different name and >3km away"
+  },
+  {
+    "submission_id": "SUB_096",
+    "name": "Completely Different Electronics Shop #10",
+    "scenario": "CONFLICTING_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Conflicting: Identical image but completely different name and >3km away"
+  },
+  {
+    "submission_id": "SUB_097",
+    "name": "GreenCare Pharmacy - ThillaiNagar Branch",
+    "scenario": "CONFLICTING_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Conflicting: Identical name but different image and far away"
+  },
+  {
+    "submission_id": "SUB_098",
+    "name": "Lakshmi Health Point - Market Branch",
+    "scenario": "CONFLICTING_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Conflicting: Identical name but different image and far away"
+  },
+  {
+    "submission_id": "SUB_099",
+    "name": "CityMed Pharmacy - Indiranagar Branch",
+    "scenario": "CONFLICTING_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Conflicting: Identical name but different image and far away"
+  },
+  {
+    "submission_id": "SUB_100",
+    "name": "BlueCross Medicals - Koramangala Branch",
+    "scenario": "CONFLICTING_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Conflicting: Identical name but different image and far away"
+  },
+  {
+    "submission_id": "SUB_101",
+    "name": "Sunrise Medicals - Gandhipuram Branch",
+    "scenario": "MISSING_IMAGE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_011",
+    "has_image": false,
+    "has_gps": true,
+    "notes": "Duplicate submission with missing image (name + close GPS)"
+  },
+  {
+    "submission_id": "SUB_102",
+    "name": "GreenCare Pharmacy - ThillaiNagar Branch",
+    "scenario": "MISSING_IMAGE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_012",
+    "has_image": false,
+    "has_gps": true,
+    "notes": "Duplicate submission with missing image (name + close GPS)"
+  },
+  {
+    "submission_id": "SUB_103",
+    "name": "Lakshmi Health Point - Market Branch",
+    "scenario": "MISSING_IMAGE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_013",
+    "has_image": false,
+    "has_gps": true,
+    "notes": "Duplicate submission with missing image (name + close GPS)"
+  },
+  {
+    "submission_id": "SUB_104",
+    "name": "CityMed Pharmacy - Indiranagar Branch",
+    "scenario": "MISSING_IMAGE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_014",
+    "has_image": false,
+    "has_gps": true,
+    "notes": "Duplicate submission with missing image (name + close GPS)"
+  },
+  {
+    "submission_id": "SUB_105",
+    "name": "BlueCross Medicals - Koramangala Branch",
+    "scenario": "MISSING_IMAGE",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_015",
+    "has_image": false,
+    "has_gps": true,
+    "notes": "Duplicate submission with missing image (name + close GPS)"
+  },
+  {
+    "submission_id": "SUB_106",
+    "name": "Isolated Rural Clinic #5",
+    "scenario": "MISSING_IMAGE",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": false,
+    "has_gps": true,
+    "notes": "Genuine submission with missing image (unrelated name and far location)"
+  },
+  {
+    "submission_id": "SUB_107",
+    "name": "Isolated Rural Clinic #6",
+    "scenario": "MISSING_IMAGE",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": false,
+    "has_gps": true,
+    "notes": "Genuine submission with missing image (unrelated name and far location)"
+  },
+  {
+    "submission_id": "SUB_108",
+    "name": "Isolated Rural Clinic #7",
+    "scenario": "MISSING_IMAGE",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": false,
+    "has_gps": true,
+    "notes": "Genuine submission with missing image (unrelated name and far location)"
+  },
+  {
+    "submission_id": "SUB_109",
+    "name": "Isolated Rural Clinic #8",
+    "scenario": "MISSING_IMAGE",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": false,
+    "has_gps": true,
+    "notes": "Genuine submission with missing image (unrelated name and far location)"
+  },
+  {
+    "submission_id": "SUB_110",
+    "name": "Isolated Rural Clinic #9",
+    "scenario": "MISSING_IMAGE",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": false,
+    "has_gps": true,
+    "notes": "Genuine submission with missing image (unrelated name and far location)"
+  },
+  {
+    "submission_id": "SUB_111",
+    "name": "Sunrise Medicals - KKNagar Branch",
+    "scenario": "MISSING_GPS",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_021",
+    "has_image": true,
+    "has_gps": false,
+    "notes": "Duplicate submission with missing GPS (identical name + identical photo)"
+  },
+  {
+    "submission_id": "SUB_112",
+    "name": "GreenCare Pharmacy - Simmakkal Branch",
+    "scenario": "MISSING_GPS",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_022",
+    "has_image": true,
+    "has_gps": false,
+    "notes": "Duplicate submission with missing GPS (identical name + identical photo)"
+  },
+  {
+    "submission_id": "SUB_113",
+    "name": "Lakshmi Health Point - RSPuram Branch",
+    "scenario": "MISSING_GPS",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_023",
+    "has_image": true,
+    "has_gps": false,
+    "notes": "Duplicate submission with missing GPS (identical name + identical photo)"
+  },
+  {
+    "submission_id": "SUB_114",
+    "name": "CityMed Pharmacy - Gandhipuram Branch",
+    "scenario": "MISSING_GPS",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_024",
+    "has_image": true,
+    "has_gps": false,
+    "notes": "Duplicate submission with missing GPS (identical name + identical photo)"
+  },
+  {
+    "submission_id": "SUB_115",
+    "name": "BlueCross Medicals - ThillaiNagar Branch",
+    "scenario": "MISSING_GPS",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_025",
+    "has_image": true,
+    "has_gps": false,
+    "notes": "Duplicate submission with missing GPS (identical name + identical photo)"
+  },
+  {
+    "submission_id": "SUB_116",
+    "name": "Novel Entity Healthcare #5",
+    "scenario": "MISSING_GPS",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": false,
+    "notes": "Genuine submission with missing GPS (unrelated name and image)"
+  },
+  {
+    "submission_id": "SUB_117",
+    "name": "Novel Entity Healthcare #6",
+    "scenario": "MISSING_GPS",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": false,
+    "notes": "Genuine submission with missing GPS (unrelated name and image)"
+  },
+  {
+    "submission_id": "SUB_118",
+    "name": "Novel Entity Healthcare #7",
+    "scenario": "MISSING_GPS",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": false,
+    "notes": "Genuine submission with missing GPS (unrelated name and image)"
+  },
+  {
+    "submission_id": "SUB_119",
+    "name": "Relief Medicals",
+    "scenario": "MISSING_GPS",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": false,
+    "notes": "Ambiguous submission with missing GPS"
+  },
+  {
+    "submission_id": "SUB_120",
+    "name": "WellCare Medicals",
+    "scenario": "MISSING_GPS",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": false,
+    "notes": "Ambiguous submission with missing GPS"
+  },
+  {
+    "submission_id": "SUB_121",
+    "name": "Sri General Store",
+    "scenario": "WEAK_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": false,
+    "has_gps": true,
+    "notes": "Weak evidence: moderate name similarity, missing image, 300m distance"
+  },
+  {
+    "submission_id": "SUB_122",
+    "name": "MedPlus General Store",
+    "scenario": "WEAK_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": false,
+    "has_gps": true,
+    "notes": "Weak evidence: moderate name similarity, missing image, 300m distance"
+  },
+  {
+    "submission_id": "SUB_123",
+    "name": "Apollo General Store",
+    "scenario": "WEAK_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": false,
+    "has_gps": true,
+    "notes": "Weak evidence: moderate name similarity, missing image, 300m distance"
+  },
+  {
+    "submission_id": "SUB_124",
+    "name": "Relief General Store",
+    "scenario": "WEAK_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": false,
+    "has_gps": true,
+    "notes": "Weak evidence: moderate name similarity, missing image, 300m distance"
+  },
+  {
+    "submission_id": "SUB_125",
+    "name": "WellCare General Store",
+    "scenario": "WEAK_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": false,
+    "has_gps": true,
+    "notes": "Weak evidence: moderate name similarity, missing image, 300m distance"
+  },
+  {
+    "submission_id": "SUB_126",
+    "name": "Sunrise General Store",
+    "scenario": "WEAK_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": false,
+    "has_gps": true,
+    "notes": "Weak evidence: moderate name similarity, missing image, 300m distance"
+  },
+  {
+    "submission_id": "SUB_127",
+    "name": "GreenCare General Store",
+    "scenario": "WEAK_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": false,
+    "has_gps": true,
+    "notes": "Weak evidence: moderate name similarity, missing image, 300m distance"
+  },
+  {
+    "submission_id": "SUB_128",
+    "name": "Lakshmi General Store",
+    "scenario": "WEAK_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": false,
+    "has_gps": true,
+    "notes": "Weak evidence: moderate name similarity, missing image, 300m distance"
+  },
+  {
+    "submission_id": "SUB_129",
+    "name": "CityMed General Store",
+    "scenario": "WEAK_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": false,
+    "has_gps": true,
+    "notes": "Weak evidence: moderate name similarity, missing image, 300m distance"
+  },
+  {
+    "submission_id": "SUB_130",
+    "name": "BlueCross General Store",
+    "scenario": "WEAK_EVIDENCE",
+    "expected_decision": "NEEDS_REVIEW",
+    "expected_match_outlet_id": null,
+    "has_image": false,
+    "has_gps": true,
+    "notes": "Weak evidence: moderate name similarity, missing image, 300m distance"
+  },
+  {
+    "submission_id": "SUB_131",
+    "name": "Aura Organic Herbals",
+    "scenario": "NEW_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Completely brand new outlet 'Aura Organic Herbals' with novel branding and location"
+  },
+  {
+    "submission_id": "SUB_132",
+    "name": "Blissful Ayur Care",
+    "scenario": "NEW_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Completely brand new outlet 'Blissful Ayur Care' with novel branding and location"
+  },
+  {
+    "submission_id": "SUB_133",
+    "name": "Chaitanya Dental Depot",
+    "scenario": "NEW_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Completely brand new outlet 'Chaitanya Dental Depot' with novel branding and location"
+  },
+  {
+    "submission_id": "SUB_134",
+    "name": "Dhanvantari Health Line",
+    "scenario": "NEW_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Completely brand new outlet 'Dhanvantari Health Line' with novel branding and location"
+  },
+  {
+    "submission_id": "SUB_135",
+    "name": "Evergreen Super Pharmacy",
+    "scenario": "NEW_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Completely brand new outlet 'Evergreen Super Pharmacy' with novel branding and location"
+  },
+  {
+    "submission_id": "SUB_136",
+    "name": "Frontier Surgicals",
+    "scenario": "NEW_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Completely brand new outlet 'Frontier Surgicals' with novel branding and location"
+  },
+  {
+    "submission_id": "SUB_137",
+    "name": "Genesis Pharma Hub",
+    "scenario": "NEW_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Completely brand new outlet 'Genesis Pharma Hub' with novel branding and location"
+  },
+  {
+    "submission_id": "SUB_138",
+    "name": "Harmony Holistic Wellness",
+    "scenario": "NEW_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Completely brand new outlet 'Harmony Holistic Wellness' with novel branding and location"
+  },
+  {
+    "submission_id": "SUB_139",
+    "name": "Infinity Diagnostics",
+    "scenario": "NEW_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Completely brand new outlet 'Infinity Diagnostics' with novel branding and location"
+  },
+  {
+    "submission_id": "SUB_140",
+    "name": "Jupiter Healthcare",
+    "scenario": "NEW_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Completely brand new outlet 'Jupiter Healthcare' with novel branding and location"
+  },
+  {
+    "submission_id": "SUB_141",
+    "name": "Kalyan Ayurvedic Point",
+    "scenario": "NEW_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Completely brand new outlet 'Kalyan Ayurvedic Point' with novel branding and location"
+  },
+  {
+    "submission_id": "SUB_142",
+    "name": "LifeSpring Homeopathy",
+    "scenario": "NEW_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Completely brand new outlet 'LifeSpring Homeopathy' with novel branding and location"
+  },
+  {
+    "submission_id": "SUB_143",
+    "name": "Maruti Medicine Center",
+    "scenario": "NEW_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Completely brand new outlet 'Maruti Medicine Center' with novel branding and location"
+  },
+  {
+    "submission_id": "SUB_144",
+    "name": "Narayana Health Oasis",
+    "scenario": "NEW_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Completely brand new outlet 'Narayana Health Oasis' with novel branding and location"
+  },
+  {
+    "submission_id": "SUB_145",
+    "name": "Omkar Medical Hall",
+    "scenario": "NEW_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Completely brand new outlet 'Omkar Medical Hall' with novel branding and location"
+  },
+  {
+    "submission_id": "SUB_146",
+    "name": "Prana Vitality Pharma",
+    "scenario": "NEW_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Completely brand new outlet 'Prana Vitality Pharma' with novel branding and location"
+  },
+  {
+    "submission_id": "SUB_147",
+    "name": "Quantum Care Drugs",
+    "scenario": "NEW_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Completely brand new outlet 'Quantum Care Drugs' with novel branding and location"
+  },
+  {
+    "submission_id": "SUB_148",
+    "name": "Radiance Mother & Child Meds",
+    "scenario": "NEW_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Completely brand new outlet 'Radiance Mother & Child Meds' with novel branding and location"
+  },
+  {
+    "submission_id": "SUB_149",
+    "name": "Shanti Wellness Dispensary",
+    "scenario": "NEW_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Completely brand new outlet 'Shanti Wellness Dispensary' with novel branding and location"
+  },
+  {
+    "submission_id": "SUB_150",
+    "name": "Trinetra Eye & Health Pharmacy",
+    "scenario": "NEW_OUTLET",
+    "expected_decision": "GENUINE",
+    "expected_match_outlet_id": null,
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Completely brand new outlet 'Trinetra Eye & Health Pharmacy' with novel branding and location"
+  },
+  {
+    "submission_id": "SUB_151",
+    "name": "Sunrise Medicals - Indiranagar Branch",
+    "scenario": "PERFECT_MATCH",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_001",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Exact perfect clone of SYNTH_OUTLET_001 (identical name, image, coordinates)"
+  },
+  {
+    "submission_id": "SUB_152",
+    "name": "Sunrise Medicals - Gandhipuram Branch",
+    "scenario": "PERFECT_MATCH",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_011",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Exact perfect clone of SYNTH_OUTLET_011 (identical name, image, coordinates)"
+  },
+  {
+    "submission_id": "SUB_153",
+    "name": "Sunrise Medicals - KKNagar Branch",
+    "scenario": "PERFECT_MATCH",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_021",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Exact perfect clone of SYNTH_OUTLET_021 (identical name, image, coordinates)"
+  },
+  {
+    "submission_id": "SUB_154",
+    "name": "Sunrise Medicals #31",
+    "scenario": "PERFECT_MATCH",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_031",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Exact perfect clone of SYNTH_OUTLET_031 (identical name, image, coordinates)"
+  },
+  {
+    "submission_id": "SUB_155",
+    "name": "Sunrise Medicals #41",
+    "scenario": "PERFECT_MATCH",
+    "expected_decision": "DUPLICATE",
+    "expected_match_outlet_id": "SYNTH_OUTLET_041",
+    "has_image": true,
+    "has_gps": true,
+    "notes": "Exact perfect clone of SYNTH_OUTLET_041 (identical name, image, coordinates)"
+  }
+]

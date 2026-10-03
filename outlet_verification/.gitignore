@@ -1,0 +1,28 @@
+# Environment variables
+.env
+*.env
+
+# Python virtual environment
+venv/
+.venv/
+env/
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE files
+.vscode/
+.idea/
+
+# Generated Evaluation Dataset Images (preserves CSV and JSON datasets)
+evaluation_dataset/base_outlets/images/
+evaluation_dataset/submissions/images/
+*.jpg
+*.jpeg
+*.png

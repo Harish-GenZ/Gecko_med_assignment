@@ -1,0 +1,14 @@
+{
+  "total_evaluation_time_seconds": 193.23,
+  "submissions_evaluated": 155,
+  "mean_latency_ms": 1120.16,
+  "p50_latency_ms": 1096.19,
+  "p90_latency_ms": 1255.0,
+  "p95_latency_ms": 1299.64,
+  "max_latency_ms": 7025.2,
+  "latency_breakdown_averages_ms": {
+    "embedding_generation": 106.46,
+    "candidate_retrieval_and_db": 1013.47,
+    "evidence_scoring_and_decision": 0.24
+  }
+}

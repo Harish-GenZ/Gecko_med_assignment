@@ -1,0 +1,32 @@
+{
+  "dataset_name": "Synthetic Outlet Verification Evaluation Dataset (Phase 6A)",
+  "total_base_outlets": 55,
+  "total_submissions": 155,
+  "ground_truth_distribution": {
+    "DUPLICATE": 70,
+    "GENUINE": 58,
+    "NEEDS_REVIEW": 27
+  },
+  "scenario_distribution": {
+    "STRONG_DUPLICATE": 25,
+    "SAME_OUTLET_DIFFERENT_NAME": 15,
+    "SAME_BRAND_DIFFERENT_BRANCH": 15,
+    "SIMILAR_NAME_DIFFERENT_OUTLET": 15,
+    "GPS_DRIFT": 15,
+    "CONFLICTING_EVIDENCE": 15,
+    "MISSING_IMAGE": 10,
+    "MISSING_GPS": 10,
+    "WEAK_EVIDENCE": 10,
+    "NEW_OUTLET": 20,
+    "PERFECT_MATCH": 5
+  },
+  "image_statistics": {
+    "base_images_count": 55,
+    "submission_images_count": 135,
+    "missing_images_count": 20
+  },
+  "gps_statistics": {
+    "submissions_with_gps": 145,
+    "missing_gps_count": 10
+  }
+}
