@@ -57,8 +57,9 @@ COPY backend/requirements.txt .
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cpu && \
     pip install --no-cache-dir -r requirements.txt && \
-    pip uninstall -y opencv-python opencv-contrib-python && \
-    pip install --no-cache-dir opencv-python-headless
+    (pip uninstall -y opencv-python opencv-contrib-python || true) && \
+    pip install --no-cache-dir --force-reinstall --no-deps opencv-python-headless && \
+    python -c "import cv2; print('OpenCV headless verified:', cv2.__version__)"
 
 # Pre-download and cache RapidOCR ONNX models into the image layer
 # Eliminates cold-start runtime model downloads on container boot
