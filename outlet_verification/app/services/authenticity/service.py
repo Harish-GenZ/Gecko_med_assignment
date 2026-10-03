@@ -56,17 +56,33 @@ class StoreAuthenticityService:
 
         # 3. Signboard OCR & Cross-Verification (EasyOCR)
         ocr_res = self.ocr_service.analyze_image(image, submitted_name=name)
+        if (
+            ocr_res.has_readable_signboard
+            and ocr_res.detected_retail_keywords
+            and ocr_res.name_match_score is not None
+            and ocr_res.name_match_score < 0.20
+        ):
+            rejection_reasons.append("SIGNBOARD_MISMATCH")
+            logger.info(
+                "Signboard mismatch detected: OCR read '%s', but submitted name is '%s' (score: %.2f)",
+                " ".join(ocr_res.extracted_text_lines),
+                name,
+                ocr_res.name_match_score,
+            )
 
         # Synthesis & Decision
         if rejection_reasons:
             is_authentic = False
             status = "REJECTED"
-            confidence = round(1.0 - visual_res.store_probability, 4)
+            confidence = round(1.0 - visual_res.store_probability if not visual_res.is_retail_store else 0.95, 4)
             summary_parts = []
             if "NOT_A_RETAIL_STOREFRONT_IMAGE" in rejection_reasons:
                 summary_parts.append(f"Image appears to be '{visual_res.top_predicted_label}' rather than an authentic store storefront")
             if "NON_OUTLET_NAME" in rejection_reasons:
                 summary_parts.append(f"Name '{name}' does not represent a valid commercial outlet")
+            if "SIGNBOARD_MISMATCH" in rejection_reasons:
+                detected_text = " ".join(ocr_res.extracted_text_lines[:3])
+                summary_parts.append(f"Signboard in photo reads '{detected_text}' which contradicts the submitted name '{name}'")
             summary = "; ".join(summary_parts) + "."
         else:
             is_authentic = True

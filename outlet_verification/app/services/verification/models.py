@@ -144,3 +144,7 @@ class VerificationResponse(BaseModel):
         default=None,
         description="Domain authenticity analysis (storefront visual classifier, signboard OCR, and name check).",
     )
+    candidates: list[ScoredCandidate] = Field(
+        default_factory=list,
+        description="All evaluated candidate matches retrieved from database search.",
+    )

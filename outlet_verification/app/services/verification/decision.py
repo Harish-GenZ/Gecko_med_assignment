@@ -136,6 +136,7 @@ class DecisionEngine:
                 candidate_margin=margin,
                 evidence_status="CONFLICTING_EVIDENCE",
                 candidates_evaluated=len(scored_candidates),
+                candidates=ranked,
             )
 
         # ----------------------------------------------------------------------
@@ -171,6 +172,7 @@ class DecisionEngine:
                 candidate_margin=margin,
                 evidence_status="AMBIGUOUS_CANDIDATES",
                 candidates_evaluated=len(scored_candidates),
+                candidates=ranked,
             )
 
         # ----------------------------------------------------------------------
@@ -196,6 +198,7 @@ class DecisionEngine:
                     candidate_margin=margin,
                     evidence_status="LOW_COVERAGE",
                     candidates_evaluated=len(scored_candidates),
+                    candidates=ranked,
                 )
 
         # ----------------------------------------------------------------------
@@ -224,6 +227,7 @@ class DecisionEngine:
                         candidate_margin=margin,
                         evidence_status="WEAK_AMBIGUOUS_EVIDENCE",
                         candidates_evaluated=len(scored_candidates),
+                        candidates=ranked,
                     )
 
             if c.name_similarity is None and c.image_similarity is not None:
@@ -242,6 +246,7 @@ class DecisionEngine:
                         candidate_margin=margin,
                         evidence_status="WEAK_AMBIGUOUS_EVIDENCE",
                         candidates_evaluated=len(scored_candidates),
+                        candidates=ranked,
                     )
 
         # ----------------------------------------------------------------------
@@ -306,6 +311,7 @@ class DecisionEngine:
             candidate_margin=margin,
             evidence_status="MATCHED_CANDIDATE",
             candidates_evaluated=len(scored_candidates),
+            candidates=ranked,
         )
 
 
