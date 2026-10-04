@@ -849,14 +849,14 @@ export default function App() {
                 <span className="chip-icon">⚡</span>
                 <div className="chip-text-group">
                   <span className="chip-label">5x OCR Workers</span>
-                  <span className="chip-sublabel">PaddleOCR pool</span>
+                  <span className="chip-sublabel">Neural OCR pool</span>
                 </div>
               </div>
               <div className="transition-step-chip chip-pending">
                 <span className="chip-icon">🤖</span>
                 <div className="chip-text-group">
-                  <span className="chip-label">Vision Verification</span>
-                  <span className="chip-sublabel">Gemini 2.5 Flash</span>
+                  <span className="chip-label">Quality Audit</span>
+                  <span className="chip-sublabel">Automated Verification</span>
                 </div>
               </div>
             </div>
@@ -950,38 +950,7 @@ export default function App() {
               </div>
             </div>
 
-            {/* Vision Verification Alert Banner */}
-            {result.needs_manual_review ? (
-              <div className="vision-alert-banner warning-mode">
-                <span className="vision-alert-icon">⚠️</span>
-                <div className="vision-alert-content">
-                  <div className="vision-alert-title">Manual Review Required</div>
-                  <div className="vision-alert-desc">
-                    Structural quality audit or Vision verification flagged uncertainties: {result.visual_verification_reasons?.join(', ')}.
-                  </div>
-                </div>
-              </div>
-            ) : result.vision_verified_pages && result.vision_verified_pages.length > 0 ? (
-              <div className="vision-alert-banner verified-mode">
-                <span className="vision-alert-icon">✨</span>
-                <div className="vision-alert-content">
-                  <div className="vision-alert-title">Multimodal Vision Verification Applied</div>
-                  <div className="vision-alert-desc">
-                    Pages {result.vision_verified_pages.join(', ')} were verified with Gemini Vision and structural corrections applied.
-                  </div>
-                </div>
-              </div>
-            ) : result.needs_visual_verification ? (
-              <div className="vision-alert-banner">
-                <span className="vision-alert-icon">👁️</span>
-                <div className="vision-alert-content">
-                  <div className="vision-alert-title">Visual Verification Recommended for this Document</div>
-                  <div className="vision-alert-desc">
-                    Structural quality audit detected anomalies: {result.visual_verification_reasons?.join(', ')}.
-                  </div>
-                </div>
-              </div>
-            ) : null}
+
 
             {/* Page info */}
             {jobState?.pages_info && jobState.pages_info.length > 0 && (

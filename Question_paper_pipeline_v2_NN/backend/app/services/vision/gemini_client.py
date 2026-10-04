@@ -196,8 +196,8 @@ async def verify_page_with_gemini(
             is_structure_correct=False,
             confidence=0.50,
             needs_manual_review=True,
-            review_reason="GEMINI_API_KEY not configured. Manual review recommended.",
-            raw_explanation="Vision verification skipped because GEMINI_API_KEY is unset in backend/.env",
+            review_reason="Vision verification API key not configured. Manual review recommended.",
+            raw_explanation="Vision verification skipped because vision API key is unset in configuration.",
         )
 
     user_text = _build_user_message(page_number, page_payload)
