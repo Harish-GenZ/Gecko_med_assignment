@@ -26,7 +26,7 @@ export class ApiError extends Error {
  */
 export async function checkBackendHealth(): Promise<BackendHealth> {
   const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), 6000);
+  const timeoutId = setTimeout(() => controller.abort(), 10000);
 
   try {
     const res = await fetch(`${API_BASE_URL}/health`, {

@@ -12,11 +12,11 @@ MODEL_NAME = "openai/clip-vit-base-patch32"
 
 # Domain-specific candidate labels for zero-shot retail outlet classification
 CANDIDATE_LABELS = [
-    "a storefront photograph of a supermarket, general store, or retail grocery shop",
-    "an exterior view of a retail department store or shopping mart with signboard",
+    "a storefront photograph of a pharmacy, medical store, chemist shop, supermarket, or retail grocery shop",
+    "an exterior view of a retail department store, medical shop, pharmacy, or commercial storefront with signboard",
     "a selfie or portrait photograph of a person",
     "a photo of an empty street, road, or outdoor landscape",
-    "an indoor living room, bedroom, or residential house",
+    "an indoor living room, bedroom, office desk, table, or wall in a house",
     "a photo of a vehicle, car, or motorcycle",
     "a blank, solid black, solid white, or completely blurry picture",
     "a receipt, bill document, or paper text screenshot",

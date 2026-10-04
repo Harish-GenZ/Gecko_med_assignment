@@ -57,7 +57,7 @@ class VerificationJsonRequest(BaseModel):
         "photograph uploaded to Railway Object Storage."
     ),
 )
-async def verify_outlet_form(
+def verify_outlet_form(
     name: str = Form(..., description="Outlet name"),
     latitude: float = Form(..., description="Latitude coordinate (-90 to +90)"),
     longitude: float = Form(..., description="Longitude coordinate (-180 to +180)"),
@@ -74,7 +74,7 @@ async def verify_outlet_form(
     verification_service: VerificationService = Depends(get_verification_service),
 ) -> VerificationResponse:
     try:
-        image_bytes = await image.read()
+        image_bytes = image.file.read()
         if not image_bytes:
             raise HTTPException(
                 status_code=status.HTTP_400_BAD_REQUEST,
@@ -113,7 +113,7 @@ async def verify_outlet_form(
     summary="Register a verified genuine outlet directly into database and bucket",
     description="Uploads storefront image to Railway S3 Object Storage, computes embeddings, and saves outlet to PostgreSQL.",
 )
-async def register_outlet_direct(
+def register_outlet_direct(
     name: str = Form(..., description="Outlet name"),
     latitude: float = Form(..., description="Latitude coordinate (-90 to +90)"),
     longitude: float = Form(..., description="Longitude coordinate (-180 to +180)"),
@@ -122,7 +122,7 @@ async def register_outlet_direct(
     verification_service: VerificationService = Depends(get_verification_service),
 ) -> RegisterOutletResponse:
     try:
-        image_bytes = await image.read()
+        image_bytes = image.file.read()
         if not image_bytes:
             raise HTTPException(
                 status_code=status.HTTP_400_BAD_REQUEST,

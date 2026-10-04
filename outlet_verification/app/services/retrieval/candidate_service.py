@@ -13,6 +13,10 @@ from app.services.retrieval.image_retrieval import search_by_image_embedding
 from app.services.retrieval.models import CandidateEvidence, RetrievalResult
 from app.services.retrieval.name_retrieval import search_by_name_embedding
 
+from difflib import SequenceMatcher
+from app.models.outlet import Outlet
+from app.services.authenticity.signboard_ocr import transliterate_tamil
+
 logger = logging.getLogger("outlet_verification.retrieval.candidate_service")
 
 
@@ -37,6 +41,59 @@ def compute_haversine_distance(
     )
     c = 2.0 * math.atan2(math.sqrt(a), math.sqrt(1.0 - a))
     return round(r_earth * c, 2)
+
+
+def compute_vector_cosine(v1: list[float] | None, v2: list[float] | None) -> float | None:
+    """
+    Computes cosine similarity between two float vectors.
+    Returns float in [0.0, 1.0] or None if either vector is missing/empty.
+    """
+    if not v1 or not v2 or len(v1) != len(v2):
+        return None
+    dot = sum(a * b for a, b in zip(v1, v2))
+    norm1 = math.sqrt(sum(a * a for a in v1))
+    norm2 = math.sqrt(sum(b * b for b in v2))
+    if norm1 <= 0 or norm2 <= 0:
+        return 0.0
+    return max(0.0, min(1.0, dot / (norm1 * norm2)))
+
+
+def compute_name_similarity(
+    query_name: str,
+    target_name: str,
+    query_vector: list[float] | None,
+    target_vector: list[float] | None,
+) -> float:
+    """
+    Computes comprehensive name similarity across:
+      1. Dense vector semantic cosine similarity (all-MiniLM-L6-v2)
+      2. Cross-lingual transliteration (Tamil -> English) lexical similarity
+      3. Token set overlap (Jaccard similarity)
+    """
+    scores: list[float] = []
+
+    # 1. Semantic vector cosine similarity
+    vec_sim = compute_vector_cosine(query_vector, target_vector)
+    if vec_sim is not None:
+        scores.append(vec_sim)
+
+    # 2. Transliterated lexical similarity
+    q_norm = transliterate_tamil(query_name).lower().strip()
+    t_norm = transliterate_tamil(target_name).lower().strip()
+    if q_norm and t_norm:
+        lex_sim = SequenceMatcher(None, q_norm, t_norm).ratio()
+        scores.append(lex_sim)
+
+        # Token overlap
+        q_tokens = set(q_norm.split())
+        t_tokens = set(t_norm.split())
+        if q_tokens and t_tokens:
+            jaccard = len(q_tokens & t_tokens) / len(q_tokens | t_tokens)
+            scores.append(jaccard)
+
+    if not scores:
+        return 0.0
+    return round(max(scores), 4)
 
 
 class CandidateRetrievalService:
@@ -186,18 +243,52 @@ class CandidateRetrievalService:
                     latitude, longitude, data["latitude"], data["longitude"]
                 )
 
+        # 6B. Cross-Channel Backfill for All Candidates:
+        # The user requires all 3 dimensions (distance, image comparison, name comparison)
+        # to be compared against the respected top-k in the database.
+        # Fetch stored candidate embeddings to evaluate missing image or name signals.
+        candidate_ids = list(candidates_map.keys())
+        if candidate_ids:
+            try:
+                db_outlets = db.query(Outlet).filter(Outlet.id.in_(candidate_ids)).all()
+                outlets_by_id = {str(o.id): o for o in db_outlets}
+
+                for oid, data in candidates_map.items():
+                    o = outlets_by_id.get(oid)
+                    if not o:
+                        continue
+
+                    # 1. Backfill Image Comparison if missing
+                    if data["image_similarity"] is None and image_vector is not None and o.image_embedding is not None:
+                        img_sim = compute_vector_cosine(image_vector, o.image_embedding)
+                        if img_sim is not None:
+                            data["image_similarity"] = round(img_sim, 4)
+
+                    # 2. Backfill / Refine Name Comparison across semantic & cross-lingual channels
+                    cand_name_sim = compute_name_similarity(
+                        query_name=name,
+                        target_name=data["name"],
+                        query_vector=name_vector,
+                        target_vector=o.name_embedding,
+                    )
+                    if data["name_similarity"] is None:
+                        data["name_similarity"] = cand_name_sim
+                    else:
+                        data["name_similarity"] = round(max(data["name_similarity"], cand_name_sim), 4)
+            except Exception as backfill_exc:
+                logger.warning("Error backfilling candidate evidence signals: %s", backfill_exc)
+
         # 7. Format into structured CandidateEvidence objects
         candidate_objects: list[CandidateEvidence] = [
             CandidateEvidence(**data) for data in candidates_map.values()
         ]
 
         # 8. Sort candidates deterministically:
-        # Priority: number of matching channels (e.g. 3 channels > 2 channels > 1 channel),
-        # then distance or similarity.
+        # Priority: multimodal match (composite similarity + close distance),
+        # then closest physical distance.
         candidate_objects.sort(
             key=lambda c: (
-                len(c.matched_methods),
-                (c.name_similarity or 0.0) + (c.image_similarity or 0.0),
+                (c.name_similarity or 0.0) + (c.image_similarity or 0.0) + (1.0 if c.distance_meters is not None and c.distance_meters < 50.0 else 0.0),
                 -(c.distance_meters if c.distance_meters is not None else 999999.0),
             ),
             reverse=True,

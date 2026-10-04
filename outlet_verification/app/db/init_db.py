@@ -109,29 +109,53 @@ def inspect_and_initialize_db() -> dict[str, Any]:
     return result
 
 
-def check_db_health() -> dict[str, Any]:
+import time
+
+_db_health_cache: dict[str, Any] | None = None
+_db_health_cache_time: float = 0.0
+DB_HEALTH_CACHE_TTL_SECONDS: float = 15.0
+
+
+def check_db_health(force: bool = False) -> dict[str, Any]:
     """
     Lightweight database health probe for /health endpoint.
+    Caches the result for 15 seconds to avoid expensive network round-trips
+    on high-frequency status polls.
     """
+    global _db_health_cache, _db_health_cache_time
+    now = time.monotonic()
+
+    if not force and _db_health_cache is not None and (now - _db_health_cache_time) < DB_HEALTH_CACHE_TTL_SECONDS:
+        return _db_health_cache
+
     settings = get_settings()
     if not settings.effective_database_url or engine is None:
-        return {
+        res = {
             "status": "unconfigured",
             "message": "DATABASE_URL is not set.",
             "target": settings.masked_database_url,
         }
+        _db_health_cache = res
+        _db_health_cache_time = now
+        return res
 
     try:
         with engine.connect() as conn:
             conn.execute(text("SELECT 1;"))
-            return {
+            res = {
                 "status": "healthy",
                 "message": "Database connection verified.",
                 "target": settings.masked_database_url,
             }
+            _db_health_cache = res
+            _db_health_cache_time = now
+            return res
     except Exception as exc:
-        return {
+        res = {
             "status": "unhealthy",
             "message": f"Connection error: {type(exc).__name__}",
             "target": settings.masked_database_url,
         }
+        _db_health_cache = res
+        _db_health_cache_time = now
+        return res

@@ -21,6 +21,8 @@ class AuthenticityAssessment(BaseModel):
     ocr_lines: list[str] = Field(default_factory=list)
     ocr_retail_detected: bool = False
     ocr_name_match_score: float | None = None
+    is_cross_lingual_match: bool = False
+    is_incidental_signage: bool = False
     rejection_reasons: list[str] = Field(default_factory=list)
     summary: str
 
@@ -39,6 +41,11 @@ class StoreAuthenticityService:
         self.storefront_classifier = StorefrontClassifier.get_instance()
         self.ocr_service = SignboardOCRService.get_instance()
 
+    def warm_up(self) -> None:
+        """Pre-load heavyweight visual and OCR neural networks during app startup."""
+        self.storefront_classifier.load_model()
+        self.ocr_service.load_reader()
+
     def evaluate_authenticity(self, name: str, image: Any) -> AuthenticityAssessment:
         rejection_reasons: list[str] = []
 
@@ -54,20 +61,43 @@ class StoreAuthenticityService:
             rejection_reasons.append("NOT_A_RETAIL_STOREFRONT_IMAGE")
             logger.info("Image rejected by visual classifier: %s", visual_res.rejection_reason)
 
-        # 3. Signboard OCR & Cross-Verification (EasyOCR)
+        # 3. Signboard OCR & Cross-Verification (EasyOCR + Multilingual & Semantic Matching)
         ocr_res = self.ocr_service.analyze_image(image, submitted_name=name)
         if (
-            ocr_res.has_readable_signboard
-            and ocr_res.detected_retail_keywords
-            and ocr_res.name_match_score is not None
-            and ocr_res.name_match_score < 0.20
+            ocr_res.has_conflicting_brand
+            and not ocr_res.is_cross_lingual_or_category_match
+            and not ocr_res.is_incidental_signage
         ):
+            rejection_reasons.append("NAME_MISMATCH")
+            rejection_reasons.append("SIGNBOARD_MISMATCH")
+            logger.info(
+                "Name mismatch detected: Signboard has conflicting brand '%s', which contradicts '%s'",
+                ocr_res.conflicting_brand_name or " ".join(ocr_res.extracted_text_lines),
+                name,
+            )
+        elif (
+            ocr_res.has_readable_signboard
+            and ocr_res.name_match_score is not None
+            and ocr_res.name_match_score < 0.25
+            and not ocr_res.is_cross_lingual_or_category_match
+            and not ocr_res.is_incidental_signage
+            and not visual_res.is_retail_store
+        ):
+            rejection_reasons.append("NAME_MISMATCH")
             rejection_reasons.append("SIGNBOARD_MISMATCH")
             logger.info(
                 "Signboard mismatch detected: OCR read '%s', but submitted name is '%s' (score: %.2f)",
                 " ".join(ocr_res.extracted_text_lines),
                 name,
                 ocr_res.name_match_score,
+            )
+        elif ocr_res.is_cross_lingual_or_category_match or ocr_res.is_incidental_signage:
+            logger.info(
+                "Semantic / cross-lingual or incidental match confirmed for '%s' (OCR text: '%s', score: %.2f, incidental: %s)",
+                name,
+                " ".join(ocr_res.extracted_text_lines),
+                ocr_res.name_match_score or 0.0,
+                ocr_res.is_incidental_signage,
             )
 
         # Synthesis & Decision
@@ -80,19 +110,37 @@ class StoreAuthenticityService:
                 summary_parts.append(f"Image appears to be '{visual_res.top_predicted_label}' rather than an authentic store storefront")
             if "NON_OUTLET_NAME" in rejection_reasons:
                 summary_parts.append(f"Name '{name}' does not represent a valid commercial outlet")
-            if "SIGNBOARD_MISMATCH" in rejection_reasons:
-                detected_text = " ".join(ocr_res.extracted_text_lines[:3])
-                summary_parts.append(f"Signboard in photo reads '{detected_text}' which contradicts the submitted name '{name}'")
+            if "NAME_MISMATCH" in rejection_reasons or "SIGNBOARD_MISMATCH" in rejection_reasons:
+                detected_text = ocr_res.conflicting_brand_name or " ".join(ocr_res.extracted_text_lines[:3])
+                score_pct = f"{ocr_res.name_match_score * 100:.0f}%" if ocr_res.name_match_score is not None else "0%"
+                summary_parts.append(
+                    f"Name mismatch detected: Signboard in photo contains conflicting brand '{detected_text}' which contradicts the submitted name '{name}' (similarity: {score_pct})"
+                )
             summary = "; ".join(summary_parts) + "."
         else:
             is_authentic = True
             status = "AUTHENTIC"
             confidence = round(visual_res.store_probability, 4)
-            summary = (
-                f"Verified authentic retail outlet storefront "
-                f"(storefront probability: {visual_res.store_probability:.1%}, "
-                f"name category: {name_res.category})."
-            )
+            if ocr_res.is_cross_lingual_or_category_match and not ocr_res.is_incidental_signage:
+                score_pct = f"{ocr_res.name_match_score * 100:.0f}%" if ocr_res.name_match_score is not None else "100%"
+                summary = (
+                    f"Verified authentic retail storefront. "
+                    f"Semantic and cross-lingual match confirmed between submitted name '{name}' "
+                    f"and physical signboard (match score: {score_pct})."
+                )
+            elif ocr_res.is_incidental_signage:
+                detected_incidental = ", ".join(ocr_res.extracted_text_lines[:3])
+                summary = (
+                    f"Verified authentic retail storefront (storefront probability: {visual_res.store_probability:.1%}, "
+                    f"category: {name_res.category}). "
+                    f"Storefront verified with incidental product signage ('{detected_incidental}') and no conflicting commercial brand."
+                )
+            else:
+                summary = (
+                    f"Verified authentic retail outlet storefront "
+                    f"(storefront probability: {visual_res.store_probability:.1%}, "
+                    f"name category: {name_res.category})."
+                )
 
         return AuthenticityAssessment(
             is_authentic_store=is_authentic,
@@ -106,6 +154,8 @@ class StoreAuthenticityService:
             ocr_lines=ocr_res.extracted_text_lines,
             ocr_retail_detected=len(ocr_res.detected_retail_keywords) > 0,
             ocr_name_match_score=ocr_res.name_match_score,
+            is_cross_lingual_match=ocr_res.is_cross_lingual_or_category_match,
+            is_incidental_signage=ocr_res.is_incidental_signage,
             rejection_reasons=rejection_reasons,
             summary=summary,
         )

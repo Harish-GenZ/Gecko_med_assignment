@@ -72,17 +72,20 @@ export const CandidateList: React.FC<CandidateListProps> = ({ candidates = [] })
                 </div>
 
                 <div className="text-right flex-shrink-0">
-                  <span className="text-[10px] text-slate-500 block uppercase font-medium">Confidence</span>
+                  <span className="text-[10px] text-slate-500 block uppercase font-medium">3-Metric Avg</span>
                   <span
                     className={`text-sm font-bold font-mono ${
-                      sc.duplicate_confidence >= 0.8
+                      sc.duplicate_confidence >= 0.75
                         ? 'text-rose-400'
-                        : sc.duplicate_confidence >= 0.35
-                        ? 'text-amber-400'
                         : 'text-emerald-400'
                     }`}
                   >
                     {(sc.duplicate_confidence * 100).toFixed(1)}%
+                  </span>
+                  <span className={`text-[9px] font-semibold uppercase block ${
+                    sc.duplicate_confidence >= 0.75 ? 'text-rose-400' : 'text-emerald-400'
+                  }`}>
+                    {sc.duplicate_confidence >= 0.75 ? '>= 75% Dup' : '< 75% Distinct'}
                   </span>
                 </div>
               </div>

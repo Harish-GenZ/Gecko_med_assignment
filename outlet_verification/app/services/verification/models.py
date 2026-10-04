@@ -32,6 +32,7 @@ class ReasonCode(str, Enum):
     NOT_A_RETAIL_STOREFRONT_IMAGE = "NOT_A_RETAIL_STOREFRONT_IMAGE"
     NON_OUTLET_NAME = "NON_OUTLET_NAME"
     SIGNBOARD_MISMATCH = "SIGNBOARD_MISMATCH"
+    NAME_MISMATCH = "NAME_MISMATCH"
     FAKE_OUTLET_REJECTED = "FAKE_OUTLET_REJECTED"
 
 
@@ -54,6 +55,7 @@ class VerificationEvidence(BaseModel):
     image_similarity: float | None = None
     distance_meters: float | None = None
     geo_proximity_score: float | None = None
+    three_metric_average: float | None = None
 
 
 class CandidateFlags(BaseModel):
@@ -71,6 +73,8 @@ class ScoredCandidate(BaseModel):
     """
     candidate: CandidateEvidence
     geo_proximity_score: float | None = None
+    three_metric_average: float | None = None
+    is_duplicate_candidate: bool = False
     base_score: float
     evidence_coverage: float
     evidence_agreement: float

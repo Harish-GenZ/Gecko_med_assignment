@@ -57,16 +57,22 @@ export const VerificationResult: React.FC<VerificationResultProps> = ({
           badgeColor: 'bg-emerald-500 text-white',
           textColor: 'text-emerald-400',
         };
-      case 'REJECTED':
+      case 'REJECTED': {
+        const isNameMismatch =
+          response.reason_codes.includes('NAME_MISMATCH') ||
+          response.reason_codes.includes('SIGNBOARD_MISMATCH');
         return {
-          title: 'REJECTED: FAKE / NON-STORE OUTLET',
-          subtitle: 'Input does not qualify as an authentic commercial store or supermarket',
+          title: isNameMismatch ? 'REJECTED: NAME MISMATCH' : 'REJECTED: FAKE / NON-STORE OUTLET',
+          subtitle: isNameMismatch
+            ? 'Signboard text extracted from photo contradicts the submitted outlet name'
+            : 'Input does not qualify as an authentic commercial store or supermarket',
           icon: <ShieldAlert className="w-6 h-6 text-rose-500" />,
           borderColor: 'border-rose-600/70',
           bgGradient: 'from-rose-950/70 via-slate-900 to-slate-900',
           badgeColor: 'bg-rose-600 text-white font-bold',
           textColor: 'text-rose-400',
         };
+      }
       case 'NEEDS_REVIEW':
       default:
         return {
@@ -114,16 +120,16 @@ export const VerificationResult: React.FC<VerificationResultProps> = ({
             </div>
           </div>
 
-          {/* Duplicate Confidence Callout */}
+          {/* Duplicate Confidence / 3-Metric Average Callout */}
           <div className="text-left sm:text-right border-t sm:border-t-0 sm:border-l border-slate-800/80 pt-3 sm:pt-0 sm:pl-6 flex-shrink-0">
             <span className="text-xs text-slate-400 block font-medium">
-              Duplicate Confidence
+              3-Metric Average
             </span>
             <span className={`text-3xl font-extrabold font-mono ${badge.textColor}`}>
               {(duplicate_confidence * 100).toFixed(1)}%
             </span>
             <span className="text-[11px] text-slate-500 block">
-              Engineered evidence score
+              {duplicate_confidence >= 0.75 ? '>= 75.0% (Duplicate)' : '< 75.0% (Genuine)'}
             </span>
           </div>
         </div>
@@ -256,6 +262,22 @@ export const VerificationResult: React.FC<VerificationResultProps> = ({
                     ? `${response.authenticity.ocr_lines.length} lines detected`
                     : 'No readable text'}
                 </span>
+                {response.authenticity.ocr_name_match_score !== null && response.authenticity.ocr_name_match_score !== undefined && (
+                  <span
+                    className={`text-[11px] block font-mono font-medium ${
+                      response.authenticity.is_cross_lingual_match || response.authenticity.is_incidental_signage
+                        ? 'text-emerald-400'
+                        : response.authenticity.ocr_name_match_score < 0.3
+                        ? 'text-rose-400 font-bold'
+                        : 'text-emerald-400'
+                    }`}
+                  >
+                    Name match: {(response.authenticity.ocr_name_match_score * 100).toFixed(0)}%
+                    {response.authenticity.is_cross_lingual_match && !response.authenticity.is_incidental_signage && ' (Semantic/Tamil Match)'}
+                    {response.authenticity.is_incidental_signage && ' (Incidental Signage)'}
+                    {response.authenticity.ocr_name_match_score < 0.3 && !response.authenticity.is_cross_lingual_match && !response.authenticity.is_incidental_signage && ' (Mismatch)'}
+                  </span>
+                )}
                 {response.authenticity.ocr_lines.length > 0 && (
                   <span className="text-[11px] text-cyan-400 block truncate" title={response.authenticity.ocr_lines.join(', ')}>
                     {response.authenticity.ocr_lines.join(', ')}

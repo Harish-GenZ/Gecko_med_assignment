@@ -128,40 +128,41 @@ class CandidateScorer:
             )
             agreement = max(0.0, min(1.0, 1.0 - disagreement))
 
-        # 6. Duplicate Confidence (Engineered Evidence Fusion)
-        confidence = base_score * (0.70 + 0.30 * coverage) * agreement
-        duplicate_confidence = max(0.0, min(1.0, confidence))
+        # 6. 3-Metric Average (Distance + Image + Name) / 3
+        # As explicitly required:
+        # Distance between them, image comparison, and name comparison all must be evaluated.
+        # Only when all 3 cross 75% as average is the candidate considered a duplicate.
+        three_metric_average: float | None = None
+        if (
+            geo_proximity is not None
+            and candidate.image_similarity is not None
+            and candidate.name_similarity is not None
+        ):
+            three_metric_average = round(
+                (geo_proximity + candidate.image_similarity + candidate.name_similarity) / 3.0,
+                4,
+            )
 
-        # Storefront Category & Physical Distance Gating:
-        # In retail medical shop verification, any two storefronts have baseline CLIP visual
-        # similarity (~0.50-0.70) simply from common retail features (shelves, counter, signboards).
-        # When an outlet is physically distant (dist > 500m), it cannot be a physical duplicate
-        # unless there is an exact photographic clone (i_sim >= 0.90) indicating photo reuse fraud.
-        # For non-cloned images across distant locations, duplicate confidence is attenuated by distance.
-        dist = candidate.distance_meters
-        i_sim = candidate.image_similarity
-        if dist is not None and dist > 500.0:
-            if i_sim is None or i_sim < 0.90:
-                distance_factor = max(0.0, min(1.0, 500.0 / dist))
-                duplicate_confidence = duplicate_confidence * distance_factor
+        # Duplicate Confidence:
+        # When all three metrics are present, duplicate_confidence is the exact 3-metric average.
+        if three_metric_average is not None:
+            duplicate_confidence = three_metric_average
+        else:
+            # Fallback if any signal is missing
+            confidence = base_score * (0.70 + 0.30 * coverage) * agreement
+            duplicate_confidence = max(0.0, min(1.0, confidence))
+
+        # Deterministic 75% rule flag
+        is_dup_candidate = (
+            three_metric_average is not None and three_metric_average >= 0.75
+        )
 
         # 7. Strong Evidence & Safeguard Flags
         n_sim = candidate.name_similarity
         i_sim = candidate.image_similarity
         dist = candidate.distance_meters
 
-        strong_duplicate = False
-        if i_sim is not None and dist is not None:
-            # Rule 11.1: High image, close distance, moderate name
-            if (
-                i_sim >= self.strong_image_threshold
-                and dist <= self.strong_image_geo_meters
-                and (n_sim is not None and n_sim >= 0.60)
-            ):
-                strong_duplicate = True
-            # Rule 11.2: Very high image + close distance even if names differ
-            elif i_sim >= 0.95 and dist <= self.strong_image_geo_meters:
-                strong_duplicate = True
+        strong_duplicate = is_dup_candidate
 
         # Rule 11.3: Strong name but conflicting image
         conflicting_evidence = False
@@ -184,6 +185,8 @@ class CandidateScorer:
         return ScoredCandidate(
             candidate=candidate,
             geo_proximity_score=round(geo_proximity, 4) if geo_proximity is not None else None,
+            three_metric_average=three_metric_average,
+            is_duplicate_candidate=is_dup_candidate,
             base_score=round(base_score, 4),
             evidence_coverage=round(coverage, 4),
             evidence_agreement=round(agreement, 4),

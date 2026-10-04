@@ -12,6 +12,8 @@ export interface AuthenticityAssessment {
   ocr_lines: string[];
   ocr_retail_detected: boolean;
   ocr_name_match_score: number | null;
+  is_cross_lingual_match?: boolean;
+  is_incidental_signage?: boolean;
   rejection_reasons: string[];
   summary: string;
 }
@@ -42,6 +44,7 @@ export interface VerificationEvidence {
   image_similarity: number | null;
   distance_meters: number | null;
   geo_proximity_score: number | null;
+  three_metric_average?: number | null;
 }
 
 export interface CandidateEvidence {
@@ -59,6 +62,8 @@ export interface CandidateEvidence {
 export interface ScoredCandidate {
   candidate: CandidateEvidence;
   geo_proximity_score: number | null;
+  three_metric_average?: number | null;
+  is_duplicate_candidate?: boolean;
   base_score: number;
   evidence_coverage: number;
   evidence_agreement: number;

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
   Shield,
   Activity,
@@ -22,10 +22,13 @@ import {
 import type { BackendHealth, VerificationResponse } from './types/verification';
 
 export function App() {
-  const [health, setHealth] = useState<BackendHealth>({ status: 'offline' });
+  const [health, setHealth] = useState<BackendHealth>({ status: 'ok' });
   const [isHealthChecking, setIsHealthChecking] = useState(false);
 
   const [isLoading, setIsLoading] = useState(false);
+  const isLoadingRef = useRef(false);
+  isLoadingRef.current = isLoading;
+
   const [isRegistering, setIsRegistering] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [verificationResult, setVerificationResult] = useState<VerificationResponse | null>(null);
@@ -61,6 +64,7 @@ export function App() {
     });
 
     const interval = setInterval(async () => {
+      if (isLoadingRef.current) return;
       const res = await checkBackendHealth();
       if (isMounted) setHealth(res);
     }, 20000);
@@ -102,6 +106,7 @@ export function App() {
         data.autoRegister
       );
       setVerificationResult(result);
+      setHealth((prev) => ({ ...prev, status: 'ok' }));
     } catch (err: unknown) {
       if (err instanceof Error) {
         setError(err.message);
@@ -227,7 +232,7 @@ export function App() {
           </div>
 
           {/* Connection Trouble Notice */}
-          {health.status === 'offline' && (
+          {health.status === 'offline' && !isLoading && (
             <div className="bg-rose-950/40 border border-rose-900/60 rounded-lg p-3 text-xs text-rose-300 flex items-start gap-2.5">
               <AlertCircle className="w-4 h-4 text-rose-400 flex-shrink-0 mt-0.5" />
               <div>

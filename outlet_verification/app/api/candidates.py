@@ -38,7 +38,7 @@ class CandidateSearchJsonRequest(BaseModel):
     summary="Search candidate outlets via multipart form",
     description="Surfaces candidate outlets via Name HNSW vector search, Image HNSW vector search, and Geographic radius pre-filtering.",
 )
-async def search_candidates_form(
+def search_candidates_form(
     name: str = Form(..., description="Outlet name"),
     latitude: float = Form(..., description="Latitude coordinate (-90 to +90)"),
     longitude: float = Form(..., description="Longitude coordinate (-180 to +180)"),
@@ -51,7 +51,7 @@ async def search_candidates_form(
     retrieval_service: CandidateRetrievalService = Depends(get_candidate_retrieval_service),
 ) -> RetrievalResult:
     try:
-        image_bytes = await image.read()
+        image_bytes = image.file.read()
         if not image_bytes:
             raise HTTPException(
                 status_code=status.HTTP_400_BAD_REQUEST,

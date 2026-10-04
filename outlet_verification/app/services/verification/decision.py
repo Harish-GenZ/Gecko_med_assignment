@@ -73,11 +73,16 @@ class DecisionEngine:
             )
 
         # ----------------------------------------------------------------------
-        # Step 2: Sort and rank candidates by duplicate_confidence descending
+        # Step 2: Sort and rank candidates by three_metric_average / duplicate_confidence descending
         # ----------------------------------------------------------------------
         ranked = sorted(
             scored_candidates,
-            key=lambda sc: (sc.duplicate_confidence, sc.base_score, sc.evidence_coverage),
+            key=lambda sc: (
+                sc.three_metric_average if sc.three_metric_average is not None else -1.0,
+                sc.duplicate_confidence,
+                sc.base_score,
+                sc.evidence_coverage,
+            ),
             reverse=True,
         )
 
@@ -102,6 +107,7 @@ class DecisionEngine:
             image_similarity=top_sc.candidate.image_similarity,
             distance_meters=top_sc.candidate.distance_meters,
             geo_proximity_score=top_sc.geo_proximity_score,
+            three_metric_average=top_sc.three_metric_average,
         )
 
         reason_codes: list[str] = []
@@ -250,52 +256,54 @@ class DecisionEngine:
                     )
 
         # ----------------------------------------------------------------------
-        # Step 7: Confidence Threshold Evaluation
+        # Step 7: 3-Metric Average Evaluation (Strict 75% Threshold Rule)
+        # Condition: Distance between them, image comparison, and name comparison
+        # all should be compared with the respected top-k in the database.
+        # And ONLY if all these 3 cross 75% as average (>= 0.75) is it shown as DUPLICATE.
         # ----------------------------------------------------------------------
-        if top_sc.duplicate_confidence >= self.duplicate_threshold:
-            decision = VerificationDecision.DUPLICATE
-            if (
-                c.name_similarity is not None
-                and c.image_similarity is not None
-                and c.distance_meters is not None
-                and top_sc.duplicate_confidence >= 0.85
-            ):
-                if ReasonCode.STRONG_MULTIMODAL_MATCH.value not in reason_codes:
-                    reason_codes.append(ReasonCode.STRONG_MULTIMODAL_MATCH.value)
-            elif not flags.strong_duplicate_evidence:
-                if ReasonCode.HIGH_NAME_IMAGE_GEO_MATCH.value not in reason_codes:
-                    reason_codes.append(ReasonCode.HIGH_NAME_IMAGE_GEO_MATCH.value)
+        has_all_three_signals = (
+            top_sc.three_metric_average is not None
+            and top_sc.geo_proximity_score is not None
+            and c.image_similarity is not None
+            and c.name_similarity is not None
+        )
+        crosses_75_percent_average = (
+            has_all_three_signals and top_sc.three_metric_average >= 0.75
+        )
 
+        if crosses_75_percent_average:
+            decision = VerificationDecision.DUPLICATE
+            if ReasonCode.STRONG_MULTIMODAL_MATCH.value not in reason_codes:
+                reason_codes.append(ReasonCode.STRONG_MULTIMODAL_MATCH.value)
             reason_summary = (
-                f"High duplicate confidence ({top_sc.duplicate_confidence:.2f} >= "
-                f"{self.duplicate_threshold:.2f}). Matched with existing outlet."
-            )
-        elif top_sc.duplicate_confidence <= self.genuine_threshold:
-            decision = VerificationDecision.GENUINE
-            reason_codes.append(ReasonCode.LOW_CONFIDENCE_GENUINE.value)
-            reason_summary = (
-                f"Duplicate confidence ({top_sc.duplicate_confidence:.2f}) is below genuine "
-                f"threshold ({self.genuine_threshold:.2f}). Outlet appears distinct and genuine."
+                f"3-Metric Average ({top_sc.three_metric_average * 100:.1f}%) crosses the 75% duplicate threshold "
+                f"across Distance Proximity ({(top_sc.geo_proximity_score or 0) * 100:.1f}%), "
+                f"Visual Image Similarity ({(c.image_similarity or 0) * 100:.1f}%), "
+                f"and Name Similarity ({(c.name_similarity or 0) * 100:.1f}%). "
+                f"Matched duplicate with existing outlet '{c.name}'."
             )
         else:
-            # Uncertain range [self.genuine_threshold, self.duplicate_threshold]
-            # Human review is only requested when outlets are in close geographic vicinity
-            # (<= 500m or GPS unknown) and the system is not certain.
-            # Distant candidates (> 500m) without an exact image clone (i_sim < 0.90) are physically
-            # distinct separate outlets and must be classified as GENUINE.
-            if dist is not None and dist > 500.0 and (c.image_similarity is None or c.image_similarity < 0.90):
+            # Does NOT cross 75% average across all 3 metrics: CANNOT be shown as DUPLICATE.
+            if top_sc.three_metric_average is not None:
+                # All 3 metrics evaluated, but average is < 75%
                 decision = VerificationDecision.GENUINE
-                reason_codes.append(ReasonCode.LOW_CONFIDENCE_GENUINE.value)
+                if ReasonCode.LOW_CONFIDENCE_GENUINE.value not in reason_codes:
+                    reason_codes.append(ReasonCode.LOW_CONFIDENCE_GENUINE.value)
                 reason_summary = (
-                    f"Candidate outlet is physically distant ({dist:.0f}m > 500m) with distinct storefront and identity. "
+                    f"3-Metric Average ({top_sc.three_metric_average * 100:.1f}%) is below the 75% duplicate threshold "
+                    f"(Distance Proximity: {(top_sc.geo_proximity_score or 0) * 100:.1f}%, "
+                    f"Image Similarity: {(c.image_similarity or 0) * 100:.1f}%, "
+                    f"Name Similarity: {(c.name_similarity or 0) * 100:.1f}%). "
                     f"Outlet is verified as GENUINE."
                 )
             else:
+                # Incomplete signals (e.g. missing coordinates or missing photo)
                 decision = VerificationDecision.NEEDS_REVIEW
-                reason_codes.append(ReasonCode.INSUFFICIENT_EVIDENCE.value)
+                if ReasonCode.INSUFFICIENT_EVIDENCE.value not in reason_codes:
+                    reason_codes.append(ReasonCode.INSUFFICIENT_EVIDENCE.value)
                 reason_summary = (
-                    f"Outlets are in close geographic vicinity ({dist if dist is not None else 'unknown'}m) "
-                    f"with ambiguous evidence (confidence {top_sc.duplicate_confidence:.2f}). Manual review required."
+                    "Incomplete comparison signals. Distance, image comparison, and name comparison "
+                    "must all be evaluated to determine duplicate status. Manual review required."
                 )
 
         return VerificationResponse(

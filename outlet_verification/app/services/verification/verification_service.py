@@ -153,7 +153,11 @@ class VerificationService:
                     clean_name,
                     auth_assessment.rejection_reasons,
                 )
-                duration_ms = round((time.perf_counter() - start_time) * 1000, 2)
+                has_name_mismatch = (
+                    "NAME_MISMATCH" in auth_assessment.rejection_reasons
+                    or "SIGNBOARD_MISMATCH" in auth_assessment.rejection_reasons
+                )
+                summary_prefix = "Outlet rejected due to name mismatch: " if has_name_mismatch else "Outlet rejected as fake / non-commercial store: "
                 return VerificationResponse(
                     decision=VerificationDecision.REJECTED,
                     duplicate_confidence=0.0,
@@ -163,9 +167,9 @@ class VerificationService:
                     evidence=None,
                     matched_methods=[],
                     reason_codes=auth_assessment.rejection_reasons or [ReasonCode.FAKE_OUTLET_REJECTED.value],
-                    reason_summary=f"Outlet rejected as fake / non-commercial store: {auth_assessment.summary}",
+                    reason_summary=f"{summary_prefix}{auth_assessment.summary}",
                     candidate_margin=None,
-                    evidence_status="REJECTED_NON_STORE",
+                    evidence_status="REJECTED_NAME_MISMATCH" if has_name_mismatch else "REJECTED_NON_STORE",
                     candidates_evaluated=0,
                     registered=False,
                     registered_outlet_id=None,
