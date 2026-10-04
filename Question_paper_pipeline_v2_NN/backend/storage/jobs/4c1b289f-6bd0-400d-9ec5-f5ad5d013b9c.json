@@ -1,0 +1,11 @@
+{
+  "job_id": "4c1b289f-6bd0-400d-9ec5-f5ad5d013b9c",
+  "status": "processing",
+  "filename": "biochem_p1_p2.pdf",
+  "progress": 10,
+  "current_step": "Processing 2 pages",
+  "error": null,
+  "pages_info": [],
+  "result": null,
+  "created_at": "2026-10-04T04:32:43.435510"
+}

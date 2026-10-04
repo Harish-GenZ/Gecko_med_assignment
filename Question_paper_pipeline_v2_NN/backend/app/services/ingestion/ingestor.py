@@ -9,6 +9,7 @@ Strategy:
 """
 
 import io
+import re
 from pathlib import Path
 from typing import List, Tuple
 
@@ -18,10 +19,23 @@ from PIL import Image
 from app.core.config import PAGE_SCANNED_THRESHOLD, DPI_RENDER
 from app.models.schemas import PageType
 
+# Question indicators to distinguish genuine digital question paper pages
+# from short watermarks, copyright notices, telegram links, or scanner headers
+_QUESTION_PATTERN_RE = re.compile(
+    r'(?:(?:^|\n)\s*(?:Q\.?\s*\d+|\b\d{1,2}\s*[\.\)]|\([a-z0-9ivx]+\))\s+)|'
+    r'\b(?:describe|explain|define|enlist|enumerate|differentiate|discuss|'
+    r'write\s+short\s+notes?|classify|what\s+is|what\s+are)\b|'
+    r'(?:\(\s*\d+\s*marks?\s*\)|\[\s*\d+\s*marks?\s*\]|\bmarks?[:\s-]+\d+)',
+    re.I
+)
+
 
 def ingest_pdf(pdf_path: Path) -> List[dict]:
     """
     Process a PDF file.
+    Applies adaptive render scaling (300 DPI / minimum 2800px height) and
+    realistic digital vs. scanned detection (>= PAGE_SCANNED_THRESHOLD chars + verified question patterns).
+    Pages falling short are routed as SCANNED to the neural OCR pipeline.
 
     Returns a list of page dicts:
     {
@@ -33,13 +47,24 @@ def ingest_pdf(pdf_path: Path) -> List[dict]:
     """
     pages = []
     doc = fitz.open(pdf_path)
-    mat = fitz.Matrix(DPI_RENDER / 72, DPI_RENDER / 72)  # 200 DPI
 
     for page_index, page in enumerate(doc):
+        rect = page.rect
+        # 1. Adaptive Render Scaling:
+        # Ensure DPI is at least DPI_RENDER (300 DPI), or dynamically scaled
+        # so the rendered height is at least ~2800px (capped at 360 DPI to protect memory/speed)
+        target_dpi = max(float(DPI_RENDER), (2800.0 / max(rect.height, 1.0)) * 72.0)
+        target_dpi = min(target_dpi, 360.0)
+        scale = target_dpi / 72.0
+        mat = fitz.Matrix(scale, scale)
+
         native_text = page.get_text("text").strip()
         char_count  = len(native_text)
 
-        if char_count >= PAGE_SCANNED_THRESHOLD:
+        # 2. Realistic "Digital vs Scanned" Detection:
+        # Requires sufficient character volume AND presence of genuine question patterns
+        has_question_patterns = bool(_QUESTION_PATTERN_RE.search(native_text))
+        if char_count >= PAGE_SCANNED_THRESHOLD and has_question_patterns:
             page_type = PageType.DIGITAL
         else:
             page_type = PageType.SCANNED

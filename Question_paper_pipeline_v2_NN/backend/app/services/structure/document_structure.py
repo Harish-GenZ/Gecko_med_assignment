@@ -27,7 +27,7 @@ logger = logging.getLogger(__name__)
 
 # Section boundary patterns (e.g. "Section A", "PART-A", "Part B", "(PART-A)", "[Group 1]")
 SECTION_RE = re.compile(
-    r'^[\s\(\[]*(?:section|part|group)\s*[-:]?\s*([A-Za-z0-9]+|first|second|part\s*-[iI]+|[iI]+)[\s\(\):]*.*$',
+    r'^[\s\(\[]*(?:sectio[nm]|secton|part|group)\s*[-:]?\s*([A-Za-z0-9]+|first|second|part\s*-[iI]+|[iI]+)[\s\(\):]*.*$',
     re.I
 )
 

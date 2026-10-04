@@ -1,0 +1,212 @@
+{
+  "job_id": "69c15689-06b6-48e8-9aa4-b251c90db18b",
+  "status": "completed",
+  "filename": "temp_2page.pdf",
+  "progress": 100,
+  "current_step": "Completed",
+  "error": null,
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 2,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 0,
+      "processing_state": "FINALIZED"
+    }
+  ],
+  "result": {
+    "document": "temp_2page.pdf",
+    "total_pages": 2,
+    "question_papers": [
+      {
+        "paper_index": 0,
+        "page_range": [
+          1,
+          2
+        ],
+        "metadata": {
+          "university": "Rohilkhand Medical College & Hospital, Bareilly",
+          "exam_month": "November",
+          "exam_year": "2023",
+          "session_code": "Batch 2020",
+          "subject": "Community Medicine (Paper II)",
+          "paper_code": null,
+          "max_marks": "100",
+          "duration": "3 hours",
+          "confidence": 1.0,
+          "status": "ok",
+          "missing_fields": []
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Sohan, a 61year old male resident of Rithora, was suffering from cough more than 3 weeks and fever with evening rise of temperature for last 2 weeks. He had taken treatment only for fever and cough but the complaints persisted. He was referred to district hospital where on sputum examination his two sputum samples were found positive for AFB. Sohan had not taken any previous treatment for tuberculosis. Answer the following question in context with above scenario (marks =1+2+3+2+2=10): a. Explain the category of DOTS applicable to the patient. b. Describe the other types of patients come under this category. c. Describe the treatment regimen for the above category. d. Define New Case, relapse, MDR and of tuberculosis. e. Discuss the preventive measures against the childhood tubercular meningitis?",
+            "type": "Essay",
+            "part": "Section A",
+            "heading": "Structured Long Essay Questions / Problem based questions / Modified Essay Questions",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.768,
+            "confidence_breakdown": {
+              "ocr": 0.1,
+              "boundary": 1.0,
+              "classification": 0.98,
+              "overall": 0.768
+            },
+            "status": "ok",
+            "confidence_level": "MEDIUM",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "a. Discuss about the components of the iodine deficiency disorders under the iodine deficiency disorder control programme. b. Describe the Primary mental health care & it's implementations. c. Describe the activities of WHO in disease control and health promotion as per the World health day theme 2023. d. Explain with examples the various characteristics. e. Describe principles of health education.",
+            "type": "Very Short Answers",
+            "part": "Section A",
+            "heading": "Short Essay Questions (SEQs)",
+            "options": null,
+            "marks": "30",
+            "confidence": 0.768,
+            "confidence_breakdown": {
+              "ocr": 0.1,
+              "boundary": 1.0,
+              "classification": 0.98,
+              "overall": 0.768
+            },
+            "status": "ok",
+            "confidence_level": "MEDIUM",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Attempt all question in the given sequence.",
+          "Draw appropriate diagrams and explain with examples wherever necessary"
+        ],
+        "parts": [
+          "Section A"
+        ],
+        "raw_text": "\n",
+        "confidence": {
+          "ocr_confidence": 0.1,
+          "ocr_confidence_available": true,
+          "structure_confidence": 0.85,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 1.0,
+          "classification_confidence": 0.98,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.773
+        },
+        "confidence_level": "MEDIUM",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [
+          {
+            "type": "low_page_text_density",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Page 1 has very low extracted text density (0 chars)."
+          },
+          {
+            "type": "weak_header_detected",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination header block was absent or unusually brief."
+          }
+        ],
+        "vision_verified": true,
+        "vision_confidence": 0.98,
+        "vision_status": "CORRECTED",
+        "needs_manual_review": false
+      }
+    ],
+    "page_audits": [
+      {
+        "page": 1,
+        "confidence": {
+          "ocr_confidence": 0.1,
+          "ocr_confidence_available": true,
+          "structure_confidence": 0.85,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 1.0,
+          "classification_confidence": 0.98,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.773
+        },
+        "status": "MEDIUM",
+        "anomalies": [
+          {
+            "type": "low_page_text_density",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Page 1 has very low extracted text density (0 chars)."
+          },
+          {
+            "type": "weak_header_detected",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination header block was absent or unusually brief."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.98,
+        "vision_status": "CORRECTED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 2
+      },
+      {
+        "page": 2,
+        "confidence": {
+          "ocr_confidence": 0.1,
+          "ocr_confidence_available": true,
+          "structure_confidence": 0.85,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 1.0,
+          "classification_confidence": 0.98,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.773
+        },
+        "status": "MEDIUM",
+        "anomalies": [
+          {
+            "type": "low_page_text_density",
+            "severity": "medium",
+            "text_preview": null,
+            "reason": "Page 1 has very low extracted text density (0 chars)."
+          },
+          {
+            "type": "weak_header_detected",
+            "severity": "low",
+            "text_preview": null,
+            "reason": "Examination header block was absent or unusually brief."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.98,
+        "vision_status": "CORRECTED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 2
+      }
+    ],
+    "processing_notes": [],
+    "needs_visual_verification": false,
+    "visual_verification_reasons": [],
+    "vision_verified_pages": [
+      1,
+      2
+    ],
+    "needs_manual_review": false
+  },
+  "created_at": "2026-10-04T07:24:47.799728"
+}

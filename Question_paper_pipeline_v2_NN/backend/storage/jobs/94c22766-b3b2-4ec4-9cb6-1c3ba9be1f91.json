@@ -1,0 +1,341 @@
+{
+  "job_id": "94c22766-b3b2-4ec4-9cb6-1c3ba9be1f91",
+  "status": "completed",
+  "filename": "temp_2page.pdf",
+  "progress": 100,
+  "current_step": "Completed",
+  "error": null,
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 2028,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 2,
+      "type": "scanned",
+      "ocr_used": true,
+      "char_count": 2669,
+      "processing_state": "FINALIZED"
+    }
+  ],
+  "result": {
+    "document": "temp_2page.pdf",
+    "total_pages": 2,
+    "question_papers": [
+      {
+        "paper_index": 0,
+        "page_range": [
+          1,
+          1
+        ],
+        "metadata": {
+          "university": "Rohilkhand Medical College & Hospital, Bareilly",
+          "exam_month": "November",
+          "exam_year": "2023",
+          "session_code": null,
+          "subject": "Community Medicine Paper 1",
+          "paper_code": null,
+          "max_marks": "100",
+          "duration": "3 hours",
+          "confidence": 0.98,
+          "status": "ok",
+          "missing_fields": [
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "You are working as scientist B in an institute and you are planning research to conduct in the catchment areas of your institute. Answer the following question in context with above scenario (2+4+6 = 10 Marks): a. Define epidemiology, b. Enlist the type of epidemiological studies, c. Explain briefly the merits and demerits of case control and cohort study design.",
+            "type": "Essay",
+            "part": "Sectiom A",
+            "heading": "Structured Long Essay Questions/Problem based questions/ Modified Essay Questions",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.958,
+            "confidence_breakdown": {
+              "ocr": 0.902,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.958
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "An epidemic of diarrhoea of unknown aetiology has occurred in the nearby locality, suspects\nsay they have common source of water supply from nearby river. How will you carry out\nsurveillance of this water supply on following parameters\nAnswer the following question in context with above scenario\na. Describe steps of sample collection.of water\nb. Discuss the methods of transportation of water sample\nExplain the surveillance of drinking water",
+            "type": "Essay",
+            "part": "Section B",
+            "heading": "Structured Long Essay Questions/Problem based questions/ Modified Essay Questions",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.957,
+            "confidence_breakdown": {
+              "ocr": 0.902,
+              "boundary": 1.0,
+              "classification": 0.948,
+              "overall": 0.957
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "a. Describe the uses of screening, b. Draw the diagrams of 3 types of graphs frequently used in data presentation, c. Explain the natural history of diseases, d. Differentiate between active and passive immunization using examples of immunization against tetanus and rabies, e. Discuss the steps of investigation of an epidemic.",
+            "type": "Short Notes",
+            "part": "Sectiom A",
+            "heading": "Short Essay Questions (SEQs)",
+            "options": null,
+            "marks": "30",
+            "confidence": 0.958,
+            "confidence_breakdown": {
+              "ocr": 0.902,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.958
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "Discuss the newer techniques in health based on genetic engineering\nExplain the principles and uses of essential medicine under NHM\nDeseribe the third generation IU Ds\nExplain the IMNCI role in preventing Diarrhoeal diseases\ne. Enumerate the indicators of fertility and describe any one",
+            "type": "Short Notes",
+            "part": "Section B",
+            "heading": "Short Essay Questions (SEQs)",
+            "options": null,
+            "marks": "6",
+            "confidence": 0.957,
+            "confidence_breakdown": {
+              "ocr": 0.902,
+              "boundary": 1.0,
+              "classification": 0.948,
+              "overall": 0.957
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Attempt all question in the given sequence.",
+          "Draw appropriate diagrams and explain with examples wherever necessary"
+        ],
+        "parts": [
+          "Sectiom A",
+          "Section B"
+        ],
+        "raw_text": "Send Up Examination, Batch 2020, November 2023\nCommunity MedicinePaper 1\nRohilkhand Medical College & Hospital, Bareilly\nTime: 3 hours. Marks: 80+20=100\nNote: Attempt all question in the given sequence. Draw appropriate diagrams and\nexplain with examples wherever necessary\nSectiom A (Marks: 40)\nQ1. Structured Lomg Essay Questioms/Problem based questiomsl Modified Essay\nQuestions\nYou are working as scientist B in an institute and you are planning research to conduct in the\ncatchment areas of your institute.\nAnswer the folawing questiom in comtext with above scemario(2+4+6 = 10 Marks)\na.Define epidemiology\nb. Enlist the type of epidenniological studies.\nC- Explain briefy the merits and demerits of case control and cohort study design.\nQ2. Short Essay Questions (SEQs) (6 marks each=30Marks)\naDescribe the uses of screening\n-b. Draw the diagrams of 3 types of graphs frequently iksed in data presentation\nExplain the natural history of diseases\nDifferentiate between active and passive immunization using e examples of\nimmunization against tetanus and rabies\nDiscuss the steps of investigation of an epideimig\nSection B (Marks: 40)\nQl. Structured Long Essay Questions/Problem based questions/ Modified Essay\nQuestions\nAn epidemic of diarrhoea of unknown aetiology has occurred in the nearby locality, suspects\nsay they have common source of water supply from nearby river. How will you carry out\nsurveillance of this water supply on following parameters\nAnswer the following question in context with above scenario(Marks 2+2+6-10)\na. Describe steps of sample collection.of water\nb. Discuss the methods of transportation of water sample\nExplain the surveillance of drinking water\nQ2. Short Essay Questions (SEQs) (6 marks each=30Marks)\nDiscuss the newer techniques in health based on genetic engineering\nExplain the principles and uses of essential medicine under NHM\nDeseribe the third generation IU Ds\nExplain the IMNCI role in preventing Diarrhoeal diseases\ne. Enumerate the indicators of fertility and describe any one",
+        "confidence": {
+          "ocr_confidence": 0.902,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.949,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.965
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [],
+        "vision_verified": true,
+        "vision_confidence": 0.98,
+        "vision_status": "CORRECTED",
+        "needs_manual_review": false
+      },
+      {
+        "paper_index": 1,
+        "page_range": [
+          2,
+          2
+        ],
+        "metadata": {
+          "university": "Rohilkhand Medical College & Hospital, Bareilly",
+          "exam_month": "November",
+          "exam_year": "2023",
+          "session_code": null,
+          "subject": "Community Medicine",
+          "paper_code": null,
+          "max_marks": "100",
+          "duration": "3 hours",
+          "confidence": 0.98,
+          "status": "ok",
+          "missing_fields": [
+            "session_code"
+          ]
+        },
+        "questions": [
+          {
+            "number": "1",
+            "text": "Sohan, a 61 year old male resident of Rithora, was suffering from cough more than 3 weeks and fever with evening rise of temperature for last 2 weeks. He had taken treatment only for fever and cough but the complaints persisted. He was referred to district hospital where on sputum examination his two sputum samples were found positive for AFB. Sohan had not taken any previous treatment for tuberculosis. Answer the following question in context with above scenario (marks =1+2+3+2+2=10): a. Explain the category of DOTS applicable to the patient. b. Describe the other types of patients come under this category. c. Describe the treatment regimen for the above category. d. Define New Case, relapse, MDR and of tuberculosis. e. Discuss the preventive measures against the childhood tubercular meningitis?",
+            "type": "Essay",
+            "part": "Section A",
+            "heading": "Structured Long Essay Questions / Problem based questions / Modified Essay Questions",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.956,
+            "confidence_breakdown": {
+              "ocr": 0.894,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.956
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "a. Discuss about the components of the iodine deficiency disorders under the iodine deficiency disorder control programme. b. Describe the Primary mental health care & it's implementations. c. Describe the activities of WHO in disease control and health promotion as per the World health day theme 2023. d. Explain with examples the various characteristics. e. Describe principles of health education.",
+            "type": "Essay",
+            "part": "Section A",
+            "heading": "Short Essay Questions (SEQs)",
+            "options": null,
+            "marks": "30",
+            "confidence": 0.956,
+            "confidence_breakdown": {
+              "ocr": 0.894,
+              "boundary": 1.0,
+              "classification": 0.95,
+              "overall": 0.956
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "1",
+            "text": "Modifned\nAsthemedicalofficerofaPHC you have to check the work of Anganwariworker and he was not\nsatisfied with the services provided by her in the village.\nAnswer the following question in context with above scenario\na. PrepareaprojecttoimprovetheservicesoftheAnganwariworker in the catchment areas of yourhospital.\nEirumerate the steps of projectprotocol prepared by you.",
+            "type": "Essay",
+            "part": "Section B",
+            "heading": "Structured Long Essay Questions / Problem based questions / Modifned Essay Questions",
+            "options": null,
+            "marks": "10",
+            "confidence": 0.94,
+            "confidence_breakdown": {
+              "ocr": 0.894,
+              "boundary": 1.0,
+              "classification": 0.903,
+              "overall": 0.94
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "2",
+            "text": "e. DifferentiateBetweenCostbeneftandcosteffectiveanalysis\nd. DifferentiateBetweenProgrammeevaluationandreviewtechniqueandcriticalpathmethod",
+            "type": "Short Notes",
+            "part": "Section B",
+            "heading": "bDifferentiateBetween objectiveandgoalinhealhplanning C",
+            "options": null,
+            "marks": null,
+            "confidence": 0.955,
+            "confidence_breakdown": {
+              "ocr": 0.894,
+              "boundary": 1.0,
+              "classification": 0.946,
+              "overall": 0.955
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Attempt all question in the given sequence.",
+          "Draw appropriate diagrams and explain with examples wherever necessary"
+        ],
+        "parts": [
+          "Section A",
+          "Section B"
+        ],
+        "raw_text": "Marks Ea Send Up xminntion, Bateh 2020, November 2023\nPaper 1\nCommunity Medicine\nRohilkhand Medical College & Hospital, Bareilly\nTime: 3 hours Max. Marks: 80 +20 =100\nNote: Attempt all question in the given sequence. Draw appropriate diagrams and explain with\nexamples wherever necessary\nSection A (Marks: 40)\nQ1.Structured Long Essay Questions / Problem based questions / Modified Essay Questions\nSohan, a 6lyear old male resident of Rithora, was suffering from cough more than 3 weeks and fever\nwith evening rise of temperature for last 2 weeks. He had taken treatment only for fever and cough but\nthe complaints persisted. He was referred to district hospital where on sputum examination his two\nsputum samples were found positive for AFB. Sohan had not taken any previous treatment for\ntuberculosis.\nAnswer the following questiom in context with above scemario (marks =1+2+3+2+2-10)\nExplain the category of DOTS applicable to the patient.\nb. Describe the other types of patients come under this category.\nC. Describe the treatment regimen for the above category.\nd, Define New Case, relapse, MDR ang of tuberculosis.\ne. Discuss the preventive measures against the childhood tubercular meningitis?\nQ2. Short Essay Questioms (SEQs) (6 marks each-30Marks)\nDiscuss about the components of the iodine deficiency disorders under the iodine deficiency\ndisorder control programme\nDescribe the Primary mental health care & it's implementations.\nDescribe the activities of WHO in disease control and health promotion as per the World health\nday theme 2023\nExplain with examples the various characteristics c- fr saan.tra thsum n\nalong wis:.\nDescribe principles of health education\nSection B (Marks: 40)\nQ1.Structured Long Essay Questions / Problem based questions / Modifned Essay Questions\nAsthemedicalofficerofaPHC you have to check the work of Anganwariworker and he was not\nsatisfied with the services provided by her in the village.\nAnswer the following question in context with above scenario (Marks 5+1+2+2-10)\na.PrepareaprojecttoimprovetheservicesoftheAnganwariworker in the catchment areas of yourhospital.\nEirumerate the steps of projectprotocol prepared by you.\nbDifferentiateBetween objectiveandgoalinhealhplanning C\ne.DifferentiateBetweenCostbeneftandcosteffectiveanalysis\nd. DifferentiateBetweenProgrammeevaluationandreviewtechniqueandcriticalpathmethod\nQ2. Short Essay Questions (SEQs) (6 marks each=30Marks)\n'a.Describe the phases in disaster management\nb. Classify the risk factors of non-communicable diseases\nC. Discuss the medical benefits,under ESI schemes\nDescribe the Janni Suraksha Yojana (JSY)\nDiscuss strategies and services of School Health Program",
+        "confidence": {
+          "ocr_confidence": 0.894,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.937,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.963
+        },
+        "confidence_level": "HIGH",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [],
+        "vision_verified": true,
+        "vision_confidence": 0.98,
+        "vision_status": "CORRECTED",
+        "needs_manual_review": false
+      }
+    ],
+    "page_audits": [
+      {
+        "page": 1,
+        "confidence": {
+          "ocr_confidence": 0.902,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.949,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.965
+        },
+        "status": "HIGH",
+        "anomalies": [],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.98,
+        "vision_status": "CORRECTED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 2
+      },
+      {
+        "page": 2,
+        "confidence": {
+          "ocr_confidence": 0.894,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 1.0,
+          "metadata_confidence": 0.9,
+          "classification_confidence": 0.937,
+          "consistency_confidence": 1.0,
+          "overall_confidence": 0.963
+        },
+        "status": "HIGH",
+        "anomalies": [],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.98,
+        "vision_status": "CORRECTED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 2
+      }
+    ],
+    "processing_notes": [],
+    "needs_visual_verification": false,
+    "visual_verification_reasons": [],
+    "vision_verified_pages": [
+      1,
+      2
+    ],
+    "needs_manual_review": false
+  },
+  "created_at": "2026-10-04T07:37:14.690978"
+}

@@ -36,7 +36,7 @@ JOBS_DIR.mkdir(parents=True, exist_ok=True)
 # OCR
 OCR_LANGUAGE         = "en"
 OCR_MIN_CONFIDENCE   = 0.60   # Below this → mark page as needs_review
-PAGE_SCANNED_THRESHOLD = 50   # chars: pages with fewer chars are treated as scanned
+PAGE_SCANNED_THRESHOLD = 350  # chars: pages with fewer chars (or lacking question patterns) are treated as scanned
 OCR_WORKERS          = int(os.getenv("OCR_WORKERS", str(max(1, min(os.cpu_count() or 2, 4)))))
 
 # Classification confidence
@@ -44,7 +44,7 @@ CLASSIFICATION_CONFIDENCE_THRESHOLD = 0.70
 
 # Processing
 MAX_FILE_SIZE_MB = 200
-DPI_RENDER       = 200   # DPI for rasterising PDF pages for OCR
+DPI_RENDER       = 300   # DPI for rasterising PDF pages for OCR (adaptive scaling matches camera resolution)
 
 # Job timeout in seconds (40 mins for large multi-page PDFs)
 JOB_TIMEOUT = 2400

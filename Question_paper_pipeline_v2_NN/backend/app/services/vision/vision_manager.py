@@ -119,11 +119,11 @@ class VisionPipelineManager:
             except Exception as e:
                 logger.warning(f"[{self.job_id}] Failed to serialize page {pg_num} image: {e}")
 
-        # Submit task to bounded background thread pool
+        # Submit task to bounded background thread pool without keeping heavy uncompressed PIL image in RAM
         future = self._executor.submit(
             self._execute_vision_task,
             page_index,
-            page_image,
+            None,
             image_bytes,
             page_payload,
         )
@@ -179,9 +179,10 @@ class VisionPipelineManager:
             if result is None or result.confidence < 0.60:
                 logger.info(f"[{self.job_id}] [Vision] Executing Stage 3 Local VLM engine for Page {pg_num}...")
                 from app.services.vision.local_vlm import verify_page_with_local_vlm
+                vlm_img = Image.open(io.BytesIO(image_bytes)) if image_bytes else None
                 result = verify_page_with_local_vlm(
                     page_number=pg_num,
-                    image=page_image,
+                    image=vlm_img,
                     page_payload=page_payload,
                 )
 

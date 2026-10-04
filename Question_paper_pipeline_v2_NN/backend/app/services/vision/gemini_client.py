@@ -12,6 +12,7 @@ Features:
 """
 
 import os
+import re
 import json
 import time
 import base64
@@ -47,42 +48,44 @@ def set_mock_vision_handler(handler: Optional[Callable[[int, Dict[str, Any]], Vi
     _MOCK_VISION_HANDLER = handler
 
 
-SYSTEM_PROMPT = """You are an expert medical examination paper quality auditor and layout verification assistant.
-Your task is to inspect the uploaded question paper page image against any machine-extracted text, metadata, instructions, and questions.
+def _norm_sec(s: Optional[str]) -> str:
+    """Normalize section label for robust matching, e.g. 'Sectiom A' -> 'SECTIONA'."""
+    if not s:
+        return ""
+    clean = re.sub(r'[\s\(\)\[\]\-_:]', '', str(s)).upper()
+    clean = clean.replace("SECTIOM", "SECTION").replace("SECTON", "SECTION")
+    clean = clean.replace("PART", "SECTION").replace("GROUP", "SECTION")
+    return clean
 
-CRITICAL INSTRUCTIONS:
-1. FOREGROUND TARGET DOCUMENT ONLY:
-   - If other overlapping papers, background sheets, or desk surfaces are visible behind or around the target question paper (e.g. peeking out at top or sides), extract information ONLY from the main foreground question paper in front.
-   - Completely ignore any university names, session codes, dates, or headers from background or overlapping papers (e.g. if the foreground paper is ANQP Code: MBY2P6 / 15th Sept, ignore background paper MBY2P4 / 7th Sept).
 
-2. STRICT SOURCE OF TRUTH — PRINTED / TYPESET DETAILS ONLY:
-   - Use ONLY officially printed/typeset text as the source of truth.
-   - You MUST COMPLETELY IGNORE all handwritten annotations, pen/pencil markings, roll numbers, or doodles.
-   - For MCQs, transcribe only the printed options and text; do NOT choose or modify options based on student circles or ticks.
+SYSTEM_PROMPT = """You are an expert medical examination paper proofreader and quality verification specialist.
+Your primary role is to inspect the uploaded question paper page image against the machine-extracted OCR text and questions, and CORRECT ALL SPELLING MISTAKES, TYPOS, MERGED WORDS, AND OCR DEFECTS while strictly preserving all questions and structure.
 
-3. EXAM METADATA INSPECTION & EXTRACTION:
-   - Inspect the printed details at the top header/masthead of the foreground question paper:
-     * university: Printed university/institution name (e.g. "UHSR", "Kaloji Narayana Rao University", "Bareilly International University").
-     * subject: Printed subject/course name (e.g. "Pharmacology (Paper-2)", "Pathology", "Biochemistry").
-     * exam_year & exam_month: Printed examination session date/month/year (e.g. "September", "2026").
-     * session_code: Printed session code or ANQP code (e.g. "MBY2P6", "MB2019101").
-     * paper_code: Printed paper code or QP code (e.g. "1726N", "11016").
-     * max_marks: Printed maximum marks / total marks (e.g. "100", "80", "50").
-     * duration: Printed time allowed / duration (e.g. "3 hours", "3 Hours").
+CORE RESPONSIBILITIES:
+1. SPELLING & TYPO CORRECTION (HIGHEST PRIORITY):
+   - Correct all misspelled English and medical terms, e.g.:
+     * "scemario" -> "scenario", "folawing" -> "following", "iksed" -> "used", "Lomg" -> "Long", "Questioms" -> "Questions", "Sectiom" -> "Section", "Modifned" -> "Modified", "Deseribe" -> "Describe", "Eirumerate" -> "Enumerate", "epideimig" -> "epidemic", "epidenniological" -> "epidemiological", "healh" -> "health", "Bhorc Commitce" -> "Bhore Committee", "developnent" -> "development".
+   - Fix merged words with missing spaces caused by OCR scanners, e.g.:
+     * "AsthemedicalofficerofaPHC" -> "As the medical officer of a PHC"
+     * "PrepareaprojecttoimprovetheservicesoftheAnganwariworker" -> "Prepare a project to improve the services of the Anganwadi worker"
+     * "bDifferentiateBetween objectiveandgoalinhealhplanning" -> "b. Differentiate between objective and goal in health planning"
+     * "DifferentiateBetweenCostbeneftandcosteffectiveanalysis" -> "c. Differentiate between cost benefit and cost effective analysis"
+     * "DifferentiateBetweenProgrammeevaluationandreviewtechniqueandcriticalpathmethod" -> "d. Differentiate between programme evaluation and review technique and critical path method"
+   - Fix broken sub-part labels and OCR noise artifacts (e.g. restoring faint text from the printed image).
 
-4. PRINTED INSTRUCTIONS:
-   - Extract all officially printed instructions as an array of strings (e.g. items 1, 2, 3, 4).
+2. DO NOT DROP OR REMOVE QUESTIONS:
+   - You MUST output every single question provided in Extracted Questions, plus any additional questions clearly visible in the image.
+   - Maintain all sections (e.g. Section A, Section B). DO NOT merge Section B into Section A or drop Section B.
+   - For every question, keep its sub-parts (a, b, c, d, e...) clearly formatted in 'text'.
 
-5. COMPLETE QUESTION EXTRACTION (NO DROPOUTS OR TRUNCATION):
-   - Every single question on the page must be extracted completely:
-     * For long questions / clinical vignettes (e.g. Q.1), extract the FULL question prompt including the opening scenario AND all sub-parts (a), (b), (c), (d) without cutting off sentences.
-     * For short notes (e.g. Q.2), preserve all items (a), (b), (c), (d), (e).
-     * For 'Explain why' questions (e.g. Q.3), preserve all items (a), (b), (c).
-     * For Multiple Choice Questions (MCQs under Q.4), split them into separate distinct questions ('4.1', '4.2', '4.3'...).
-       For each MCQ, provide its prompt in 'text', marks in 'marks' (e.g. '1'), 'type' as 'MCQ', and an 'options' array: [{"label": "a", "text": "..."}, {"label": "b", "text": "..."}].
-       DO NOT combine options into the question text.
+3. EXAM METADATA & INSTRUCTIONS:
+   - Extract and correct header metadata (university, subject, exam_year, exam_month, session_code, paper_code, max_marks, duration).
+   - If university name is printed in header (e.g. "Rohilkhand Medical College & Hospital, Bareilly" or "Bareilly International University"), ensure it is accurately captured.
+   - Fix any typos in printed instructions.
+   - Base all decisions strictly on PRINTED/TYPESET text. Ignore handwritten annotations, roll numbers, or doodles.
 
-6. Return strictly valid JSON adhering to the schema below:
+4. OUTPUT FORMAT:
+Return strictly valid JSON adhering to this schema:
 {
   "page_number": <int>,
   "is_structure_correct": true,
@@ -90,44 +93,30 @@ CRITICAL INSTRUCTIONS:
   "metadata": {
     "university": "<university>",
     "subject": "<subject>",
-    "session_code": "<session code e.g. MBY2P6>",
-    "paper_code": "<paper code e.g. 1726N>",
-    "exam_year": "<year e.g. 2026>",
-    "exam_month": "<month e.g. September>",
-    "max_marks": "<e.g. 100>",
-    "duration": "<e.g. 3 hours>"
+    "session_code": "<session code or ANQP code>",
+    "paper_code": "<paper code>",
+    "exam_year": "<year>",
+    "exam_month": "<month>",
+    "max_marks": "<marks>",
+    "duration": "<duration>"
   },
   "instructions": [
-    "<instruction 1>",
-    "<instruction 2>"
+    "<corrected instruction 1>",
+    "<corrected instruction 2>"
   ],
   "questions": [
     {
-      "number": "1",
-      "heading": "<heading if any>",
-      "text": "<full question text with all sub-parts (a), (b)...>",
-      "marks": "<marks e.g. 11>",
-      "type": "Essay",
-      "part": "PART-A",
+      "number": "<question number e.g. 1, 2>",
+      "part": "<section name e.g. Section A, Section B>",
+      "heading": "<heading if any e.g. Structured Long Essay Questions>",
+      "text": "<full question text with all sub-parts (a), (b)... spelling and spacing fully corrected>",
+      "marks": "<marks e.g. 10, 30>",
+      "type": "<Essay | Short Notes | Very Short Answers | MCQ>",
       "options": null
-    },
-    {
-      "number": "4.1",
-      "heading": "Multiple choice questions.",
-      "text": "<mcq prompt>",
-      "marks": "1",
-      "type": "MCQ",
-      "part": "PART-A",
-      "options": [
-        {"label": "a", "text": "<option a text>"},
-        {"label": "b", "text": "<option b text>"},
-        {"label": "c", "text": "<option c text>"},
-        {"label": "d", "text": "<option d text>"}
-      ]
     }
   ],
   "needs_manual_review": false,
-  "raw_explanation": "<brief summary>"
+  "raw_explanation": "<brief summary of spelling/typos corrected>"
 }
 """
 
@@ -142,28 +131,35 @@ def _build_user_message(page_number: int, page_payload: Dict[str, Any]) -> str:
     confidence = page_payload.get("confidence", {})
     verification_reasons = page_payload.get("verification_reasons", [])
 
-    return f"""Please verify Page {page_number} of this examination paper:
+    formatted_questions = []
+    for q in questions:
+        formatted_questions.append({
+            "number": str(q.get("number", "")),
+            "part": q.get("part") or q.get("section") or "Section A",
+            "heading": q.get("heading"),
+            "marks": q.get("marks"),
+            "text": q.get("text", ""),
+        })
+
+    return f"""Please review and proofread Page {page_number} of this medical examination paper:
 
 CURRENT EXTRACTED DATA:
-- Visual Verification Trigger Reasons: {json.dumps(verification_reasons)}
-- Current Confidence Breakdown: {json.dumps(confidence, indent=2)}
-- Extracted Exam Metadata: {json.dumps(metadata, indent=2)}
-- Detected Sections/Parts: {json.dumps(sections)}
+- Header Metadata: {json.dumps(metadata, indent=2)}
+- Detected Sections: {json.dumps(sections)}
 - Detected Instructions ({len(instructions)} items):
 {json.dumps(instructions, indent=2)}
-- Extracted Questions ({len(questions)} items):
-{json.dumps([{"number": q.get("number"), "text": q.get("text", "")[:120], "part": q.get("part"), "marks": q.get("marks")} for q in questions], indent=2)}
+- Extracted Questions ({len(questions)} items to proofread and correct):
+{json.dumps(formatted_questions, indent=2)}
 
 OCR RAW TEXT:
 \"\"\"
 {ocr_text[:4000]}
 \"\"\"
 
-CRITICAL VERIFICATION TASKS:
-1. SOURCE OF TRUTH: Base all decisions strictly on PRINTED/TYPESET text. Completely ignore handwritten notes, pencil/pen markings, ticks, circles, student answers, or scribbles.
-2. EXAM METADATA: Inspect the printed header/masthead on this page. If university, subject, session_code/QP code, exam_year, exam_month, max_marks, or duration are missing or inaccurate in Extracted Exam Metadata, supply corrected values in metadata_corrections.
-3. STRUCTURE: Identify if any genuine questions or marks were mistakenly trapped in instructions, missing, or mis-numbered.
-Return the structured JSON correction output.
+PROOFREADING & SPELL-CHECKING INSTRUCTIONS:
+1. Proofread and correct all spelling mistakes, typos, character glitches, and merged words in the question texts, headings, sections, and header metadata.
+2. Every question provided above in "Extracted Questions" MUST be included in the output JSON with its spelling and wording corrected. Preserve all questions across all sections (e.g. Section A, Section B). Do NOT drop or delete any question.
+3. Return the fully proofread output as valid JSON matching the schema.
 """
 
 
@@ -283,11 +279,16 @@ async def verify_page_with_gemini(
                         q_corr = parsed_json.get("question_corrections") or []
                         for q in parsed_json["questions"]:
                             q_num = str(q.get("number", "")).replace("Q.", "").strip()
-                            if q_num and not any(item.get("question_number") == q_num for item in q_corr):
+                            q_sec = q.get("part") or q.get("section") or "Section A"
+                            q_sec_norm = _norm_sec(q_sec)
+                            if q_num and not any(
+                                item.get("question_number") == q_num and _norm_sec(item.get("section")) == q_sec_norm
+                                for item in q_corr
+                            ):
                                 q_corr.append({
                                     "question_number": q_num,
                                     "action": "REPLACE",
-                                    "section": q.get("part") or q.get("section") or "PART-A",
+                                    "section": q_sec,
                                     "text": q.get("text", ""),
                                     "heading": q.get("heading"),
                                     "marks": str(q.get("marks", "")) if q.get("marks") is not None else None,

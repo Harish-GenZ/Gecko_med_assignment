@@ -1,0 +1,11 @@
+{
+  "job_id": "1eb22714-5709-4e83-96ad-63c22c4c855b",
+  "status": "processing",
+  "filename": "temp_2page_novision.pdf",
+  "progress": 10,
+  "current_step": "Processing 2 pages",
+  "error": null,
+  "pages_info": [],
+  "result": null,
+  "created_at": "2026-10-04T07:26:18.435309"
+}

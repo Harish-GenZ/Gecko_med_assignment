@@ -205,6 +205,7 @@ def run_pipeline(file_path: Path, job_id: str) -> None:
                 vision_manager.set_page_state(idx, PageProcessingState.OCR_COMPLETE)
                 vision_manager.record_timestamp(idx, "ocr_completed")
                 _evaluate_and_trigger_page_vision(page, idx, vision_manager, job_id, total_pages=total_pages)
+                page["image"] = None
         else:
             # Multi-page: distribute independent pages across ProcessPoolExecutor workers
             logger.info(f"[{job_id}] Distributing {total_pages} pages across {max_workers} worker processes (OCR_WORKERS={OCR_WORKERS})")
@@ -272,6 +273,9 @@ def run_pipeline(file_path: Path, job_id: str) -> None:
                         # Trigger Vision verification asynchronously immediately
                         _evaluate_and_trigger_page_vision(page, idx, vision_manager, job_id, total_pages=total_pages)
 
+                        # Immediately release raw uncompressed image memory for this completed page
+                        page["image"] = None
+
                         progress = 10 + int(60 * completed_count / max(total_pages, 1))
                         _update(job_id, progress=progress,
                                 current_step=f"OCR {completed_count}/{total_pages} pages completed")
@@ -327,6 +331,7 @@ def run_pipeline(file_path: Path, job_id: str) -> None:
                         vision_manager.set_page_state(idx, PageProcessingState.OCR_COMPLETE)
                         vision_manager.record_timestamp(idx, "ocr_completed")
                         _evaluate_and_trigger_page_vision(page, idx, vision_manager, job_id, total_pages=total_pages)
+                        page["image"] = None
 
                         progress = 10 + int(60 * completed_count / max(total_pages, 1))
                         _update(job_id, progress=progress,

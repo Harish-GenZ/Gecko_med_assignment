@@ -40,8 +40,8 @@ def _get_rapid_ocr():
             # Fine-tune DBNet text detector postprocess parameters for high sensitivity on medical papers
             if hasattr(_rapid_ocr, "text_detector") and hasattr(_rapid_ocr.text_detector, "postprocess_op"):
                 _rapid_ocr.text_detector.postprocess_op.thresh = 0.22
-                _rapid_ocr.text_detector.postprocess_op.box_thresh = 0.45
-                _rapid_ocr.text_detector.postprocess_op.unclip_ratio = 1.8
+                _rapid_ocr.text_detector.postprocess_op.box_thresh = 0.35
+                _rapid_ocr.text_detector.postprocess_op.unclip_ratio = 2.0
             logger.info("[OCR Engine] RapidOCR ONNX Runtime engine initialized successfully with enhanced sensitivity.")
         except Exception as e:
             logger.warning(f"[OCR Engine] RapidOCR init failed: {e}. Checking fallback.")
@@ -188,7 +188,24 @@ def _cluster_and_sort_boxes(all_raw_boxes: List[dict], confidences: List[float])
     # Check if there is a distinct gap near the middle indicating 2 columns
     left_boxes = [b for b in all_raw_boxes if b["x_r"] < mid_x + page_width * 0.05]
     right_boxes = [b for b in all_raw_boxes if b["x_l"] > mid_x - page_width * 0.05]
-    is_two_column = (len(left_boxes) > 6 and len(right_boxes) > 6 and
+
+    # Distinguish genuine multi-column layout from single-column question papers with right-aligned marks.
+    # In question papers, right-side boxes are typically short tokens like "(10 Marks)", "[5]", "(5 Marks)".
+    marks_pat = re.compile(
+        r'^\s*[\(\[]?\s*(?:marks?[:\s-]*\d+|\d+\s*marks?|[\d\+\-x×\s=]+|\d+)\s*[\)\]]?\s*$',
+        re.I
+    )
+    right_prose_boxes = [
+        b for b in right_boxes
+        if len(b["text"].split()) >= 4 and b["w"] > page_width * 0.22 and not marks_pat.match(b["text"])
+    ]
+    left_prose_boxes = [
+        b for b in left_boxes
+        if len(b["text"].split()) >= 4 and b["w"] > page_width * 0.22
+    ]
+
+    # True 2-column requires substantial multi-word prose paragraphs on BOTH left and right
+    is_two_column = (len(left_prose_boxes) >= 8 and len(right_prose_boxes) >= 8 and
                      (len(left_boxes) + len(right_boxes)) >= len(all_raw_boxes) * 0.75)
 
     if is_two_column:
@@ -199,12 +216,18 @@ def _cluster_and_sort_boxes(all_raw_boxes: List[dict], confidences: List[float])
         spanning = [b for b in all_raw_boxes if b not in left_boxes and b not in right_boxes]
         span_res = _cluster_single_column(spanning) if spanning else []
 
-        # Sort: top spanning lines (header) -> left column -> right column -> bottom spanning
-        top_span = [r for r in span_res if r["y_c"] < (all_raw_boxes[0]["y_c"] if all_raw_boxes else 0)]
+        # Sort: top spanning lines (header above columns) -> left column -> right column -> bottom spanning
+        first_col_top_y = min(
+            (left_res[0]["y_c"] if left_res else 999999),
+            (right_res[0]["y_c"] if right_res else 999999)
+        )
+        top_span = [r for r in span_res if r["y_c"] < first_col_top_y]
         bot_span = [r for r in span_res if r not in top_span]
 
         combined_rows = top_span + left_res + right_res + bot_span
     else:
+        # Standard question paper (single-column with optional right-aligned marks):
+        # Cluster row-by-row top-to-bottom so question text and its mark stay together on the same line
         combined_rows = _cluster_single_column(all_raw_boxes)
 
     sorted_lines: List[str] = []

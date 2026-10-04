@@ -1,0 +1,552 @@
+{
+  "job_id": "f584cbf8-7076-429c-9272-2599dbb8274f",
+  "status": "completed",
+  "filename": "biochem_p1_p2.pdf",
+  "progress": 100,
+  "current_step": "Completed",
+  "error": null,
+  "pages_info": [
+    {
+      "page_number": 1,
+      "type": "digital",
+      "ocr_used": false,
+      "char_count": 1402,
+      "processing_state": "FINALIZED"
+    },
+    {
+      "page_number": 2,
+      "type": "digital",
+      "ocr_used": false,
+      "char_count": 1918,
+      "processing_state": "FINALIZED"
+    }
+  ],
+  "result": {
+    "document": "biochem_p1_p2.pdf",
+    "total_pages": 2,
+    "question_papers": [
+      {
+        "paper_index": 0,
+        "page_range": [
+          1,
+          2
+        ],
+        "metadata": {
+          "university": "KALOJI NARAYANA RAO UNIVERSITY OF HEALTH SCIENCES",
+          "exam_month": "November",
+          "exam_year": "2023",
+          "session_code": "MB2019101",
+          "subject": "BIOCHEMISTRY (New Regulation) PAPER - I",
+          "paper_code": "MB2019101",
+          "max_marks": "100",
+          "duration": "3 Hours",
+          "confidence": 1.0,
+          "status": "ok",
+          "missing_fields": []
+        },
+        "questions": [
+          {
+            "number": "8",
+            "text": "The fluid mosaic model of membrane includes",
+            "type": "MCQ",
+            "part": "PART-A",
+            "heading": null,
+            "options": [
+              {
+                "label": "a",
+                "text": "Cholesterol molecules in the membrane increase stability of membrane"
+              },
+              {
+                "label": "b",
+                "text": "Membrane proteins are fixed and cannot move"
+              },
+              {
+                "label": "c",
+                "text": "Membrane contains bimolecular leaflet of lipids"
+              },
+              {
+                "label": "d",
+                "text": "Permeability of drugs across cell membrane is dependent on their solubility in water"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.993,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.98,
+              "overall": 0.993
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "9",
+            "text": "Mobility of particles during electrophoresis is based on all the following factors, except",
+            "type": "MCQ",
+            "part": "PART-A",
+            "heading": null,
+            "options": [
+              {
+                "label": "a",
+                "text": "Current voltage and ampere"
+              },
+              {
+                "label": "b",
+                "text": "Quality of supporting media"
+              },
+              {
+                "label": "c",
+                "text": "Ph of buffer medium"
+              },
+              {
+                "label": "d",
+                "text": "Solubility of particle protein"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.993,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.98,
+              "overall": 0.993
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "10",
+            "text": "The power house of the cell is",
+            "type": "MCQ",
+            "part": "PART-A",
+            "heading": null,
+            "options": [
+              {
+                "label": "a",
+                "text": "Nucleus"
+              },
+              {
+                "label": "b",
+                "text": "Cell membrane"
+              },
+              {
+                "label": "c",
+                "text": "Mitochondria"
+              },
+              {
+                "label": "d",
+                "text": "Lysosomes"
+              }
+            ],
+            "marks": null,
+            "confidence": 0.993,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.98,
+              "overall": 0.993
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "11",
+            "text": "What are Lipoproteins. Classify Lipoproteins. Explain the transport of TAG (Tri Acyl glycerides) in the body. Discuss the clinical significance of LDL and HDL. Add a note on dyslipidaemias.",
+            "type": "Essay",
+            "part": "PART-A",
+            "heading": "Essey/Long Answer Questions",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.993,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.98,
+              "overall": 0.993
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "12",
+            "text": "What is Glycogen. How is Glycogen broken down in the body. Explain the hormonal regulation of the pathway. Write about glycogen storage disorders.",
+            "type": "Essay",
+            "part": "PART-A",
+            "heading": "Essey/Long Answer Questions",
+            "options": null,
+            "marks": "15",
+            "confidence": 0.993,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.98,
+              "overall": 0.993
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "13",
+            "text": "What are the different types of enzyme inhibition. Explain about competitive inhibition with two examples of its therapeutic significance.",
+            "type": "Short Notes",
+            "part": "PART-A",
+            "heading": "Short Answer Questions",
+            "options": null,
+            "marks": "6",
+            "confidence": 0.993,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.98,
+              "overall": 0.993
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "14",
+            "text": "Write about inhibitors and uncouplers of electron transport chain.",
+            "type": "Short Notes",
+            "part": "PART-A",
+            "heading": "Short Answer Questions",
+            "options": null,
+            "marks": "6",
+            "confidence": 0.993,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.98,
+              "overall": 0.993
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "15",
+            "text": "Justify Physician role in Health Care System.",
+            "type": "Short Notes",
+            "part": "PART-A",
+            "heading": "Short Answer Questions",
+            "options": null,
+            "marks": "6",
+            "confidence": 0.993,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.98,
+              "overall": 0.993
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "16",
+            "text": "Enzyme profile in liver diseases, and write about their clinical significance.",
+            "type": "Short Notes",
+            "part": "PART-A",
+            "heading": "Short Answer Questions",
+            "options": null,
+            "marks": "6",
+            "confidence": 0.993,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.98,
+              "overall": 0.993
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "17",
+            "text": "Describe the sources, daily requirement and functions of Vitamin C.",
+            "type": "Short Notes",
+            "part": "PART-A",
+            "heading": "Short Answer Questions",
+            "options": null,
+            "marks": "6",
+            "confidence": 0.993,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.98,
+              "overall": 0.993
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "18",
+            "text": "Describe the regulation of calcium homeostasis.",
+            "type": "Short Notes",
+            "part": "PART-A",
+            "heading": "Short Answer Questions",
+            "options": null,
+            "marks": "6",
+            "confidence": 0.993,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.98,
+              "overall": 0.993
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "19",
+            "text": "Define BMR, what is its normal value, and what are all the factors affecting BMR.",
+            "type": "Very Short Answers",
+            "part": "PART-A",
+            "heading": "Short Answer Questions",
+            "options": null,
+            "marks": "6",
+            "confidence": 0.993,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.98,
+              "overall": 0.993
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "20",
+            "text": "Write about classification of lipids with suitable examples.",
+            "type": "Short Notes",
+            "part": "PART-A",
+            "heading": "Very Short Answer Questions",
+            "options": null,
+            "marks": "3",
+            "confidence": 0.993,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.98,
+              "overall": 0.993
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "21",
+            "text": "Principle and applications of Enzyme Linked Immunosorbent Assay (ELISA).",
+            "type": "Short Notes",
+            "part": "PART-A",
+            "heading": "Very Short Answer Questions",
+            "options": null,
+            "marks": "3",
+            "confidence": 0.993,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.98,
+              "overall": 0.993
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "22",
+            "text": "Antioxidant Vitamins.",
+            "type": "Short Notes",
+            "part": "PART-A",
+            "heading": "Very Short Answer Questions",
+            "options": null,
+            "marks": "3",
+            "confidence": 0.953,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 0.9,
+              "classification": 0.98,
+              "overall": 0.953
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "23",
+            "text": "Describe about transport systems with examples.",
+            "type": "Very Short Answers",
+            "part": "PART-A",
+            "heading": "Very Short Answer Questions",
+            "options": null,
+            "marks": "3",
+            "confidence": 0.993,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.98,
+              "overall": 0.993
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "24",
+            "text": "Essential Fatty acids.",
+            "type": "Short Notes",
+            "part": "PART-A",
+            "heading": "Very Short Answer Questions",
+            "options": null,
+            "marks": "3",
+            "confidence": 0.953,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 0.9,
+              "classification": 0.98,
+              "overall": 0.953
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          },
+          {
+            "number": "25",
+            "text": "Compare and Contrast Kwashiorkor and Marasmus.",
+            "type": "Short Notes",
+            "part": "PART-A",
+            "heading": "Very Short Answer Questions",
+            "options": null,
+            "marks": "3",
+            "confidence": 0.993,
+            "confidence_breakdown": {
+              "ocr": 1.0,
+              "boundary": 1.0,
+              "classification": 0.98,
+              "overall": 0.993
+            },
+            "status": "ok",
+            "confidence_level": "HIGH",
+            "anomalies": []
+          }
+        ],
+        "instructions": [
+          "Answer all questions",
+          "Draw diagrams whenever necessary"
+        ],
+        "parts": [
+          "PART-A"
+        ],
+        "raw_text": "PAPER CODE: MB2019101\nKAI-OJI NARAHNA RAO UNIVERSITY OF \nSCIENCES\nARANGAI. TELANGANA STATE - 506 002\nMBBS FIRST WAR EXAMINATIONS: NOVEMBER. 2023\nBIOCHEMISTRY (New Regulation)\nPAPER \n\u2014 1\nTime: Ilours\nMax Marks: 100\nNote: Answer alt gucsuons\nKNRUHS \n-2022\ndart\ndiagrams whenever\nI pencil lany \nColour pencil\nMultiple Choice Questions:\nlox 1-10\nAnomenc carbon atom of fructose is in\na) \nI g carbon atom\n_b) \ncarbon atom\nc) \nPenultimate carbon atom\nd) \nNone of the above\n2.\nAll the following are unsaturated fatty acids except\n-a) Propionic acid\nb) Linoleic acid\nc) Linolcnic acid\nd) Arachidonic acid\n3.\nDuring glycogen breakdown, the action of glycogen phosphorylase produces\na) \nGlucose -6-phosphate\n\u2022b) Glucose-I-phosphate\nc) \nFructose- 6-phosphate\nd) None of the above\n4.\nThe key enzyme in the pathway of cholesterol biosynthesis is\na) \nHMG COA\nb) \nHMGCoA1yase\n-c) \nHMG COA reductase\nd) Mevalonate kinase\n5.\nComponents of the electron transport chain are arranged in order of\n. a) \nDecreasing redox potential\nb) \nIncreasing redox potential\nc) \nPositive redox potential to negative \nd) \nNone of the above\nredox potential\n@medi circle\n6.\nEnzymes act by reducing the\n- a) \nActivation energy\nb) \nHeat energy\nc) \nBinding energy\nd) \nAll of the above\n7.\nIncreased levels of lactate dehydrogenase (LDH) can be observed in\na) \nMyocardial infarction .\nb) \nHaemolytic anaemia\nc) \nLcukaemia \u2022s\nd) \nAll of the above\nfluid mosau-\u2022 model or membrane Includes\na) Cholesterol molecules in the b) \nmembrane Increase stability of\nmembrane\nc) Membrane contatns bimolecular d) \nleaflet of l'Ptds\nMembrane proteins are fixed\nand cannot move\nPermeability of drugs across\ncell membrane ts dependent on\ntheir \n9.\nMobility of particles during electrophoresis is based \nsolubility \non all the followtng\nin water\nfactors. except\na) Current voltage and ampere\nc) \nPh of buffet medium\n10.\nThe power house of the cell is\na) Nucleus\n, c) Mitochondria\nEssey/Long Answer Questions:\nQuality of supporting media\nd)\nSolubility of particle protein\nb)\nCell membrane\nd)\nLysosomes\n2 x 15=30\n41. What arc t.ipoproteins. Classify Lipoproteins. Explain the transport of TAG (Tri Acyl\nglycertdes) in the body. Discuss the clinical significance of LDL and HDL. Add a note on\ndyslipidaernias.\n$2. What is Glycogen. How is Glycogen broken down in the body. Explain the hormonal\nregulation of the pathway. Write about glycogen storage disorders.\nShort Answer Questions:\n@medi \ncircle\n7 x 6-42\n13. What are the different types of enzyme inhibition. Explatn about competitive inhibition with\ntwo examples of its thetapeutic significance.\nJ.4. Write about inhibitors and uncouplers of electron transport chain.\nJustify Physician role in Health Care System.\nJ6. Enzyme profile in liver diseases, and write about their clinical significance.\nF. Describe the sources. daily requirement and functions of Vitamin C.\nDescnbe the regulation of calcium homeostasis.\nJ'. Define BMR, what is its normal value, and what are all the factors affecting BMR\nVery Short Answer Questions:\n6 x 3-18\nWrite about classification of lipids with suitable examples.\nPrinciple and applications of Enzyme Linked Immunosorbent Assay (ELISA).\n\u201422. Antioxidant Vitamins.\n.23. Describe about transport systems with examples,\n-24. Essential Fatty acids.\n'8. Compare and Contrast Kwashiorkor and Marasmus.",
+        "confidence": {
+          "ocr_confidence": 1.0,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.989,
+          "metadata_confidence": 1.0,
+          "classification_confidence": 0.98,
+          "consistency_confidence": 0.65,
+          "overall_confidence": 0.58
+        },
+        "confidence_level": "LOW",
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "First extracted question is Q8; expected Q1. Initial questions appear lost or unsegmented."
+          }
+        ],
+        "vision_verified": true,
+        "vision_confidence": 0.98,
+        "vision_status": "CORRECTED",
+        "needs_manual_review": false
+      }
+    ],
+    "page_audits": [
+      {
+        "page": 1,
+        "confidence": {
+          "ocr_confidence": 1.0,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.989,
+          "metadata_confidence": 1.0,
+          "classification_confidence": 0.98,
+          "consistency_confidence": 0.65,
+          "overall_confidence": 0.58
+        },
+        "status": "LOW",
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "First extracted question is Q8; expected Q1. Initial questions appear lost or unsegmented."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.98,
+        "vision_status": "CORRECTED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 7
+      },
+      {
+        "page": 2,
+        "confidence": {
+          "ocr_confidence": 1.0,
+          "ocr_confidence_available": true,
+          "structure_confidence": 1.0,
+          "segmentation_confidence": 0.989,
+          "metadata_confidence": 1.0,
+          "classification_confidence": 0.98,
+          "consistency_confidence": 0.65,
+          "overall_confidence": 0.58
+        },
+        "status": "LOW",
+        "anomalies": [
+          {
+            "type": "question_numbering_gap",
+            "severity": "high",
+            "text_preview": null,
+            "reason": "First extracted question is Q8; expected Q1. Initial questions appear lost or unsegmented."
+          }
+        ],
+        "needs_visual_verification": false,
+        "visual_verification_reasons": [],
+        "processing_state": "FINALIZED",
+        "vision_confidence": 0.98,
+        "vision_status": "CORRECTED",
+        "vision_error": null,
+        "needs_manual_review": false,
+        "corrections_applied": 18
+      }
+    ],
+    "processing_notes": [
+      "Paper 1: [HIGH] First extracted question is Q8; expected Q1. Initial questions appear lost or unsegmented.",
+      "Paper 1: Overall confidence 58.0% (LOW) \u2014 visual review recommended."
+    ],
+    "needs_visual_verification": false,
+    "visual_verification_reasons": [],
+    "vision_verified_pages": [
+      1,
+      2
+    ],
+    "needs_manual_review": false
+  },
+  "created_at": "2026-10-04T04:33:17.596374"
+}

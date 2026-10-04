@@ -172,10 +172,13 @@ def validate_and_filter_corrections(
 
 
 def _norm_sec(s: Optional[str]) -> str:
-    """Normalize section label for robust matching, e.g. '(PART-A)' -> 'PARTA'."""
+    """Normalize section label for robust matching, e.g. 'Sectiom A' -> 'SECTIONA'."""
     if not s:
         return ""
-    return re.sub(r'[\s\(\)\[\]\-_:]', '', s).upper()
+    clean = re.sub(r'[\s\(\)\[\]\-_:]', '', str(s)).upper()
+    clean = clean.replace("SECTIOM", "SECTION").replace("SECTON", "SECTION")
+    clean = clean.replace("PART", "SECTION").replace("GROUP", "SECTION")
+    return clean
 
 
 def apply_validated_corrections(
@@ -190,7 +193,17 @@ def apply_validated_corrections(
 
     # 1. Apply instructions if provided by high-fidelity Vision
     if vision_result.instructions and len(vision_result.instructions) > 0:
-        paper.instructions = [str(x).strip() for x in vision_result.instructions if str(x).strip()]
+        if (paper.page_range and len(paper.page_range) == 2 and
+                paper.page_range[1] > paper.page_range[0] and paper.instructions):
+            # Multi-page paper: merge instructions without clobbering previous pages
+            merged_inst = list(paper.instructions)
+            for new_inst in vision_result.instructions:
+                s = str(new_inst).strip()
+                if s and not any(_text_grounded_in_source(s, cur, 0.70) for cur in merged_inst):
+                    merged_inst.append(s)
+            paper.instructions = merged_inst
+        else:
+            paper.instructions = [str(x).strip() for x in vision_result.instructions if str(x).strip()]
         corrections_applied += 1
         logger.info(f"[VisionValidator] Replaced instructions with {len(paper.instructions)} verified items from Vision.")
     elif paper.instructions:
@@ -235,28 +248,53 @@ def apply_validated_corrections(
         paper.instructions = final_instructions if final_instructions else None
 
     # 2. Apply question corrections
-    # If Vision performed high-confidence multimodal extraction (>= 0.88) with multiple questions,
-    # perform high-fidelity visual question reconstruction
-    if vision_result.confidence >= 0.88 and len(vision_result.question_corrections) >= 2:
-        logger.info(
-            f"[VisionValidator] Applying high-fidelity visual question reconstruction "
-            f"({len(vision_result.question_corrections)} questions)."
-        )
-        reconstructed: List[Question] = []
-        for q_corr in vision_result.question_corrections:
-            q_num = re.sub(r'^[Qq][\.\s]*', '', q_corr.question_number).strip()
-            clean_sec = re.sub(r'^[\s\(\[]+|[\s\)\]]+$', '', q_corr.section).strip() if q_corr.section else "PART-A"
-            q_type = None
-            if q_corr.type:
-                for qt in QuestionType:
-                    if qt.value.lower() == str(q_corr.type).lower():
-                        q_type = qt
-                        break
-            if not q_type:
-                raw_dict = {"text": q_corr.text or "", "heading": q_corr.heading, "marks": q_corr.marks, "options": q_corr.options}
-                q_type, _ = classify_question(raw_dict, clean_sec)
+    # The vision model's duty is strictly to correct alignment, typography, mismatched words,
+    # marks, headings, and options. It must NEVER remove or drop existing OCR questions!
+    new_questions: List[Question] = list(paper.questions)
 
-            mcq_opts = None
+    for q_corr in vision_result.question_corrections:
+        # User requirement: Vision must never remove questions or drop text
+        if q_corr.action == "REMOVE":
+            continue
+
+        q_corr_sec_norm = _norm_sec(q_corr.section)
+        clean_target_sec = re.sub(r'^[\s\(\[]+|[\s\)\]]+$', '', q_corr.section).strip() if q_corr.section else None
+        q_corr_num = re.sub(r'^[Qq][\.\s]*', '', q_corr.question_number).strip()
+
+        # Step A: Attempt to match an existing question in the paper
+        matched_q: Optional[Question] = None
+
+        # Priority 1: Match by both question number AND section
+        for q in new_questions:
+            if q.number.strip() == q_corr_num and (not q_corr_sec_norm or _norm_sec(q.part) == q_corr_sec_norm):
+                matched_q = q
+                break
+
+        # Priority 2: Match by text grounding / token overlap (for OCR typos or mislabeled sections)
+        if matched_q is None and q_corr.text:
+            for q in new_questions:
+                if q.text and (_text_grounded_in_source(q_corr.text, q.text, threshold=0.45) or
+                               _text_grounded_in_source(q.text, q_corr.text, threshold=0.45)):
+                    matched_q = q
+                    break
+
+        # Priority 3: Match by question number alone if unambiguous
+        if matched_q is None:
+            same_num_qs = [q for q in new_questions if q.number.strip() == q_corr_num]
+            if len(same_num_qs) == 1:
+                matched_q = same_num_qs[0]
+
+        # Step B: Apply corrections to matched question
+        if matched_q is not None:
+            # Correct mismatched words and broken OCR alignment
+            if q_corr.text and len(q_corr.text.strip()) > 5:
+                matched_q.text = q_corr.text
+            if q_corr.marks:
+                matched_q.marks = q_corr.marks
+            if clean_target_sec and (not matched_q.part or "sectiom" in matched_q.part.lower() or matched_q.part.lower() in ("none", "part-a", "part a")):
+                matched_q.part = clean_target_sec
+            if q_corr.heading:
+                matched_q.heading = q_corr.heading
             if q_corr.options:
                 mcq_opts = []
                 for opt in q_corr.options:
@@ -264,100 +302,37 @@ def apply_validated_corrections(
                         mcq_opts.append(MCQOption(label=opt.get("label", ""), text=opt.get("text", "")))
                     elif isinstance(opt, MCQOption):
                         mcq_opts.append(opt)
-
-            reconstructed.append(Question(
-                number=q_num,
-                text=q_corr.text or "",
-                type=q_type,
-                part=clean_sec,
-                heading=q_corr.heading,
-                marks=q_corr.marks,
-                options=mcq_opts,
-                confidence=0.98,
-                status=ReviewStatus.OK,
-            ))
+                matched_q.options = mcq_opts
+            if q_corr.type:
+                for qt in QuestionType:
+                    if qt.value.lower() == str(q_corr.type).lower():
+                        matched_q.type = qt
+                        break
+            matched_q.confidence = max(matched_q.confidence or 0.0, 0.95)
             corrections_applied += 1
+        else:
+            # Genuinely new question detected by Vision that OCR missed completely
+            if q_corr.text and len(q_corr.text.strip()) > 20:
+                q_text = q_corr.text
+                raw_dict = {"text": q_text, "heading": q_corr.heading, "marks": q_corr.marks, "options": q_corr.options}
+                q_type, q_conf = classify_question(raw_dict, clean_target_sec)
+                mcq_opts = [
+                    MCQOption(label=opt.get("label", ""), text=opt.get("text", "")) if isinstance(opt, dict) else opt
+                    for opt in q_corr.options
+                ] if q_corr.options else None
 
-        new_questions = reconstructed
-    else:
-        new_questions: List[Question] = list(paper.questions)
-        for q_corr in vision_result.question_corrections:
-            q_corr_sec_norm = _norm_sec(q_corr.section)
-            clean_target_sec = re.sub(r'^[\s\(\[]+|[\s\)\]]+$', '', q_corr.section).strip() if q_corr.section else None
-
-            if q_corr.action in ("ADD", "MOVE", "REPLACE"):
-                matched_q: Optional[Question] = None
-                for q in new_questions:
-                    same_num_and_sec = (q.number.strip() == q_corr.question_number.strip() and _norm_sec(q.part) == q_corr_sec_norm)
-                    same_text = False
-                    if q_corr.text and q.text:
-                        same_text = _text_grounded_in_source(q_corr.text, q.text, threshold=0.65)
-
-                    if same_num_and_sec or same_text:
-                        matched_q = q
-                        break
-
-                if matched_q is not None:
-                    if q_corr.text:
-                        matched_q.text = q_corr.text
-                    if q_corr.marks:
-                        matched_q.marks = q_corr.marks
-                    if clean_target_sec:
-                        matched_q.part = clean_target_sec
-                    if q_corr.heading:
-                        matched_q.heading = q_corr.heading
-                    if q_corr.options:
-                        matched_q.options = [
-                            MCQOption(label=opt.get("label", ""), text=opt.get("text", "")) if isinstance(opt, dict) else opt
-                            for opt in q_corr.options
-                        ]
-                    matched_q.number = q_corr.question_number
-                    corrections_applied += 1
-                else:
-                    q_text = q_corr.text or ""
-                    raw_dict = {"text": q_text, "heading": q_corr.heading, "marks": q_corr.marks, "options": q_corr.options}
-                    q_type, q_conf = classify_question(raw_dict, clean_target_sec)
-                    mcq_opts = [
-                        MCQOption(label=opt.get("label", ""), text=opt.get("text", "")) if isinstance(opt, dict) else opt
-                        for opt in q_corr.options
-                    ] if q_corr.options else None
-
-                    new_q = Question(
-                        number=q_corr.question_number,
-                        text=q_text,
-                        type=q_type,
-                        part=clean_target_sec,
-                        heading=q_corr.heading,
-                        marks=q_corr.marks,
-                        options=mcq_opts,
-                        confidence=round(min(q_corr.confidence, q_conf), 3),
-                        status=ReviewStatus.OK,
-                    )
-                    new_questions.append(new_q)
-                    corrections_applied += 1
-
-            elif q_corr.action == "MODIFY":
-                for q in new_questions:
-                    if q.number.strip() == q_corr.question_number.strip() and (not q_corr.section or _norm_sec(q.part) == q_corr_sec_norm):
-                        if q_corr.text:
-                            q.text = q_corr.text
-                        if q_corr.marks:
-                            q.marks = q_corr.marks
-                        if q_corr.heading:
-                            q.heading = q_corr.heading
-                        if q_corr.options:
-                            q.options = [
-                                MCQOption(label=opt.get("label", ""), text=opt.get("text", "")) if isinstance(opt, dict) else opt
-                                for opt in q_corr.options
-                            ]
-                        corrections_applied += 1
-                        break
-
-            elif q_corr.action == "REMOVE":
-                new_questions = [
-                    q for q in new_questions
-                    if not (q.number.strip() == q_corr.question_number.strip() and (not q_corr.section or _norm_sec(q.part) == q_corr_sec_norm))
-                ]
+                new_q = Question(
+                    number=q_corr_num,
+                    text=q_text,
+                    type=q_type,
+                    part=clean_target_sec,
+                    heading=q_corr.heading,
+                    marks=q_corr.marks,
+                    options=mcq_opts,
+                    confidence=round(min(q_corr.confidence, q_conf), 3),
+                    status=ReviewStatus.OK,
+                )
+                new_questions.append(new_q)
                 corrections_applied += 1
 
     # Ensure no duplicate questions exist within the same section
@@ -386,6 +361,8 @@ def apply_validated_corrections(
 
     new_questions.sort(key=_sort_key)
     paper.questions = new_questions
+    if paper.parts:
+        paper.parts = [re.sub(r'\bSectio[nm]\b', 'Section', p, flags=re.I) for p in paper.parts]
 
     # 3. Update metadata if corrections present
     if not paper.metadata:
