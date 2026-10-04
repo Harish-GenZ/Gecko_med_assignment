@@ -24,6 +24,7 @@ class DecisionEngine:
     def __init__(
         self,
         duplicate_threshold: float | None = None,
+        review_threshold: float | None = None,
         genuine_threshold: float | None = None,
         min_coverage: float | None = None,
         min_margin: float | None = None,
@@ -33,6 +34,11 @@ class DecisionEngine:
             duplicate_threshold
             if duplicate_threshold is not None
             else settings.VERIFICATION_DUPLICATE_THRESHOLD
+        )
+        self.review_threshold = (
+            review_threshold
+            if review_threshold is not None
+            else getattr(settings, "VERIFICATION_REVIEW_THRESHOLD", 0.70)
         )
         self.genuine_threshold = (
             genuine_threshold
@@ -285,17 +291,32 @@ class DecisionEngine:
         else:
             # Does NOT cross 75% average across all 3 metrics: CANNOT be shown as DUPLICATE.
             if top_sc.three_metric_average is not None:
-                # All 3 metrics evaluated, but average is < 75%
-                decision = VerificationDecision.GENUINE
-                if ReasonCode.LOW_CONFIDENCE_GENUINE.value not in reason_codes:
-                    reason_codes.append(ReasonCode.LOW_CONFIDENCE_GENUINE.value)
-                reason_summary = (
-                    f"3-Metric Average ({top_sc.three_metric_average * 100:.1f}%) is below the 75% duplicate threshold "
-                    f"(Distance Proximity: {(top_sc.geo_proximity_score or 0) * 100:.1f}%, "
-                    f"Image Similarity: {(c.image_similarity or 0) * 100:.1f}%, "
-                    f"Name Similarity: {(c.name_similarity or 0) * 100:.1f}%). "
-                    f"Outlet is verified as GENUINE."
-                )
+                # 70% to 75% Ambiguity Rule:
+                # If the 3-metric average is between 70.0% and 74.9%, the evidence is in the borderline
+                # ambiguity zone, requiring manual review. Below 70.0%, it is auto-approved as GENUINE.
+                if top_sc.three_metric_average >= self.review_threshold:
+                    decision = VerificationDecision.NEEDS_REVIEW
+                    if ReasonCode.INSUFFICIENT_EVIDENCE.value not in reason_codes:
+                        reason_codes.append(ReasonCode.INSUFFICIENT_EVIDENCE.value)
+                    reason_summary = (
+                        f"3-Metric Average ({top_sc.three_metric_average * 100:.1f}%) is in the borderline "
+                        f"ambiguity range (70.0% - 74.9%) compared to existing outlet '{c.name}'. "
+                        f"Distance Proximity: {(top_sc.geo_proximity_score or 0) * 100:.1f}%, "
+                        f"Image Similarity: {(c.image_similarity or 0) * 100:.1f}%, "
+                        f"Name Similarity: {(c.name_similarity or 0) * 100:.1f}%. "
+                        f"Information is insufficient to automatically decide. Manual review required."
+                    )
+                else:
+                    decision = VerificationDecision.GENUINE
+                    if ReasonCode.LOW_CONFIDENCE_GENUINE.value not in reason_codes:
+                        reason_codes.append(ReasonCode.LOW_CONFIDENCE_GENUINE.value)
+                    reason_summary = (
+                        f"3-Metric Average ({top_sc.three_metric_average * 100:.1f}%) is below 70% "
+                        f"(Distance Proximity: {(top_sc.geo_proximity_score or 0) * 100:.1f}%, "
+                        f"Image Similarity: {(c.image_similarity or 0) * 100:.1f}%, "
+                        f"Name Similarity: {(c.name_similarity or 0) * 100:.1f}%). "
+                        f"Outlet is verified as GENUINE."
+                    )
             else:
                 # Incomplete signals (e.g. missing coordinates or missing photo)
                 decision = VerificationDecision.NEEDS_REVIEW
