@@ -65,6 +65,20 @@ COMMON_STOPWORDS_AND_FRAGMENTS = {
     "nag", "nagar", "colony", "city", "town", "dist", "district", "pin", "code"
 }
 
+# Established commercial retail and pharmacy chains for genuine conflicting brand detection
+KNOWN_COMMERCIAL_CHAINS = {
+    # Established Pharmacy Chains
+    "apollo", "medplus", "wellness forever", "guardian", "netmeds", "pharmeasy", "frank ross", "sanjivani",
+    # Food & Retail Chains
+    "subway", "mcdonalds", "kfc", "dominos", "pizza hut", "burger king",
+    "starbucks", "cafe coffee day", "costa coffee", "dunkin",
+    # Supermarkets & Department Stores
+    "dmart", "reliance", "spencer", "spencers", "more supermarket", "nature basket",
+    "big bazaar", "bigbazaar", "easyday", "7-eleven", "spar",
+    # Electronics & Eyewear
+    "croma", "vijay sales", "titan", "lenskart", "bata"
+}
+
 
 # Unicode mappings for Tamil script phonetic transliteration
 TAMIL_VOWELS = {
@@ -262,34 +276,42 @@ class SignboardOCRService:
             if re.search(r"[\u0B80-\u0BFF\u0900-\u097F]", clean_t):
                 has_regional_script = True
 
-            # Require minimum characters and reasonable confidence
-            alpha_tokens = re.findall(r"[a-zA-Z0-9\u0B80-\u0BFF]", clean_t)
-            if len(alpha_tokens) < 2:
+            # Strip edge punctuation and noise like underscores or hyphens: "JG_l_" -> "JG_l"
+            stripped_t = re.sub(r"^[\W_]+|[\W_]+$", "", clean_t)
+            if not stripped_t:
                 continue
 
-            # Must have confidence >= 0.35 (or 0.30 if 4+ letters) to avoid texture hallucinations
-            min_conf = 0.30 if len(clean_t) >= 4 else 0.35
+            # Require at least 3 alphanumeric characters
+            alpha_tokens = re.findall(r"[a-zA-Z0-9\u0B80-\u0BFF]", stripped_t)
+            if len(alpha_tokens) < 3:
+                continue
+
+            # Must have confidence >= 0.45 for short words (< 5 chars) and >= 0.35 for longer words
+            min_conf = 0.35 if len(stripped_t) >= 5 else 0.45
             if c_val < min_conf:
                 continue
 
-            # Skip non-pronounceable gibberish consonant strings (e.g. "qzx", "bdfg")
-            clean_lower = clean_t.lower()
-            words_in_line = clean_lower.split()
+            # Check that line contains real pronounceable words (not consonant smashes like 'jgl')
+            words_in_line = stripped_t.lower().split()
             filtered_line_words = []
             for w in words_in_line:
                 clean_w = re.sub(r"[^a-z0-9\u0B80-\u0BFF]", "", w)
                 if not clean_w:
                     continue
-                # If Latin and length >= 4, check for vowel or digits
-                if re.match(r"^[a-z]+$", clean_w) and len(clean_w) >= 4:
-                    if not re.search(r"[aeiouy]", clean_w):
-                        continue
+                # If Latin, check for vowel or digits (allow common 2-letter abbreviations)
+                if re.match(r"^[a-z]+$", clean_w):
+                    if len(clean_w) == 2 and clean_w not in {"st", "dr", "mr", "tv", "rd", "no", "co"}:
+                        if not re.search(r"[aeiouy]", clean_w):
+                            continue
+                    elif len(clean_w) >= 3:
+                        if not re.search(r"[aeiouy]", clean_w):
+                            continue
                 filtered_line_words.append(clean_w)
                 if len(clean_w) >= 3 and not clean_w.isdigit():
                     high_conf_words[clean_w] = max(high_conf_words.get(clean_w, 0.0), c_val)
 
             if filtered_line_words:
-                extracted_lines.append(clean_t)
+                extracted_lines.append(stripped_t)
 
         total_detections = len(results)
         valid_lines_count = len(extracted_lines)
@@ -302,9 +324,9 @@ class SignboardOCRService:
             is_unclear_or_multilingual = True
             clarity_status = "MULTILINGUAL_OR_STYLIZED"
         elif total_detections > 0 and valid_lines_count == 0:
-            # Text was found in image, but confidence was too low or text was illegible
+            # Text was detected by CRAFT but could not be extracted with high confidence
             is_unclear_or_multilingual = True
-            clarity_status = "UNCLEAR_OR_BLURRY" if is_blurry else "MULTILINGUAL_OR_STYLIZED"
+            clarity_status = "LOW_CONFIDENCE_INCONCLUSIVE" if not is_blurry else "UNCLEAR_OR_BLURRY"
         elif is_blurry and valid_lines_count < 2:
             is_unclear_or_multilingual = True
             clarity_status = "UNCLEAR_OR_BLURRY"
@@ -402,28 +424,26 @@ class SignboardOCRService:
                 logger.debug("Semantic embedding comparison bypassed: %s", e_exc)
 
             # G. Conflicting Commercial Brand Detection
-            # A conflicting commercial brand requires high confidence (>= 0.65), length >= 4,
-            # valid word structure, and having no phonetic/semantic match with submitted brands.
+            # A conflicting commercial brand requires high confidence (>= 0.70), matching an established
+            # commercial chain brand (e.g., 'medplus' when submitted 'apollo'), and having no phonetic/semantic match.
             conflicting_tokens: list[str] = []
             if ocr_brands and not is_incidental_signage and not is_unclear_or_multilingual:
                 for ob in ocr_brands:
                     if (
                         len(ob) >= 4
-                        and ob not in COMMON_STOPWORDS_AND_FRAGMENTS
-                        and high_conf_words.get(ob, 0.0) >= 0.65
-                        and re.search(r"[aeiouy]", ob)
+                        and ob in KNOWN_COMMERCIAL_CHAINS
+                        and high_conf_words.get(ob, 0.0) >= 0.70
                     ):
                         matched = any(
-                            difflib.SequenceMatcher(None, sb, ob).ratio() >= 0.60
+                            difflib.SequenceMatcher(None, sb, ob).ratio() >= 0.65
                             or (re.sub(r"[aeiou]+", "", sb) == re.sub(r"[aeiou]+", "", ob) and len(re.sub(r"[aeiou]+", "", sb)) >= 2)
-                            or difflib.SequenceMatcher(None, re.sub(r"[aeiou]+", "", sb), re.sub(r"[aeiou]+", "", ob)).ratio() >= 0.65
                             or sb in ob or ob in sb
                             for sb in sub_brands
                         )
                         if not matched:
                             conflicting_tokens.append(ob)
 
-                if conflicting_tokens and brand_score < 0.60 and valid_lines_count >= 1:
+                if conflicting_tokens and brand_score < 0.50 and valid_lines_count >= 1:
                     has_conflicting_brand = True
                     conflicting_brand_name = " ".join(conflicting_tokens)
 
@@ -441,12 +461,21 @@ class SignboardOCRService:
                 # Incidental promotional signage without competing brand
                 name_match_score = 0.85
                 is_semantic_match = True
-            else:
+            elif max(token_overlap_score, seq_score, embedding_sim, brand_score) >= 0.40 and not has_conflicting_brand:
                 name_match_score = round(max(token_overlap_score, seq_score, embedding_sim, brand_score), 4)
-                if name_match_score >= 0.40 and not has_conflicting_brand:
-                    is_semantic_match = True
+                is_semantic_match = True
+            else:
+                # OCR could not extract clear name details with sufficient confidence
+                name_match_score = None
+                is_semantic_match = False
+                if not has_conflicting_brand:
+                    is_unclear_or_multilingual = True
+                    clarity_status = "LOW_CONFIDENCE_INCONCLUSIVE"
 
         has_readable_signboard = len(extracted_lines) > 0 and not is_unclear_or_multilingual
+        if is_unclear_or_multilingual or not has_readable_signboard:
+            if not has_conflicting_brand:
+                name_match_score = None
 
         return OCRAnalysisResult(
             extracted_text_lines=extracted_lines,

@@ -88,8 +88,15 @@ class StoreAuthenticityService:
             # 3. Signboard OCR & Cross-Verification (EasyOCR + Multilingual & Semantic Matching)
             ocr_res = self.ocr_service.analyze_image(image, submitted_name=name)
 
+        # Signboard Cross-Verification:
+        # A submission is ONLY rejected for NAME_MISMATCH / SIGNBOARD_MISMATCH if:
+        # 1. OCR extracted clear, high-confidence signboard text (not low confidence / blurry / multilingual), AND
+        # 2. There is an explicit, verified conflicting commercial brand name (e.g. 'MedPlus' on an 'Apollo' submission).
+        # If OCR details cannot be extracted with high confidence, OCR is marked as inconclusive
+        # and bypassed from comparison so genuine outlets are NOT falsely rejected.
         if (
             ocr_res.has_conflicting_brand
+            and ocr_res.conflicting_brand_name
             and not ocr_res.is_cross_lingual_or_category_match
             and not ocr_res.is_incidental_signage
             and not ocr_res.is_unclear_or_multilingual
@@ -98,26 +105,9 @@ class StoreAuthenticityService:
             rejection_reasons.append("NAME_MISMATCH")
             rejection_reasons.append("SIGNBOARD_MISMATCH")
             logger.info(
-                "Name mismatch detected: Signboard has conflicting brand '%s', which contradicts '%s'",
-                ocr_res.conflicting_brand_name or " ".join(ocr_res.extracted_text_lines),
+                "Name mismatch detected: Signboard has confirmed conflicting brand '%s', which contradicts '%s'",
+                ocr_res.conflicting_brand_name,
                 name,
-            )
-        elif (
-            ocr_res.has_readable_signboard
-            and ocr_res.name_match_score is not None
-            and ocr_res.name_match_score < 0.25
-            and not ocr_res.is_cross_lingual_or_category_match
-            and not ocr_res.is_incidental_signage
-            and not ocr_res.is_unclear_or_multilingual
-            and visual_res.is_retail_store
-        ):
-            rejection_reasons.append("NAME_MISMATCH")
-            rejection_reasons.append("SIGNBOARD_MISMATCH")
-            logger.info(
-                "Signboard mismatch detected: OCR read '%s', but submitted name is '%s' (score: %.2f)",
-                " ".join(ocr_res.extracted_text_lines),
-                name,
-                ocr_res.name_match_score,
             )
         elif ocr_res.is_cross_lingual_or_category_match or ocr_res.is_incidental_signage:
             logger.info(
@@ -126,6 +116,12 @@ class StoreAuthenticityService:
                 " ".join(ocr_res.extracted_text_lines),
                 ocr_res.name_match_score or 0.0,
                 ocr_res.is_incidental_signage,
+            )
+        elif ocr_res.is_unclear_or_multilingual or not ocr_res.has_readable_signboard:
+            logger.info(
+                "Signboard details obtained with low confidence / unclear for '%s' (status: %s). Bypassing OCR from comparison.",
+                name,
+                ocr_res.clarity_status,
             )
 
         # Synthesis & Decision
@@ -163,15 +159,16 @@ class StoreAuthenticityService:
                     f"category: {name_res.category}). "
                     f"Storefront verified with incidental product signage ('{detected_incidental}') and no conflicting commercial brand."
                 )
-            elif ocr_res.is_unclear_or_multilingual:
-                clarity_desc = (
-                    "signboard text is in a regional/multilingual script or stylized font"
-                    if ocr_res.clarity_status == "MULTILINGUAL_OR_STYLIZED"
-                    else "signboard text is blurry or unreadable"
-                )
+            elif ocr_res.is_unclear_or_multilingual or not ocr_res.has_readable_signboard:
+                if ocr_res.clarity_status == "MULTILINGUAL_OR_STYLIZED":
+                    clarity_desc = "signboard is in regional script or stylized font (bypassed from comparison)"
+                elif ocr_res.clarity_status == "UNCLEAR_OR_BLURRY":
+                    clarity_desc = "signboard photo is blurry or unreadable (bypassed from comparison)"
+                else:
+                    clarity_desc = "signboard text obtained with low confidence / unclear (bypassed from comparison)"
                 summary = (
-                    f"Verified authentic retail outlet storefront (storefront probability: {visual_res.store_probability:.1%}, "
-                    f"name category: {name_res.category}). "
+                    f"Verified authentic retail storefront (storefront probability: {visual_res.store_probability:.1%}, "
+                    f"category: {name_res.category}). "
                     f"Physical {clarity_desc}; visual and semantic signals confirmed authenticity."
                 )
             else:

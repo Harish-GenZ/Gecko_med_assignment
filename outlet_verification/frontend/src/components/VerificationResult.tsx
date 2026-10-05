@@ -262,39 +262,52 @@ export const VerificationResult: React.FC<VerificationResultProps> = ({
               <div className="p-2.5 bg-slate-950/60 rounded border border-slate-800/80">
                 <span className="text-[10px] text-slate-400 uppercase font-mono block">2. Signboard OCR</span>
                 <span className="font-semibold text-slate-200 block">
-                  {response.authenticity.ocr_lines.length > 0
+                  {response.authenticity.ocr_name_match_score !== null && response.authenticity.ocr_name_match_score !== undefined
                     ? `${response.authenticity.ocr_lines.length} lines detected`
-                    : response.authenticity.is_unclear_or_multilingual
-                    ? (response.authenticity.ocr_clarity_status === 'MULTILINGUAL_OR_STYLIZED' ? 'Multilingual / Regional Script' : 'Unclear / Blurry Photo')
-                    : 'No signboard text'}
+                    : response.authenticity.ocr_clarity_status === 'MULTILINGUAL_OR_STYLIZED'
+                    ? 'Regional / Stylized Font'
+                    : response.authenticity.ocr_clarity_status === 'UNCLEAR_OR_BLURRY'
+                    ? 'Unclear / Blurry Photo'
+                    : response.authenticity.ocr_clarity_status === 'NO_SIGNBOARD'
+                    ? 'No Signboard Detected'
+                    : 'Obtained with Low Confidence'}
                 </span>
-                {response.authenticity.ocr_name_match_score !== null && response.authenticity.ocr_name_match_score !== undefined && (
-                  <span
-                    className={`text-[11px] block font-mono font-medium ${
-                      response.authenticity.is_cross_lingual_match || response.authenticity.is_incidental_signage
-                        ? 'text-emerald-400'
-                        : response.authenticity.ocr_name_match_score < 0.3
-                        ? 'text-rose-400 font-bold'
-                        : 'text-emerald-400'
-                    }`}
-                  >
-                    Name match: {(response.authenticity.ocr_name_match_score * 100).toFixed(0)}%
-                    {response.authenticity.is_cross_lingual_match && !response.authenticity.is_incidental_signage && ' (Semantic/Tamil Match)'}
-                    {response.authenticity.is_incidental_signage && ' (Incidental Signage)'}
-                    {response.authenticity.ocr_name_match_score < 0.3 && !response.authenticity.is_cross_lingual_match && !response.authenticity.is_incidental_signage && ' (Mismatch)'}
-                  </span>
-                )}
-                {response.authenticity.ocr_lines.length > 0 && (
-                  <span className="text-[11px] text-cyan-400 block truncate" title={response.authenticity.ocr_lines.join(', ')}>
-                    {response.authenticity.ocr_lines.join(', ')}
-                  </span>
-                )}
-                {response.authenticity.is_unclear_or_multilingual && response.authenticity.ocr_lines.length === 0 && (
-                  <span className="text-[11px] text-amber-400/90 block">
-                    {response.authenticity.ocr_clarity_status === 'MULTILINGUAL_OR_STYLIZED'
-                      ? 'Signboard is in regional script or stylized font'
-                      : 'Photo is blurry or unreadable'}
-                  </span>
+                {response.authenticity.ocr_name_match_score !== null && response.authenticity.ocr_name_match_score !== undefined ? (
+                  <>
+                    <span
+                      className={`text-[11px] block font-mono font-medium ${
+                        response.authenticity.is_cross_lingual_match || response.authenticity.is_incidental_signage
+                          ? 'text-emerald-400'
+                          : response.authenticity.ocr_name_match_score < 0.3
+                          ? 'text-rose-400 font-bold'
+                          : 'text-emerald-400'
+                      }`}
+                    >
+                      Name match: {(response.authenticity.ocr_name_match_score * 100).toFixed(0)}%
+                      {response.authenticity.is_cross_lingual_match && !response.authenticity.is_incidental_signage && ' (Semantic/Tamil Match)'}
+                      {response.authenticity.is_incidental_signage && ' (Incidental Signage)'}
+                      {response.authenticity.ocr_name_match_score < 0.3 && !response.authenticity.is_cross_lingual_match && !response.authenticity.is_incidental_signage && ' (Mismatch)'}
+                    </span>
+                    {response.authenticity.ocr_lines.length > 0 && (
+                      <span className="text-[11px] text-cyan-400 block truncate" title={response.authenticity.ocr_lines.join(', ')}>
+                        {response.authenticity.ocr_lines.join(', ')}
+                      </span>
+                    )}
+                  </>
+                ) : (
+                  <>
+                    <span className="text-[11px] text-amber-400 font-mono font-medium block">
+                      Name match: Bypassed from comparison
+                    </span>
+                    <span className="text-[10px] text-slate-400 block">
+                      Signboard details obtained with low confidence; not used for rejection
+                    </span>
+                    {response.authenticity.ocr_lines.length > 0 && (
+                      <span className="text-[10px] text-slate-500 block truncate" title={response.authenticity.ocr_lines.join(', ')}>
+                        Raw text: {response.authenticity.ocr_lines.join(', ')}
+                      </span>
+                    )}
+                  </>
                 )}
               </div>
 
