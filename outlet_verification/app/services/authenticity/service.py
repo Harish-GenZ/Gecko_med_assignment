@@ -3,7 +3,7 @@ from typing import Any
 from pydantic import BaseModel, Field
 
 from app.services.authenticity.name_classifier import NameClassifier
-from app.services.authenticity.signboard_ocr import SignboardOCRService
+from app.services.authenticity.signboard_ocr import OCRAnalysisResult, SignboardOCRService
 from app.services.authenticity.storefront_classifier import StorefrontClassifier
 
 logger = logging.getLogger("outlet_verification.authenticity.service")
@@ -23,6 +23,8 @@ class AuthenticityAssessment(BaseModel):
     ocr_name_match_score: float | None = None
     is_cross_lingual_match: bool = False
     is_incidental_signage: bool = False
+    is_unclear_or_multilingual: bool = False
+    ocr_clarity_status: str = "LEGIBLE"
     rejection_reasons: list[str] = Field(default_factory=list)
     summary: str
 
@@ -61,12 +63,37 @@ class StoreAuthenticityService:
             rejection_reasons.append("NOT_A_RETAIL_STOREFRONT_IMAGE")
             logger.info("Image rejected by visual classifier: %s", visual_res.rejection_reason)
 
-        # 3. Signboard OCR & Cross-Verification (EasyOCR + Multilingual & Semantic Matching)
-        ocr_res = self.ocr_service.analyze_image(image, submitted_name=name)
+        # Smart Bypass: If image is decisively NOT a retail storefront (e.g. bedroom, living room, car, road, selfie)
+        # or name is explicitly a non-outlet term (e.g. 'bedroom'), skip expensive OCR on non-store elements.
+        if not visual_res.is_retail_store and (not name_res.is_valid_outlet_name or visual_res.store_probability < 0.20):
+            logger.info(
+                "Skipping OCR analysis: Image is not a retail storefront (store_prob: %.2f%%) and name is '%s'",
+                visual_res.store_probability * 100,
+                name,
+            )
+            ocr_res = OCRAnalysisResult(
+                extracted_text_lines=[],
+                detected_retail_keywords=[],
+                name_match_score=None,
+                has_readable_signboard=False,
+                is_cross_lingual_or_category_match=False,
+                is_incidental_signage=False,
+                has_conflicting_brand=False,
+                conflicting_brand_name=None,
+                is_unclear_or_multilingual=False,
+                clarity_status="NO_SIGNBOARD",
+                rejection_reason=None,
+            )
+        else:
+            # 3. Signboard OCR & Cross-Verification (EasyOCR + Multilingual & Semantic Matching)
+            ocr_res = self.ocr_service.analyze_image(image, submitted_name=name)
+
         if (
             ocr_res.has_conflicting_brand
             and not ocr_res.is_cross_lingual_or_category_match
             and not ocr_res.is_incidental_signage
+            and not ocr_res.is_unclear_or_multilingual
+            and visual_res.is_retail_store
         ):
             rejection_reasons.append("NAME_MISMATCH")
             rejection_reasons.append("SIGNBOARD_MISMATCH")
@@ -81,7 +108,8 @@ class StoreAuthenticityService:
             and ocr_res.name_match_score < 0.25
             and not ocr_res.is_cross_lingual_or_category_match
             and not ocr_res.is_incidental_signage
-            and not visual_res.is_retail_store
+            and not ocr_res.is_unclear_or_multilingual
+            and visual_res.is_retail_store
         ):
             rejection_reasons.append("NAME_MISMATCH")
             rejection_reasons.append("SIGNBOARD_MISMATCH")
@@ -135,6 +163,17 @@ class StoreAuthenticityService:
                     f"category: {name_res.category}). "
                     f"Storefront verified with incidental product signage ('{detected_incidental}') and no conflicting commercial brand."
                 )
+            elif ocr_res.is_unclear_or_multilingual:
+                clarity_desc = (
+                    "signboard text is in a regional/multilingual script or stylized font"
+                    if ocr_res.clarity_status == "MULTILINGUAL_OR_STYLIZED"
+                    else "signboard text is blurry or unreadable"
+                )
+                summary = (
+                    f"Verified authentic retail outlet storefront (storefront probability: {visual_res.store_probability:.1%}, "
+                    f"name category: {name_res.category}). "
+                    f"Physical {clarity_desc}; visual and semantic signals confirmed authenticity."
+                )
             else:
                 summary = (
                     f"Verified authentic retail outlet storefront "
@@ -156,6 +195,8 @@ class StoreAuthenticityService:
             ocr_name_match_score=ocr_res.name_match_score,
             is_cross_lingual_match=ocr_res.is_cross_lingual_or_category_match,
             is_incidental_signage=ocr_res.is_incidental_signage,
+            is_unclear_or_multilingual=ocr_res.is_unclear_or_multilingual,
+            ocr_clarity_status=ocr_res.clarity_status,
             rejection_reasons=rejection_reasons,
             summary=summary,
         )

@@ -264,7 +264,9 @@ export const VerificationResult: React.FC<VerificationResultProps> = ({
                 <span className="font-semibold text-slate-200 block">
                   {response.authenticity.ocr_lines.length > 0
                     ? `${response.authenticity.ocr_lines.length} lines detected`
-                    : 'No readable text'}
+                    : response.authenticity.is_unclear_or_multilingual
+                    ? (response.authenticity.ocr_clarity_status === 'MULTILINGUAL_OR_STYLIZED' ? 'Multilingual / Regional Script' : 'Unclear / Blurry Photo')
+                    : 'No signboard text'}
                 </span>
                 {response.authenticity.ocr_name_match_score !== null && response.authenticity.ocr_name_match_score !== undefined && (
                   <span
@@ -285,6 +287,13 @@ export const VerificationResult: React.FC<VerificationResultProps> = ({
                 {response.authenticity.ocr_lines.length > 0 && (
                   <span className="text-[11px] text-cyan-400 block truncate" title={response.authenticity.ocr_lines.join(', ')}>
                     {response.authenticity.ocr_lines.join(', ')}
+                  </span>
+                )}
+                {response.authenticity.is_unclear_or_multilingual && response.authenticity.ocr_lines.length === 0 && (
+                  <span className="text-[11px] text-amber-400/90 block">
+                    {response.authenticity.ocr_clarity_status === 'MULTILINGUAL_OR_STYLIZED'
+                      ? 'Signboard is in regional script or stylized font'
+                      : 'Photo is blurry or unreadable'}
                   </span>
                 )}
               </div>

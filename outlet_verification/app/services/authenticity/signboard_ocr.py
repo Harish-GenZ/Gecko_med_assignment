@@ -5,6 +5,7 @@ import threading
 from typing import Any, NamedTuple
 import numpy as np
 
+from PIL import Image
 from app.services.authenticity.utils import load_pil_image
 
 logger = logging.getLogger("outlet_verification.authenticity.ocr")
@@ -130,6 +131,8 @@ class OCRAnalysisResult(NamedTuple):
     is_incidental_signage: bool = False
     has_conflicting_brand: bool = False
     conflicting_brand_name: str | None = None
+    is_unclear_or_multilingual: bool = False
+    clarity_status: str = "LEGIBLE"  # "LEGIBLE", "UNCLEAR_OR_BLURRY", "MULTILINGUAL_OR_STYLIZED", "NO_SIGNBOARD"
     rejection_reason: str | None = None
 
 
@@ -180,6 +183,8 @@ class SignboardOCRService:
         """
         Extracts text from the image and performs multimodal, cross-lingual,
         and semantic name cross-matching with incidental signage filtering.
+        Optimized for swift CPU inference via automatic dimension downscaling and
+        noise / blur / multilingual detection.
         """
         self.load_reader()
         if self.reader is None:
@@ -192,11 +197,36 @@ class SignboardOCRService:
                 is_incidental_signage=False,
                 has_conflicting_brand=False,
                 conflicting_brand_name=None,
+                is_unclear_or_multilingual=True,
+                clarity_status="UNCLEAR_OR_BLURRY",
                 rejection_reason=None,
             )
 
         pil_img = load_pil_image(image_input)
-        img_np = np.array(pil_img)
+
+        # 1. Blur & Sharpness estimation (Laplacian variance approximation)
+        is_blurry = False
+        try:
+            gray = np.array(pil_img.convert("L"), dtype=np.float32)
+            if gray.shape[0] > 10 and gray.shape[1] > 10:
+                laplacian = (
+                    gray[:-2, 1:-1] + gray[2:, 1:-1] + gray[1:-1, :-2] + gray[1:-1, 2:]
+                    - 4.0 * gray[1:-1, 1:-1]
+                )
+                is_blurry = float(laplacian.var()) < 40.0
+        except Exception:
+            pass
+
+        # 2. Downscale high-resolution images to max 1200px to prevent 40+ second CPU stalls
+        MAX_OCR_DIM = 1200
+        w, h = pil_img.size
+        if max(w, h) > MAX_OCR_DIM:
+            scale = MAX_OCR_DIM / float(max(w, h))
+            pil_ocr = pil_img.resize((int(w * scale), int(h * scale)), Image.Resampling.BILINEAR)
+        else:
+            pil_ocr = pil_img
+
+        img_np = np.array(pil_ocr)
 
         try:
             results = self.reader.readtext(img_np)
@@ -211,20 +241,75 @@ class SignboardOCRService:
                 is_incidental_signage=False,
                 has_conflicting_brand=False,
                 conflicting_brand_name=None,
+                is_unclear_or_multilingual=True,
+                clarity_status="UNCLEAR_OR_BLURRY",
                 rejection_reason=None,
             )
 
         extracted_lines: list[str] = []
         high_conf_words: dict[str, float] = {}
+        detected_confidences: list[float] = []
+        has_regional_script = False
 
         for _, text, conf in results:
             clean_t = text.strip() if text else ""
-            if conf >= 0.20 and len(clean_t) > 1:
+            if not clean_t:
+                continue
+            c_val = float(conf)
+            detected_confidences.append(c_val)
+
+            # Detect regional Tamil / Devanagari Unicode scripts
+            if re.search(r"[\u0B80-\u0BFF\u0900-\u097F]", clean_t):
+                has_regional_script = True
+
+            # Require minimum characters and reasonable confidence
+            alpha_tokens = re.findall(r"[a-zA-Z0-9\u0B80-\u0BFF]", clean_t)
+            if len(alpha_tokens) < 2:
+                continue
+
+            # Must have confidence >= 0.35 (or 0.30 if 4+ letters) to avoid texture hallucinations
+            min_conf = 0.30 if len(clean_t) >= 4 else 0.35
+            if c_val < min_conf:
+                continue
+
+            # Skip non-pronounceable gibberish consonant strings (e.g. "qzx", "bdfg")
+            clean_lower = clean_t.lower()
+            words_in_line = clean_lower.split()
+            filtered_line_words = []
+            for w in words_in_line:
+                clean_w = re.sub(r"[^a-z0-9\u0B80-\u0BFF]", "", w)
+                if not clean_w:
+                    continue
+                # If Latin and length >= 4, check for vowel or digits
+                if re.match(r"^[a-z]+$", clean_w) and len(clean_w) >= 4:
+                    if not re.search(r"[aeiouy]", clean_w):
+                        continue
+                filtered_line_words.append(clean_w)
+                if len(clean_w) >= 3 and not clean_w.isdigit():
+                    high_conf_words[clean_w] = max(high_conf_words.get(clean_w, 0.0), c_val)
+
+            if filtered_line_words:
                 extracted_lines.append(clean_t)
-            # Track high confidence individual words for reliable conflicting brand checks
-            for w in re.findall(r"[a-z0-9]+", clean_t.lower()):
-                if len(w) >= 3 and not w.isdigit():
-                    high_conf_words[w] = max(high_conf_words.get(w, 0.0), float(conf))
+
+        total_detections = len(results)
+        valid_lines_count = len(extracted_lines)
+        avg_conf = (sum(detected_confidences) / len(detected_confidences)) if detected_confidences else 0.0
+
+        is_unclear_or_multilingual = False
+        clarity_status = "LEGIBLE"
+
+        if has_regional_script:
+            is_unclear_or_multilingual = True
+            clarity_status = "MULTILINGUAL_OR_STYLIZED"
+        elif total_detections > 0 and valid_lines_count == 0:
+            # Text was found in image, but confidence was too low or text was illegible
+            is_unclear_or_multilingual = True
+            clarity_status = "UNCLEAR_OR_BLURRY" if is_blurry else "MULTILINGUAL_OR_STYLIZED"
+        elif is_blurry and valid_lines_count < 2:
+            is_unclear_or_multilingual = True
+            clarity_status = "UNCLEAR_OR_BLURRY"
+        elif valid_lines_count == 0:
+            clarity_status = "NO_SIGNBOARD"
 
         full_ocr_raw = " ".join(extracted_lines).lower()
         full_ocr_trans = transliterate_tamil(full_ocr_raw).lower()
@@ -317,15 +402,16 @@ class SignboardOCRService:
                 logger.debug("Semantic embedding comparison bypassed: %s", e_exc)
 
             # G. Conflicting Commercial Brand Detection
-            # A conflicting commercial brand requires high confidence (>= 0.50), length >= 4,
-            # not being in stop words or incidental terms, and having no phonetic/semantic match with submitted brands.
+            # A conflicting commercial brand requires high confidence (>= 0.65), length >= 4,
+            # valid word structure, and having no phonetic/semantic match with submitted brands.
             conflicting_tokens: list[str] = []
-            if ocr_brands and not is_incidental_signage:
+            if ocr_brands and not is_incidental_signage and not is_unclear_or_multilingual:
                 for ob in ocr_brands:
                     if (
                         len(ob) >= 4
                         and ob not in COMMON_STOPWORDS_AND_FRAGMENTS
-                        and high_conf_words.get(ob, 0.0) >= 0.50
+                        and high_conf_words.get(ob, 0.0) >= 0.65
+                        and re.search(r"[aeiouy]", ob)
                     ):
                         matched = any(
                             difflib.SequenceMatcher(None, sb, ob).ratio() >= 0.60
@@ -337,11 +423,9 @@ class SignboardOCRService:
                         if not matched:
                             conflicting_tokens.append(ob)
 
-                if conflicting_tokens and brand_score < 0.60:
+                if conflicting_tokens and brand_score < 0.60 and valid_lines_count >= 1:
                     has_conflicting_brand = True
                     conflicting_brand_name = " ".join(conflicting_tokens)
-
-
 
             # H. Evidence Synthesis
             if category_matched and brand_score >= 0.70:
@@ -362,7 +446,7 @@ class SignboardOCRService:
                 if name_match_score >= 0.40 and not has_conflicting_brand:
                     is_semantic_match = True
 
-        has_readable_signboard = len(extracted_lines) > 0
+        has_readable_signboard = len(extracted_lines) > 0 and not is_unclear_or_multilingual
 
         return OCRAnalysisResult(
             extracted_text_lines=extracted_lines,
@@ -373,6 +457,8 @@ class SignboardOCRService:
             is_incidental_signage=is_incidental_signage,
             has_conflicting_brand=has_conflicting_brand,
             conflicting_brand_name=conflicting_brand_name,
+            is_unclear_or_multilingual=is_unclear_or_multilingual,
+            clarity_status=clarity_status,
             rejection_reason=None,
         )
 

@@ -14,6 +14,8 @@ export interface AuthenticityAssessment {
   ocr_name_match_score: number | null;
   is_cross_lingual_match?: boolean;
   is_incidental_signage?: boolean;
+  is_unclear_or_multilingual?: boolean;
+  ocr_clarity_status?: string;
   rejection_reasons: string[];
   summary: string;
 }
