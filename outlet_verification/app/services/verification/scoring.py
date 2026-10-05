@@ -162,7 +162,14 @@ class CandidateScorer:
         i_sim = candidate.image_similarity
         dist = candidate.distance_meters
 
-        strong_duplicate = is_dup_candidate
+        # Strong duplicate evidence: either 3-metric average >= 0.75 or strong visual+geo match
+        strong_image_geo = (
+            i_sim is not None
+            and dist is not None
+            and i_sim >= self.strong_image_threshold
+            and dist <= self.strong_image_geo_meters
+        )
+        strong_duplicate = is_dup_candidate or strong_image_geo
 
         # Rule 11.3: Strong name but conflicting image
         conflicting_evidence = False

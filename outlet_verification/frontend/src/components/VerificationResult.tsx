@@ -129,7 +129,11 @@ export const VerificationResult: React.FC<VerificationResultProps> = ({
               {(duplicate_confidence * 100).toFixed(1)}%
             </span>
             <span className="text-[11px] text-slate-500 block">
-              {duplicate_confidence >= 0.75 ? '>= 75.0% (Duplicate)' : '< 75.0% (Genuine)'}
+              {duplicate_confidence >= 0.75
+                ? '>= 75.0% (Duplicate)'
+                : duplicate_confidence >= 0.65
+                ? '65.0% - 75.0% (Manual Review)'
+                : '< 65.0% (Genuine)'}
             </span>
           </div>
         </div>

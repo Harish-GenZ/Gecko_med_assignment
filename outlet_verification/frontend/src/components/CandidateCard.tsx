@@ -86,16 +86,26 @@ export const CandidateCard: React.FC<CandidateCardProps> = ({
           <div className="text-right flex-shrink-0">
             <span className="text-[11px] text-slate-500 block uppercase font-medium">3-Metric Average</span>
             <span className={`text-lg font-bold font-mono ${
-              confidence >= 0.75 ? 'text-rose-400' : 'text-emerald-400'
+              confidence >= 0.75
+                ? 'text-rose-400'
+                : confidence >= 0.65
+                ? 'text-amber-400'
+                : 'text-emerald-400'
             }`}>
               {(confidence * 100).toFixed(1)}%
             </span>
             <span className={`text-[10px] font-semibold tracking-wider uppercase px-2 py-0.5 rounded block mt-0.5 ${
               confidence >= 0.75
                 ? 'bg-rose-500/20 text-rose-300 border border-rose-500/30'
+                : confidence >= 0.65
+                ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30'
                 : 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30'
             }`}>
-              {confidence >= 0.75 ? 'Duplicate (>= 75%)' : 'Distinct (< 75%)'}
+              {confidence >= 0.75
+                ? 'Duplicate (>= 75%)'
+                : confidence >= 0.65
+                ? 'Review (65-75%)'
+                : 'Distinct (< 65%)'}
             </span>
           </div>
         )}

@@ -198,7 +198,7 @@ def test_scenario_5_missing_image():
     scorer = get_candidate_scorer()
     scored = scorer.score_candidate(cand)
 
-    assert scored.evidence_coverage == 0.55
+    assert math.isclose(scored.evidence_coverage, scorer.name_weight + scorer.geo_weight, abs_tol=1e-3)
     # Base score should be ~0.7557, NOT ~0.415
     assert scored.base_score > 0.70
     print("[PASS] test_scenario_5_missing_image passed:", scored.base_score, scored.evidence_coverage)
@@ -211,7 +211,7 @@ def test_scenario_6_missing_gps():
     decision_engine = get_decision_engine()
 
     scored = scorer.score_candidate(cand)
-    assert scored.evidence_coverage == 0.75
+    assert math.isclose(scored.evidence_coverage, scorer.name_weight + scorer.image_weight, abs_tol=1e-3)
     assert scored.base_score > 0.85
 
     result = decision_engine.evaluate([scored])
@@ -250,7 +250,7 @@ def test_scenario_8_no_candidates():
 
 
 def test_scenario_9_ambiguous_candidates():
-    """Test 9: Two candidates with high scores but margin < 0.10 -> NEEDS_REVIEW."""
+    """Test 9: Two candidates with 3-metric average >= 0.75 are DUPLICATE (strong 75% rule) with margin recorded."""
     cand_a = make_candidate(
         outlet_id="cand-A",
         name="Apollo Pharmacy Branch 1",
@@ -272,7 +272,7 @@ def test_scenario_9_ambiguous_candidates():
     scored_a = scorer.score_candidate(cand_a)
     scored_b = scorer.score_candidate(cand_b)
 
-    # Both are high confidence (>= 0.80), but margin is < 0.10
+    # Both are high confidence (>= 0.80), and margin is < 0.10
     assert scored_a.duplicate_confidence >= 0.80
     assert scored_b.duplicate_confidence >= 0.80
     margin_diff = scored_a.duplicate_confidence - scored_b.duplicate_confidence
@@ -280,12 +280,28 @@ def test_scenario_9_ambiguous_candidates():
 
     result = decision_engine.evaluate([scored_a, scored_b])
 
-    assert result.decision == VerificationDecision.NEEDS_REVIEW
+    # Above 75% is strictly DUPLICATE
+    assert result.decision == VerificationDecision.DUPLICATE
     assert ReasonCode.AMBIGUOUS_TOP_CANDIDATES.value in result.reason_codes
     assert result.candidate_margin is not None
     assert result.candidate_margin < 0.10
 
     print("[PASS] test_scenario_9_ambiguous_candidates passed:", result.decision, result.candidate_margin)
+
+
+def test_scenario_manual_review_range_65_to_75():
+    """Test: 3-Metric average in the 65% to 75% range correctly yields NEEDS_REVIEW."""
+    # Let average be ~0.70: name=0.70, image=0.70, distance=35.6m (geo ≈ 0.70)
+    cand = make_candidate(name_sim=0.70, image_sim=0.70, distance_m=35.667)
+    scorer = get_candidate_scorer()
+    decision_engine = get_decision_engine()
+
+    scored = scorer.score_candidate(cand)
+    assert 0.65 <= scored.duplicate_confidence < 0.75
+
+    result = decision_engine.evaluate([scored])
+    assert result.decision == VerificationDecision.NEEDS_REVIEW
+    print("[PASS] test_scenario_manual_review_range_65_to_75 passed:", result.decision, result.duplicate_confidence)
 
 
 def test_scenario_10_perfect_match():
@@ -426,6 +442,7 @@ if __name__ == "__main__":
     test_scenario_7_weak_evidence()
     test_scenario_8_no_candidates()
     test_scenario_9_ambiguous_candidates()
+    test_scenario_manual_review_range_65_to_75()
     test_scenario_10_perfect_match()
     test_scenario_11_completely_different_outlet()
 
